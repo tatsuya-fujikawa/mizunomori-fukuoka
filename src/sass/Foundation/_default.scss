@@ -1,0 +1,84 @@
+@import "normalize";
+@import "color";
+
+$basefontsize: 16;
+html, body {
+  padding: 0;
+  margin: 0;
+  counter-reset: ranking;
+  counter-reset: rankingLower;
+}
+
+* {
+  box-sizing: border-box;
+
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+}
+
+html {
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  font-size: $basefontsize + px;
+  font-family: 'Noto Sans JP', "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", sans-serif;
+
+}
+
+@function rem($pixels, $context: $basefontsize) { 
+  @return $pixels / $context * 1rem;
+}
+
+body {
+  color: var(--color-font);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  letter-spacing: .05em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+hr {
+  background-color: #D0D3DC;
+  opacity: 0.8;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+:root {
+  --en-font: 'roboto', sans-serif;
+}
+
+$layout-width-inner: 1200px;
+$breakpoints: (
+  "small": "screen and (max-width: 425px)",
+  "sp": "screen and (max-width: 767px)",
+  "tab": "screen and (max-width: 1200px)", 
+  "pc": "screen and (min-width: #{$layout-width-inner})"
+);
+
+@mixin mq($breakpoint: sp) {
+
+  @media #{map-get($breakpoints, $breakpoint)} {
+
+    @content;
+  }
+}
+

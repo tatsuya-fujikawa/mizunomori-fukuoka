@@ -1,0 +1,36 @@
+
+.u-uppercase {
+    text-transform: uppercase;
+}
+.u-strong {
+    font-weight: bold;
+}
+.u-fontGothic {
+    font-family: fot-tsukuardgothic-std, sans-serif;
+  }
+.u-uppercase {
+    text-transform: uppercase;
+    }
+
+.u-lowercase {
+    text-transform: lowercase;
+}
+
+.u-centerposition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.u-visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(50%);
+}
