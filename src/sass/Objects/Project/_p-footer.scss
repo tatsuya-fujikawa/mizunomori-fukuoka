@@ -1,19 +1,41 @@
 .p-footer {
   color: var(--color-font);
 
+  &__flex {
+    @include mq('pc') {
+      display: flex;
+    }
+  }
+
 
   &__icons {
     padding-top: rem(36);
     max-width: 95%;
     margin: 0 auto;
 
+    @include mq('pc'){
+      width: 160px;
+    }
+
     ul {
       display: flex;
       justify-content: center;
+
+      @include mq('pc') {
+        align-items: center;
+        flex-wrap: wrap;
+      }
     }
 
     li {
       padding-right: rem(24);
+
+      @include mq('pc'){
+        padding-right: 0;
+        flex-basis: 50%;
+        text-align: center;
+        padding-bottom: rem(16);
+      }
 
       &:last-child {
         padding-right: 0;
@@ -55,6 +77,10 @@
     width: 95%;
     margin: 0 auto;
     padding-top: rem(36);
+
+    @include mq('pc') {
+      width: 430px;
+    }
   }
 
   &__copyright {
