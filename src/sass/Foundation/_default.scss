@@ -66,11 +66,10 @@ img {
   --en-font: 'roboto', sans-serif;
 }
 
-$layout-width-inner: 1200px;
+$layout-width-inner: 1000px;
 $breakpoints: (
   "small": "screen and (max-width: 425px)",
   "sp": "screen and (max-width: 767px)",
-  "tab": "screen and (max-width: 1200px)", 
   "pc": "screen and (min-width: #{$layout-width-inner})"
 );
 
