@@ -1,0 +1,43 @@
+.c-buttonCTAWrap {
+    display: flex;
+    
+}
+.c-buttonCTA {
+
+    a {
+        position: relative;
+        font-family: fot-tsukuardgothic-std, sans-serif;
+        font-weight: bold;
+        color: var(--color-white);
+        padding: rem(16) 0;
+        text-align: center;
+        border-radius: 16px;
+        display: inline-block;
+        min-width: 130px;
+    }
+
+    &__phone a {
+        background-color: var(--color-phone);
+        margin-right: rem(14);
+
+        &:before {
+            content: '';
+            position: absolute;
+            // background-image: url(../img/call.svg);
+            z-index: 10;
+            background-image: url('@image/call.svg');
+            background-color: #333333;
+            top: 0;
+            left: 0;
+            width: 30px;
+            height: 30px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__mail a {
+        background-color: var(--color-reserve);
+    }
+
+}

@@ -1,6 +1,7 @@
 const PATH = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const StylelintPlugin = require('stylelint-webpack-plugin');
+// const StylelintPlugin = require('stylelint-webpack-plugin');
+const path = require('path');
 
 module.exports = {
   mode: "production",
@@ -8,8 +9,6 @@ module.exports = {
   output: {
     path: PATH.resolve(__dirname, "dist"),
     filename: "bundle.js",
-    publicPath: "http://localhost:8080/"
-    
   },
   devServer: {
     static: "dist",
@@ -18,15 +17,15 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /.(jpg|png|gif|svg)$/,
-        use: {
-          loader: "file-loader",
-          options: {
-            name: "../img/[name].[ext]",
-          }
-        }
-      },
+      // {
+      //   test: /.(jpg|png|gif|svg)$/,
+      //   use: {
+      //     loader: "file-loader",
+      //     options: {
+      //       name: "../img/[name].[ext]",
+      //     }
+      //   }
+      // },
       {
         test: /\.scss$/i,
         use: [
@@ -35,6 +34,10 @@ module.exports = {
           },
           {
             loader: "css-loader",
+            options: {
+              url: true,
+              // sourceMap: true,
+            }
           },
           {
             loader: "postcss-loader",
@@ -61,12 +64,23 @@ module.exports = {
           },
         ]
       },
-    ]
+      {
+        // 対象となるファイルの拡張子
+        test: /\.(gif|png|jpg|eot|wof|woff|ttf|svg)$/,
+        // 画像をBase64として取り込む
+        type: "asset/inline",
+      },
+    ],
   },
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'css/style.css',
       ignoreOrder: true,
     }),
-  ]
+  ],
+  resolve: {
+    alias: {
+      "@image": path.resolve(__dirname, './src/img/'),
+    },
+  },
 };
