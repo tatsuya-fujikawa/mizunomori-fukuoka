@@ -1,0 +1,6 @@
+.l-containerPc {
+  @include mq('pc') {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
