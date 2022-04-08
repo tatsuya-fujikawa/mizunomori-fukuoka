@@ -1,0 +1,55 @@
+.c-accordion {
+  padding-bottom: rem(16);
+
+  &__tab {
+    text-align: center;
+    padding: rem(12) 0;
+    margin-bottom: rem(8);
+    border-radius: 6px;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    position: relative;
+
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 9px;
+      height: 9px;
+      border-bottom: 2px solid #fff;
+      border-right: 2px solid #fff;
+      transform: rotate(45deg);
+      top: 40%;
+      right: 15px;
+      transition: 0.2s ease;
+    }
+
+    &.on::after {
+      transform: rotate(-135deg);
+      top: 42%;
+    }
+
+    &Access {
+      background-color: var(--color-key);
+      color: var(--color-white);
+      font-size: rem(14);
+      font-weight: bold;
+      box-shadow: 3px 6px 15px -7px #b5b5b5;
+      transition: 0.2s ease;
+
+      &.on {
+        box-shadow: none;
+        transition: 0.2s ease;
+      }
+    }
+  }
+
+  &__contents {
+    margin: 0 auto;
+    width: 95%;
+    
+    img {
+      display: block;
+      margin: 0 auto rem(8)
+    }
+  }
+}

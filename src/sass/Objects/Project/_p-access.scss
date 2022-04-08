@@ -1,0 +1,74 @@
+.p-access {
+  &__map {
+    @include mq('pc') {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: rem(100);
+    }
+
+    &-map {
+      text-align: center;
+      padding-top: rem(36);
+
+      @include mq('pc') {
+        padding-left: rem(36);
+      }
+
+
+      iframe {
+        width: 250px;
+        height: 250px;
+
+        @include mq('pc') {
+          width: 465px;
+          height: 220px;
+        }
+
+      }
+    }
+  }
+
+  &__address {
+    text-align: center;
+
+    @include mq('pc') {
+      padding-right: rem(36);
+      text-align: left;
+    }
+
+    &-title {
+      font-size: rem(18);
+      font-weight: bold;
+      padding-top: rem(36);
+      @include mq('pc') {
+        padding-top: 0;
+      }
+
+    }
+    &-text {
+      padding-top: rem(36);
+    }
+  }
+
+  &__card {
+    background-color: var(--color-white);
+    border-radius: rem(16);
+    padding: rem(24) rem(30);
+    margin-bottom: rem(30);
+
+    &-body {
+
+      span {
+        display: block;
+        text-align: center;
+        font-size: rem(40);
+        padding-top: rem(32);
+      }
+
+      p {
+        padding-top: rem(24);
+      }
+    }
+  }
+}

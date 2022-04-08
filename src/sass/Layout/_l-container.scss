@@ -1,3 +1,13 @@
+.l-container {
+  width: 95%;
+  margin: 0 auto;
+
+  @include mq('pc') {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
 .l-containerPc {
   @include mq('pc') {
     max-width: 1000px;

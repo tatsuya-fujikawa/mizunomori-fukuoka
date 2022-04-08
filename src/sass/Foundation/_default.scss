@@ -81,3 +81,9 @@ $breakpoints: (
   }
 }
 
+.u-spNone {
+  display: none;
+  @include mq('pc') {
+      display: block;
+  }
+}

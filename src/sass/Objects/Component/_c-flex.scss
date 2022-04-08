@@ -1,0 +1,27 @@
+.c-flex {
+  display: flex;
+
+  &__alignCenter {
+    align-items: center;
+  }
+  &__spaceBetween {
+    justify-content: space-between;
+  }
+  &__wrap {
+    flex-wrap: wrap;
+  }
+  &__center {
+    justify-content: center;
+  }
+  &__half {
+    flex-basis: 50%;
+  }
+}
+
+.c-flexPC {
+  display: block;
+
+  @include mq('pc') {
+    display: flex;
+  }
+}
