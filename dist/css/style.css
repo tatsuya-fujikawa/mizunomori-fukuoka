@@ -313,7 +313,7 @@ svg:not([fill]) {
   --color-main: #EDF8F8;
   --color-key: #a5dddb;
   --color-white: #ffffff;
-  --color-gray: #D0D3DC;
+  --color-gray: #4D4D4E;
   --color-twitter: #42B0FC;
   --color-phone: #F793A5;
   --color-reserve: #F7D093;
@@ -468,6 +468,22 @@ img {
   z-index: 10;
 }
 
+.c-buttonOrdinary a {
+  background-color: var(--color-key);
+  border-radius: 6px;
+  box-shadow: 3px 6px 15px -7px #b5b5b5;
+  color: var(--color-white);
+  display: block;
+  font-family: fot-tsukuardgothic-std, sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin: 0 auto;
+  max-width: 300px;
+  padding: 0.5rem;
+  text-align: center;
+  width: 65%;
+}
+
 .c-tabMenu__tab-menu {
   border-collapse: collapse;
   display: flex;
@@ -531,6 +547,56 @@ img {
 .c-sentence {
   color: var(--color-font);
   font-size: 0.875rem;
+}
+
+.c-DrProfile {
+  background-color: var(--color-white);
+  margin-top: 3.75rem;
+  padding: 2.5rem 1.25rem;
+}
+.c-DrProfile__img {
+  text-align: center;
+}
+.c-DrProfile__name {
+  font-size: 0.875rem;
+  font-weight: normal;
+  padding-top: 2.5rem;
+  text-align: center;
+}
+.c-DrProfile__name span {
+  background: linear-gradient(transparent 80%, #DCF5F5 80%);
+  font-size: 1.5rem;
+}
+.c-DrProfile__body {
+  padding-top: 2.5rem;
+}
+.c-DrProfile__career {
+  padding-top: 2.5rem;
+}
+.c-DrProfile__conference {
+  color: var(--color-gray);
+  font-family: fot-tsukuardgothic-std, sans-serif;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  z-index: 10;
+}
+.c-DrProfile__conference span {
+  background-color: var(--color-white);
+  display: inline-block;
+  font-size: 1.125rem;
+  padding: 0 0.25rem;
+}
+.c-DrProfile__list {
+  border: 1px solid #E2E2E2;
+  border-radius: 6px;
+  padding: 1.5rem;
+  position: relative;
+  top: -16px;
+}
+.c-DrProfile__list-item {
+  font-size: 0.875rem;
+  text-align: center;
 }
 
 .c-accordion {
@@ -799,6 +865,10 @@ img {
   display: block;
 }
 
+.u-bgMainColor {
+  background-color: var(--color-main);
+}
+
 .u-spacer__s {
   height: 1rem;
 }
@@ -834,6 +904,11 @@ img {
   }
   .c-buttonCTAWrap.-forPC {
     display: flex;
+  }
+  .c-sentence {
+    font-size: 1rem;
+    letter-spacing: -0.025em;
+    line-height: 1.6875rem;
   }
   .c-flexPC {
     display: flex;

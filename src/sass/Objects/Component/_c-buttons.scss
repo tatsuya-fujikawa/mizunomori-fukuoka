@@ -77,3 +77,24 @@
 
 
 }
+
+.c-buttonOrdinary {
+
+    a{
+        text-align: center;
+        font-size: rem(14);
+        color: var(--color-white);
+        font-family: fot-tsukuardgothic-std, sans-serif;
+        padding: rem(8);
+        width: 65%;
+        max-width: 300px;
+        display: block;
+        background-color: var(--color-key);
+        border-radius: 6px;
+        margin: 0 auto;
+        font-weight: bold;
+        box-shadow: 3px 6px 15px -7px #b5b5b5;
+    }
+
+}
+
