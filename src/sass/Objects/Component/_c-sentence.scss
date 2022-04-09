@@ -1,0 +1,10 @@
+.c-sentence {
+  font-size: rem(14);
+  color: var(--color-font);
+
+  @include mq('pc') {
+    font-size: rem(16);
+    letter-spacing: -0.025em;
+    line-height: rem(27);
+  }
+}

@@ -1,0 +1,57 @@
+.c-DrProfile {
+  background-color: var(--color-white);
+  padding: rem(40) rem(20);
+  margin-top: rem(60);
+
+  &__img {
+    text-align: center;
+  }
+
+  &__name {
+    font-size: rem(14);
+    font-weight: normal;
+    text-align: center;
+    padding-top: rem(40);
+
+    span {
+      font-size: rem(24);
+      background:linear-gradient(transparent 80%, #DCF5F5 80%);
+    }
+  }
+
+  &__body {
+    padding-top: rem(40);
+  }
+
+  &__career {
+    padding-top: rem(40);
+  }
+  &__conference {
+    text-align: center;
+    font-weight: bold;
+    font-family: $mainFont;
+    color: var(--color-gray);
+    position: relative;
+    z-index: 10;
+
+    span {
+      display: inline-block;
+      font-size: rem(18);
+      padding: 0 rem(4);
+      background-color: var(--color-white);
+    }
+  }
+
+  &__list {
+    border: 1px solid #E2E2E2;
+    border-radius: 6px;
+    padding: rem(24);
+    position: relative;
+    top: -16px;
+
+    &-item {
+      text-align: center;
+      font-size: rem(14);
+    }
+  }
+}

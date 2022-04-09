@@ -1,5 +1,13 @@
 .c-buttonCTAWrap {
     display: flex;
+
+    &.-forPC {
+        display: none;
+
+        @include mq('pc') {
+            display: flex;
+        }
+    }
     
 }
 .c-buttonCTA {
@@ -14,11 +22,20 @@
         border-radius: 16px;
         display: inline-block;
         min-width: 130px;
+        box-shadow: 3px 6px 15px -7px #b5b5b5;
+        transition: 0.3s ease;
+        padding-left: rem(16);
+
+        &:hover {
+            transform: translateY(2px);
+            transition: 0.3s ease;
+            opacity: 0.8;
+        }
     }
 
     &__phone a {
         background-color: var(--color-phone);
-        margin-right: rem(14);
+        margin-right: rem(6);
 
         &:before {
             content: '';
@@ -26,11 +43,11 @@
             // background-image: url(../img/call.svg);
             z-index: 10;
             background-image: url('@image/call.svg');
-            background-color: #333333;
-            top: 0;
-            left: 0;
-            width: 30px;
-            height: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 10px;
+            width: 25px;
+            height: 25px;
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -38,6 +55,46 @@
 
     &__mail a {
         background-color: var(--color-reserve);
+        padding-left: rem(20);
+        margin-left: rem(6);
+
+        &:before {
+            content: '';
+            position: absolute;
+            // background-image: url(../img/call.svg);
+            z-index: 10;
+            background-image: url('@image/email.svg');
+            top: 50%;
+            transform: translateY(-50%);
+            left: 5px;
+            width: 30px;
+            height: 30px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+    }
+
+
+}
+
+.c-buttonOrdinary {
+
+    a{
+        text-align: center;
+        font-size: rem(14);
+        color: var(--color-white);
+        font-family: fot-tsukuardgothic-std, sans-serif;
+        padding: rem(8);
+        width: 65%;
+        max-width: 300px;
+        display: block;
+        background-color: var(--color-key);
+        border-radius: 6px;
+        margin: 0 auto;
+        font-weight: bold;
+        box-shadow: 3px 6px 15px -7px #b5b5b5;
     }
 
 }
+

@@ -34,3 +34,30 @@
     white-space: nowrap;
     clip-path: inset(50%);
 }
+
+.u-spNone {
+    display: none;
+    @include mq('pc') {
+        display: block;
+    }
+}
+.u-pcNone {
+    display: block;
+    @include mq('pc') {
+        display: none;
+    }
+}
+
+.u-bgMainColor {
+    background-color: var(--color-main);
+}
+
+.u-spacer__s {
+    height: rem(16);
+}
+.u-spacer__m {
+    height: rem(32);
+}
+.u-spacer__l {
+    height: rem(64);
+}

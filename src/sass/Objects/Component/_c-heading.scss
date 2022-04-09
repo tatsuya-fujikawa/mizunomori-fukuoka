@@ -1,0 +1,14 @@
+.c-heading {
+  text-align: center;
+
+  &__en {
+    font-size: rem(40);
+    font-weight: 300;
+    color: var(--color-heading);
+  }
+  &__jp {
+    font-size: rem(14);
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    color: #4D4D4E;
+  }
+}

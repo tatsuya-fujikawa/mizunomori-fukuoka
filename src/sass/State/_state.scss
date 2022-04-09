@@ -1,0 +1,7 @@
+.js-content {
+  display: none;
+  
+  &.on {
+    display: block;
+  }
+}

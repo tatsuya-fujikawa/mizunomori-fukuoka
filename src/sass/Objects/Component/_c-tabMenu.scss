@@ -1,0 +1,68 @@
+.c-tabMenu {
+  &__tab-menu {
+    display: flex;
+    justify-content: space-between;
+    border-collapse: collapse;
+    /* border-bottom: 1px solid #323232; */
+    position: relative;
+    padding: 1px;
+  }
+
+  &__tab-menu li {
+    width: 25%;
+    border-radius: 8px 8px 0 0;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    padding: 2px;
+  }
+
+  &__tab-menu li a {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    padding: rem(32) 0;
+    color: var(--color-font);
+    text-decoration: none;
+    background-color: var(--color-main);
+    border-radius: 16px 16px 0 0;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+
+  &__tab-menu li a span {
+    display: block;
+    font-size: 1.5em;
+  }
+  &__tab-menu li a.active {
+    color: #363636;
+    background-color: #c9ebe9;
+    border-bottom: none;
+    position: relative;
+    top: 3px;
+    transition: 0.2s ease;
+  }
+  
+  .p-runmor__tab-menu li a:not(.active):hover {
+    opacity: 0.5;
+    transition: 0.4s;
+  }
+  
+  &__content {
+    display: none;
+    transition: all 0.3s ease;
+  }
+  &__content.active {
+    display: block;
+    background-color: #c9ebe9;
+    color: var(--color-font);
+    font-size: 1.125rem;
+    padding: rem(40) rem(80);
+    border-top: none;
+    margin: 0 2px;
+    border-radius: 0 0 16px 16px;
+  }
+
+}
+
