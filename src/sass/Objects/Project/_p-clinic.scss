@@ -1,0 +1,14 @@
+.p-clinic {
+  &__photos {
+    display: flex;
+    padding-top: rem(38);
+
+    &-slide {
+      padding-right: rem(26);
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}

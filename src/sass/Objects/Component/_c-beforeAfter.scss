@@ -1,0 +1,25 @@
+.c-beforeAfter {
+  display: flex;
+  justify-content: center;
+
+  &__before {
+    padding-right: rem(8);
+  }
+  &__after {
+    padding-left: rem(8);
+  }
+
+  figure img {
+    vertical-align: bottom;
+  }
+  
+
+  figcaption {
+    text-align: center;
+    padding: rem(4) 0;
+    background-color: var(--color-white);
+    font-family: $mainFont;
+    color: var(--color-fontGray);
+    font-weight: bold;
+  }
+}

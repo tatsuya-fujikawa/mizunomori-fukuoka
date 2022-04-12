@@ -1,0 +1,8 @@
+.l-readingSection {
+
+  padding: rem(35) 0 0;
+
+  @include mq('pc') {
+    padding: rem(72) 0 0;
+  }
+}

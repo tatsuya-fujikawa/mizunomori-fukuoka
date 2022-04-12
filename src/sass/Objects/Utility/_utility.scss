@@ -16,6 +16,10 @@
     text-transform: lowercase;
 }
 
+.u-textCenter {
+    text-align: center;
+}
+
 .u-centerposition {
     display: flex;
     justify-content: center;
@@ -50,6 +54,9 @@
 
 .u-bgMainColor {
     background-color: var(--color-main);
+}
+.u-blueCrayon {
+    background: linear-gradient(transparent 80%, #DCF5F5 80%);
 }
 
 .u-spacer__s {

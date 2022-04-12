@@ -1,8 +1,23 @@
 .p-CTA {
+  background-color: var(--color-main);
+  border-radius: 12px;
+  padding: rem(16) 0 rem(24);
+
+  @include mq('pc') {
+    max-width: 500px;
+    padding: rem(26) 0 rem(32);
+    margin: rem(80) auto rem(60);
+  }
+
   &__heading {
     font-family: fot-tsukuardgothic-std, sans-serif;
     text-align: center;
     color: var(--color-font);
     padding-bottom: rem(8);
+
+    @include mq('pc') {
+      font-size: rem(20);
+      padding-bottom: rem(16);
+    }
   }
 }

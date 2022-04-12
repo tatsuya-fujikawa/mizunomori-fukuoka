@@ -31,6 +31,10 @@
             transition: 0.3s ease;
             opacity: 0.8;
         }
+
+        @include mq('pc') {
+            min-width: 160px;
+        }
     }
 
     &__phone a {
@@ -75,6 +79,12 @@
 
     }
 
+    &__footer a {
+        @include mq('pc') {
+            min-width: 130px;
+        }
+    }
+
 
 }
 
@@ -94,7 +104,38 @@
         margin: 0 auto;
         font-weight: bold;
         box-shadow: 3px 6px 15px -7px #b5b5b5;
+
+
+        &:hover {
+            transform: translateY(2px);
+            transition: 0.3s ease;
+            opacity: 0.8;
+        }
     }
 
+}
+
+.c-buttonSquare {
+    background-color: var(--color-white);
+    max-width: 100%;
+    padding: rem(8);
+    border-radius: 6px;
+    color: var(--color-key);
+    font-weight: bold;
+    font-family: $mainFont;
+    border: 2px solid var(--color-key);
+    box-shadow: 3px 6px 15px -7px #b5b5b5;
+    transition: 0.3s ease;
+
+    &:hover {
+        transform: translateY(2px);
+        transition: 0.3s ease;
+        opacity: 0.8;
+    }
+
+    @include mq('pc') {
+        width: 200px;
+        margin: 0 auto;
+    }
 }
 
