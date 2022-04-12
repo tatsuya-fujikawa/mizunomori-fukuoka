@@ -1,0 +1,35 @@
+.p-diagnosisMenu {
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: rem(40);
+    }
+    &__card {
+        display: block;
+        width: 210px;
+        box-sizing: border-box;
+        text-align: center;
+        padding: rem(8);
+        background-color: var(--color-white);
+        box-shadow: 3px 6px 15px -7px #b5b5b5;
+        margin-bottom: rem(24);
+        border-radius: rem(6);
+
+        &:hover {
+            opacity: 1;
+            box-shadow: none;
+        }
+    }
+    &__lead {
+        text-align: center;
+        font-size: rem(14);
+        font-family: $mainFont;
+        font-weight: bold;
+    }
+    &__title {
+        font-size: rem(18);
+        color: var(--color-fontGray);
+        font-weight: bold;
+    }
+}
