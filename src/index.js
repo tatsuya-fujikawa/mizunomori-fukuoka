@@ -1,5 +1,4 @@
 import "./sass/style.scss";
-
 import { tabSwitch } from "./js/tabmenu";
 
 tabSwitch();
@@ -11,5 +10,4 @@ $(function () {
       $(this).nextAll('.js-content').slideToggle('500');
     });
   }
-
 });

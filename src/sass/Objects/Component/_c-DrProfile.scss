@@ -3,6 +3,7 @@
   padding: rem(40) rem(20);
   margin-top: rem(60);
 
+
   &__img {
     text-align: center;
   }
@@ -81,6 +82,16 @@
     @include mq('pc') {
       flex-basis: 70%;
       padding: 0 rem(64);
+    }
+  }
+
+  &__bnr {
+    display: block;
+    padding-top: rem(16);
+    margin: 0 auto;
+
+    @include mq('pc') {
+      width: 70%;
     }
   }
 }

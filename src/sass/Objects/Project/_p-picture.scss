@@ -1,0 +1,125 @@
+.p-picture {
+  &__lead {
+    text-align: center;
+    font-size: rem(20);
+    font-family: $mainFont;
+    padding-top: rem(32);
+    color: var(--color-fontGray);
+  }
+  &__ranking {
+    color: var(--color-fontGray);
+    font-family: $mainFont;
+    position: relative;
+    padding: rem(32) rem(0) rem(24) rem(32);
+
+    @include mq('pc') {
+      padding: rem(56) rem(0) rem(24) rem(32);
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url('@image/crown_gold.svg');
+      width: 25px;
+      height: 25px;
+      background-size: cover;
+      left: 0;
+    }
+
+    &-silver {
+      &::before {
+        background-image: url('@image/crown_silver.svg');
+      }
+    }
+    &-blonze {
+      &::before {
+        background-image: url('@image/crown_blonze.svg');
+      }
+    }
+  }
+
+  &__card {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  &__description {
+    text-align: center;
+    padding-top: rem(24);
+  }
+
+  &__button {
+    display: inline-block;
+    padding: rem(8) rem(24);
+    width: 60%;
+    max-width: 200px;
+    color: var(--color-fontGray);
+    background-color: #C8EAE8;
+    border-radius: 6px;
+    font-weight: bold;
+    font-family: $mainFont;
+    position: relative;
+    transition: .3s ease;
+
+    &:hover {
+      opacity: 0.8;
+      transition: .3s ease;
+    }
+
+    &:after {
+      border-bottom: 2px solid var(--color-fontGray);
+      border-right: 2px solid var(--color-fontGray);
+      content: "";
+      height: 9px;
+      position: absolute;
+      right: 15px;
+      top: 40%;
+      transform: rotate(45deg);
+      transition: 0.2s ease;
+      width: 9px;
+    }
+
+    &.on:after {
+      transform: rotate(-135deg);
+      top: 42%;
+    }
+  }
+
+  &__hiddenTable {
+    padding-top: rem(16);
+    padding-bottom: rem(16);
+    dl {
+    border: 2px solid #cacaca;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background: var(--color-white);
+    font-size: rem(12);
+    }
+
+    dt {
+      border-right: 2px solid #cacaca;
+      box-sizing: border-box;
+      width: 90px;
+      padding: rem(12) rem(6);
+
+      &:not(:first-of-type) {
+        border-top: 2px solid #cacaca;
+      }
+    }
+    dd {
+      box-sizing: border-box;
+      width: calc(100% - 90px);
+      padding: rem(12);
+
+      &:not(:first-of-type) {
+        border-top: 2px solid #cacaca;
+      }
+
+      span {
+        display: block;
+        text-align: left;
+      }
+    }
+  }
+}

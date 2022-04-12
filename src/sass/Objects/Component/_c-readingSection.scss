@@ -1,0 +1,38 @@
+.c-readingSection {
+  &__title {
+    font-family: $mainFont;
+    text-align: center;
+    font-size: rem(20);
+    font-weight: bold;
+
+    @include mq('pc') {
+      font-size: rem(28);
+    }
+  }
+
+  &__Container {
+    padding: rem(32) 0 0;
+
+    @include mq('pc') {
+      padding: rem(60) 0 0;
+    }
+  }
+
+  &__sentence {
+    text-align: center;
+    font-size: rem(14);
+    color: var(--color-font);
+
+    @include mq('pc') {
+      font-size: rem(16);
+    }
+
+    & + & {
+      padding-top: rem(24);
+
+      @include mq('pc') {
+        padding-top: rem(40);
+      }
+    }
+  }
+}
