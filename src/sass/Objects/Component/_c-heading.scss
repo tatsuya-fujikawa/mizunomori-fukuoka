@@ -12,3 +12,34 @@
     color: #4D4D4E;
   }
 }
+
+.c-heading__reasons {
+
+  @include mq('pc') {
+    text-align: center;
+  }
+
+  &Jp {
+    font-size: rem(28);
+    color: #C3B173;
+    text-align: center;
+    font-family: $mainFont;
+    position: relative;
+    top: -40px;
+    font-weight: 500;
+
+    @include mq('pc') {
+      font-size: rem(30);
+    }
+  }
+  &En {
+    font-size: rem(60);
+    color: #C3B173;
+    opacity: 0.2;
+    font-weight: 300;
+
+    @include mq('pc') {
+      font-size: rem(66);
+    }
+  }
+}

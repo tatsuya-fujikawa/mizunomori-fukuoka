@@ -14,6 +14,7 @@
     text-align: center;
     color: var(--color-font);
     padding-bottom: rem(8);
+    font-size: rem(18);
 
     @include mq('pc') {
       font-size: rem(20);
