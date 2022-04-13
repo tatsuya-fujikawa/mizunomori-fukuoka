@@ -6,8 +6,8 @@
     font-weight: bold;
 }
 .u-fontGothic {
-    font-family: fot-tsukuardgothic-std, sans-serif;
-  }
+    font-family: $mainFont;
+}
 .u-uppercase {
     text-transform: uppercase;
     }
@@ -54,6 +54,9 @@
 
 .u-bgMainColor {
     background-color: var(--color-main);
+}
+.u-bgAccentColor {
+    background-color: #FDE9ED;
 }
 .u-blueCrayon {
     background: linear-gradient(transparent 80%, #DCF5F5 80%);
