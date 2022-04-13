@@ -3,18 +3,29 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: rem(40);
+        padding: rem(16) rem(14);
+
+        @include mq('pc') {
+            padding: rem(40);
+        }
     }
     &__card {
         display: block;
-        width: 210px;
+        width: 47%;
         box-sizing: border-box;
         text-align: center;
-        padding: rem(8);
+        font-size: rem(14);
+        padding: rem(12);
         background-color: var(--color-white);
         box-shadow: 3px 6px 15px -7px #b5b5b5;
-        margin-bottom: rem(24);
+        margin-bottom: rem(16);
         border-radius: rem(6);
+
+        @include mq('pc') {
+            margin-bottom: rem(24);
+            padding: rem(8);
+            width: 210px;
+        }
 
         &:hover {
             opacity: 1;
