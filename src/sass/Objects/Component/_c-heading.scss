@@ -16,6 +16,7 @@
 .c-heading__reasons {
 
   @include mq('pc') {
+    padding-top: rem(100);
     text-align: center;
   }
 
@@ -41,5 +42,17 @@
     @include mq('pc') {
       font-size: rem(66);
     }
+  }
+}
+
+.c-heading__rumor {
+  text-align: center;
+  padding-top: rem(32);
+  padding-bottom: rem(55);
+  position: relative;
+  right: -20px;
+
+  @include mq('pc') {
+    padding-top: rem(100);
   }
 }

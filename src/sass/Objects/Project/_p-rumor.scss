@@ -1,0 +1,144 @@
+.p-rumor {
+    overflow: hidden;
+  
+    &__wrap {
+      @include mq('pc') {
+        display: flex!important;
+        justify-content: space-between;
+        padding-bottom: rem(152);
+      }
+    }
+    &__card {
+      background-color: var(--color-white);
+      border-radius: rem(16);
+      left: -20px;
+      border: 2px solid #F2D192;
+      margin-bottom: rem(20);
+      padding: rem(48) rem(30) rem(48) rem(55);
+      position: relative;
+  
+      @include mq('pc') {
+        width: 320px;
+        left: 0;
+        padding: rem(52) rem(32);
+      }
+    }
+  
+    &__cardTitle {
+      font-family: $mainFont;
+      font-size: rem(18);
+      @include mq('pc') {
+        text-align: center;
+      }
+  
+      span {
+        position: relative;
+        display: inline-block;
+        width: 55px;
+        height: 55px;
+        text-align: center;
+        z-index: 0;
+        margin-right: rem(16);
+        color: var(--color-white);
+  
+        @include mq('pc') {
+          display: block;
+          margin: 0 auto;
+          height: 55px;
+          padding-bottom: rem(20);
+        }
+  
+        &:before {
+          width: 60px;
+          height: 60px;
+          border-radius: 5000px;
+          background-color: #F2D192;
+          position: absolute;
+          content: '';
+          z-index: -1;
+          left: 0;
+          top: -45px;
+          transform: translateY(50%);
+        }
+      }
+    }
+  
+    &__cardSentence {
+      padding-top: rem(32);
+      font-size: rem(14);
+  
+      @include mq('pc') {
+        font-size: rem(16);
+      }
+  
+    }
+
+    &__accordionList {
+      padding-bottom: rem(20);
+    }
+
+    &__accordionList dl {
+      position: relative;
+      right: -20px;
+      padding-bottom: rem(20);
+    }
+
+    &__accordion {
+      border-radius: rem(16);
+      border: 2px solid #F2D192;
+      background-color: var(--color-white);
+      position: relative;
+
+      &:after {
+        border-bottom: 2px solid #F2D192;
+        border-right: 2px solid #F2D192;
+        content: "";
+        height: 9px;
+        position: absolute;
+        right: 30px;
+        top: 40%;
+        transform: rotate(45deg);
+        transition: 0.2s ease;
+        width: 9px;
+      }
+
+      &.on {
+        border-radius: rem(16) 0 rem(16) 0;
+        border-bottom: none;
+
+        &:after {
+          top: 42%;
+          transform: rotate(-135deg);
+        }
+      }
+    }
+
+    &__accordionNumber {
+      display: inline-block;
+      padding: rem(20);
+      margin: -1px;
+      min-width: 90px;
+      background-color: #F2D192;
+      color: var(--color-white);
+      font-family: $mainFont;
+      border-radius: rem(16);
+      transition: 0.2s ease;
+    }
+    &__accordionTitle {
+      padding-left: rem(12);
+      font-family: $mainFont;
+      padding-right: rem(32);
+    }
+    &__accordionContent {
+      background-color: var(--color-white);
+      padding: rem(20) rem(40) rem(38) rem(20);
+      border-radius: 0 rem(16) rem(16) rem(16);
+      border-bottom: 2px solid #F2D192;
+      border-left: 2px solid #F2D192;
+    }
+}
+
+.p-rumor__accordion.on .p-rumor__accordionNumber {
+  border-radius: rem(16) 0 rem(16) 0;
+  transition: 0.2s ease;
+}

@@ -1,5 +1,13 @@
 .p-reasons {
   overflow: hidden;
+
+  &__wrap {
+    @include mq('pc') {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: rem(152);
+    }
+  }
   &__card {
     background-color: var(--color-white);
     border-radius: rem(16);
@@ -7,11 +15,20 @@
     padding: rem(48) rem(30) rem(48) rem(55);
     position: relative;
     left: -20px;
+
+    @include mq('pc') {
+      width: 320px;
+      left: 0;
+      padding: rem(52) rem(32);
+    }
   }
 
   &__cardTitle {
     font-family: $mainFont;
     font-size: rem(18);
+    @include mq('pc') {
+      text-align: center;
+    }
 
     span {
       position: relative;
@@ -21,6 +38,12 @@
       z-index: 0;
       margin-right: rem(16);
       color: var(--color-white);
+
+      @include mq('pc') {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: rem(20);
+      }
 
       &:before {
         width: 30px;
@@ -38,6 +61,10 @@
   &__cardSentence {
     padding-top: rem(32);
     font-size: rem(14);
+
+    @include mq('pc') {
+      font-size: rem(16);
+    }
 
   }
 }
