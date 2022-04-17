@@ -1,0 +1,16 @@
+.p-header {
+    background-color: var(--color-white);
+    border-bottom: 1px solid #fafafa;
+    
+    &__logo {
+        &-top {
+            span {
+                display: inline-block;
+                padding-left: rem(6);
+            }
+        }
+        &-text {
+            font-size: rem(12);
+        }
+    }
+}
