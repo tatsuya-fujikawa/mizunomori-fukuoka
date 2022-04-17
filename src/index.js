@@ -1,7 +1,9 @@
-import "./sass/style.scss";
 import { tabSwitch } from "./js/tabmenu";
+import { humbergerButton } from "./js/humberger";
+import "./sass/style.scss";
 
 tabSwitch();
+humbergerButton();
 
 $(function () {
   if($('.js-accordion').length){

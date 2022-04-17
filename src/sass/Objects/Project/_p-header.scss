@@ -2,8 +2,18 @@
     background-color: var(--color-white);
     border-bottom: 1px solid #fafafa;
     
+    &__top {
+        @include mq('pc') {
+            padding-bottom: rem(16);
+        }
+    }
     &__logo {
         &-top {
+            img {
+                @include mq('sp') {
+                    width: 70%;
+                }
+            }
             span {
                 display: inline-block;
                 padding-left: rem(6);
@@ -11,6 +21,100 @@
         }
         &-text {
             font-size: rem(12);
+            @include mq('sp') {
+                font-size: rem(10);
+            }
         }
     }
+
+    &__bottom {
+        border-top: 1px solid #B3B3B3;
+        border-bottom: 1px solid #B3B3B3;
+    }
+    &__listItem {
+        flex-basis: calc(100% / 7);
+
+        a {
+            display: block;
+            font-family: $mainFont;
+            text-align: center;
+            padding: rem(12) 0;
+            font-weight: bold;
+
+            &:hover {
+                color: #a69871 !important;
+            }
+        }
+    }
+
+    &__listItem.-diagnosis {
+        position: relative;
+    }
+
+    &__listChild {
+        position: absolute;
+        background-color: var(--color-white);
+        z-index: 10;
+        
+        content: '';
+        top: 50px;
+        li {
+            height: 0;
+            overflow: hidden;
+            transition: .3s ease;
+            width: 180px;
+
+            a {
+                // border-top: 1px solid #eee;
+                display: block;
+                padding: rem(6) rem(6);
+                transition: .3s ease;
+            }
+        }
+    }
+
+    &__listItem:hover > .p-header__listChild {
+        border: 1px solid #B3B3B3;
+        border-top: none;
+    }
+
+    &__listItem:hover > .p-header__listChild li {
+        height: 40px;
+        overflow: visible;
+        transition: .3s ease;
+    }
+}
+
+.p-header {
+    &__humbergerButton {
+        position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+        background:#A5DDDB;
+        cursor: pointer;
+        width: 44px;
+        height:44px;
+        border-radius: 5px;
+
+        span {
+            display: inline-block;
+            transition: all .4s;/*アニメーションの設定*/
+            position: absolute;
+            left: 11px;
+            height: 3px;
+            border-radius: 2px;
+            background: #fff;
+            width: 50%;
+
+            &:nth-of-type(1) {
+                top: 12px;
+            }
+            &:nth-of-type(2) {
+                top: 20px;
+            }
+            &:nth-of-type(3) {
+                top: 28px;
+            }
+        }
+    }
+
+
 }
