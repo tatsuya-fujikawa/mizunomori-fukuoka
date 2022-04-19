@@ -10,6 +10,7 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js"></script>
     <script src="./bundle.js" defer></script>
     <script>
         (function(d) {
@@ -119,10 +120,12 @@
     </header>
     <main>
 
+
+
         <div class="l-mv p-mv">
             <div class="l-containerPc">
                 <div class="p-mv__mv">
-                    <img src="./img/mv_sp.webp" alt="">
+                    <img src="./img/mv_sp.webp" alt="メインビュー">
                 </div><!-- /p-mv__mv -->
             </div><!-- /l-containerPC -->
         </div><!-- /l-mv -->
@@ -150,6 +153,18 @@
                 </div><!-- /c-buttonCTAWrap -->
             </div><!-- /.p-CTA -->
         </div><!-- /l-container -->
+
+        <nav class="p-spnav l-spnav u-pcNone">
+            <ul class="p-spnav__list">
+                <li class="p-spnav__list-item"><a href="#">症例を探す</a></li>
+                <li class="p-spnav__list-item"><a href="#">料金一覧</a></li>
+                <li class="p-spnav__list-item"><a href="#">症例写真</a></li>
+                <li class="p-spnav__list-item"><a href="#">ドクター紹介</a></li>
+                <li class="p-spnav__list-item"><a href="#">アクセス</a></li>
+                <li class="p-spnav__list-item"><a href="#">よくあるご質問</a></li>
+            </ul><!-- /.p-spnav__list -->
+        </nav><!-- /.p-spnav -->
+
         <section class="l-diagnosisMenu p-diagnosisMenu">
             <div class="l-container">
                 <div class="l-spacer__headingTop c-heading">
@@ -198,6 +213,43 @@
                 </div><!-- /u-bgMainColor -->
             </div><!-- /l-container -->
         </section><!-- /l-diagnosisMenu -->
+
+        <section class="l-searchMenu p-searchMenu">
+            <div class="l-container">
+                <h2 class="p-searchMenu__title u-centerposition">部位ごとに探す</h2>
+                <div class="p-searchMenu__box c-flexPC">
+                    <div class="p-searchMenu__img c-flex__half">
+                        <img src="./img/menu_face.png" alt="Face">
+                    </div><!-- /.p-searchMenu__img -->
+                    <nav class="c-flex__half">
+                        <h3 class="u-visually-hidden">部位ごとのナビゲーションリンク</h3>
+                        <ul class="p-searchMenu__buttons">
+                            <li><button type="button" data-micromodal-trigger="modal-1">二重・目元</button></li>
+                            <li><button type="button" data-micromodal-trigger="modal-2">鼻</button></li>
+                            <li><button type="button" data-micromodal-trigger="modal-3">小顔</button></li>
+                            <li><button type="button" data-micromodal-trigger="modal-4">フェイスライン</button></li>
+                            <li><button type="button" data-micromodal-trigger="modal-5">しわ・たるみ</button></li>
+                            <li><button type="button" data-micromodal-trigger="modal-6">口元</button></li>
+                        </ul>
+                    </nav><!-- /.p-searchMenu__buttons -->
+                </div><!-- /.p-searchMenu__box -->
+                <div class="p-searchMenu__box c-flexPC p-searchMenu__box-reverse">
+                    <div class="p-searchMenu__img c-flex__half p-searchMenu__img-reverse">
+                        <img src="./img/menu_body.png" alt="Body">
+                    </div><!-- /.p-searchMenu__img -->
+                    <nav class="c-flex__half">
+                        <h3 class="u-visually-hidden">部位ごとのナビゲーションリンク</h3>
+                        <ul class="p-searchMenu__buttons">
+                            <li><button type="button" data-micromodal-trigger="modal-7">二の腕・お腹</button></li>
+                            <li><button type="button" data-micromodal-trigger="modal-8">豊胸・バスト</button></li>
+                            <li><button type="button" data-micromodal-trigger="modal-9">太もも・お尻</button></li>
+                            <li><button type="button" data-micromodal-trigger="modal-10">肩・ふくらはぎ</button></li>
+                            <li><button type="button" data-micromodal-trigger="modal-11">その他</button></li>
+                        </ul>
+                    </nav><!-- /.p-searchMenu__buttons -->
+                </div><!-- /.p-searchMenu__box -->
+            </div><!-- /.l-container -->
+        </section><!-- /.l-search -->
 
         <div class="u-CircleOuter u-pcNone">
             <div class="u-bgCircle u-bgAccentColor"></div><!-- /u-bgCircle -->
@@ -978,5 +1030,23 @@
         </div><!-- /.p-footer__bottom -->
         <p class="p-footer__copyright u-centerposition">&copy; 2022 mizunomori-biyougeka. All rights reserved.</p>
     </footer>
+
+    <!-- <div id="modal-1" class="p-modal__wrap" aria-hidden="true">
+        <div class="p-modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="p-modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title" >
+            <header>
+                <h2 id="modal-1-title">
+                Modal Title
+                </h2>
+                <button type="button" aria-label="Close modal" data-micromodal-close></button>
+            </header>
+
+            <div id="modal-1-content">
+                Modal Content
+            </div>
+            </div>
+        </div>
+    </div> -->
+
 </body>
 </html>
