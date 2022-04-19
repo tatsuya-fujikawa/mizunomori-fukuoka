@@ -1,0 +1,86 @@
+.p-searchMenu {
+  &__title {
+    font-size: rem(18);
+    font-family: $mainFont;
+    color: var(--color-gray);
+  }
+
+  &__box {
+    margin-top: rem(32);
+    background-color: var(--color-main);
+    box-shadow: 3px 6px 10px -7px #b5b5b5;
+
+    
+    @include mq('pc') {
+      margin-top: rem(78);
+      width: 95%;
+      margin-left: auto;
+    }
+
+    &-reverse {
+      flex-direction: row-reverse;
+
+      @include mq('pc') {
+        margin: rem(100) auto 0 0;
+      }
+      
+    }
+  }
+  &__img {
+    img {
+      position: relative;
+      width: 100%;
+
+      
+    @include mq('pc') {
+      top: -40px;
+      left: -45px;
+    }
+    }
+
+    &-reverse {
+      img {
+        @include mq('pc') {
+          // right: -45px;
+          left: 45px;
+        }
+      }
+    }
+  }
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: rem(16);
+    padding-bottom: rem(16);
+
+    @include mq('pc') {
+      padding-top: rem(64);
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    li {
+      flex-basis: 50%;
+
+      button {
+        margin: 0 auto rem(16);
+        box-shadow: 3px 6px 10px -7px #b5b5b5;
+        font-family: $mainFont;
+        font-weight: bold;
+        font-size: rem(14);
+        text-align: center;
+        display: block;
+        width: 90%;
+        padding: rem(12) 0;
+        border-radius: rem(6);
+        background-color: var(--color-white);
+        transition: 0.2s ease;
+
+        &:hover {
+          box-shadow: none;
+          transition: 0.2s ease;
+        }
+      }
+    }
+  }
+}

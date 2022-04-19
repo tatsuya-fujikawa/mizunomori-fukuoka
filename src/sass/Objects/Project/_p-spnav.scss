@@ -1,0 +1,61 @@
+.p-spnav {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item {
+      flex-basis: 50%;
+      text-align: center;
+
+      a {
+        display: block;
+        font-size: rem(14);
+        position: relative;
+        padding: rem(12);
+        color: var(--color-white);
+        background-color: var(--color-key);
+        border-bottom: 2px solid var(--color-white);
+        font-weight: bold;
+
+        &:before{
+          background-image: url('@image/icon01.png');
+          position: absolute;
+          content: '';
+          width: 25px;
+          height: 25px;
+          top: 50%;
+          left: 8%;
+          background-size: contain;
+          transform: translateY(-50%);
+        }
+
+      }
+
+      &:nth-of-type(2) a:before {
+        background-image: url('@image/icon02.png');
+      }
+
+      &:nth-of-type(3) a:before {
+        background-image: url('@image/icon03.png');
+      }
+
+      &:nth-of-type(4) a:before {
+        background-image: url('@image/icon04.png');
+      }
+
+      &:nth-of-type(5) a:before {
+        background-image: url('@image/icon05.png');
+      }
+
+      &:nth-of-type(6) a:before {
+        background-image: url('@image/icon06.png');
+      }
+
+      &:nth-of-type(odd) a {
+        border-right: 2px solid var(--color-white);
+      }
+
+
+    }
+  }
+}
