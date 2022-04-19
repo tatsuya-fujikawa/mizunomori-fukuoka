@@ -26,3 +26,12 @@
     }
   }
 }
+
+#js-nav {
+  transform: translateY(-130%);
+  transition: 0.3s ease;
+}
+#js-nav.is-open {
+  transform: translateY(0%);
+  transition: 0.3s ease;
+}

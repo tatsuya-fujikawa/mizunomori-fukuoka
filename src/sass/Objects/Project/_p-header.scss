@@ -8,6 +8,9 @@
         }
     }
     &__logo {
+
+        padding-left: rem(12);
+
         &-top {
             img {
                 @include mq('sp') {
@@ -87,7 +90,8 @@
 
 .p-header {
     &__humbergerButton {
-        position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+        position: relative;
+        right: 12px;
         background:#A5DDDB;
         cursor: pointer;
         width: 44px;
@@ -96,7 +100,7 @@
 
         span {
             display: inline-block;
-            transition: all .4s;/*アニメーションの設定*/
+            transition: all .3s;
             position: absolute;
             left: 11px;
             height: 3px;
@@ -115,6 +119,61 @@
             }
         }
     }
+
+    &__humbergerInner {
+        background-color: #A5DDDB;
+        top: 0;
+        left: 0;
+        position:fixed;
+        height: 100vh;
+        overflow-y: scroll;
+        z-index: 50;
+    }
+    &__humbergerNav {
+        padding-top: rem(90);
+        padding-bottom: rem(40);
+
+        &-title {
+            text-align: center;
+            background-color: var(--color-white);
+            font-family: $mainFont;
+            border-radius: rem(6);
+            font-size: rem(12);
+            padding: rem(8) 0;
+        }
+
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: rem(20);
+
+            & + & {
+                padding-bottom: rem(20);
+            }
+
+            li {
+                flex-basis: 49%;
+                text-align: center;
+                padding-bottom: rem(10);
+
+                &:nth-child(odd) {
+                    margin-right: 2%;
+                }
+            }
+
+            li a {
+                display: block;
+                background-color: var(--color-white);
+                font-size: rem(14);
+                font-family: $mainFont;
+                font-weight: bold;
+                padding: rem(15) 0;
+                border-radius: 6px;
+                box-shadow: 1px 1px 2px (0,0,0,0,16);
+            }
+        }
+    }
+
 
 
 }

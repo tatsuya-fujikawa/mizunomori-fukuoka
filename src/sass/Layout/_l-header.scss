@@ -1,12 +1,16 @@
 .l-header {
     padding-top: rem(16);
 
-
-    @include mq('sp') {
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 100;
-        padding-bottom: rem(16);
+    &__top {
+        
+            @include mq('sp') {
+                position: fixed;
+                padding-top: rem(16);
+                width: 100%;
+                top: 0;
+                z-index: 100;
+                background-color: var(--color-white);
+                padding-bottom: rem(16);
+            }
     }
 }
