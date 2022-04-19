@@ -16,5 +16,7 @@ $(function () {
 
 MicroModal.init({
   openClass: 'is-open',
-  dasableScroll: true,
+  disableScroll: true,
+  awaitOpenAnimation: true,
+  awaitCloseAnimation: true,
 });
