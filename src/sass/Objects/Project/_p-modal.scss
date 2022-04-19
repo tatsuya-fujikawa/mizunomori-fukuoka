@@ -1,0 +1,51 @@
+#p-modal-1 {
+    display: none;
+
+    animation: fadeIn .5s ease;
+    &.is-open {
+        display: block;
+    }
+}
+.p-modal__wrap {
+    display: none;
+    animation: fadeIn .5s ease;
+
+    &.is-open {
+        display: block;
+    }
+}
+
+.p-modal {
+    &__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 5;
+        background: rgba(0,0,0,0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        will-change: transform;
+    }
+
+    &__container {
+        width: 75%;
+        height: 75vh;
+        overflow-y: auto;
+        box-sizing: border-box;
+        padding: rem(24);
+        z-index: 10;
+        background-color: var(--color-white);
+        transition: 0.5s ease;
+    }
+}
+
+.p-modal__wrap[aria-hidden="false"] .p-modal__overlay {
+    animation: fadeIn .3s cubic-bezier(0, 0, .2, 1);
+}
+
+.p-modal__wrap[aria-hidden="true"] .p-modal__overlay {
+    animation: fadeOut .3s cubic-bezier(0, 0, .2, 1);
+}
