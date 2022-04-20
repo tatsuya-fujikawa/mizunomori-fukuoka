@@ -4,11 +4,16 @@
     animation: fadeIn .5s ease;
     &.is-open {
         display: block;
+        
     }
 }
 .p-modal__wrap {
     display: none;
-    animation: fadeIn .5s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 
     &.is-open {
         display: block;
@@ -22,30 +27,79 @@
         left: 0;
         right: 0;
         bottom: 0;
-        z-index: 5;
-        background: rgba(0,0,0,0.6);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        background-color: rgba(255,255,255,0.5);
         will-change: transform;
     }
 
     &__container {
-        width: 75%;
-        height: 75vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        max-width: 960px;
+        width: 95%;
+        height: 50vh;
+        z-index: 10;
         overflow-y: auto;
         box-sizing: border-box;
-        padding: rem(24);
-        z-index: 10;
-        background-color: var(--color-white);
+        padding: rem(24) rem(8);
+        background: rgba(0,0,0,0.7);
         transition: 0.5s ease;
+
+        @include mq('pc') {
+            padding: rem(32);
+        }
+    }
+    &__close {
+        text-align: right;
+    }
+    &__closeButton {
+        background-color: rgb(160, 160, 160);
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        z-index: 15;
+        color: var(--color-white);
+        position: relative;
+    }
+
+    &__flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__block {
+        flex-basis: 50%;
+        margin-bottom: rem(16);
+    }
+    &__lead {
+        font-size: rem(18);
+        font-family: $mainFont;
+        color: var(--color-key);
+        width: 90%;
+        padding-bottom: rem(4);
+        border-bottom: 2px solid var(--color-white);
+    }
+    &__category {
+        padding-top: rem(6);
+
+        &-item {
+            color: var(--color-white);
+        }
     }
 }
 
 .p-modal__wrap[aria-hidden="false"] .p-modal__overlay {
     animation: fadeIn .3s cubic-bezier(0, 0, .2, 1);
 }
+.p-modal__wrap[aria-hidden="false"] .p-modal__container {
+    animation: fadeIn .3s cubic-bezier(0, 0, .2, 1);
+}
 
 .p-modal__wrap[aria-hidden="true"] .p-modal__overlay {
+    animation: fadeOut .3s cubic-bezier(0, 0, .2, 1);
+}
+.p-modal__wrap[aria-hidden="true"] .p-modal__container {
     animation: fadeOut .3s cubic-bezier(0, 0, .2, 1);
 }
