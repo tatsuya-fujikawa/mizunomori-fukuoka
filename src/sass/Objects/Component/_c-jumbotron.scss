@@ -1,0 +1,61 @@
+.c-jumbotron {
+    &__mv {
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        height: 300px;
+
+        @include mq('pc') {
+            height: 400px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+
+    &__inner {
+        width: 95%;
+        margin: 0 auto;
+        position: relative;
+    
+        @include mq('pc') {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+    }
+    &__title {
+        position: absolute;
+        bottom: rem(60);
+        font-size: rem(24);
+
+        @include mq('pc') {
+            bottom: rem(78);
+            font-size: rem(36);
+        }
+
+        span {
+            font-family: $mainFont;
+            color: var(--color-white);
+            text-shadow: 0 3px 6px rgba(0,0,0,.16);
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 80%;
+                height: 1px;
+                border-radius: 5000px;
+                background-color: var(--color-white);
+                bottom: rem(-16);
+                box-shadow: 0 3px 6px rgba(0,0,0,.16);
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,9 @@
+.l-breadcrumb {
+    background: rgba(74,85,85,.21);
+    padding: rem(10) 0;
+
+    @include mq('pc') {
+        background: none;
+        padding: rem(20) 0;
+    }
+}
