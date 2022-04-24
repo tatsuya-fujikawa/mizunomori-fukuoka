@@ -1,0 +1,5 @@
+.l-jumbotron {
+    @include mq('sp') {
+        padding-top: rem(64);
+    }
+}
