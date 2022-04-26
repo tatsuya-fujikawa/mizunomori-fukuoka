@@ -1808,6 +1808,9 @@ img {
 .p-doctor__button + .p-doctor__button {
   padding-top: 1.25rem;
 }
+.p-doctor__button.-half {
+  width: max(40%, 250px);
+}
 .p-doctor__content {
   background-color: #EDF8F8;
   padding: 0 1.25rem;
@@ -1834,7 +1837,7 @@ img {
 }
 .p-doctor__careerList li span {
   display: inline-block;
-  min-width: 60px;
+  min-width: 75px;
 }
 .p-doctor__closeButton {
   padding-bottom: 1.25rem;
@@ -1874,6 +1877,26 @@ img {
 
 .p-doctor__button.on .p-doctor__buttonText:after {
   transform: rotate(45deg);
+}
+
+.p-doctor__bottom {
+  margin: 0 auto;
+  padding-top: 3.75rem;
+  width: 90%;
+}
+
+.p-doctor__bottomButton {
+  padding-bottom: 1.25rem;
+  transition: 0.2s ease;
+}
+
+.p-doctor__bottomButton:hover {
+  transform: translateY(2px);
+  transition: 0.2s ease;
+}
+
+.p-doctor__bottomButton .p-doctor__buttonText {
+  min-width: 100%;
 }
 
 .p-CTA {
@@ -2389,11 +2412,18 @@ img {
   .p-doctor__button {
     padding-top: 3.125rem;
   }
+  .p-doctor__content {
+    padding: 0 2.25rem;
+  }
   .p-doctor__career {
     padding-top: 4.5rem;
   }
   .p-doctor__careerList li {
     font-size: 0.875rem;
+  }
+  .p-doctor__bottomButton .p-doctor__buttonText {
+    min-width: 334px;
+    width: 50%;
   }
   .p-CTA {
     margin: 5rem auto 3.75rem;
