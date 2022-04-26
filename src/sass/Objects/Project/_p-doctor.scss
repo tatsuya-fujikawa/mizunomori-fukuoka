@@ -14,9 +14,6 @@
         width: 90%;
         margin: 0 auto;
 
-        @include mq('pc') {
-            max-width: 380px;
-        }
         img {
             box-shadow: 10px 10px 0 rgba(165,221,219,.8);
         }
@@ -54,8 +51,73 @@
             font-size: rem(36);
             padding-left: rem(16);
         }
-    }
+    } 
     &__instagram {
         padding: rem(0) rem(16);
     }
+    &__flexItem {
+        width: 100%;
+
+        & + & {
+            padding-top: rem(40);
+
+            @include mq('pc') {
+                padding-top: 0;
+            }
+        }
+
+        @include mq('pc') {
+            width: calc((100% - 56px) / 2);
+        }
+    }
+
+    &__button {
+        position: relative;
+        padding-top: rem(40);
+
+        @include mq('pc') {
+            padding-top: rem(50);
+        }
+        &Text {
+            display: block;
+            position: relative;
+            padding: rem(8) 0;
+            background-color: #C8EAE8;
+            text-align: center;
+            font-family: $mainFont;
+            color: #343434;
+            font-weight: bold;
+            border-radius: rem(6);
+            box-shadow: 3px 6px 15px -7px #b5b5b5;
+            transition: 0.2s ease;
+
+            &:after {
+                border-bottom: 2px solid var(--color-fontGray);
+                border-right: 2px solid var(--color-fontGray);
+                content: "";
+                height: 12px;
+                position: absolute;
+                right: 10%;
+                top: 35%;
+                transform: rotate(-45deg);
+                transition: 0.2s ease;
+                width: 12px;
+            }
+
+
+            &:hover {
+                opacity: 0.8;
+                transition: 0.2s ease;
+            }
+        }
+
+
+        & + & {
+            padding-top: rem(20);
+        }
+    }
+}
+
+.p-doctor__button.on .p-doctor__buttonText:after {
+    transform: rotate(45deg);
 }
