@@ -8,3 +8,14 @@
     line-height: rem(32);
   }
 }
+
+.c-sentence__sm {
+  font-size: rem(12);
+  color: var(--color-font);
+
+  @include mq('pc') {
+    font-size: rem(16);
+    letter-spacing: -0.025em;
+    line-height: rem(32);
+  }
+}

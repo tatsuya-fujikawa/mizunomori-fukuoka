@@ -75,6 +75,10 @@
         position: relative;
         padding-top: rem(40);
 
+        &:hover {
+            cursor: pointer;
+        }
+
         @include mq('pc') {
             padding-top: rem(50);
         }
@@ -90,6 +94,7 @@
             border-radius: rem(6);
             box-shadow: 3px 6px 15px -7px #b5b5b5;
             transition: 0.2s ease;
+            z-index: 10;
 
             &:after {
                 border-bottom: 2px solid var(--color-fontGray);
@@ -115,9 +120,125 @@
         & + & {
             padding-top: rem(20);
         }
+
+        &.-half {
+            width: max(40%, 250px);
+        }
     }
+
+    &__content {
+        background-color: #EDF8F8;
+        position: relative;
+        top: -4px;
+        padding: 0 rem(20);
+
+        @include mq('pc') {
+            padding: 0 rem(36);
+        }
+    }
+
+    &__career {
+        padding-top: rem(55);
+
+        @include mq('pc') {
+            padding-top: rem(72);
+        }
+    }
+
+    &__careerLeft {
+        margin: 0 auto;
+        text-align: center;
+        img {
+            width: 80%;
+            text-align: center;
+        }
+    }
+    &__careerList {
+        padding-bottom: rem(16);
+
+        li {
+            font-size: rem(12);
+            padding-bottom: rem(4);
+
+            @include mq('pc') {
+                font-size: rem(14);
+            }
+
+            span {
+                min-width: 75px;
+                display: inline-block;
+            }
+        }
+    }
+
+    &__closeButton {
+        text-align: center;
+        padding-top: rem(20);
+        padding-bottom: rem(20);
+
+        span {
+            width: max(30%, 200px);
+            background-color: var(--color-key);
+            display: inline-block;
+            padding: rem(4) 0;
+            border-radius: rem(6);
+            box-shadow: 3px 6px 15px -7px #b5b5b5;
+            font-family: $mainFont;
+            position: relative;
+            transition: 0.2s ease;
+            font-weight: bold;
+
+            &:after {
+                border-bottom: 2px solid var(--color-fontGray);
+                border-right: 2px solid var(--color-fontGray);
+                content: "";
+                height: 9px;
+                position: absolute;
+                right: 20%;
+                top: 40%;
+                transform: rotate(-135deg);
+                transition: 0.2s ease;
+                width: 9px;
+            }
+            &:hover {
+                opacity: 0.8;
+                cursor: pointer;
+                box-shadow: none;
+                transition: 0.2s ease;
+            }
+        }
+
+
+    }
+
 }
 
 .p-doctor__button.on .p-doctor__buttonText:after {
     transform: rotate(45deg);
+}
+
+.p-doctor__bottom {
+    padding-top: rem(60);
+    width: 90%;
+    margin: 0 auto;
+}
+
+.p-doctor__bottomButton {
+    transition: 0.2s ease;
+    padding-bottom: rem(20);
+}
+.p-doctor__bottomButton:hover {
+    transform: translateY(2px);
+    transition: 0.2s ease;
+}
+
+.p-doctor__bottomButton .p-doctor__buttonText {
+
+    min-width: 100%;
+
+    @include mq('pc') {
+        min-width: 334px;
+        width: 50%;
+    }
+
 }

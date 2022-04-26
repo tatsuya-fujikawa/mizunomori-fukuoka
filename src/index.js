@@ -11,9 +11,15 @@ $(function () {
       $(this).toggleClass('on');
       $(this).nextAll('.js-content').slideToggle('500');
     });
+    $('.js-closeaccordion').click(function() {
+      $(this).parent().hide();
+      $(this).parent().prev().removeClass('on');
+    });
   }
 });
 
+
+//モーダル
 MicroModal.init({
   openClass: 'is-open',
   disableScroll: true,
