@@ -319,6 +319,7 @@ svg:not([fill]) {
   --color-phone: #F793A5;
   --color-reserve: #F7D093;
   --color-heading: #92DDDA;
+  --swiper-theme-color: #4d4d4d!important;
 }
 
 html, body {
@@ -865,7 +866,7 @@ img {
   transform: rotate(-135deg);
 }
 .c-accordion__tabAccess {
-  background-color: var(--color-key);
+  background-color: var(--color-heading);
   box-shadow: 3px 6px 15px -7px #b5b5b5;
   color: var(--color-white);
   font-size: 0.875rem;
@@ -1723,6 +1724,7 @@ img {
 .p-clinic__photos {
   display: flex;
   padding-top: 2.375rem;
+  text-align: center;
 }
 .p-clinic__photos-slide {
   padding-right: 1.625rem;
@@ -2056,6 +2058,10 @@ img {
   display: block;
 }
 
+.u-spNone.u-spNoneimportant {
+  display: none;
+}
+
 .u-bgMainColor {
   background-color: var(--color-main);
 }
@@ -2148,6 +2154,30 @@ img {
 #js-nav.is-open {
   transform: translateY(0%);
   transition: 0.3s ease;
+}
+
+.swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+  padding-top: 2.375rem;
+  position: relative;
+}
+
+.swiper {
+  max-width: 500px;
+}
+
+.swiper-slide img {
+  height: auto;
+  width: 100%;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -20px !important;
 }
 
 @media screen and (min-width: 1000px){
@@ -2482,6 +2512,9 @@ img {
   }
   .u-pcNone {
     display: none;
+  }
+  .u-spNone.u-spNoneimportant {
+    display: block;
   }
 }
 

@@ -51,6 +51,12 @@
         display: none;
     }
 }
+.u-spNone.u-spNoneimportant {
+    display: none;
+    @include mq('pc') {
+        display: block;
+    }
+}
 
 .u-bgMainColor {
     background-color: var(--color-main);
