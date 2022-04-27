@@ -56,3 +56,22 @@
     padding-top: rem(100);
   }
 }
+
+.c-heading__point {
+  font-size: rem(16);
+  padding-left: rem(24);
+  position: relative;
+  margin-bottom: rem(8);
+
+  &:before {
+    content: '';
+    border-radius: 5000px;
+    position: absolute;
+    background-color: #F7D093;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
