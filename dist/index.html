@@ -10,11 +10,16 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js"></script>
     <script src="./bundle.js" defer></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
     <script>
         (function(d) {
           var config = {
@@ -974,17 +979,38 @@
                     <span class="c-heading__en u-uppercase" lang="en">clinic</span>
                     <h2 class="c-heading__jp">当院のご紹介</h2>
                 </div><!-- /.c-heading -->
-                <div class="p-clinic__photos">
-                    <div class="p-clinic__photos-slide">
-                        <img src="./img/fukuoka.webp" alt="福岡院の内装">
-                    </div><!-- /.p-clinic__photos-slide -->
-                    <div class="p-clinic__photos-slide">
-                        <img src="./img/fukuoka.webp" alt="福岡院の内装">
-                    </div><!-- /.p-clinic__photos-slide -->
-                    <div class="p-clinic__photos-slide">
-                        <img src="./img/fukuoka.webp" alt="福岡院の内装">
-                    </div><!-- /.p-clinic__photos-slide -->
-                </div><!-- /.p-clinic__photos -->
+                <div class="swiper-container u-pcNone">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./img/interior_01.webp" alt="福岡院の内装">
+                            </div><!-- /. -->
+                            <div class="swiper-slide">
+                                <img src="./img/interior_02.webp" alt="福岡院の内装">
+                            </div><!-- /. -->
+                            <div class="swiper-slide">
+                                <img src="./img/interior_03.webp" alt="福岡院の内装">
+                            </div><!-- /.-->
+                        </div><!-- /.p-clinic__photos -->
+    
+                        
+                    </div><!-- /.swiper -->
+                    <div class="swiper-pagination"></div><!-- /.swiper-pagination -->
+                </div><!-- /.spiwer-wrapper -->
+
+                <div class="u-spNone">
+                    <div class="p-clinic__photos">
+                        <div class="p-clinic__photos-slide">
+                            <img src="./img/interior_01.webp" alt="福岡院の内装">
+                        </div><!-- /.p-clinic__photos-slide -->
+                        <div class="p-clinic__photos-slide">
+                            <img src="./img/interior_02.webp" alt="福岡院の内装">
+                        </div><!-- /.p-clinic__photos-slide -->
+                        <div class="p-clinic__photos-slide">
+                            <img src="./img/interior_03.webp" alt="福岡院の内装">
+                        </div><!-- /.p-clinic__photos-slide -->
+                    </div><!-- /.p-clinic__photos -->
+                </div><!-- /.u-spNone -->
 
                 <div class="l-readingSection c-readingSection">
                     <div class="c-readingSection__title">

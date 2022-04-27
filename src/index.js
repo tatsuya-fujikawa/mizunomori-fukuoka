@@ -1,5 +1,6 @@
 import { tabSwitch } from "./js/tabmenu";
 import { humbergerButton } from "./js/humberger";
+
 import "./sass/style.scss";
 
 tabSwitch();
@@ -26,3 +27,44 @@ MicroModal.init({
   awaitOpenAnimation: true,
   awaitCloseAnimation: true,
 });
+
+const swiperSlides = document.getElementsByClassName('swiper-slide');
+const breakPoint = 768;
+let mySwiper;
+let mySwiperBool;
+
+window.addEventListener('load', () => {
+  if( breakPoint < window.innerWidth) {
+    mySwiperBool = false;
+  } else {
+    createSwiper();
+    mySwiperBool = true;
+  }
+}, false);
+
+window.addEventListener('resize', () => {
+  if(breakPoint < window.innerWidth && mySwiperBool) {
+    mySwiper.destroy(false,true);
+    mySwiperBool = false;
+  } else if (breakPoint >= window.innerWidth && !(mySwiperBool)) {
+    createSwiper();
+    mySwiperBool = true;
+  }
+},false);
+
+const createSwiper = () => {
+  mySwiper = new Swiper('.swiper', {
+    // Optional parameters
+    effect: 'fade',
+    loop: true,
+    slidesPerView: 1,
+    autoplay: {
+      delay: 3000,
+    },
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+  });
+}

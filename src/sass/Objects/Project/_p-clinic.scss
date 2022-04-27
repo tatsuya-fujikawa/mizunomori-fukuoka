@@ -1,10 +1,16 @@
 .p-clinic {
   &__photos {
     display: flex;
+    text-align: center;
     padding-top: rem(38);
 
     &-slide {
       padding-right: rem(26);
+      // flex-shrink: 1!important;
+
+      // @include mq('sp') {
+      //   flex-shrink: 0;
+      // }
 
       &:last-child {
         padding-right: 0;
