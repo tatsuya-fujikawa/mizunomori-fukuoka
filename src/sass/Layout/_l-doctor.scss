@@ -4,4 +4,12 @@
   &__top {
     padding-top: rem(40);
   }
+
+  &__body {
+    padding-top: rem(40);
+
+    @include mq('pc') {
+      padding-top: rem(60);
+    }
+  }
 }

@@ -14,3 +14,13 @@
     margin: 0 auto;
   }
 }
+
+.l-container__narrow {
+  width: 95%;
+  margin: 0 auto;
+
+  @include mq('pc') {
+    max-width: 920px;
+    margin: 0 auto;
+  }
+}
