@@ -1,0 +1,110 @@
+.p-sitemap {
+    margin: 0 auto;
+    // &__list {
+
+    // }
+    &__listItem {
+        padding-bottom: rem(0);
+
+        a {
+            font-size: rem(12);
+            display: inline-block;
+            position: relative;
+            padding-left: rem(24);
+
+            &:hover {
+                text-decoration: underline;
+                opacity: 0.8;
+            }
+
+            &:before {
+                border-bottom: 2px solid var(--color-fontGray);
+                border-right: 2px solid var(--color-fontGray);
+                content: "";
+                height: 7px;
+                position: absolute;
+                left: 10px;
+                top: 37%;
+                transform: rotate(-45deg);
+                width: 7px;
+            }
+        }
+    }
+
+    &__aboutDiagnosis {
+        padding-top: rem(48);
+        padding-bottom: rem(40);
+    }
+
+    &__snsWrap {
+        padding-top: rem(48);
+        padding-bottom: rem(40);
+    }
+
+    &__snsList {
+        display: flex;
+        flex-wrap: wrap;
+        margin: rem(20) auto 0;
+        max-width: 90%;
+
+        @include mq('pc') {
+            max-width: 760px;
+        }
+
+    }
+    &__snsListItem {
+        width: 50%;
+        font-size: rem(12);
+        padding-bottom: rem(18);
+        @include mq('pc') {
+            font-size: rem(14);
+            width: calc(100% / 3);
+        }
+    }
+    &__snsListItem a {
+        position: relative;
+        line-height: rem(16);
+        // padding-left: 1em;
+        // text-indent: -1em;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &:before {
+            position: relative;
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            background-image: url('@image/youtube_icon.svg');
+            background-size: contain;
+            width: 16px;
+            height: 16px;
+            margin-right: rem(12);
+        }
+
+        &[data-icon="twitter"]:before {
+            background-image: url('@image/twitter_icon.svg');
+        }
+
+        &[data-icon="Instagram"]:before {
+            background-image: url('@image/instagram_icon.svg');
+        }
+
+        &[data-icon="note"]:before {
+            background-image: url('@image/note_icon.svg');
+        }
+
+        &[data-icon="Pinterest"]:before {
+            background-image: url('@image/Pinterest_icon.svg');
+        }
+
+        span {
+            @include mq('sp') {
+                display: inline-block;
+                padding-left: rem(26);
+            }
+        }
+    }
+
+}

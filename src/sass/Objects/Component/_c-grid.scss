@@ -1,0 +1,14 @@
+.c-grid {
+    display: grid;
+    gap: rem(40) rem(18);
+    grid-template-columns: repeat(2,1fr);
+
+    @include mq('pc') {
+        grid-template-columns: repeat(3,1fr);
+        gap: rem(60);
+    }
+
+    &__oneColumnSp {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
