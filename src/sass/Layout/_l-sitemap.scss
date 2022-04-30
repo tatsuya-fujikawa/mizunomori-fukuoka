@@ -1,0 +1,7 @@
+.l-sitemap {
+    padding-top: rem(40);
+
+    @include mq('pc') {
+        padding-top: rem(80);
+    }
+}

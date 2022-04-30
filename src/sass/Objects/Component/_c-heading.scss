@@ -74,4 +74,34 @@
     top: 50%;
     transform: translateY(-50%);
   }
+
+  &[data-type="sitemap"] {
+    @include mq('sp') {
+      font-size: rem(12);
+      padding-left: rem(14);
+    }
+  }
+
+  &[data-type="sitemap"]:before {
+    background-color: #A5DDDB;
+    width: 12px;
+    height: 12px;
+  }
+
+
+  &[data-type="sitemap_line"] {
+    @include mq('sp') {
+      font-size: rem(12);
+      padding-left: rem(14);
+      font-weight: bold;
+    }
+  }
+
+  &[data-type="sitemap_line"]:before {
+    background-color: #A5DDDB;
+    width: 3px;
+    height: 14px;
+    border-radius: 0;
+    left: 8px;
+  }
 }
