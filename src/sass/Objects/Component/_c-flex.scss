@@ -25,3 +25,11 @@
     display: flex;
   }
 }
+
+.c-flexSP {
+  display: flex;
+
+  @include mq('pc') {
+    display: block;
+  }
+}
