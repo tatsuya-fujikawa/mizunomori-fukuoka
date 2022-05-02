@@ -1846,10 +1846,12 @@ img {
   letter-spacing: -0.024em;
 }
 .p-doctor__small {
+  font-weight: normal;
   text-align: center;
 }
 .p-doctor__name {
   font-size: 1.875rem;
+  font-weight: normal;
   text-align: right;
 }
 .p-doctor__instagram {
