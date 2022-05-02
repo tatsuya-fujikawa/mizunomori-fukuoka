@@ -1,0 +1,72 @@
+
+.p-diagnosisListWrap {
+    &__flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    
+    &__group {
+        width: 100%;
+        padding-bottom: rem(56);
+
+        @include mq('pc') {
+            width: calc((422px / 920px) * 100%)  ;
+            padding-bottom: rem(100);
+            color: var(--color-font);
+        }
+    }
+
+    &__title {
+        background-color: var(--color-main);
+        font-size: rem(14);
+        padding: rem(12) 0 rem(12) rem(16);
+        margin-bottom: rem(20);
+
+        @include mq('pc') {
+            font-size: rem(16);
+        }
+    }
+
+    &__MV {
+        min-width: 160px;
+        padding-right: rem(8);
+
+        @include mq('pc') {
+            padding-right: rem(16);
+        }
+
+        img {
+            width: 160px;
+        }
+    }
+    &__listItem {
+        padding-bottom: rem(0);
+
+        a {
+            font-size: rem(12);
+            display: inline-block;
+            position: relative;
+            padding-left: rem(24);
+
+            &:hover {
+                text-decoration: underline;
+                opacity: 0.8;
+            }
+
+            &:before {
+                border-bottom: 2px solid var(--color-fontGray);
+                border-right: 2px solid var(--color-fontGray);
+                content: "";
+                height: 7px;
+                position: absolute;
+                left: 10px;
+                top: 37%;
+                transform: rotate(-45deg);
+                width: 7px;
+            }
+        }
+    }
+}
+
