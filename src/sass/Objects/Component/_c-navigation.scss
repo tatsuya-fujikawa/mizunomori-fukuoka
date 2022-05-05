@@ -1,0 +1,96 @@
+.c-navigation {
+    &__list {
+        background-color: var(--color-white);
+        box-shadow: 2px 4px 3px rgba(0,0,0,.05);
+        padding: rem(8) rem(16);
+
+        @include mq('pc') {
+            padding: rem(16) rem(32);
+        }
+    }
+
+    &__listItem {
+        flex-basis: 50%;
+        margin-bottom: rem(16);
+        position: relative;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            font-size: rem(14);
+            font-family: $mainFont;
+            color: #3EA49F;
+            font-weight: bold;
+            height: 50px;
+            padding-right: 10px;
+            position: relative;
+
+            @include mq('pc') {
+                font-size: rem(18);
+            }
+
+            &:after {
+                border-bottom: 2px solid #3EA49F;
+                border-right: 2px solid #3EA49F;
+                content: "";
+                height: 9px;
+                position: absolute;
+                right: 5px;
+                top: 40%;
+                transform: rotate(45deg);
+                transition: 0.2s ease;
+                width: 9px;
+
+                @include mq('pc') {
+                    right: 20px;
+                }
+            }
+        }
+
+        &:after {
+            position: absolute;
+            content: '';
+            width: 95%;
+            height: 1px;
+            background-color: #ddd;
+            bottom: -10px;
+        }
+
+        &:last-child {
+            &:after {
+                width: 0;
+                height: 0;
+            }
+        }
+        &:nth-last-child(2) {
+            &:after {
+                width: 0;
+                height: 0;
+            }
+        }
+
+        &:nth-child(odd) {
+            padding-right: rem(8);
+
+            &:before {
+                position: absolute;
+                content: '';
+                width: 1px;
+                height: 80%;
+                background-color: #ddd;
+                bottom: 0;
+                right: 0;
+
+                @include mq('pc') {
+                    right: 6px;
+                }
+            }
+        }
+        &:nth-child(even) {
+            padding-left: rem(8);
+        }
+
+
+    }
+}
