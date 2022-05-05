@@ -5,8 +5,7 @@ $basefontsize: 16;
 html, body {
   padding: 0;
   margin: 0;
-  counter-reset: ranking;
-  counter-reset: rankingLower;
+  scroll-behavior: smooth;
 }
 
 $mainFont: fot-tsukuardgothic-std, sans-serif;
