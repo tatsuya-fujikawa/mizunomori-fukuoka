@@ -105,3 +105,12 @@
     left: 8px;
   }
 }
+
+.c-heading__Lower {
+  font-size: rem(18);
+  font-family: $mainFont;
+
+  @include mq('pc') {
+    font-size: rem(20);
+  }
+}
