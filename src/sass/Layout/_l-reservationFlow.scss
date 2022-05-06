@@ -1,0 +1,7 @@
+.l-reservationFlow {
+  padding: rem(52) 0;
+
+  @include mq('pc') {
+    padding: rem(80) 0;
+  }
+}
