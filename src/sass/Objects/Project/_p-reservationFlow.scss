@@ -1,0 +1,15 @@
+.p-reservationFlow {
+
+  &__box {
+    background-color: var(--color-white);
+  }
+
+  &__steps {
+    padding: rem(40) rem(20) 0;
+
+    @include mq('pc') {
+      padding: rem(60) rem(60) 0;
+    }
+
+  }
+}

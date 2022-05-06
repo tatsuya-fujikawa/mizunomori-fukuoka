@@ -1,0 +1,9 @@
+.l-first {
+  padding-top: rem(64);
+  padding-bottom: rem(56);
+
+  @include mq('pc') {
+    padding-top: rem(80);
+    padding-bottom: rem(100);
+  }
+}

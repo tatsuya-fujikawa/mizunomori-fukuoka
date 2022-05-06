@@ -1,0 +1,49 @@
+.p-first {
+   &__point {
+     border-radius: rem(16);
+     padding: rem(19) 0 rem(24);
+
+     @include mq('pc') {
+       padding: rem(42) 0 rem(48);
+     }
+   }
+
+   &__pointTitle {
+     text-align: center;
+     font-family: $mainFont;
+     font-size: rem(18);
+
+     @include mq('pc') {
+       font-size: rem(22);
+     }
+
+     span {
+       border-bottom: 1px solid #707070;
+       padding-bottom: rem(6);
+       display: inline-block;
+       width: auto;
+     }
+
+   }
+
+   &__pointList {
+     padding-top: rem(20);
+     list-style-type: decimal;
+     padding-left: rem(24);
+     max-width: 90%;
+     margin: 0 auto;
+
+     @include mq('pc') {
+       max-width: 37%;
+     }
+   }
+
+   &__lead {
+     padding-top: rem(32);
+     text-align: center;
+
+     @include mq('pc') {
+       padding-top: rem(64);
+     }
+   }
+}
