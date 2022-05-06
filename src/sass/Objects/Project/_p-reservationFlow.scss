@@ -1,0 +1,53 @@
+.p-reservationFlow {
+
+  &__box {
+    background-color: var(--color-white);
+  }
+
+  &__title {
+    text-align: center;
+    font-family: $mainFont;
+    padding-top: rem(40);
+
+    @include mq('pc') {
+      padding-top: rem(56);
+    }
+  }
+
+  &__steps {
+    padding: rem(40) rem(20) 0;
+
+    @include mq('pc') {
+      padding: rem(60) rem(60) 0;
+    }
+
+  }
+
+  &__lead {
+    padding-bottom: rem(8);
+    margin-bottom: rem(20);
+    border-bottom: 1px solid #707070;
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 38px;
+      height: 38px;
+      background-color:#F8E1B4;
+      border-radius: 5000px;
+      text-align: center;
+      line-height: 38px;
+      margin-right: rem(12);
+    }
+  }
+
+  &__img {
+    width: 60%;
+    margin: 0 auto;
+
+    @include mq('pc') {
+      width: auto;
+    }
+  }
+}

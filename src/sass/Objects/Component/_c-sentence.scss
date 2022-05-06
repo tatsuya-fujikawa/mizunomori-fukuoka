@@ -19,3 +19,11 @@
     line-height: rem(32);
   }
 }
+
+.c-sentence__wideSpacing {
+  line-height: rem(28);
+  
+  @include mq('pc') {
+    line-height: rem(44);
+  }
+}

@@ -59,6 +59,10 @@
 
     &-body {
 
+      @include mq('pc') {
+        padding-left: rem(8);
+      }
+
       span {
         display: block;
         text-align: center;
