@@ -21,6 +21,14 @@
       padding: rem(60) rem(60) 0;
     }
 
+    &:last-of-type {
+      padding: rem(40) rem(20);
+
+      @include mq('pc') {
+        padding: rem(60) rem(60);
+      }
+    }
+
   }
 
   &__lead {
