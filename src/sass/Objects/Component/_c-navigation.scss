@@ -2,10 +2,10 @@
     &__list {
         background-color: var(--color-white);
         box-shadow: 2px 4px 3px rgba(0,0,0,.05);
-        padding: rem(8) rem(16);
+        padding: rem(8) rem(16) rem(0);
 
         @include mq('pc') {
-            padding: rem(16) rem(32);
+            padding: rem(16) rem(32) rem(0);
         }
     }
 
