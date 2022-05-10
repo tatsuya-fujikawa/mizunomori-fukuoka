@@ -58,4 +58,51 @@
       width: auto;
     }
   }
+
+  &__notes {
+    padding: rem(40) rem(20);
+
+    @include mq('pc') {
+      padding: rem(40) rem(60) rem(60);
+    }
+    
+  }
+  &__notesInner {
+    border: 1px solid #E2E2E2;
+    padding: rem(14) rem(14) rem(60);
+
+    @include mq('pc') {
+      padding: rem(16) rem(16) rem(36);
+    }
+
+  }
+  &__notesTitle {
+    font-size: rem(14);
+    border-bottom: 1px solid #E2E2E2;
+    padding-bottom: rem(4);
+    margin-bottom: rem(16);
+
+    @include mq('pc') {
+      font-size: rem(16);
+    }
+
+    &:last-of-type {
+      padding-top: rem(24);
+    }
+  }
+
+  &__notesList {
+    font-size: rem(12);
+    list-style-type: square;
+
+    @include mq('pc') {
+      font-size: rem(14);
+    }
+
+    li {
+      margin-left: rem(16);
+      padding-bottom: rem(4);
+
+    }
+  }
 }

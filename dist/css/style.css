@@ -1867,6 +1867,9 @@ img {
 .p-reservationFlow__steps {
   padding: 2.5rem 1.25rem 0;
 }
+.p-reservationFlow__steps:last-of-type {
+  padding: 2.5rem 1.25rem;
+}
 .p-reservationFlow__lead {
   border-bottom: 1px solid #707070;
   margin-bottom: 1.25rem;
@@ -2800,6 +2803,9 @@ img {
   }
   .p-reservationFlow__steps {
     padding: 3.75rem 3.75rem 0;
+  }
+  .p-reservationFlow__steps:last-of-type {
+    padding: 3.75rem 3.75rem;
   }
   .p-reservationFlow__img {
     width: auto;
