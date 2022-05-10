@@ -16,6 +16,9 @@
   &__half {
     flex-basis: 50%;
   }
+  &__reverse {
+    flex-direction: row-reverse;
+  }
 }
 
 .c-flexPC {

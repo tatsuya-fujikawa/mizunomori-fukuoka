@@ -1,0 +1,34 @@
+.p-aboutPayment {
+    &__select {
+        figure {
+            width: 50%;
+            padding-bottom: rem(6);
+            padding-top: rem(16);
+        }
+        figcaption {
+            text-align: center;
+            font-size: rem(12);
+        }
+    }
+
+    &__body {
+        padding-bottom: rem(60);
+    }
+
+    &__bodyLeft {
+        padding-top: rem(32);
+    }
+
+    &__bodyRight {
+        padding-top: rem(40);
+    }
+
+    &__sectionTitle {
+        background-color: #EDF8F8;
+        padding: rem(7) 0 rem(7) rem(20);
+        font-size: rem(16);
+    }
+    &__bodyLeading {
+        padding: rem(20) rem(16) rem(0);
+      }
+}

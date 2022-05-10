@@ -46,7 +46,7 @@ module.exports = {
                 plugins: [
                   ["autoprefixer", {grid: true}],
                   ["css-declaration-sorter", {order: "alphabetical"}],
-                  ["postcss-sort-media-queries", {sort: "mobile-first"}],
+                  // ["postcss-sort-media-queries", {sort: "mobile-first"}],
                 ],
               },
             }
