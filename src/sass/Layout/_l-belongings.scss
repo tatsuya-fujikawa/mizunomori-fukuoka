@@ -1,0 +1,7 @@
+.l-belongings {
+  padding: 0 0 rem(60);
+
+  @include mq('pc') {
+    padding:  0 0 rem(80);
+  }
+}

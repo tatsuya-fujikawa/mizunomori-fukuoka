@@ -101,7 +101,17 @@
 .u-blueCrayon {
     background: linear-gradient(transparent 80%, #DCF5F5 80%);
 }
+.u-textLink {
+    color: #1C74BF;
+    text-decoration: underline;
 
+    &:hover {
+        opacity: 0.8;
+    }
+}
+.u-underline {
+    text-decoration: underline;
+}
 
 .u-spacer__s {
     height: rem(16);
