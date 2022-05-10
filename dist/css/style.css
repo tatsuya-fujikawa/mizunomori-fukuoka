@@ -1394,9 +1394,11 @@ img {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.c-grid__oneColumnSp {
-  -ms-grid-columns: (1fr)[1];
-  grid-template-columns: repeat(1, 1fr);
+@media screen and (max-width: 767px) {
+  .c-grid__oneColumnSp {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .p-header {
