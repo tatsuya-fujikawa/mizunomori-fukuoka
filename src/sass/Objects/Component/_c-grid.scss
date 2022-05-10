@@ -9,6 +9,8 @@
     }
 
     &__oneColumnSp {
-        grid-template-columns: repeat(1,1fr);
+        @include mq('sp') {
+            grid-template-columns: repeat(1,1fr);
+        }
     }
 }
