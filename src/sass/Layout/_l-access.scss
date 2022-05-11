@@ -1,0 +1,12 @@
+.l-access {
+    &__lower {
+        padding: rem(60) 0;
+
+        @include mq('pc') {
+            padding: rem(80) 0;
+        }
+    }
+    &__map {
+        padding-top: rem(36);
+    }
+}
