@@ -1,0 +1,29 @@
+.p-accessPoint {
+
+    &__inner {
+        background-color: var(--color-white);
+        padding: rem(40) rem(20);
+    }
+
+    &__sectionTitle {
+        background-color: #F4F4F4;
+        font-size: rem(18);
+        font-family: $mainFont;
+        text-align: center;
+        padding: rem(6) 0;
+    }
+
+    &__section {
+        padding-bottom: rem(60);
+    }
+
+    &__lead {
+        text-align: center;
+        font-weight: bold;
+        font-size: rem(18);
+        padding-top: rem(24);
+    }
+    &__sentence {
+        padding-top: rem(24);
+    }
+}

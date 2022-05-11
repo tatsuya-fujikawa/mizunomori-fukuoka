@@ -9,7 +9,7 @@
 
     &-map {
       text-align: center;
-      padding-top: rem(36);
+
 
       @include mq('pc') {
         padding-left: rem(36);
@@ -73,6 +73,63 @@
       p {
         padding-top: rem(24);
       }
+    }
+  }
+
+  &__sectionTitle {
+    text-align: center;
+    background-color: var(--color-main);
+    font-size: rem(16);
+    padding: rem(6) 0;
+
+    @include mq('pc') {
+      font-size: rem(20);
+      padding: rem(10) 0;
+    }
+  }
+
+  &__table {
+    margin-top: rem(24);
+    font-size: rem(14);
+    border: 1px solid #E2E2E2;
+    border-collapse: collapse;
+    width: 100%;
+
+    @include mq('pc') {
+      max-width: 830px;
+      margin: rem(20) auto 0;
+      font-size: rem(16);
+    }
+
+    tr {
+      border-bottom: 1px solid #E2E2E2;
+    }
+
+    td {
+      padding: rem(8) 0;
+
+      @include mq('pc') {
+        padding: rem(12) 0;
+      }
+    }
+
+    td span {
+      min-width: 100px;
+      padding: rem(0) rem(16);
+
+      @include mq('pc') {
+        min-width: 185px;
+      }
+    }
+  }
+
+  &__tableLeft {
+    background-color: #E2E2E2;
+    width: 105px;
+    text-align: center;
+
+    @include mq('pc') {
+      min-width: 185px;
     }
   }
 }
