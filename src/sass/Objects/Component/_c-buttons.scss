@@ -37,6 +37,10 @@
         }
     }
 
+    &__narrow a {
+        min-width: 130px;
+    }
+
     &__phone a {
         background-color: var(--color-phone);
         margin-right: rem(6);
