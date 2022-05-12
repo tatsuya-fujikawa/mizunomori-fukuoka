@@ -6,7 +6,16 @@
   @include mq('pc') {
     max-width: 500px;
     padding: rem(26) 0 rem(32);
-    margin: rem(80) auto rem(60);
+    margin-left:auto;
+    margin-right: auto;
+  }
+
+  &__narrow {
+    @include mq('pc') {
+      max-width: 300px;
+      padding: rem(16) 0;
+    }
+  
   }
 
   &__heading {
