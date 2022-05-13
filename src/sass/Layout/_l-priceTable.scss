@@ -1,0 +1,10 @@
+.l-priceTable {
+  &__wrap {
+    padding-top: rem(16);
+
+    @include mq('pc') {
+      padding-top: rem(40);
+    }
+  }
+
+}

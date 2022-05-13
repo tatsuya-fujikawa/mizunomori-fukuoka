@@ -54,6 +54,32 @@
     &-item {
       text-align: center;
       font-size: rem(14);
+
+      &.-lowerstyle {
+        text-align: left;
+      }
+
+      span {
+        min-width: 70px;
+        display: inline-block;
+      }
+    }
+
+    &.-lowerstyle {
+      text-align: left;
+      padding: rem(24) rem(8);
+
+      @include mq('pc') {
+        padding: rem(24);
+      }
+    }
+  }
+
+  &__listText {
+    font-size: rem(14);
+
+    & + & {
+      padding-top: rem(16);
     }
   }
 
