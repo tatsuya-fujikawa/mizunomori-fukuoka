@@ -54,4 +54,23 @@
       width: 50%;
     }
   }
+
+  &__bnrArea {
+    padding-bottom: rem(48);
+
+    @include mq('pc') {
+      padding-bottom: rem(80);
+    }
+  }
+  &__bnrAreaText {
+    text-align: center;
+    font-family: $mainFont;
+    font-size: rem(18);
+    color: #4D4D4E;
+    font-weight: bold;
+    padding-bottom: rem(16);
+  }
+  &__bnrAreaBnr {
+    text-align: center;
+  }
 } 
