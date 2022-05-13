@@ -7,6 +7,14 @@
     }
   }
 
+  &__headingDiagnosis {
+    padding-top: rem(80);
+
+    @include mq('pc') {
+      padding-top: rem(120);
+    }
+  }
+
   &__sectionBottom {
     padding-bottom: rem(40);
 
@@ -14,4 +22,5 @@
       padding-bottom: rem(80);
     }
   }
+
 }

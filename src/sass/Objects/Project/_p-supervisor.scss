@@ -1,0 +1,57 @@
+.p-supervisor {
+  &__profile {
+    background-color: var(--color-white);
+    padding: rem(40) rem(20);
+
+    display: block;
+    flex-wrap: wrap;
+
+    @include mq('pc') {
+      display: flex;
+    }
+  }
+
+  &__profileTop {
+    width: 100%;
+
+    @include mq('pc') {
+      width: 50%;
+      padding: 0 rem(60);
+    }
+  }
+
+  &__profileTopRight {
+    padding-left: rem(22);
+
+    @include mq('pc') {
+      padding-top: rem(54);
+      padding-left: rem(40);
+      padding-right: rem(40);
+      text-align: center;
+    }
+
+  }
+
+  &__profileName {
+    padding-top: rem(12);
+
+    @include mq('pc') {
+      font-size: rem(22);
+    }
+
+    img {
+      display: inline-block;
+      margin-left: rem(12);
+      position: relative;
+      top: 2px;
+    }
+  }
+
+  &__profileBottom {
+    width: 100%;
+
+    @include mq('pc') {
+      width: 50%;
+    }
+  }
+} 

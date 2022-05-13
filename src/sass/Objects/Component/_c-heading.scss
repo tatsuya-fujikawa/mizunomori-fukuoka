@@ -114,3 +114,32 @@
     font-size: rem(20);
   }
 }
+
+.c-heading__diagnosis {
+  font-size: rem(12);
+  position: relative;
+  font-family: $mainFont;
+  color: #4D4D4E;
+
+  @include mq('pc') {
+    font-size: rem(16);
+  }
+
+  &:before {
+    font-size: rem(20);
+    position: absolute;
+    content: attr(data-entitle);
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -28px;
+    color: #1A1A1A;
+
+    @include mq('pc') {
+      font-size: rem(30);
+      top: -46px;
+    }
+  }
+}
