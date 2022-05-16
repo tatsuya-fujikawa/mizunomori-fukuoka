@@ -4,6 +4,10 @@
     text-align: center;
     font-family: $mainFont;
     color: #41A5A0;
+
+    @include mq('pc') {
+      font-size: rem(26);
+    }
   }
 
   &__sentence {
@@ -13,5 +17,10 @@
     font-family: $mainFont;
     font-size: rem(14);
     font-weight: bold;
+
+    @include mq('pc') {
+      font-size: rem(20);
+      line-height: rem(46);
+    }
   }
 }

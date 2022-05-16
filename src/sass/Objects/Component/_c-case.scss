@@ -1,6 +1,6 @@
 .c-case {
   &__box {
-    border: 1px solid #FFD696;
+    border: 2px solid #FFD696;
     margin-top: rem(64);
   }
 
@@ -16,10 +16,21 @@
     font-family: $mainFont;
     position: relative;
     top: -24px;
+
+    @include mq('pc') {
+      max-width: 290px;
+    }
   }
 
   &__boxInner {
     padding: 0 rem(20);
+
+    @include mq('pc') {
+      padding: 0;
+      width: 533px;
+      margin: 0 auto;
+      padding-top: rem(26);
+    }
   }
 
   &__picture {
@@ -31,6 +42,11 @@
       font-size: rem(12);
       color: #4D4D4E;
       font-weight: bold;
+
+      @include mq('pc') {
+        font-size: rem(16);
+        padding-bottom: rem(4);
+      }
     }
   }
 
@@ -45,6 +61,11 @@
     color: #1A1A1A;
     margin: rem(16) auto rem(8);
     position: relative;
+
+    @include mq('pc') {
+      font-size: rem(16);
+      margin: rem(16) auto rem(14);
+    }
 
     &:hover {
       cursor: pointer;
@@ -88,16 +109,27 @@
       font-size: rem(12);
       text-align: center;
 
+      @include mq('pc') {
+        font-size: rem(16);
+        width: 154px;
+      }
+
       &:not(:first-of-type) {
         border-top: 2px solid #DDDDDD;
       }
     }
+
     dd {
       box-sizing: border-box;
       width: calc(100% - 90px);
       padding: rem(10) rem(6);
       font-size: 0.75rem;
       background-color: #fff;
+
+      @include mq('pc') {
+        font-size: rem(14);
+        width: calc(100% - 154px);
+      }
 
       &:not(:first-of-type) {
         border-top: 1px solid #cacaca;
@@ -108,11 +140,21 @@
   &__bottom {
     padding-top: rem(16);
     padding-bottom: rem(40);
+
+    @include mq('pc') {
+      padding-top: rem(26);
+      padding-bottom: rem(60);
+    }
   }
 
   &__recommend {
     text-align: center;
     font-size: rem(14);
+    font-weight: bold;
+
+    @include mq('pc') {
+      font-size: rem(16);
+    }
   }
 
   &__list {
@@ -124,11 +166,19 @@
   &__listItem {
     font-size: rem(14);
     padding-top: rem(4);
+
+    @include mq('pc') {
+      font-size: rem(16);
+    }
   }
 
   &__bottomButton {
 
     padding-top: rem(30);
+
+    @include mq('pc') {
+      padding-top: rem(40);
+    }
     
     a {
       display: block;
@@ -142,6 +192,11 @@
       border-radius: 6px;
       font-weight: bold;
       position: relative;
+
+      @include mq('pc') {
+        font-size: rem(16);
+        max-width: 337px;
+      }
 
       &:after {
         border-bottom: 2px solid #1A1A1A;
@@ -159,6 +214,27 @@
       &:hover:after {
         right: 22px;
       }
+    }
+  }
+
+  &__archiveButton {
+
+    padding-top: rem(40);
+    padding-bottom: rem(60);
+
+    @include mq('pc') {
+      padding-top: rem(60);
+      padding-bottom: rem(80);
+    }
+
+    a {
+      background-color: #FFD696;
+      max-width: 100%;
+  
+      @include mq('pc') {
+        max-width: rem(712);
+      }
+  
     }
   }
 }
