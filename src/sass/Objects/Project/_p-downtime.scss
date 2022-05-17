@@ -1,0 +1,9 @@
+.p-downtime {
+  &__top {
+    padding: rem(36) 0 rem(30);
+    @include mq('pc') {
+      text-align: center;
+      padding: rem(62) 0 rem(74);
+    }
+  }
+}

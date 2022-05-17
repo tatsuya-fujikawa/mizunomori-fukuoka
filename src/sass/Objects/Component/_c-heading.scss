@@ -101,6 +101,14 @@
     background-color: #F793A5;
   }
 
+  &[data-type="keycolor"]{
+    font-family: $mainFont;
+  }
+
+  &[data-type="keycolor"]:before {
+    background-color: var(--color-key);
+  }
+
 
   &[data-type="sitemap_line"] {
     @include mq('sp') {
