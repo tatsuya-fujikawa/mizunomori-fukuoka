@@ -1,0 +1,87 @@
+.p-downtime {
+  &__top {
+    padding: rem(36) 0 rem(30);
+    @include mq('pc') {
+      text-align: center;
+      padding: rem(62) 0 rem(74);
+    }
+  }
+
+  &__list {
+    padding-left: rem(6);
+    padding-bottom: rem(32);
+  }
+
+  &__listItem {
+    position: relative;
+    padding-bottom: rem(6);
+
+    a {
+      color: #3EA49F;
+      font-size: rem(14);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      padding-left: rem(16);
+      position: relative;
+
+      &:before {
+        border-bottom: 1px solid #3EA49F;
+        border-right: 1px solid #3EA49F;
+        content: "";
+        height: 5px;
+        left: 0px;
+        position: absolute;
+        top: 40%;
+        transform: rotate(-45deg);
+        width: 5px;
+      }
+    }
+  }
+
+  &__point {
+    padding-top: rem(24);
+  }
+
+  &__pointStep {
+    border-radius: rem(6);
+    border: 1px solid #3EA49F;
+    display: flex;
+    align-items: center;
+
+
+    span {
+      background-color: #3EA49F;
+      color: var(--color-white);
+      min-width: 90px;
+      padding: rem(8);
+      text-align: center;
+      font-family: $mainFont;
+      font-size: rem(16);
+      letter-spacing: -0.025em;
+      font-weight: bold;
+    }
+
+    p {
+      width: calc(100% - 90px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: $mainFont;
+      font-size: rem(16);
+      font-weight: bold;
+      color: #3EA49F;
+    }
+  }
+
+  &__pointText {
+    padding-left: rem(16);
+    padding-top: rem(8);
+
+    @include mq('pc') {
+      text-align: center;
+      padding-left: 0;
+    }
+  }
+
+
+}

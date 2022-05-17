@@ -1,0 +1,38 @@
+.p-questions {
+  &__button {
+    padding-top: rem(36);
+
+    a {
+      background-color: #fff;
+      color: #1A1A1A;
+      border-radius: 6px;
+      display: block;
+      border: 2px solid #A5DDDB;
+      font-family: fot-tsukuardgothic-std, sans-serif;
+      font-weight: bold;
+      margin: 0 auto;
+      font-size: 1rem;
+      max-width: 337px;
+      padding: 0.625rem 0;
+      position: relative;
+      text-align: center;
+
+      &:after {
+        border-bottom: 2px solid #1A1A1A;
+        border-right: 2px solid #1A1A1A;
+        content: "";
+        height: 9px;
+        position: absolute;
+        right: 25px;
+        top: 40%;
+        transform: rotate(-45deg);
+        transition: 0.2s ease;
+        width: 9px;
+      }
+
+      &:hover:after {
+        right: 22px;
+      }
+    }
+  }
+}

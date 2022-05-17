@@ -88,6 +88,27 @@
     height: 12px;
   }
 
+  &[data-type="price"] {
+    font-family: $mainFont;
+    font-weight: bold;
+
+    @include mq('pc') {
+      font-size: rem(18);
+    }
+  }
+
+  &[data-type="price"]:before {
+    background-color: #F793A5;
+  }
+
+  &[data-type="keycolor"]{
+    font-family: $mainFont;
+  }
+
+  &[data-type="keycolor"]:before {
+    background-color: var(--color-key);
+  }
+
 
   &[data-type="sitemap_line"] {
     @include mq('sp') {
@@ -99,6 +120,23 @@
 
   &[data-type="sitemap_line"]:before {
     background-color: #A5DDDB;
+    width: 3px;
+    height: 14px;
+    border-radius: 0;
+    left: 8px;
+  }
+
+  &[data-type="price_line"] {
+    @include mq('sp') {
+      font-size: rem(16);
+      padding-left: rem(14);
+      font-weight: bold;
+      font-family: $mainFont;
+    }
+  }
+
+  &[data-type="price_line"]:before {
+    background-color: #F793A5;
     width: 3px;
     height: 14px;
     border-radius: 0;

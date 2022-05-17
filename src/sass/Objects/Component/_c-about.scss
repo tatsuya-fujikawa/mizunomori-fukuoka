@@ -1,0 +1,59 @@
+.c-about {
+  &__box {
+    border: 1px solid #92DDDA;
+    border-radius: rem(12);
+    padding-bottom: rem(40);
+    margin-top: rem(34);
+    background-color: var(--color-white);
+    position: relative;
+
+    @include mq('pc') {
+      margin-top: rem(48);
+    }
+
+    &:before {
+      position: absolute;
+      content: '';
+      width: 90%;
+      height: 2px;
+      left: 50%;
+      top: -1px;
+      transform: translateX(-50%);
+      background-color: var(--color-white);
+
+      @include mq('pc') {
+        width: 50%;
+      }
+    }
+  }
+
+  &__title {
+    text-align: center;
+
+    span {
+      display: inline-block;
+      color: #3EA49F;
+      font-weight: bold;
+      font-family: $mainFont;
+      font-size: rem(18);
+      position: relative;
+      top: -14px;
+      z-index: 10;
+
+      @include mq('pc') {
+        font-size: rem(22);
+        top: -20px;
+      }
+    }
+  }
+
+  &__boxInner {
+    padding: rem(20) rem(25) rem(40);
+
+    @include mq('pc') {
+      padding: rem(20) 0 rem(40);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+}

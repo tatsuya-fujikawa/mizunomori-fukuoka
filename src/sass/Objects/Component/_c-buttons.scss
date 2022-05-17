@@ -125,6 +125,29 @@
 
 }
 
+.c-buttonOrdinary[data-type="downtime"] {
+
+    a {
+        position: relative;
+        color: #1a1a1a;
+        background-color: #C8EAE8;
+        width: 80%;
+
+        &:after {
+            border-bottom: 2px solid #1a1a1a;
+            border-right: 2px solid #1a1a1a;
+            content: "";
+            height: 9px;
+            position: absolute;
+            right: 15px;
+            top: 40%;
+            transform: rotate(-45deg);
+            transition: 0.2s ease;
+            width: 9px;
+        }
+    }
+}
+
 .c-buttonSquare {
     background-color: var(--color-white);
     max-width: 100%;

@@ -1,0 +1,26 @@
+.p-recommend {
+
+  &__lead {
+    text-align: center;
+    font-family: $mainFont;
+    color: #41A5A0;
+
+    @include mq('pc') {
+      font-size: rem(26);
+    }
+  }
+
+  &__sentence {
+    text-align: center;
+    padding-top: rem(40);
+    color: #2B2B2B;
+    font-family: $mainFont;
+    font-size: rem(14);
+    font-weight: bold;
+
+    @include mq('pc') {
+      font-size: rem(20);
+      line-height: rem(46);
+    }
+  }
+}

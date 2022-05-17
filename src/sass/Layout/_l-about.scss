@@ -1,0 +1,7 @@
+.l-about {
+  padding-bottom: rem(40);
+
+  @include mq('pc') {
+    padding-bottom: rem(80);
+  }
+}
