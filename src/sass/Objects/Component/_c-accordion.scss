@@ -10,6 +10,11 @@
     position: relative;
 
 
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+
     &::after {
       position: absolute;
       content: '';
@@ -53,4 +58,60 @@
       margin: 0 auto rem(8)
     }
   }
+
+  &__contentsInner {
+    padding: rem(16);
+
+    @include mq('pc') {
+      padding: rem(16) rem(24);
+    }
+  }
+}
+
+.c-accordion[data-type="questions"] {
+
+  padding-bottom: rem(24);
+
+  &:first-of-type {
+    padding-top: rem(26);
+
+    @include mq('pc') {
+      padding-top: rem(40);
+    }
+  }
+  
+  & > .c-accordion__tab {
+    background-color: #A5DDDB;
+    color: #1A1A1A;
+    box-shadow: none;
+    text-align: left;
+    padding-left: rem(16);
+    font-size: rem(14);
+    font-family: "Noto Sans JP", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", sans-serif;
+    font-weight: normal;
+    margin-bottom: 0;
+
+    @include mq('pc') {
+      font-size: rem(16);
+      padding-left: rem(24);
+    }
+
+    &:after {
+      border-bottom: 2px solid #1A1A1A;
+      border-right: 2px solid #1A1A1A;
+    }
+
+    &.on {
+      border-radius: 6px 6px 0 0;
+    }
+  }
+
+  & > .c-accordion__contents {
+    border: 2px solid #A5DDDB;
+    border-top: none;
+    width: 100%;
+    background-color: var(--color-white);
+  }
+
+
 }

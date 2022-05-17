@@ -7,6 +7,10 @@
     letter-spacing: -0.025em;
     line-height: rem(32);
   }
+
+  & + & {
+    padding-top: rem(16);
+  }
 }
 
 .c-sentence__sm {
