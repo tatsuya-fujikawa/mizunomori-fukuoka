@@ -727,6 +727,15 @@ img {
   padding: 5rem 0 11.25rem;
 }
 
+.l-point {
+  padding-bottom: 3.75rem;
+}
+@media screen and (min-width: 960px) {
+  .l-point {
+    padding-bottom: 5rem;
+  }
+}
+
 .l-under20 {
   padding: 2.5rem 0;
 }
@@ -1209,6 +1218,11 @@ img {
 .c-case__picture {
   background-color: #FFECC9;
   flex-basis: 48%;
+}
+@media screen and (min-width: 960px) {
+  .c-case__picture img {
+    width: 100%;
+  }
 }
 .c-case__picture figcaption {
   color: #4D4D4E;
@@ -3335,6 +3349,7 @@ img {
 @media screen and (min-width: 960px) {
   .p-price__lead {
     font-size: 1.625rem;
+    padding-top: 3rem;
   }
 }
 .p-price__sentence {
@@ -3524,6 +3539,198 @@ img {
   top: 40%;
   transform: rotate(-45deg);
   width: 5px;
+}
+
+.p-point__lead {
+  color: #3EA49F;
+  font-family: fot-tsukuardgothic-std, sans-serif;
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding-top: 2.5rem;
+  text-align: center;
+}
+.p-point__box {
+  padding-top: 2.25rem;
+}
+.p-point__title {
+  font-family: fot-tsukuardgothic-std, sans-serif;
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+  position: relative;
+}
+@media screen and (min-width: 960px) {
+  .p-point__title {
+    font-size: 1.25rem;
+  }
+}
+.p-point__title:after {
+  background-color: #000;
+  bottom: -5px;
+  content: "";
+  height: 1px;
+  left: -10%;
+  position: absolute;
+  width: 70%;
+}
+@media screen and (min-width: 960px) {
+  .p-point__title:after {
+    left: 0;
+    width: 30%;
+  }
+}
+.p-point__boxInner {
+  background-color: #F0F0F0;
+  margin: 0 calc(50% - 50vw) 0 auto;
+  padding: 1.25rem 0 1.25rem 1.25rem;
+  width: 100%;
+}
+@media screen and (min-width: 960px) {
+  .p-point__boxInner {
+    margin: 0 auto 0 0;
+    padding: 1.75rem 2.5rem;
+    width: 800px;
+  }
+}
+.p-point__boxLead {
+  font-size: 0.875rem;
+  padding-bottom: 1.25rem;
+  padding-right: 0.5rem;
+}
+@media screen and (min-width: 960px) {
+  .p-point__boxLead {
+    font-size: 1.125rem;
+  }
+}
+.p-point__boxLead span {
+  color: #3EA49F;
+  display: block;
+  font-family: fot-tsukuardgothic-std, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+@media screen and (min-width: 960px) {
+  .p-point__boxLead span {
+    font-size: 1.125rem;
+    text-align: left;
+  }
+}
+.p-point__boxBody {
+  padding-top: 1.25rem;
+}
+.p-point__point {
+  flex-basis: 55%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 960px) {
+  .p-point__point {
+    flex-basis: 60%;
+  }
+}
+.p-point__pointImg {
+  flex-basis: 45%;
+  margin: 0 auto;
+  padding-left: 5px;
+}
+.p-point__pointImg img {
+  display: block;
+  margin: 0 auto;
+}
+@media screen and (min-width: 960px) {
+  .p-point__pointImg {
+    flex-basis: 40%;
+    padding-left: 1rem;
+  }
+}
+.p-point__pointTitle {
+  background-color: #3EA49F;
+  border-radius: 5000px;
+  color: var(--color-white);
+  font-family: fot-tsukuardgothic-std, sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  max-width: 165px;
+  padding: 0.5rem 0.625rem;
+  text-align: center;
+}
+@media screen and (min-width: 960px) {
+  .p-point__pointTitle {
+    font-size: 1rem;
+    max-width: 180px;
+  }
+}
+.p-point__pointText {
+  font-size: 0.75rem;
+  max-width: 154px;
+  padding: 0.5rem 0 1rem;
+}
+@media screen and (min-width: 960px) {
+  .p-point__pointText {
+    font-size: 0.875rem;
+    max-width: 100%;
+  }
+}
+
+.p-point__title[data-style=reverse] {
+  text-align: right;
+}
+.p-point__title[data-style=reverse]:after {
+  left: 42%;
+  width: 60%;
+}
+@media screen and (min-width: 960px) {
+  .p-point__title[data-style=reverse]:after {
+    left: 70%;
+    width: 30%;
+  }
+}
+
+.p-point__boxInner[data-style=reverse] {
+  margin: 0 0 auto calc(50% - 50vw);
+  padding: 1.25rem 1.25rem 1.25rem 0;
+}
+@media screen and (min-width: 960px) {
+  .p-point__boxInner[data-style=reverse] {
+    margin: 0 0 0 auto;
+    padding: 1.75rem 2.5rem;
+  }
+}
+
+.p-point__boxLead[data-style=reverse] {
+  padding-left: 1rem;
+}
+
+.p-point__boxSentence[data-style=reverse] {
+  padding-left: 1rem;
+}
+
+.p-point__pointTitle[data-style=reverse] {
+  margin: 0 0 0 auto;
+}
+@media screen and (min-width: 960px) {
+  .p-point__pointTitle[data-style=reverse] {
+    margin: 0 auto 0 0;
+  }
+}
+
+.p-point__pointText[data-style=reverse] {
+  margin: 0 0 0 auto;
+}
+@media screen and (min-width: 960px) {
+  .p-point__pointText[data-style=reverse] {
+    margin: 0 auto 0 0;
+  }
+}
+
+.p-point__pointImg[data-style=reverse] {
+  padding-left: 0;
+  padding-right: 5px;
+}
+@media screen and (min-width: 960px) {
+  .p-point__pointImg[data-style=reverse] {
+    padding-right: 1rem;
+  }
 }
 
 .p-reservationFlow__box {
