@@ -83,4 +83,5 @@ module.exports = {
       "@image": path.resolve(__dirname, './src/img/'),
     },
   },
+  performance: { hints: false }
 };

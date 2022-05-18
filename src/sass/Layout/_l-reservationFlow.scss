@@ -5,3 +5,11 @@
     padding: rem(80) 0;
   }
 }
+
+.l-reservationFlow__lower {
+  padding-bottom: rem(32);
+
+  @include mq('pc') {
+    padding-bottom: rem(64);
+  }
+}

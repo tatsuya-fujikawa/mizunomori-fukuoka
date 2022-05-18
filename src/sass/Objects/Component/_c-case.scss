@@ -37,6 +37,12 @@
     flex-basis: 48%;
     background-color: #FFECC9;
 
+    img {
+      @include mq('pc') {
+        width: 100%;
+      }
+    }
+
     figcaption {
       text-align: center;
       font-size: rem(12);

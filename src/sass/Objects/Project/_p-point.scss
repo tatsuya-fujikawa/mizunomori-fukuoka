@@ -1,0 +1,189 @@
+.p-point {
+  &__lead {
+    text-align: center;
+    color: #3EA49F;
+    font-size: rem(18);
+    font-family: $mainFont;
+    font-weight: bold;
+    padding-top: rem(40);
+  }
+
+  &__box {
+    padding-top: rem(36);
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: rem(18);
+    position: relative;
+    margin-bottom: rem(20);
+    font-family: $mainFont;
+
+    @include mq('pc') {
+      font-size: rem(20);
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      width: 70%;
+      height: 1px;
+      background-color: #000;
+      bottom: -5px;
+      left: -10%;
+
+      @include mq('pc') {
+        width: 30%;
+        left: 0;
+      }
+    }
+  }
+
+  &__boxInner {
+    background-color: #F0F0F0;
+    padding: rem(20) 0 rem(20) rem(20);
+    margin: 0 calc(50% - 50vw) 0 auto;
+    width: 100%;
+
+    @include mq('pc') {
+      margin: 0 auto 0 0;
+      padding: rem(28) rem(40);
+      width: 800px;
+    }
+  }
+
+  &__boxLead {
+    font-size: rem(14);
+    padding-right: rem(8);
+    padding-bottom: rem(20);
+
+    @include mq('pc') {
+      font-size: rem(18);
+    }
+
+    span {
+      display: block;
+      text-align: center;
+      color: #3EA49F;
+      font-family: $mainFont;
+      font-size: rem(16);
+      font-weight: bold;
+
+      @include mq('pc') {
+        text-align: left;
+        font-size: rem(18);
+      }
+    }
+  }
+
+  &__boxBody {
+    padding-top: rem(20);
+  }
+
+  &__point {
+    flex-basis: 55%;
+    margin: 0 auto;
+
+    @include mq('pc') {
+      flex-basis: 60%;
+    }
+
+  }
+  &__pointImg {
+    flex-basis: 45%;
+    padding-left: 5px;
+    margin: 0 auto;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include mq('pc') {
+      flex-basis: 40%;
+      padding-left: rem(16);
+    }
+  }
+
+  &__pointTitle {
+    font-size: rem(14);
+    font-weight: bold;
+    font-family: $mainFont;
+    padding: rem(8) rem(10);
+    text-align: center;
+    border-radius: 5000px;
+    background-color: #3EA49F;
+    color: var(--color-white);
+    max-width: 165px;
+
+    @include mq('pc') {
+      font-size: rem(16);
+      max-width: 180px;
+    }
+  }
+
+  &__pointText {
+    padding: rem(8) 0 rem(16);
+    font-size: rem(12);
+    // margin: 0 auto;
+    max-width: 154px;
+
+    @include mq('pc') {
+      font-size: rem(14);
+      max-width: 100%;
+    }
+  }
+}
+
+.p-point__title[data-style="reverse"] {
+  text-align: right;
+
+  &:after {
+    left: 42%;
+    width: 60%;
+
+    
+    @include mq('pc') {
+      width: 30%;
+      left: 70%;
+    }
+  }
+}
+
+.p-point__boxInner[data-style="reverse"] {
+  margin: 0 0 auto calc(50% - 50vw);
+  padding: rem(20) rem(20) rem(20) 0;
+
+  @include mq('pc') {
+    margin:0 0 0 auto;
+    padding: rem(28) rem(40);
+  }
+}
+
+.p-point__boxLead[data-style="reverse"]  {
+  padding-left: rem(16);
+}
+.p-point__boxSentence[data-style="reverse"] {
+  padding-left: rem(16);
+}
+
+.p-point__pointTitle[data-style="reverse"] {
+  margin: 0 0 0 auto;
+  @include mq('pc') {
+    margin: 0 auto 0 0;
+  }
+}
+.p-point__pointText[data-style="reverse"] {
+  margin: 0 0 0 auto;
+  @include mq('pc') {
+    margin: 0 auto 0 0;
+  }
+}
+.p-point__pointImg[data-style="reverse"] {
+  padding-left: 0;
+  padding-right: 5px;
+
+  @include mq('pc') {
+    padding-right: rem(16);
+  }
+}
