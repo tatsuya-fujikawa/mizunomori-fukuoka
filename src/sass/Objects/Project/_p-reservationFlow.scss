@@ -54,6 +54,12 @@
     width: 60%;
     margin: 0 auto;
 
+    img {
+      @include mq('pc') {
+        width: 350px;
+      }
+    }
+
     @include mq('pc') {
       width: auto;
     }
@@ -105,4 +111,37 @@
 
     }
   }
+
+  &__centerText {
+    text-align: center;
+    padding: rem(38) 0 rem(54);
+  }
+
+  &__tag {
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: -16px;
+
+    span {
+      padding: rem(8) rem(12);
+      background-color: #FFD696;
+      width: 225px;
+      font-size: rem(18);
+      font-family: $mainFont;
+      display: inline-block;
+    }
+  }
+}
+
+.p-reservationFlow[data-style="onTheDay"] {
+  padding-top: rem(44);
+}
+.p-reservationFlow__tag[data-style="onTheDay"] span {
+  background-color: #3EA49F;
+  color: var(--color-white);
+}
+.p-reservationFlow__lead[data-style="onTheDay"] span {
+  background-color: #3EA49F;
+  color: var(--color-white);
 }
