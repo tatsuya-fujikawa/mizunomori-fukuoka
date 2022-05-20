@@ -286,7 +286,28 @@
 
   &__card {
     background-color: var(--color-white);
+    margin-top: rem(24);
     padding: rem(40) rem(20);
+
+    @include mq('pc') {
+      flex-basis: 45%;
+      padding: rem(20) rem(20) rem(20);
+      margin-bottom: rem(40);
+    }
+
+    // &:nth-of-type(odd) {
+    //   margin-right: 5%;
+    // }
+  }
+
+
+}
+
+.c-case__card .swiper-container {
+  width: 95%;
+
+  @include mq('pc') {
+    width: auto;
   }
 }
 

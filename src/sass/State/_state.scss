@@ -58,3 +58,28 @@
   bottom: -20px!important;
 }
 
+.c-case .swiper-button-next {
+
+  right: -18px;
+
+  @include mq('pc') {
+    right: -25px;
+  }
+}
+
+.c-case .swiper-button-prev {
+
+  left: -18px;
+
+  @include mq('pc') {
+    left: -25px;
+  }
+}
+
+:root {
+  --swiper-navigation-size: 24px!important;
+}
+
+.c-case .swiper-container {
+  max-width: 360px;
+}
