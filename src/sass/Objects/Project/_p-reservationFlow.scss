@@ -132,6 +132,14 @@
       display: inline-block;
     }
   }
+
+  &__afterTreatmentBox {
+    padding-bottom: rem(16);
+  }
+  &__afterTreatmentLead {
+    padding-bottom: rem(4);
+    font-weight: bold;
+  }
 }
 
 .p-reservationFlow[data-style="onTheDay"] {
@@ -144,4 +152,13 @@
 .p-reservationFlow__lead[data-style="onTheDay"] span {
   background-color: #3EA49F;
   color: var(--color-white);
+}
+
+.p-reservationFlow[data-style="afterTreatment"] {
+  padding-top: rem(44);
+}
+
+.p-reservationFlow__tag[data-style="afterTreatment"] span{
+  background-color: #D3D3D3;
+  color: var(--color-text);
 }

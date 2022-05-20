@@ -1,0 +1,147 @@
+.p-attention {
+  &__lead {
+    text-align: center;
+    color: #3EA49F;
+    font-size: rem(18);
+    font-family: $mainFont;
+    font-weight: bold;
+    padding-top: rem(40);
+  }
+
+  &__box {
+    padding-top: rem(36);
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: rem(18);
+    position: relative;
+    margin-bottom: rem(20);
+    font-family: $mainFont;
+
+    @include mq('pc') {
+      font-size: rem(20);
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      width: 70%;
+      height: 1px;
+      background-color: #000;
+      bottom: -5px;
+      left: -10%;
+
+      @include mq('pc') {
+        width: 30%;
+        left: 0;
+      }
+    }
+  }
+
+  &__boxInner {
+    background-color: #F0F0F0;
+    padding: rem(20);
+    margin: 0 calc(50% - 50vw) 0 auto;
+    width: 100%;
+
+    @include mq('pc') {
+      margin: 0 auto 0 0;
+      padding: rem(28) rem(40);
+      width: 830px;
+    }
+  }
+
+  &__centerText {
+    color: #646464;
+    padding: rem(24) 0 0;
+    
+    @include mq('pc') {
+      text-align: center;
+    }
+  }
+
+
+  &__boxBody {
+    padding-top: rem(20);
+  }
+
+  &__point {
+    flex-basis: 65%;
+    margin: 0 auto;
+    padding-left: rem(16);
+
+    @include mq('pc') {
+      flex-basis: 60%;
+    }
+
+  }
+  &__pointImg {
+    flex-basis: 35%;
+    // padding-left: 5px;
+    margin: 0 auto;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include mq('pc') {
+      flex-basis: 40%;
+      padding-left: rem(16);
+    }
+  }
+
+  &__list {
+    padding: rem(12);
+
+    li {
+      font-size: rem(14);
+      display: flex;
+      padding-bottom: rem(4);
+      align-items: center;
+    }
+  }
+
+  &__caption {
+    background-color: #A5DDDB;
+    padding: rem(20);
+    margin: rem(40) calc(50% - 50vw) 0;
+
+    @include mq('pc') {
+      margin: rem(40) auto 0;
+      padding: rem(40) rem(50);
+    }
+  }
+
+  &__captionInner {
+    padding: rem(24) rem(12) rem(32);
+    background-color: var(--color-white);
+    text-align: center;
+  }
+
+}
+
+.p-attention__title[data-style="reverse"] {
+  text-align: right;
+
+  &:after {
+    left: 42%;
+    width: 60%;
+
+    
+    @include mq('pc') {
+      width: 30%;
+      left: 70%;
+    }
+  }
+}
+
+.p-attention__boxInner[data-style="reverse"] {
+  margin: 0 0 auto calc(50% - 50vw);
+
+  @include mq('pc') {
+    margin:0 0 0 auto;
+    padding: rem(28) rem(40);
+  }
+}

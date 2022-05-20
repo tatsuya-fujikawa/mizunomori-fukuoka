@@ -1,0 +1,7 @@
+.l-reasonsLower {
+  padding-bottom: rem(60);
+
+  @include mq('pc') {
+    padding-bottom: rem(80);
+  }
+}
