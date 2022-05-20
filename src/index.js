@@ -68,3 +68,14 @@ const createSwiper = () => {
   
   });
 }
+
+swiperCases = new Swiper('.swiper__cases', {
+  effect: 'fade',
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
