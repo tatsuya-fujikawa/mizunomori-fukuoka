@@ -47,6 +47,14 @@
     }
   }
 
+  &__body {
+    padding-top: rem(8);
+
+    @include mq('pc') {
+      padding-top: rem(32);
+    }
+  }
+
   &__boxInner {
     padding: rem(20) rem(25) rem(40);
 
@@ -54,6 +62,43 @@
       padding: rem(20) 0 rem(40);
       max-width: 600px;
       margin: 0 auto;
+    }
+  }
+
+  &__list {
+    padding: rem(16) 0;
+    li {
+      font-weight: bold;
+      color: #3EA49F;
+      font-size: rem(14);
+
+      @include mq('pc') {
+        font-size: rem(16);
+      }
+    }
+  }
+}
+
+.c-about__box[data-style="ordinaryStyle"] {
+  &:before {
+    height: 0;
+
+  }
+}
+
+.c-about__boxInner[data-style="ordinaryStyle"] {
+  @include mq('pc') {
+    max-width: 700px;
+  }
+}
+
+.c-about__title[data-style="ordinaryStyle"] {
+
+  padding-top: rem(36);
+
+  span {
+    @include mq('pc') {
+      top: 0;
     }
   }
 }

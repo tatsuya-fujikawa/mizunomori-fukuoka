@@ -48,6 +48,7 @@
       font-size: rem(12);
       color: #4D4D4E;
       font-weight: bold;
+      padding-bottom: rem(4);
 
       @include mq('pc') {
         font-size: rem(16);
@@ -242,5 +243,55 @@
       }
   
     }
+  }
+
+  &__photos {
+
+    @include mq('pc') {
+      flex-basis: 50%;
+      padding-bottom: rem(40);
+    }
+
+    &:not(:first-of-type) {
+      @include mq('sp') {
+        padding-top: rem(16);
+      }
+    }
+
+    &:nth-of-type(odd) {
+      @include mq('pc') {
+        padding-right: rem(16);
+      }
+    }
+    &:nth-of-type(even) {
+      @include mq('pc') {
+        padding-left: rem(16);
+      }
+    }
+
+
+  }
+
+  &__photosTitle {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 1px;
+    padding-bottom: rem(8);
+    font-size: rem(16);
+
+    @include mq('pc') {
+      text-align: left;
+    }
+  }
+
+  &__card {
+    background-color: var(--color-white);
+    padding: rem(40) rem(20);
+  }
+}
+
+.c-case__boxInner[data-style="photo"] {
+  @include mq('pc') {
+    width: 840px;
   }
 }

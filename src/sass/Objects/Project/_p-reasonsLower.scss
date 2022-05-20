@@ -1,0 +1,20 @@
+.p-reasonsLower {
+  &__body {
+    padding-top: rem(36);
+  }
+  &__wrap {
+    padding-top: rem(36);
+
+  }
+
+  &__lead {
+    background-color: #EDF8F8;
+    padding: rem(7) 0 rem(7) rem(20);
+    font-size: rem(16);
+    font-weight: normal;
+  }
+ 
+  &__sentence {
+    padding: rem(12) rem(20) 0 rem(20);
+  }
+}
