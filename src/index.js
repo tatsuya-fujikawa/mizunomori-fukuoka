@@ -11,7 +11,7 @@ $(function () {
     $('.js-accordion').click(function() {
       $(this).toggleClass('on');
       $(this).parents('.c-case__card').toggleClass('on');
-      $(this).nextAll('.js-content').toggleClass('on');
+      $(this).nextAll('.js-content').slideToggle('on');
     });
     $('.js-closeaccordion').click(function() {
       $(this).parent().hide();

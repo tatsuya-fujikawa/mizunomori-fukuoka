@@ -6,6 +6,7 @@
     font-family: $mainFont;
     font-weight: bold;
     padding-top: rem(40);
+    line-height: rem(44);
   }
 
   &__box {
@@ -39,16 +40,55 @@
     }
   }
 
+  &__titleSecond {
+    color: #3EA49F;
+    font-weight: bold;
+    font-size: rem(18);
+    position: relative;
+    margin-bottom: rem(16);
+    font-family: $mainFont;
+
+    @include mq('pc') {
+      font-size: rem(22);
+      margin-bottom: rem(12);
+    }
+
+    span {
+      display: inline-block;
+      font-size: rem(26);
+      padding-right: rem(16);
+      position: relative;
+      top: -8px;
+
+      @include mq('pc') {
+        font-size: rem(32);
+        top: -16px;
+      }
+
+      &:after {
+        width: 80px;
+        height: 1px;
+        position: absolute;
+        content: '';
+        background-color: #3EA49F;
+        left: 0;
+        top: 34px;
+        transform: rotate(-45deg);
+      }
+
+    }
+  }
+
   &__boxInner {
     background-color: #F0F0F0;
-    padding: rem(20) 0 rem(20) rem(20);
-    margin: 0 calc(50% - 50vw) 0 auto;
+    padding: rem(16);
+    margin: 0 auto 0 calc(50% - 50vw);
     width: 100%;
 
     @include mq('pc') {
       margin: 0 auto 0 0;
       padding: rem(28) rem(40);
-      width: 800px;
+      width: 830px;
     }
   }
 
@@ -133,6 +173,21 @@
       max-width: 100%;
     }
   }
+
+  &__bottomLeft {
+    @include mq('pc') {
+      padding-right: rem(40);
+    }
+  }
+}
+
+.p-point__lead[data-style="black"] {
+  color: var(--color-text);
+  font-size: rem(16);
+
+  @include mq('pc') {
+    font-size: rem(20);
+  }
 }
 
 .p-point__title[data-style="reverse"] {
@@ -141,7 +196,6 @@
   &:after {
     left: 42%;
     width: 60%;
-
     
     @include mq('pc') {
       width: 30%;
@@ -151,8 +205,8 @@
 }
 
 .p-point__boxInner[data-style="reverse"] {
-  margin: 0 0 auto calc(50% - 50vw);
-  padding: rem(20) rem(20) rem(20) 0;
+  margin: 0 calc(50% - 50vw) 0 auto;
+  padding: rem(16);
 
   @include mq('pc') {
     margin:0 0 0 auto;
@@ -185,5 +239,19 @@
 
   @include mq('pc') {
     padding-right: rem(16);
+  }
+}
+
+.p-point__titleSecond[data-style="reverse"] {
+  text-align: right;
+
+  span {
+    padding-right: 0;
+    padding-left: rem(16);
+
+    &:after {
+      transform: rotate(45deg);
+      left: -24px;
+    }
   }
 }
