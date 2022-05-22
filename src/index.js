@@ -10,7 +10,8 @@ $(function () {
   if($('.js-accordion').length){
     $('.js-accordion').click(function() {
       $(this).toggleClass('on');
-      $(this).nextAll('.js-content').slideToggle('500');
+      $(this).parents('.c-case__card').toggleClass('on');
+      $(this).nextAll('.js-content').slideToggle('on');
     });
     $('.js-closeaccordion').click(function() {
       $(this).parent().hide();

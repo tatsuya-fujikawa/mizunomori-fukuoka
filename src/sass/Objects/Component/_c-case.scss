@@ -288,6 +288,8 @@
     background-color: var(--color-white);
     margin-top: rem(24);
     padding: rem(40) rem(20);
+    transition: 0.5s ease;
+    min-height: auto;
 
     @include mq('pc') {
       flex-basis: 45%;
@@ -298,6 +300,12 @@
     // &:nth-of-type(odd) {
     //   margin-right: 5%;
     // }
+
+    &:not(.on) {
+      @include mq('pc') {
+        max-height: 330px;
+      }
+    }
   }
 
 
