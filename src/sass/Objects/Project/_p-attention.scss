@@ -120,6 +120,57 @@
     text-align: center;
   }
 
+  &__button {
+    display: inline-block;
+    padding: rem(8) rem(40) rem(8) rem(24);
+    border-radius: 5000px;
+    background-color: #3EA49F;
+    color: var(--color-white);
+    position: relative;
+
+    &:after {
+      border-bottom: 2px solid var(--color-white);
+      border-right: 2px solid var(--color-white);
+      content: "";
+      height: 9px;
+      position: absolute;
+      right: 15px;
+      top: 40%;
+      transform: rotate(-45deg);
+      transition: 0.2s ease;
+      width: 9px;
+    }
+    &:hover:after {
+      right: 12px;
+    }
+
+  }
+
+  &__heading {
+    font-size: rem(16);
+    color: #3EA49F;
+    padding-bottom: rem(8);
+  }
+
+  &__innerWhite {
+    margin-top: rem(16);
+    background-color: var(--color-white);
+    padding: rem(8);
+
+    @include mq('pc') {
+      padding: rem(16) 0;
+    }
+  }
+
+  &__textBox {
+    padding-top: rem(8);
+  }
+
+  &__alignRight {
+    width: 50%;
+    margin: 0 0 0 auto;
+  }
+
 }
 
 .p-attention__title[data-style="reverse"] {
