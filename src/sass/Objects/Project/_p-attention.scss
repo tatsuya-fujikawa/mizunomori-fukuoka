@@ -46,9 +46,10 @@
     width: 100%;
 
     @include mq('pc') {
-      margin: 0 auto 0 0;
+      // margin: 0 auto 0 0;
+      margin: 0 auto;
       padding: rem(28) rem(40);
-      width: 830px;
+      // width: 830px;
     }
   }
 
@@ -192,7 +193,8 @@
   margin: 0 0 auto calc(50% - 50vw);
 
   @include mq('pc') {
-    margin:0 0 0 auto;
+    // margin:0 0 0 auto;
+    margin: 0 auto;
     padding: rem(28) rem(40);
   }
 }
