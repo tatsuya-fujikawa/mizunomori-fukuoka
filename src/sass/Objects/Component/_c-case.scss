@@ -308,14 +308,22 @@
       }
     }
   }
+}
 
-
-
+.c-case__card[data-style="hip"] {
+  @include mq('pc') {
+    padding-top: 0;
+  }
+  &:not(.on) {
+    @include mq('pc') {
+      max-height: 430px;
+    }
+  }
 }
 
 .c-case__card .swiper-container {
   width: 95%;
-
+  padding-top: rem(16);
   @include mq('pc') {
     width: auto;
   }
