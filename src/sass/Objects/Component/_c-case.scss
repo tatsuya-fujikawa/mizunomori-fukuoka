@@ -99,6 +99,7 @@
   }
 
   &__table {
+    padding-bottom: rem(16);
     dl {
       border: 2px solid #DDDDDD;
       display: flex;
@@ -303,10 +304,11 @@
 
     &:not(.on) {
       @include mq('pc') {
-        max-height: 330px;
+        max-height: 340px;
       }
     }
   }
+
 
 
 }

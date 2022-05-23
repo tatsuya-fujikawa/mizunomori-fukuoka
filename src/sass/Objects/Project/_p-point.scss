@@ -132,6 +132,7 @@
   &__pointImg {
     flex-basis: 45%;
     padding-left: 5px;
+    padding-right: 5px;
     margin: 0 auto;
 
     img {
@@ -177,6 +178,14 @@
   &__bottomLeft {
     @include mq('pc') {
       padding-right: rem(40);
+    }
+  }
+
+  &__boxSentence {
+    font-size: rem(12);
+
+    @include mq('pc') {
+      font-size: rem(16);
     }
   }
 }
