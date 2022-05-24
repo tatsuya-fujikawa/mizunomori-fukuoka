@@ -169,6 +169,10 @@
     border-top: 1px solid #1A1A1A;
     max-width: 70%;
     margin: 0 auto;
+
+    &-WithoutBorder {
+      border-top: none;
+    }
   }
 
   &__listItem {
@@ -306,6 +310,17 @@
       @include mq('pc') {
         max-height: 340px;
       }
+    }
+  }
+
+  &__tag {
+    padding: rem(16) rem(0);
+
+    span {
+      display: inline-block;
+      padding: rem(4) rem(12);
+      background-color: #FFECC9;
+      border-radius: 6px;
     }
   }
 }

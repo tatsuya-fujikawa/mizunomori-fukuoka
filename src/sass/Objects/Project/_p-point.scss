@@ -156,11 +156,8 @@
     color: var(--color-white);
     max-width: 165px;
     border-radius: 5000px;
+    padding: rem(4) rem(6);
 
-    &:hover {
-      opacity: 0.8;
-      transition: 0.2s ease;
-    }
 
     @include mq('pc') {
       font-size: rem(16);
@@ -170,6 +167,11 @@
     a {
       display: block;
       padding: rem(8) rem(10);
+
+      &:hover {
+        opacity: 0.8;
+        transition: 0.2s ease;
+      }
 
     }
   }

@@ -77,6 +77,67 @@
       }
     }
   }
+
+  &__hyaluronanList {
+    padding-top: rem(16);
+
+    li {
+      padding-bottom: rem(32);
+    }
+  }
+
+  &__hyaluronanListTitle {
+    font-size: rem(18);
+    font-weight: bold;
+    font-family: $mainFont;
+    margin-bottom: rem(16);
+
+    span {
+      display: inline-block;
+      margin-right: rem(24);
+      position: relative;
+      text-align: center;
+      width: 30px;
+      color: var(--color-white);
+      z-index: 0;
+
+
+      &:before {
+        background-color: #F7D093;
+        content: "";
+        height: 30px;
+        left: 0;
+        position: absolute;
+        transform: rotate(45deg);
+        width: 30px;
+        z-index: -1;
+      }
+    }
+  }
+
+  &__hyaluronanPicture {
+    width: 90%;
+    box-shadow: 18px 18px 0 #F0F0F0;
+  }
+
+  &__hyaluronanRightBox {
+    padding-top: rem(32);
+    @include mq('pc') {
+      padding-top: 0;
+    }
+  }
+}
+
+.c-about__hyaluronanPicture[data-style="02"] {
+  box-shadow: 18px 18px 0 #EDF8F8;
+}
+
+.c-about__hyaluronanPicture[data-style="03"] {
+  box-shadow: 18px 18px 0 #C8EAE8;
+}
+
+.c-about__hyaluronanPicture[data-style="04"] {
+  box-shadow: 18px 18px 0 #A5DDDB;
 }
 
 .c-about__box[data-style="ordinaryStyle"] {
