@@ -199,6 +199,10 @@
       font-size: rem(16);
     }
   }
+
+  &__figure {
+    padding: rem(0) rem(8);
+  }
 }
 
 .p-point__lead[data-style="black"] {
