@@ -329,6 +329,11 @@
   }
 }
 
+.c-case__card[data-style="arm"] .swiper-container img {
+  height: 160px;
+  object-fit: cover;
+}
+
 .c-case__boxInner[data-style="photo"] {
   @include mq('pc') {
     width: 840px;
