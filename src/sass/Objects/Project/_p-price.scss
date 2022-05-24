@@ -116,6 +116,31 @@
       }
     }
   }
+
+  &__hyaluronanInner {
+    background-color: #F8F8F8;
+    padding: rem(24) rem(20);
+
+    @include mq('pc') {
+      padding: rem(48) rem(80); 
+    }
+  }
+
+  &__hyaluronanTextBox {
+    padding-top: rem(20);
+
+    & + & {
+      padding-top: rem(40);
+    }
+  }
+  
+  &__hyaluronanLead {
+    color: #3EA49F;
+    font-weight: bold;
+    font-family: $mainFont;
+    font-size: rem(18);
+    padding-bottom: rem(8);
+  }
 } 
 
 .p-price {
@@ -129,7 +154,7 @@
     margin-top: rem(12);
 
     dt {
-      min-width: 80px;
+      min-width: 90px;
       background-color: #F0F0F0;
       display: flex;
       align-items: center;
@@ -170,6 +195,11 @@
     }
   }
 
+  &__tableNotop {
+    margin-top: 0;
+    border-top: none;
+  }
+
   &__table[data-type="table_pink"] {
     border: 2px solid #FDE9ED;
 
@@ -180,12 +210,17 @@
 
   &__tableRight {
     width: calc(100% - 80px);
-    padding: rem(0) rem(12);
+    padding: rem(0) rem(8);
 
     @include mq('pc') {
       width: calc(100% - 180px);
       padding: rem(0) rem(32);
     }
+  }
+
+  &__alignRight {
+    display: block;
+    text-align: right;
   }
 
   &__link {

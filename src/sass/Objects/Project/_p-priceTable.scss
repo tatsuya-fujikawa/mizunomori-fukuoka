@@ -53,3 +53,11 @@
     }
   }
 }
+
+.p-priceTable__listLeft[data-style="multipleLines"] {
+
+  line-height: 16px;
+  @include mq('pc') {
+    line-height: 20px;
+  }
+}
