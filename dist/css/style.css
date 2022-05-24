@@ -1768,6 +1768,10 @@ img {
   width: 80%;
 }
 
+.c-jumbotron__title[data-style=black] span {
+  color: #585858;
+}
+
 .c-readingSection__title {
   font-family: fot-tsukuardgothic-std, sans-serif;
   font-size: 1.25rem;
