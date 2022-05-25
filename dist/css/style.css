@@ -608,6 +608,10 @@ img {
   }
 }
 
+.l-method__failure {
+  margin-top: 2.5rem;
+}
+
 .l-priceTable__wrap {
   padding-top: 1rem;
 }
@@ -2955,6 +2959,19 @@ img {
   border-right: 2px solid var(--color-white);
 }
 
+.p-hyaluronanType__box {
+  border: 1px solid #DBDBDB;
+  border-radius: 6px;
+  margin-top: 2.25rem;
+  padding: 1.5rem;
+}
+@media screen and (min-width: 960px) {
+  .p-hyaluronanType__box {
+    margin-top: 3.5rem;
+    padding: 3rem;
+  }
+}
+
 #p-modal-1 {
   -webkit-animation: fadeIn 0.5s ease;
           animation: fadeIn 0.5s ease;
@@ -3119,6 +3136,79 @@ img {
 @media screen and (min-width: 960px) {
   .p-priceTable__listLeft[data-style=multipleLines] {
     line-height: 20px;
+  }
+}
+
+.p-method__lead {
+  color: #3EA49F;
+  font-family: fot-tsukuardgothic-std, sans-serif;
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding-top: 2.5rem;
+  text-align: center;
+}
+@media screen and (min-width: 960px) {
+  .p-method__lead {
+    font-size: 1.375rem;
+  }
+}
+.p-method__top {
+  padding-top: 2.5rem;
+}
+.p-method__failure {
+  background-color: #F0F0F0;
+}
+.p-method__failureInner {
+  padding: 1.875rem 1rem 3.375rem;
+}
+@media screen and (min-width: 960px) {
+  .p-method__failureInner {
+    padding: 3rem 3rem;
+  }
+}
+.p-method__failureTitle {
+  color: #3EA49F;
+  font-family: fot-tsukuardgothic-std, sans-serif;
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-align: center;
+}
+.p-method__failureBox {
+  padding-top: 1.5rem;
+}
+.p-method__failureBox + .p-method__failureBox {
+  padding-top: 3rem;
+}
+.p-method__failureLead {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+@media screen and (min-width: 960px) {
+  .p-method__failureLead {
+    font-size: 1rem;
+  }
+}
+.p-method__failureLead:after {
+  background-color: #333333;
+  bottom: -2px;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 60%;
+}
+@media screen and (min-width: 960px) {
+  .p-method__failureLead:after {
+    width: 50%;
+  }
+}
+.p-method__failureSentence {
+  padding-top: 0.5rem;
+}
+@media screen and (min-width: 960px) {
+  .p-method__failureSentence {
+    padding-left: 1rem;
   }
 }
 
@@ -5284,6 +5374,12 @@ img {
 
 .u-narrow {
   width: 80%;
+}
+
+@media screen and (min-width: 960px) {
+  .u-narrowPC {
+    width: 80%;
+  }
 }
 
 .u-marginAuto {
