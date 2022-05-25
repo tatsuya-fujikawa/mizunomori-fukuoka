@@ -162,3 +162,7 @@
   background-color: #D3D3D3;
   color: var(--color-text);
 }
+
+.p-reservationFlow__tag[data-style="long"] span {
+  width: 270px;
+}

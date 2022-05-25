@@ -250,3 +250,19 @@
   }
 
 }
+
+.p-price__table[data-style="priceBotox"] dt{
+  min-width: 140px;
+
+  @include mq('pc') {
+    min-width: 300px;
+  }
+}
+
+.p-price__table[data-style="priceBotox"] .p-price__tableRight {
+  width: calc(100% - 140px);
+}
+
+.p-price__table[data-style="priceBotox"] dd span {
+  max-width: 100%;
+}
