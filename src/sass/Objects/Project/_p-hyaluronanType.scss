@@ -1,0 +1,16 @@
+.p-hyaluronanType {
+
+  &__box {
+    margin-top: rem(36);
+    border-radius: 6px;
+    border: 1px solid #DBDBDB;
+    padding: rem(24);
+
+    @include mq('pc') {
+      margin-top: rem(56);
+      padding: rem(48);
+    }
+  }
+
+
+}

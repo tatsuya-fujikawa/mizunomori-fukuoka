@@ -125,6 +125,12 @@
 .u-narrow {
     width: 80%;
 }
+.u-narrowPC {
+    @include mq('pc') {
+        width: 80%;
+    }
+}
+
 .u-marginAuto {
     margin: 0 auto;
 }
