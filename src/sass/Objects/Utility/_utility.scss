@@ -130,6 +130,11 @@
         width: 80%;
     }
 }
+.u-narrowSP {
+    @include mq('sp') {
+        width: 80%;
+    }
+}
 
 .u-marginAuto {
     margin: 0 auto;
