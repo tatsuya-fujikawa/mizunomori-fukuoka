@@ -1261,6 +1261,18 @@ img {
     padding-top: 0;
   }
 }
+.c-about__botoxTag {
+  padding-top: 1rem;
+  text-align: center;
+}
+.c-about__botoxTag span {
+  background-color: #3A3A3A;
+  color: var(--color-white);
+  font-family: fot-tsukuardgothic-std, sans-serif;
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
 
 .c-about__hyaluronanPicture[data-style="02"] {
   box-shadow: 18px 18px 0 #EDF8F8;
@@ -4079,6 +4091,23 @@ img {
   width: 5px;
 }
 
+.p-price__table[data-style=priceBotox] dt {
+  min-width: 140px;
+}
+@media screen and (min-width: 960px) {
+  .p-price__table[data-style=priceBotox] dt {
+    min-width: 300px;
+  }
+}
+
+.p-price__table[data-style=priceBotox] .p-price__tableRight {
+  width: calc(100% - 140px);
+}
+
+.p-price__table[data-style=priceBotox] dd span {
+  max-width: 100%;
+}
+
 .p-point__lead {
   color: #3EA49F;
   font-family: fot-tsukuardgothic-std, sans-serif;
@@ -4506,6 +4535,10 @@ img {
 .p-reservationFlow__tag[data-style=afterTreatment] span {
   background-color: #D3D3D3;
   color: var(--color-text);
+}
+
+.p-reservationFlow__tag[data-style=long] span {
+  width: 270px;
 }
 
 .p-diagnosisListWrap__flex {
@@ -5378,6 +5411,12 @@ img {
 
 @media screen and (min-width: 960px) {
   .u-narrowPC {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .u-narrowSP {
     width: 80%;
   }
 }
