@@ -1,0 +1,78 @@
+.p-method {
+  &__lead {
+    padding-top: rem(40);
+    text-align: center;
+    color: #3EA49F;
+    font-weight: bold;
+    font-size: rem(18);
+    font-family: $mainFont;
+
+    @include mq('pc') {
+      font-size: rem(22);
+    }
+  }
+
+  &__top {
+    padding-top: rem(40);
+  }
+
+  &__failure {
+    background-color: #F0F0F0;
+  }
+
+  &__failureInner {
+    padding: rem(30) rem(16) rem(54);
+
+    @include mq('pc') {
+      padding: rem(48) rem(48);
+    }
+  }
+
+  &__failureTitle {
+    text-align: center;
+    color: #3EA49F;
+    font-size: rem(18);
+    font-family: $mainFont;
+    font-weight: bold;
+  }
+
+  &__failureBox {
+    padding-top: rem(24);
+
+    & + & {
+      padding-top: rem(48);
+    }
+  }
+
+  &__failureLead {
+    font-size: rem(14);
+    margin-bottom: rem(16);
+    position: relative;
+
+    @include mq('pc') {
+      font-size: rem(16);
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      width: 60%;
+      height: 1px;
+      background-color: #333333;
+      bottom: -2px;
+      left: 0;
+
+      @include mq('pc') {
+        width: 50%;
+
+      }
+    }
+  }
+
+  &__failureSentence {
+    padding-top: rem(8);
+    @include mq('pc') {
+      padding-left: rem(16);
+    }
+  }
+}
