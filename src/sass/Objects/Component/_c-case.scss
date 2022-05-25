@@ -354,3 +354,26 @@
     width: 840px;
   }
 }
+
+.c-case__list[data-style="skin"] {
+  max-width: 95%;
+  border-top: none;
+  margin-top: rem(12);
+}
+.c-case__list[data-style="skin"] li {
+  color: #3ea49f;
+  font-size: rem(12);
+  text-align: center;
+  padding-bottom: rem(8);
+
+  @include mq('pc') {
+    font-size: rem(14);
+  }
+
+}
+
+.c-case__boxInner[data-style="skin"] {
+  @include mq('sp') {
+    padding: 0 rem(12);
+  }
+}

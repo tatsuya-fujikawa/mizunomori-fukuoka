@@ -83,5 +83,57 @@
     }
   }
 
+  &__skinTitle {
+    font-size: rem(14);
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: $mainFont;
+    text-align: center;
+
+    @include mq('pc') {
+      font-size: rem(20);
+    }
+  }
+
+  &__skinBox {
+    padding: rem(24) 0 rem(12);
+    border: 1px solid #a3d3d1;
+    background-color: #fcfcfc;
+    margin-top: rem(28);
+
+    @include mq('pc') {
+      width: 75%;
+      margin: rem(40) auto 0;
+    }
+  }
+
+  &__skinLead {
+    text-align: center;
+    font-size: rem(14);
+    font-family: $mainFont;
+    font-weight: bold;
+
+    @include mq('pc') {
+      font-size: rem(20);
+    }
+  }
+
+  &__skinLisk {
+    padding-top: rem(24);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    span {
+      padding: rem(0) rem(12);
+    }
+  }
+
+  &__skinSmallText {
+    text-align: center;
+    font-size: rem(12);
+    padding-top: rem(24);
+  }
+
+
 
 }
