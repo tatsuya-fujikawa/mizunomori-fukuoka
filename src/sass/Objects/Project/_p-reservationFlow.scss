@@ -140,6 +140,25 @@
     padding-bottom: rem(4);
     font-weight: bold;
   }
+
+  &__faceWrap {
+    padding: rem(16) 0;
+    margin: rem(24) auto 0;
+    width: 90%;
+    border-radius: 6px;
+    background-color: #FFD696;
+  }
+  &__faceList {
+    width: 95%;
+    margin: 0 auto;
+    font-size: rem(12);
+
+    @include mq('pc') {
+      font-size: rem(14);
+    }
+
+  }
+
 }
 
 .p-reservationFlow[data-style="onTheDay"] {
@@ -165,4 +184,11 @@
 
 .p-reservationFlow__tag[data-style="long"] span {
   width: 270px;
+}
+
+.p-reservationFlow__faceWrap[data-style="onTheDay"] {
+  background-color: #3EA49F;
+}
+.p-reservationFlow__faceList[data-style="onTheDay"] {
+  color: var(--color-white);
 }
