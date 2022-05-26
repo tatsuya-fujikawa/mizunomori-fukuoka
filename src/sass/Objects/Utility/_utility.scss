@@ -100,6 +100,9 @@
 .u-bold {
     font-weight: bold;
 }
+.u-expantion {
+    font-size: 1.125em;
+}
 .u-bgCircle {
     position: absolute;
     content: '';
@@ -174,4 +177,13 @@
     background-repeat: no-repeat;
     background-position: right 2px center;
     background-size: 12px;
+}
+
+.u-indent {
+	padding-left:1em;
+	text-indent:-1em;
+}
+
+.u-mainFont {
+    font-family: $mainFont;
 }
