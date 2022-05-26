@@ -15,6 +15,11 @@
   &__listItem {
     position: relative;
     padding-bottom: rem(6);
+    text-align: right;
+
+    @include mq('pc') {
+      text-align:left;
+    }
 
     a {
       color: #3EA49F;
@@ -134,6 +139,22 @@
     padding-top: rem(24);
   }
 
+  &__description {
+    padding-bottom: rem(16);
+    font-size: rem(14);
+    display: flex;
+    align-items: flex-start;
+
+    @include mq('sp') {
+      justify-content: space-between;
+    }
+
+    span {
+      padding-right: rem(16);
+      padding-left: rem(8);
+      display: inline-block;
+    }
+  }
 
 
 }
