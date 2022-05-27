@@ -52,6 +52,10 @@
       font-size: .75em;
     }
   }
+
+  &__listSmall {
+    font-size: rem(10);
+  }
 }
 
 .p-priceTable__listLeft[data-style="multipleLines"] {
