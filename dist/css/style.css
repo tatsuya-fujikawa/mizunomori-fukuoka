@@ -2809,6 +2809,19 @@ img {
 .p-reasonsLower__sentence {
   padding: 0.75rem 1.25rem 0 1.25rem;
 }
+.p-reasonsLower__pointWrap {
+  border: 1px solid #707070;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.p-reasonsLower__pointPoint {
+  padding-bottom: 1rem;
+}
+.p-reasonsLower__pointPoint span {
+  background-color: #F3E73D;
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+}
 
 .p-rumor {
   overflow: hidden;
@@ -4189,20 +4202,20 @@ img {
   width: 5px;
 }
 
-.p-price__table[data-style=priceBotox] dt {
+.p-price__table[data-style=priceWide] dt {
   min-width: 140px;
 }
 @media screen and (min-width: 960px) {
-  .p-price__table[data-style=priceBotox] dt {
+  .p-price__table[data-style=priceWide] dt {
     min-width: 300px;
   }
 }
 
-.p-price__table[data-style=priceBotox] .p-price__tableRight {
+.p-price__table[data-style=priceWide] .p-price__tableRight {
   width: calc(100% - 140px);
 }
 
-.p-price__table[data-style=priceBotox] dd span {
+.p-price__table[data-style=priceWide] dd span {
   max-width: 100%;
 }
 
