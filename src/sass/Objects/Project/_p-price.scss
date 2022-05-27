@@ -251,7 +251,7 @@
 
 }
 
-.p-price__table[data-style="priceBotox"] dt{
+.p-price__table[data-style="priceWide"] dt{
   min-width: 140px;
 
   @include mq('pc') {
@@ -259,10 +259,10 @@
   }
 }
 
-.p-price__table[data-style="priceBotox"] .p-price__tableRight {
+.p-price__table[data-style="priceWide"] .p-price__tableRight {
   width: calc(100% - 140px);
 }
 
-.p-price__table[data-style="priceBotox"] dd span {
+.p-price__table[data-style="priceWide"] dd span {
   max-width: 100%;
 }
