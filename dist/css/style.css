@@ -3178,6 +3178,9 @@ img {
 .p-priceTable__listItem small {
   font-size: 0.75em;
 }
+.p-priceTable__listSmall {
+  font-size: 0.625rem;
+}
 
 .p-priceTable__listLeft[data-style=multipleLines] {
   line-height: 16px;
