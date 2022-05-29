@@ -139,6 +139,12 @@
       font-family: $mainFont;
     }
   }
+
+  &__eyeLead {
+    padding-top: rem(16);
+    font-size: rem(16);
+    color: #F793A5;
+  }
 }
 
 .c-about__hyaluronanPicture[data-style="02"] {

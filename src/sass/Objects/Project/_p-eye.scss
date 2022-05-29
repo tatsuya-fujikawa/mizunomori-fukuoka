@@ -1,0 +1,95 @@
+.p-eye {
+    &__case {
+        margin-bottom: rem(20);
+
+        &:first-of-type {
+            margin-top: rem(24);
+        }
+    }
+
+    &__caseTitle {
+        background-color: var(--color-main);
+        text-align: center;
+        padding: rem(6) 0;
+        font-family: $mainFont;
+        font-size: rem(16);
+    }
+
+    &__caseInner {
+        padding: rem(12) rem(16);
+    }
+
+    &__caseLeft {
+        flex-basis: 40%;
+    }
+
+    &__caseRight {
+        flex-basis: 60%;
+        padding-left: rem(8);
+    }
+
+    &__tableWrap {
+        width: 100%;
+        margin: rem(24) auto 0;
+        font-family: 游明朝体, Yu Mincho, YuMincho, ヒラギノ明朝 Pro W3, Hiragino Mincho Pro, ＭＳ\ Ｐ明朝, MS PMincho, メイリオ, Meiryo, serif;
+
+        @include mq('pc') {
+            // width: 90%;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th.heading {
+            text-align: center;
+            font-size: rem(16);
+            background-color: #8e8e8e;
+            color: #fff;
+            border: 1px solid #dadada;
+            padding: rem(16);
+
+            @include mq('pc') {
+                font-size: rem(18);
+            }
+        }
+
+        tr td {
+            padding: rem(12);
+            background-color: #fff;
+            border-right: 1px solid #dadada;
+            border-bottom: 1px solid #dadada;
+            font-size: rem(14);
+
+            @include mq('pc') {
+                padding: rem(16);
+            }
+        }
+
+        td.heading {
+            width: 15%;
+            background-color: #8e8e8e;
+            color: #fff;
+            text-align: center;
+            font-size: rem(16);
+            border-bottom: 1px solid #dadada;
+
+            @include mq('pc') {
+                font-size: rem(18);
+                width: 20%;
+            }
+        }
+    }
+
+    &__selectWrap {
+        padding: rem(16);
+        border-radius: rem(12);
+        border: 1px solid #dadada;
+    }
+
+    &__selectLead {
+        font-size: rem(18);
+        border-bottom: 1px solid #dadada;
+        margin-bottom: rem(16);
+    }
+}
