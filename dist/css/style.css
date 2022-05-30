@@ -1664,6 +1664,16 @@ img {
   }
 }
 
+.c-case__card[data-style=caseLower] {
+  padding: 1rem 0.5rem;
+}
+@media screen and (min-width: 960px) {
+  .c-case__card[data-style=caseLower] {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+}
+
 .c-navigation__list {
   background-color: var(--color-white);
   box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.05);
@@ -5809,4 +5819,10 @@ img {
 
 .c-case .swiper-container {
   max-width: 360px;
+}
+
+@media screen and (min-width: 960px) {
+  .c-case[data-style=caseLower] .swiper-container {
+    max-width: 600px;
+  }
 }
