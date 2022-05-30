@@ -377,3 +377,13 @@
     padding: 0 rem(12);
   }
 }
+
+.c-case__card[data-style="caseLower"] {
+
+  padding: rem(16) rem(8);
+
+  @include mq('pc') {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}

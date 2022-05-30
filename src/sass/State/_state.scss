@@ -89,3 +89,9 @@
 .c-case .swiper-container {
   max-width: 360px;
 }
+
+.c-case[data-style="caseLower"] .swiper-container {
+  @include mq('pc') {
+    max-width: 600px;
+  }
+}
