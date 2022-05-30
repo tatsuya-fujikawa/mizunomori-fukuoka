@@ -72,6 +72,9 @@ const createSwiper = () => {
 
 swiperCases = new Swiper('.swiper__cases', {
   effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
   loop: true,
   slidesPerView: 1,
   spaceBetween: 30,
