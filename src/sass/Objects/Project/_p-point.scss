@@ -290,6 +290,7 @@
 }
 
 .p-point__pointTitle.-long {
+  max-width: 60%;
   @include mq('pc') {
     max-width: 330px;
   }
