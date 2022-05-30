@@ -142,6 +142,21 @@
     border-radius: 0;
     left: 8px;
   }
+
+  &[data-type="priceTable"] {
+      font-size: rem(16);
+      text-align: left;
+      margin-left: rem(20);
+      color: #a5dddb;
+    @include mq('pc') {
+      font-size: rem(18);
+      margin-left: rem(28);
+    }
+  }
+
+  &[data-type="priceTable"]:before {
+    background-color: #A5DDDB;
+  }
 }
 
 .c-heading__Lower {
