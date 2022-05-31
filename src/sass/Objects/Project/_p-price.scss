@@ -249,6 +249,15 @@
     }
   }
 
+  &__subTitle {
+    font-size: rem(12);
+    padding-top: rem(8);
+
+    @include mq('pc') {
+      font-size: rem(14);
+    }
+  }
+
 }
 
 .p-price__table[data-style="priceWide"] dt{
