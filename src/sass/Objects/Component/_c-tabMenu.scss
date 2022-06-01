@@ -66,6 +66,142 @@
 
 }
 
+//ダイエットページ複数のタブメニュー切り替え用
+.c-tabMenu {
+  &__tab-menu02 {
+    display: flex;
+    justify-content: space-between;
+    border-collapse: collapse;
+    /* border-bottom: 1px solid #323232; */
+    position: relative;
+    padding: 1px;
+  }
+
+  &__tab-menu02 li {
+    width: 25%;
+    border-radius: 8px 8px 0 0;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    padding: 2px;
+  }
+
+  &__tab-menu02 li a {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    padding: rem(32) 0;
+    color: var(--color-font);
+    text-decoration: none;
+    background-color: var(--color-main);
+    border-radius: 16px 16px 0 0;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+
+  &__tab-menu02 li a span {
+    display: block;
+    font-size: 1.5em;
+  }
+  &__tab-menu02 li a.active {
+    color: #363636;
+    background-color: #c9ebe9;
+    border-bottom: none;
+    position: relative;
+    top: 3px;
+    transition: 0.2s ease;
+  }
+  
+  .p-runmor__tab-menu02 li a:not(.active):hover {
+    opacity: 0.5;
+    transition: 0.4s;
+  }
+  
+  &__content02 {
+    display: none;
+    transition: all 0.3s ease;
+  }
+  &__content02.active {
+    display: block;
+    background-color: #c9ebe9;
+    color: var(--color-font);
+    font-size: 1.125rem;
+    padding: rem(40) rem(80);
+    border-top: none;
+    margin: 0 2px;
+    border-radius: 0 0 16px 16px;
+  }
+
+}
+.c-tabMenu {
+  &__tab-menu03 {
+    display: flex;
+    justify-content: space-between;
+    border-collapse: collapse;
+    /* border-bottom: 1px solid #323232; */
+    position: relative;
+    padding: 1px;
+  }
+
+  &__tab-menu03 li {
+    width: 25%;
+    border-radius: 8px 8px 0 0;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    padding: 2px;
+  }
+
+  &__tab-menu03 li a {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    padding: rem(32) 0;
+    color: var(--color-font);
+    text-decoration: none;
+    background-color: var(--color-main);
+    border-radius: 16px 16px 0 0;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+
+  &__tab-menu03 li a span {
+    display: block;
+    font-size: 1.5em;
+  }
+  &__tab-menu03 li a.active {
+    color: #363636;
+    background-color: #c9ebe9;
+    border-bottom: none;
+    position: relative;
+    top: 3px;
+    transition: 0.2s ease;
+  }
+  
+  .p-runmor__tab-menu03 li a:not(.active):hover {
+    opacity: 0.5;
+    transition: 0.4s;
+  }
+  
+  &__content03 {
+    display: none;
+    transition: all 0.3s ease;
+  }
+  &__content03.active {
+    display: block;
+    background-color: #c9ebe9;
+    color: var(--color-font);
+    font-size: 1.125rem;
+    padding: rem(40) rem(80);
+    border-top: none;
+    margin: 0 2px;
+    border-radius: 0 0 16px 16px;
+  }
+
+}
+
 .c-tabMenu[data-style="bust"] {
   width: 95%;
   margin: 0 auto;
@@ -77,11 +213,13 @@
   }
 }
 
-.c-tabMenu__tab-menu[data-style="bust"] li {
+.c-tabMenu__tab-menu02[data-style="bust"] li, 
+.c-tabMenu__tab-menu03[data-style="bust"] li {
   width: 50%;
 }
 
-.c-tabMenu__tab-menu[data-style="bust"] li a {
+.c-tabMenu__tab-menu02[data-style="bust"] li a, 
+.c-tabMenu__tab-menu03[data-style="bust"] li a {
   background-color: #f2f2f2;
   font-size: rem(12);
   padding: rem(24) 0;
@@ -91,16 +229,17 @@
     font-size: rem(14);
   }
 }
-.c-tabMenu__tab-menu[data-style="bust"] li a.active {
+.c-tabMenu__tab-menu02[data-style="bust"] li a.active {
   background-color: #c9ebe9;
 }
-.c-tabMenu__content[data-style="bust"] {
+.c-tabMenu__content02[data-style="bust"], 
+.c-tabMenu__content03[data-style="bust"] {
   padding: rem(24) rem(16);
 }
-.c-tabMenu__content[data-style01="yellow"]  {
+.c-tabMenu__content03[data-style01="yellow"]  {
   background-color: #fff0cb;
 }
 
-.c-tabMenu__tab-menu[data-style01="yellow"] li a.active {
+.c-tabMenu__tab-menu03[data-style01="yellow"] li a.active {
   background-color: #fff0cb;
 }
