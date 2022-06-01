@@ -172,6 +172,18 @@
     margin: 0 0 0 auto;
   }
 
+  &__pointTitle {
+    background-color: #3EA49F;
+    border-radius: 5000px;
+    color: var(--color-white);
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-size: 0.875rem;
+    font-weight: bold;
+    max-width: 165px;
+    padding: 0.25rem 0.375rem;
+    text-align: center;
+  }
+
 }
 
 .p-attention__title[data-style="reverse"] {
@@ -196,5 +208,12 @@
     // margin:0 0 0 auto;
     margin: 0 auto;
     padding: rem(28) rem(40);
+  }
+}
+
+.p-attention__pointTitle.-long {
+  max-width: 70%;
+  @include mq('pc') {
+    max-width: 330px;
   }
 }
