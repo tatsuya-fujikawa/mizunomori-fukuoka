@@ -974,6 +974,50 @@ img {
   padding: 2.5rem 5rem;
 }
 
+.c-tabMenu[data-style=bust] {
+  margin: 0 auto;
+  padding-bottom: 4rem;
+  width: 95%;
+}
+@media screen and (min-width: 960px) {
+  .c-tabMenu[data-style=bust] {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+.c-tabMenu__tab-menu[data-style=bust] li {
+  width: 50%;
+}
+
+.c-tabMenu__tab-menu[data-style=bust] li a {
+  background-color: #f2f2f2;
+  display: block;
+  font-size: 0.75rem;
+  padding: 1.5rem 0;
+}
+@media screen and (min-width: 960px) {
+  .c-tabMenu__tab-menu[data-style=bust] li a {
+    font-size: 0.875rem;
+  }
+}
+
+.c-tabMenu__tab-menu[data-style=bust] li a.active {
+  background-color: #c9ebe9;
+}
+
+.c-tabMenu__content[data-style=bust] {
+  padding: 1.5rem 1rem;
+}
+
+.c-tabMenu__content[data-style01=yellow] {
+  background-color: #fff0cb;
+}
+
+.c-tabMenu__tab-menu[data-style01=yellow] li a.active {
+  background-color: #fff0cb;
+}
+
 .c-sentence {
   color: var(--color-font);
   font-size: 0.875rem;
@@ -3051,6 +3095,31 @@ img {
   }
 }
 
+.p-bust__card {
+  background-color: #edf8f8;
+  margin-bottom: 1.875rem;
+  margin-top: 0.5rem;
+  padding: 0 1rem 1rem;
+}
+@media screen and (min-width: 960px) {
+  .p-bust__card {
+    padding: 0 1.875rem 1.5rem 1.875rem;
+  }
+}
+.p-bust__cardTitle {
+  font-family: fot-tsukuardgothic-std, sans-serif;
+  position: relative;
+  text-align: center;
+  top: -16px;
+}
+.p-bust__cardSentence {
+  font-size: 0.875rem;
+}
+
+.p-bust__card[data-style01=yellow] {
+  background-color: #fff9ea;
+}
+
 #p-modal-1 {
   -webkit-animation: fadeIn 0.5s ease;
           animation: fadeIn 0.5s ease;
@@ -3219,6 +3288,23 @@ img {
   .p-priceTable__listLeft[data-style=multipleLines] {
     line-height: 20px;
   }
+}
+
+.p-priceTable__list[data-style=long] {
+  padding: 1rem 0.5rem;
+}
+
+.p-priceTable__listItem[data-style=long] {
+  width: 100%;
+}
+@media screen and (min-width: 960px) {
+  .p-priceTable__listItem[data-style=long] {
+    width: 65%;
+  }
+}
+
+.p-priceTable__listItem[data-style=long] a {
+  line-height: 12px;
 }
 
 .p-method__lead {
@@ -4472,7 +4558,6 @@ img {
 }
 .p-point__pointText {
   font-size: 0.75rem;
-  max-width: 160px;
   padding: 0.5rem 0 1rem;
 }
 @media screen and (min-width: 960px) {
@@ -5695,6 +5780,10 @@ img {
 
 .u-accentColor {
   color: #3EA49F;
+}
+
+.u-priceColor {
+  color: #ff7db9;
 }
 
 .u-grayColor {
