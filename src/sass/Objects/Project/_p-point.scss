@@ -290,8 +290,15 @@
 }
 
 .p-point__pointTitle.-long {
-  max-width: 60%;
+  max-width: 65%;
   @include mq('pc') {
     max-width: 330px;
+  }
+}
+
+.p-point__boxInner[data-style="fullwidth"] {
+  @include mq('sp') {
+    margin: 0 calc(50% - 50vw);
+    width: auto;
   }
 }
