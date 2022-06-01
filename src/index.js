@@ -1,9 +1,13 @@
 import { tabSwitch } from "./js/tabmenu";
+import { tabSwitchDiet02 } from "./js/tabmenuDiet";
+import { tabSwitchDiet03 } from "./js/tabmenuDiet";
 import { humbergerButton } from "./js/humberger";
 
 import "./sass/style.scss";
 
 tabSwitch();
+tabSwitchDiet02();
+tabSwitchDiet03();
 humbergerButton();
 
 $(function () {
