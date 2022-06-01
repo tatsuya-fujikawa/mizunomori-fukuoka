@@ -1,0 +1,29 @@
+.p-mouth {
+    &__card {
+        border: 4px solid #3EA49F;
+        border-top: 6px solid #3EA49F;
+        border-bottom: 6px solid #3EA49F;
+        background-color: var(--color-white);
+        padding: rem(4) rem(6);
+        margin-bottom: rem(16);
+
+        @include mq('pc') {
+            padding: rem(12) rem(16);
+        }
+    }
+
+    &__cardLeft {
+        flex-basis: 60%;
+        padding-right: rem(16);
+    }
+    &__cardRight {
+        flex-basis: 40%;
+    }
+
+    &__circle {
+        margin: rem(8);
+        background-color: #FFECC9;
+        border-radius: 5000px;
+        padding: rem(14) rem(16);
+    }
+}
