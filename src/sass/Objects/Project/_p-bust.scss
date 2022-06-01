@@ -1,0 +1,26 @@
+.p-bust {
+    &__card {
+        background-color: #edf8f8;
+        // border-radius: rem(16);
+        padding: 0 rem(16) rem(16);
+        margin-top: rem(8);
+        margin-bottom: rem(30);
+
+        @include mq('pc') {
+        padding: 0 rem(30) rem(24) rem(30);
+        }
+    }
+    &__cardTitle {
+        text-align: center;
+        font-family: $mainFont;
+        position: relative;
+        top: -16px;
+    }
+    &__cardSentence {
+        font-size: rem(14);
+    }
+}
+
+.p-bust__card[data-style01="yellow"] {
+    background-color: #fff9ea;
+}

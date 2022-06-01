@@ -66,3 +66,41 @@
 
 }
 
+.c-tabMenu[data-style="bust"] {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: rem(64);
+
+  @include mq('pc') {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.c-tabMenu__tab-menu[data-style="bust"] li {
+  width: 50%;
+}
+
+.c-tabMenu__tab-menu[data-style="bust"] li a {
+  background-color: #f2f2f2;
+  font-size: rem(12);
+  padding: rem(24) 0;
+  display: block;
+
+  @include mq('pc') {
+    font-size: rem(14);
+  }
+}
+.c-tabMenu__tab-menu[data-style="bust"] li a.active {
+  background-color: #c9ebe9;
+}
+.c-tabMenu__content[data-style="bust"] {
+  padding: rem(24) rem(16);
+}
+.c-tabMenu__content[data-style01="yellow"]  {
+  background-color: #fff0cb;
+}
+
+.c-tabMenu__tab-menu[data-style01="yellow"] li a.active {
+  background-color: #fff0cb;
+}
