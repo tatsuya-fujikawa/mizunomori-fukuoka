@@ -3239,6 +3239,22 @@ img {
 .p-bust__cardSentence {
   font-size: 0.875rem;
 }
+.p-bust__underlineTitle {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  padding-top: 1.5rem;
+  position: relative;
+}
+.p-bust__underlineTitle:after {
+  background-color: #707070;
+  bottom: -3px;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 80%;
+}
 
 .p-bust__card[data-style01=yellow] {
   background-color: #fff9ea;
@@ -4797,7 +4813,7 @@ img {
 }
 
 .p-point__pointTitle.-long {
-  max-width: 65%;
+  max-width: 90%;
 }
 @media screen and (min-width: 960px) {
   .p-point__pointTitle.-long {
@@ -5990,6 +6006,10 @@ img {
 
 .u-underline {
   text-decoration: underline;
+}
+
+.u-half {
+  width: 50%;
 }
 
 .u-spacer__s {
