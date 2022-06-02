@@ -4,7 +4,7 @@
     <div class="l-mv p-mv">
             <div class="l-containerPc">
                 <picture class="p-mv__mv">
-                    <source srcset="./img/mv_pc.webp" media="(min-width:768px)" />
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/img/mv_pc.webp" media="(min-width:768px)" />
                     <img src="<?php echo get_template_directory_uri(); ?>/img/mv_sp.webp" alt="メインビュー">
                 </picture><!-- /p-mv__mv -->
             </div><!-- /l-containerPC -->

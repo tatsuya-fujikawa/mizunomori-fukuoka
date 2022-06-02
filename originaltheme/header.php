@@ -44,7 +44,7 @@
             <div class="p-header__top l-header__top c-flex c-flex__spaceBetween">
                 <div class="p-header__logo">
                     <div class="p-header__logo-top u-min">
-                        <img src="./img/logo.png" alt="水の森美容外科">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="水の森美容外科">
                         <span>福岡院</span>
                     </div><!-- /p-header__logo-top -->
                     <div class="p-header__logo-text u-min">
