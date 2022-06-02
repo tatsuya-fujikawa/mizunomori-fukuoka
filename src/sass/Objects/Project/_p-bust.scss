@@ -19,6 +19,24 @@
     &__cardSentence {
         font-size: rem(14);
     }
+
+    &__underlineTitle {
+        padding-top: rem(24);
+        margin-bottom: rem(16);
+        font-size: rem(16);
+        font-weight: bold;
+        position: relative;
+
+        &:after {
+            position: absolute;
+            content: '';
+            width: 80%;
+            height: 1px;
+            background-color: #707070;
+            left: 0;
+            bottom: -3px;
+        }
+    }
 }
 
 .p-bust__card[data-style01="yellow"] {
