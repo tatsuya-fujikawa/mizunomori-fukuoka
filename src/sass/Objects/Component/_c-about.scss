@@ -149,6 +149,13 @@
     font-size: rem(16);
     color: #F793A5;
   }
+
+  &__tag {
+    display: inline-block;
+    background-color: #3EA49F;
+    padding: rem(2) rem(4);
+    color: var(--color-white);
+  }
 }
 
 .c-about__hyaluronanPicture[data-style="02"] {
