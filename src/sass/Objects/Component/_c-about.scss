@@ -63,6 +63,10 @@
       max-width: 600px;
       margin: 0 auto;
     }
+
+    &.-nobottom {
+      padding-bottom: rem(0);
+    }
   }
 
   &__list {
