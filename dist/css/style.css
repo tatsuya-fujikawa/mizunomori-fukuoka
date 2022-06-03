@@ -1373,6 +1373,9 @@ img {
     padding: 1.25rem 0 2.5rem;
   }
 }
+.c-about__boxInner.-nobottom {
+  padding-bottom: 0rem;
+}
 .c-about__list {
   padding: 1rem 0;
 }
@@ -1445,6 +1448,12 @@ img {
   color: #F793A5;
   font-size: 1rem;
   padding-top: 1rem;
+}
+.c-about__tag {
+  background-color: #3EA49F;
+  color: var(--color-white);
+  display: inline-block;
+  padding: 0.125rem 0.25rem;
 }
 
 .c-about__hyaluronanPicture[data-style="02"] {
@@ -1638,7 +1647,7 @@ img {
 .c-case__list {
   border-top: 1px solid #1A1A1A;
   margin: 0 auto;
-  max-width: 70%;
+  max-width: 85%;
 }
 .c-case__list-WithoutBorder {
   border-top: none;
