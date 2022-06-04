@@ -37,6 +37,71 @@
             bottom: -3px;
         }
     }
+
+    &__types {
+        padding-top: rem(24);
+    }
+    &__typesInner {
+        background-color: #FFECC9;
+        padding: rem(12) rem(12);
+    }
+    &__typesLead {
+        text-align: center;
+
+        span {
+            border: 1px solid #FFD696;
+            background-color: var(--color-white);
+            padding: rem(4) rem(8);
+            display: inline-block;
+            margin-bottom: rem(12);
+        }
+    }
+
+    &__typesList {
+        font-size: rem(12);
+        padding-top: rem(12);
+        padding-bottom: rem(24);
+
+        @include mq('pc') {
+            font-size: rem(14);
+        }
+
+        li {
+            padding-right: rem(8);
+        }
+    }
+
+    &__typesTag {
+        background-color: #FFD696;
+        border-radius: 5000px;
+        font-family: fot-tsukuardgothic-std, sans-serif;
+        font-size: 0.875rem;
+        font-weight: bold;
+        padding: 0.25rem 0.375rem;
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+    &__typesSentence {
+        font-size: rem(12);
+
+        @include mq('pc') {
+            font-size: rem(14);
+        }
+    }
+}
+
+.p-bust__typesInner[data-style="perfectDiet"] {
+    background-color: #EDF8F8;
+}
+.p-bust__typesLead[data-style="perfectDiet"] {
+    span {
+        border: 1px solid #3EA49F;
+    }
+}
+.p-bust__typesTag[data-style="perfectDiet"] {
+    background-color: #3EA49F;
+    color: var(--color-white);
 }
 
 .p-bust__card[data-style01="yellow"] {

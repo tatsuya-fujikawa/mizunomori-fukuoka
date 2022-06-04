@@ -11,6 +11,7 @@
 
   &__box {
     padding-top: rem(36);
+    clear: both;
   }
 
   &__title {
@@ -205,6 +206,7 @@
   &__figure {
     padding: rem(0) rem(8);
   }
+
 }
 
 .p-point__lead[data-style="black"] {
