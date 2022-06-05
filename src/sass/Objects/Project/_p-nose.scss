@@ -1,0 +1,283 @@
+.p-nose {
+    &__table {
+        border-collapse: collapse;
+        font-size: rem(12);
+
+        @include mq('pc') {
+            font-size: rem(14);
+        }
+
+        th {
+            background: #dde0e2;
+            border: 2px solid #fff;
+            width: 197px;
+            padding: 10px 5px;
+            text-align: center;
+
+            &.p-nose__bgOrangeColor {
+                background-color: rgb(236, 116, 96);
+                color: var(--color-white);
+            }
+        }
+
+        td {
+            background: #f5f5f5;
+            border: 2px solid #fff;
+            width: 197px;
+            padding: 10px 5px;
+            text-align: center;
+
+            &.p-nose__bgOrangeColorHalf {
+                background-color: rgba(236, 116, 96,0.5);
+                color: var(--color-white);
+            }
+        }
+    }
+}
+
+ /*---------------------------------------------
+
+		処置期間・アフターケア、総合院より取得
+
+--------------------------------------------- */
+.p-nose__schedule {
+    border: 1px solid #cacaca;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    margin: 0 15px 15px;
+}
+
+
+.p-nose__schedule h4 {
+    color: #fff;
+    font-weight: bold;
+    line-height: 12px;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.p-nose__schedule h4 img {
+    width: auto;
+    height: 12px;
+    margin-right: 5px;
+}
+
+.p-nose__schedule h4 br {
+    display: none;
+  }
+
+  .p-nose__schedule h4.green-grad {
+    background: #afd2bb;
+  }
+
+  .p-nose__schedule h4.bluegreen-grad {
+    background: #a2bdbd;
+  }
+
+  .p-nose__schedule h4.blue-grad {
+    background: #a0b6c2;
+  }
+
+  .p-nose__schedule h4.bluepurple-grad {
+    background: #9ea6bc;
+  }
+
+  .p-nose__schedule h4.purple-grad {
+    background: #bca7b8;
+  }
+
+  .p-nose__schedule h4.pink-grad {
+    background: #dfa8b5;
+  }
+
+  .p-nose__schedule dl {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    width: 100%;
+    padding: 15px 10px 0;
+    vertical-align: middle;
+  }
+
+  .p-nose__schedule dt {
+    border-radius: 50%;
+    clear: both;
+    color: #191919;
+    display: block;
+    float: left;
+    font-size: 91%;
+    width: 80px;
+    padding: 3px 0;
+    text-align: center;
+  }
+
+  .p-nose__schedule .green dt {
+    background: #d8eae1;
+  }
+
+  .p-nose__schedule .bluegreen dt {
+    background: #d3e5e4;
+  }
+
+  .p-nose__schedule .blue dt {
+    background: #cddde5;
+  }
+
+  .p-nose__schedule .bluepurple dt {
+    background: #ced5e4;
+  }
+
+  .p-nose__schedule .purple dt {
+    background: #e3d6e0;
+  }
+
+  .p-nose__schedule .pink dt {
+    background: #f2d3dc;
+  }
+
+  .p-nose__schedule dt.text {
+    background: #fff;
+    border-radius: 0;
+    color: #191919;
+    float: none;
+    font-size: 100%;
+    width: auto;
+    margin-top: 0px;
+    padding: 0 0 20px;
+    text-align: left;
+  }
+
+  .p-nose__schedule dd {
+    border-bottom: 1px dotted #cacaca;
+    margin-bottom: 15px;
+    padding: 0 0 15px 90px;
+    letter-spacing: 0;
+  }
+
+  .p-nose__schedule dd:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+@include mq('pc') {
+
+    .p-nose__schedule {
+        border: 1px solid #cacaca;
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 auto 10px;
+        display: table;
+      }
+    
+      .p-nose__schedule h4,
+      .p-nose__schedule p {
+        display: table-cell;
+        color: #fff;
+        text-shadow: 1px 1px 1px #4e4e4e;
+        font-weight: bold;
+        line-height: rem(24);
+        font-size: rem(16);
+        width: 115px;
+        text-align: center;
+        padding: 20px 0;
+        vertical-align: top;
+      }
+    
+      .p-nose__schedule h4 img,
+      .p-nose__schedule p img {
+        margin-bottom: 10px;
+      }
+    
+      .p-nose__schedule .green-grad {
+        background: #afd2bb;
+      }
+    
+      .p-nose__schedule .bluegreen-grad {
+        background: #a2bdbd;
+      }
+    
+      .p-nose__schedule .blue-grad {
+        background: #a0b6c2;
+      }
+    
+      .p-nose__schedule .bluepurple-grad {
+        background: #9ea6bc;
+      }
+    
+      .p-nose__schedule .purple-grad {
+        background: #bca7b8;
+      }
+    
+      .p-nose__schedule .pink-grad {
+        background: #dfa8b5;
+      }
+    
+      .p-nose__schedule dl {
+        display: table-cell;
+        width: 685px;
+        padding: 25px 25px 0;
+        vertical-align: middle;
+      }
+    
+      .p-nose__schedule dt {
+        border-radius: 50%;
+        clear: both;
+        color: #191919;
+        display: block;
+        float: left;
+        width: 100px;
+        margin-top: -5px;
+        padding: 5px 0;
+        text-align: center;
+      }
+    
+      .p-nose__schedule .green dt {
+        background: #d8eae1;
+      }
+    
+      .p-nose__schedule .bluegreen dt {
+        background: #d3e5e4;
+      }
+    
+      .p-nose__schedule .blue dt {
+        background: #cddde5;
+      }
+    
+      .p-nose__schedule .bluepurple dt {
+        background: #ced5e4;
+    }
+    
+    .p-nose__schedule .purple dt {
+        background: #e3d6e0;
+    }
+    
+    .p-nose__schedule .pink dt {
+        background: #f2d3dc;
+    }
+    
+    .p-nose__schedule dt.text {
+        background: #fff;
+        border-radius: 0;
+        border: none;
+        color: #191919;
+        float: none;
+        width: auto;
+        margin-top: 0px;
+        padding: 0 0 20px;
+        text-align: left;
+    }
+    
+    .p-nose__schedule dd {
+        padding: 0 0 20px 120px;
+        letter-spacing: 0;
+    }
+    
+
+
+}
+
