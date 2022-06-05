@@ -387,3 +387,7 @@
     margin: 0 auto;
   }
 }
+
+.c-case__card[data-style2="long"] {
+  max-height: 500px;
+}
