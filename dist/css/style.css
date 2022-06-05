@@ -1154,7 +1154,7 @@ img {
   }
 }
 .c-sentence + .c-sentence {
-  padding-top: 1rem;
+  padding-top: 0.75rem;
 }
 
 .c-sentence__sm {
