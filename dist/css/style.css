@@ -4527,10 +4527,20 @@ img {
 }
 
 .p-attention__pointTitle.-long {
-  max-width: 70%;
+  max-width: 75%;
 }
 @media screen and (min-width: 960px) {
   .p-attention__pointTitle.-long {
+    max-width: 330px;
+  }
+}
+
+.p-attention__pointTitle.-vw {
+  font-size: 3vw;
+}
+@media screen and (min-width: 960px) {
+  .p-attention__pointTitle.-vw {
+    font-size: 0.875rem;
     max-width: 330px;
   }
 }
