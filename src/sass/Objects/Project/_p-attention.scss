@@ -212,8 +212,15 @@
 }
 
 .p-attention__pointTitle.-long {
-  max-width: 70%;
+  max-width: 75%;
   @include mq('pc') {
+    max-width: 330px;
+  }
+}
+.p-attention__pointTitle.-vw {
+  font-size: 3vw;
+  @include mq('pc') {
+    font-size: rem(14);
     max-width: 330px;
   }
 }
