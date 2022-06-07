@@ -3720,6 +3720,15 @@ img {
   color: var(--color-white);
 }
 
+.p-nose__list {
+  padding: 0.5rem;
+}
+@media screen and (min-width: 960px) {
+  .p-nose__list {
+    padding: 1rem;
+  }
+}
+
 /*---------------------------------------------
 
 		処置期間・アフターケア、総合院より取得
