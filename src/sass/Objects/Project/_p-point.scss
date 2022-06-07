@@ -84,6 +84,7 @@
     background-color: #F0F0F0;
     padding: rem(16);
     margin: 0 auto 0 calc(50% - 50vw);
+    overflow: hidden;
     width: 100%;
 
     @include mq('pc') {
@@ -205,6 +206,21 @@
 
   &__figure {
     padding: rem(0) rem(8);
+  }
+
+  &__space {
+    float: right;
+    height: 150px;
+  }
+
+  &__floatImg {
+      float: right;
+      clear: both;
+      width: 50%;
+
+      @include mq('pc') {
+        width: 40%;
+      }
   }
 
 }
