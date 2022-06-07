@@ -65,3 +65,18 @@
     line-height: 20px;
   }
 }
+
+.p-priceTable__list[data-style="long"] {
+  padding: rem(16) rem(8);
+}
+
+.p-priceTable__listItem[data-style="long"] {
+  width: 100%;
+  @include mq('pc') {
+    width: 65%;
+  }
+}
+
+.p-priceTable__listItem[data-style="long"] a{
+  line-height: 12px;
+}

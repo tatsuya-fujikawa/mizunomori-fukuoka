@@ -11,6 +11,7 @@
 
   &__box {
     padding-top: rem(36);
+    clear: both;
   }
 
   &__title {
@@ -180,7 +181,7 @@
     padding: rem(8) 0 rem(16);
     font-size: rem(12);
     // margin: 0 auto;
-    max-width: 160px;
+    // max-width: 160px;
 
     @include mq('pc') {
       font-size: rem(14);
@@ -205,6 +206,7 @@
   &__figure {
     padding: rem(0) rem(8);
   }
+
 }
 
 .p-point__lead[data-style="black"] {
@@ -290,7 +292,14 @@
 }
 
 .p-point__pointTitle.-long {
-  max-width: 65%;
+  max-width: 90%;
+  @include mq('pc') {
+    max-width: 330px;
+  }
+}
+
+.p-point__pointTitle.-fullWidth {
+  max-width: 100%;
   @include mq('pc') {
     max-width: 330px;
   }

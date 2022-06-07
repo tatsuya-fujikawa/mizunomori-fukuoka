@@ -167,7 +167,7 @@
 
   &__list {
     border-top: 1px solid #1A1A1A;
-    max-width: 70%;
+    max-width: 85%;
     margin: 0 auto;
 
     &-WithoutBorder {
@@ -386,4 +386,8 @@
     max-width: 600px;
     margin: 0 auto;
   }
+}
+
+.c-case__card[data-style2="long"] {
+  max-height: 500px;
 }

@@ -1,0 +1,19 @@
+.c-contentBox {
+    padding-top: rem(24);
+
+    & + & {
+        padding-top: rem(16);
+
+        @include mq('pc') {
+            padding-top: rem(24);
+        }
+    }
+
+    &:last-of-type {
+        padding-bottom: rem(16);
+
+        @include mq('pc') {
+            padding-bottom: rem(24);
+        }
+    }
+}

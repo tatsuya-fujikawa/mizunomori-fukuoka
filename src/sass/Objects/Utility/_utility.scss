@@ -82,6 +82,7 @@
 .u-bgNaviColor {
     background-color: #C8EAE8;
 }
+
 .u-bgWhiteColor {
     background-color: #FFFFFF;
 }
@@ -94,8 +95,14 @@
 .u-accentColor {
     color: #3EA49F;
 }
+.u-priceColor {
+    color: #ff7db9;
+}
 .u-grayColor {
     color: #6b6b6b;
+}
+.u-goldColor {
+    color: #a79a70;
 }
 .u-bold {
     font-weight: bold;
@@ -155,6 +162,9 @@
 }
 .u-underline {
     text-decoration: underline;
+}
+.u-half {
+    width: 50%;
 }
 
 .u-spacer__s {
