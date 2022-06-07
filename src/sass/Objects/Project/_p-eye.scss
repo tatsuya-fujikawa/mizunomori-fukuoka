@@ -2,6 +2,10 @@
     &__case {
         margin-bottom: rem(20);
 
+        @include mq('pc') {
+            margin-bottom: 0;
+        }
+
         &:first-of-type {
             margin-top: rem(24);
         }

@@ -3719,7 +3719,6 @@ img {
   background-color: rgba(236, 116, 96, 0.5);
   color: var(--color-white);
 }
-
 .p-nose__list {
   padding: 0.5rem;
 }
@@ -5806,6 +5805,11 @@ img {
 
 .p-eye__case {
   margin-bottom: 1.25rem;
+}
+@media screen and (min-width: 960px) {
+  .p-eye__case {
+    margin-bottom: 0;
+  }
 }
 .p-eye__case:first-of-type {
   margin-top: 1.5rem;
