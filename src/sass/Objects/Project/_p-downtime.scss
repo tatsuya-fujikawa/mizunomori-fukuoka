@@ -156,5 +156,63 @@
     }
   }
 
+}
 
+
+//総合院より
+.p-downtime .progress_wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+@media (max-width: 736px) {
+  .p-downtime .progress_wrap {
+    display: block;
+  }
+}
+
+.p-downtime .progress_card {
+  flex-basis: 30%;
+  background-color: #f2f1f1;
+}
+
+.p-downtime .progress_card img {
+  width: 100%;
+}
+
+@media (max-width: 736px) {
+  .p-downtime .progress_card img {
+    width: 50%;
+  }
+
+  .p-downtime .progress_card {
+    width: 90%;
+    margin: 0 auto 1em;
+    display: flex;
+    align-items: center;
+  }
+
+  .p-downtime .progress_card div {
+    width: 50%;
+  }
+}
+
+.p-downtime .progress_card-title {
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+@media (max-width: 736px) {
+  .p-downtime .progress_card-title {
+    font-size: 1.125rem;
+  }
+}
+
+.p-downtime .progress_card-txt {
+  font-size: 1rem;
+  text-align: center;
+  padding: 0 0.5rem 0.5rem;
 }
