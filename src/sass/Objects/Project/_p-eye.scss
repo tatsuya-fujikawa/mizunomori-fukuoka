@@ -150,4 +150,94 @@
             }
         }
     }
+
+    &__megashiraMechanism {
+        padding-top: rem(16);
+        padding-bottom: rem(16);
+        figure {
+            padding: rem(12) rem(16);
+
+            @include mq('pc') {
+                padding: rem(12) rem(12);
+            }
+        }
+
+        figcaption {
+            color: var(--color-white);
+            background-color: #303030;
+            text-align: center;
+            padding: rem(6) 0;
+            font-size: rem(12);
+
+            @include mq('pc') {
+                font-size: rem(14);
+            }
+        }
+    }
+
+    &__megashiraType {
+        padding: rem(16);
+        margin-top: rem(32);
+        @include mq('pc') {
+            padding: rem(16) rem(32);
+        }
+    }
+    &__megashiraTypeTitle {
+        font-size: rem(18);
+        font-weight: bold;
+        font-family: $mainFont;
+        padding-bottom: rem(16);
+    }
+    &__kodawariInner {
+        display: flex;
+        align-items: center;
+        background-color: var(--color-white);
+        border: 1px solid #EBEBEB;
+    }
+    &__kodawariLeft {
+        flex-basis: 25%;
+        background-color:#3DBDBF;
+        color: var(--color-white);
+        text-align: center;
+
+        p {
+            padding: rem(8) rem(4);
+            font-size: rem(14);
+        }
+    }
+    &__kodawariRight {
+        flex-basis: 75%;
+        background-color: var(--color-white);
+
+        p {
+            text-align: center;
+            padding: rem(8) rem(4);
+            font-size: rem(14);
+            position: relative;
+
+                &:first-of-type {
+                    &:before {
+                        position: absolute;
+                        content: '';
+                        width: 80%;
+                        height: 1px;
+                        background-color: #8e8e8e;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+
+        }
+    }
+
+    &__megashiraPriceWrap {
+        padding: rem(16) rem(8);
+        border: 12px solid #E8E8E8;
+
+        @include mq('pc') {
+            padding: rem(16) rem(32);
+        }
+    }
+
 }

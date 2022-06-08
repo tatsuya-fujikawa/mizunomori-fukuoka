@@ -1367,7 +1367,7 @@ img {
   }
 }
 .c-about__boxInner {
-  padding: 1.25rem 1.5625rem 2.5rem;
+  padding: 1.25rem 1.25rem 2.5rem;
 }
 @media screen and (min-width: 960px) {
   .c-about__boxInner {
@@ -6008,6 +6008,90 @@ img {
 @media screen and (min-width: 960px) {
   .p-eye__aboutLead span {
     font-size: 1.125rem;
+  }
+}
+.p-eye__megashiraMechanism {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.p-eye__megashiraMechanism figure {
+  padding: 0.75rem 1rem;
+}
+@media screen and (min-width: 960px) {
+  .p-eye__megashiraMechanism figure {
+    padding: 0.75rem 0.75rem;
+  }
+}
+.p-eye__megashiraMechanism figcaption {
+  background-color: #303030;
+  color: var(--color-white);
+  font-size: 0.75rem;
+  padding: 0.375rem 0;
+  text-align: center;
+}
+@media screen and (min-width: 960px) {
+  .p-eye__megashiraMechanism figcaption {
+    font-size: 0.875rem;
+  }
+}
+.p-eye__megashiraType {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+@media screen and (min-width: 960px) {
+  .p-eye__megashiraType {
+    padding: 1rem 2rem;
+  }
+}
+.p-eye__megashiraTypeTitle {
+  font-family: fot-tsukuardgothic-std, sans-serif;
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+.p-eye__kodawariInner {
+  align-items: center;
+  background-color: var(--color-white);
+  border: 1px solid #EBEBEB;
+  display: flex;
+}
+.p-eye__kodawariLeft {
+  background-color: #3DBDBF;
+  color: var(--color-white);
+  flex-basis: 25%;
+  text-align: center;
+}
+.p-eye__kodawariLeft p {
+  font-size: 0.875rem;
+  padding: 0.5rem 0.25rem;
+}
+.p-eye__kodawariRight {
+  background-color: var(--color-white);
+  flex-basis: 75%;
+}
+.p-eye__kodawariRight p {
+  font-size: 0.875rem;
+  padding: 0.5rem 0.25rem;
+  position: relative;
+  text-align: center;
+}
+.p-eye__kodawariRight p:first-of-type:before {
+  background-color: #8e8e8e;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 80%;
+}
+.p-eye__megashiraPriceWrap {
+  border: 12px solid #E8E8E8;
+  padding: 1rem 0.5rem;
+}
+@media screen and (min-width: 960px) {
+  .p-eye__megashiraPriceWrap {
+    padding: 1rem 2rem;
   }
 }
 
