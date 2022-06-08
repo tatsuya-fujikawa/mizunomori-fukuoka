@@ -14,12 +14,17 @@
 
 	<div class="l-breadcrumb p-breadcrumb">
 		<div class="l-container__narrow">
-			<nav>
-				<ol class="p-breadcrumb__list">
-					<li><a href="<?php echo esc_url(home_url('')); ?>/">TOP</a></li>
-					<li>豊胸・バストTOP</li>
-				</ol>
-			</nav>
+      <?php if( !(is_home() || is_front_page() )): ?>
+        <nav>
+          <ol class="p-breadcrumb__list">
+          <?php
+            if ( function_exists( 'bcn_display' ) ) {
+            bcn_display();
+            }
+          ?>
+          </ol>
+        </nav>
+        <?php endif; ?>
 		</div><!-- /l-container -->
 	</div><!-- /p-breadcrumb -->
 
