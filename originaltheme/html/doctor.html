@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ドクター紹介｜水の森福岡院</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/bundle.js" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'ifu2hrv',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+
+</head>
+
+<body>
+<header class="l-header p-header">
+<div class="l-containerPc">
+		<div class="p-header__top l-header__top c-flex c-flex__spaceBetween">
+				<div class="p-header__logo">
+						<div class="p-header__logo-top u-min">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="水の森美容外科">
+								<span>福岡院</span>
+						</div><!-- /p-header__logo-top -->
+						<div class="p-header__logo-text u-min">
+								<p>福岡(天神・博多)の美容整形なら水の森美容外科福岡院</p>
+						</div><!-- /p-header__logo-text -->
+				</div><!-- /p-header__logo -->
+				<div class="p-header__buttons u-spNone">
+						<div class="c-buttonCTAWrap c-flex c-flex__center">
+								<div class="c-buttonCTA c-buttonCTA__header c-buttonCTA__phone">
+										<a href="">お電話</a>
+								</div>
+								<div class="c-buttonCTA c-buttonCTA__header c-buttonCTA__mail">
+										<a href="https://www.mizunomori.com/counsel/" target="_blank" rel="noopener">WEB予約</a>
+								</div>
+						</div><!-- /c-buttonCTAWrap -->
+				</div><!-- /p-header__buttons -->
+				<button class="p-header__humbergerButton u-pcNone js-humberger">
+						<span></span>
+						<span></span>
+						<span></span>
+				</button><!-- /p-header__humberger -->
+		</div><!-- /p-header__top -->
+</div><!-- /l-container -->
+<div class="p-header__bottom u-spNone">
+		<nav>
+				<div class="l-container">
+						<ul class="p-header__list c-flex c-flex__alignCenter">
+								<li class="p-header__listItem"><a href="<?php echo esc_url(home_url('')); ?>/first">初めての方へ</a></li>
+								<li class="p-header__listItem -diagnosis"><a href="<?php echo esc_url(home_url('')); ?>/diagnosis">診療項目</a>
+										<ul class="p-header__listChild">
+												<li><a href="#">二重まぶた・目元</a></li>
+												<li><a href="#">脂肪吸引・痩身</a></li>
+												<li><a href="#">ヒアルロン酸注入</a></li>
+												<li><a href="#">豊胸・バスト</a></li>
+												<li><a href="#">フェイスライン</a></li>
+												<li><a href="#">鼻</a></li>
+												<li><a href="#">ボトックス注射</a></li>
+												<li><a href="#">美容点滴・内服</a></li>
+										</ul><!-- /p-header__listChild -->
+								</li>
+								<li class="p-header__listItem"><a href="<?php echo esc_url(home_url('')); ?>/doctor">ドクター紹介</a></li>
+								<li class="p-header__listItem"><a href="https://www.mizunomori.com/price/">料金一覧</a></li>
+								<li class="p-header__listItem"><a href="https://www.mizunomori.com/faq/">よくあるご質問</a></li>
+								<li class="p-header__listItem"><a href="https://www.mizunomori.com/case-rank/">症例写真</a></li>
+								<li class="p-header__listItem"><a href="<?php echo esc_url(home_url('')); ?>/access">アクセス</a></li>
+						</ul><!-- /p-header__list -->
+				</div><!-- /l-container -->
+		</nav>
+</div><!-- /p-header__bottom -->
+<div id="js-nav" class="p-header__humbergerInner u-pcNone">
+		<div class="p-header__humbergerNav">
+				<div class="l-container">
+						<h3 class="div p-header__humbergerNav-title">診療項目</h3>
+						<nav>
+								<ul class="p-header__humbergerNav-list">
+										<li><a href="#">二重まぶた・目元</a></li>
+										<li><a href="#">脂肪吸引・痩身</a></li>
+										<li><a href="#">ヒアルロン酸注入</a></li>
+										<li><a href="#">豊胸・バスト</a></li>
+										<li><a href="#">フェイスライン</a></li>
+										<li><a href="#">鼻</a></li>
+										<li><a href="#">ボトックス注射</a></li>
+										<li><a href="#">美容点滴・内服</a></li>
+								</ul>
+								<ul class="p-header__humbergerNav-list">
+										<li><a href="<?php echo esc_url(home_url('')); ?>/first">初めての方へ</a></li>
+										<li><a href="<?php echo esc_url(home_url('')); ?>/doctor">ドクター紹介</a></li>
+										<li><a href="https://www.mizunomori.com/price/">料金一覧</a></li>
+										<li><a href="https://www.mizunomori.com/faq/">よくあるご質問</a></li>
+										<li><a href="https://www.mizunomori.com/case-rank/">症例写真</a></li>
+										<li><a href="<?php echo esc_url(home_url('')); ?>/access">アクセス</a></li>
+								</ul>
+						</nav>
+						<div class="p-CTA u-pcNone">
+								<h2 class="p-CTA__heading">無料カウンセリング予約<br class="u-pcNone">お問い合わせ　</h2>
+								<div class="c-buttonCTAWrap c-flex c-flex__center">
+										
+										<div class="c-buttonCTA c-buttonCTA__mail">
+												<a href="https://www.mizunomori.com/counsel/" target="_blank" rel="noopener">WEB予約</a>
+										</div>
+								</div><!-- /c-buttonCTAWrap -->
+						</div><!-- /.p-CTA -->
+				</div><!-- /l-container -->
+		</div><!-- /p-header__humbergerNav -->
+</div><!-- /p-header__humbergerInner -->
+</header>
+<main>
+	<section class="l-jumbotron c-jumbotron">
+		<div class="c-jumbotron__mv">
+			<picture>
+				<!-- <source srcset="<?php echo get_template_directory_uri(); ?>/img/first/mv_pc.webp" media="(min-width:768px)"/> -->
+				<source srcset="<?php echo get_template_directory_uri(); ?>/img/doctor/mv_pc.webp" media="(min-width:768px)" />
+				<!-- <img src="<?php echo get_template_directory_uri(); ?>/img/first/mv_sp.webp" alt=""> -->
+				<img src="<?php echo get_template_directory_uri(); ?>/img/doctor/mv_sp.webp" alt="">
+			</picture>
+		</div><!-- /c-jumbotron__mv -->
+		<div class="l-container c-jumbotron__inner">
+			<h1 class="c-jumbotron__title">
+				<span>福岡院ドクター紹介</span>
+			</h1><!-- /c-jumbotron__title -->
+		</div><!-- /l-container -->
+	</section><!-- /c-jumbotron -->
+
+	<div class="l-breadcrumb p-breadcrumb">
+		<div class="l-container l-container__narrow">
+			<nav>
+				<ol class="p-breadcrumb__list">
+					<li><a href="<?php echo esc_url(home_url('')); ?>/">TOP</a></li>
+					<li>ドクター紹介</li>
+				</ol>
+			</nav>
+		</div><!-- /l-container -->
+	</div><!-- /p-breadcrumb -->
+
+	<section class="p-doctor l-doctor">
+		<div class="l-container l-container__narrow">
+			<div class="l-doctor__top">
+				<h2 class="u-centerposition c-sentence">福岡院ドクターをご紹介いたします</h2>
+			</div><!-- /l-spacer -->
+
+			<div id="kaneko" class="p-doctor__box">
+				<div class="c-flexPC c-flex__alignCenter">
+					<div class="p-doctor__img c-flex__half">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/doctor/doc_kaneko1.webp" alt="金子院長">
+					</div><!-- /p-doctor__img -->
+					<div class="p-doctor__textWrap c-flex__half">
+						<p class="p-doctor__en" lang="en">Takanori Kaneko</p>
+						<h3>
+							<p class="p-doctor__small">福岡院院長</p>
+							<p class="p-doctor__name">
+								<span class="u-blueCrayon">金子 貴則</span>
+								<a class="p-doctor__instagram" href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="" width="20px" height="20px"></a>
+							</p>
+						</h3>
+					</div><!-- /p-doctor__textWrap -->
+				</div><!-- /c-flexPC -->
+				<div class="c-flexPC c-flex__spaceBetween l-doctor__body p-doctor__flex">
+					<div class="p-doctor__flexItem">
+						<h3 class="c-heading__point">院長挨拶</h3>
+						<p class="c-sentence">患者様のお悩みが解消され、外見がより良くなることによって患者様が笑顔になれるよう、確かな知識と医療技術、思いやりの心をもって、しっかりカウンセリングさせていただきます。</p>
+					</div>
+					<div class="p-doctor__flexItem">
+						<h3 class="c-heading__point">金子院長 紹介動画</h3>
+						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/doctor/doc_kaneko_youtube.webp" alt=""></a>
+					</div>
+				</div><!-- /.c-flexPC -->
+
+				<div class="p-doctor__button">
+					<a class="p-doctor__buttonText" href="https://www.mizunomori.com/case-kaneko/" target="_blank" rel="noopener">症例写真</a>
+				</div><!-- /.p-doctor__button -->
+
+				<div class="p-doctor__button js-accordion">
+					<span class="p-doctor__buttonText">詳しい経歴</span>
+				</div><!-- /.p-doctor__button -->
+
+				<div class="p-doctor__content js-content">
+					<div class="p-doctor__career c-flexPC c-flex__spaceBetween">
+
+						<div class="p-doctor__careerLeft p-doctor__flexItem">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/doctor/doc_kaneko2.webp" alt="金子医師">
+						</div><!-- /.p-doctor__careerLeft -->
+
+						<div class="p-doctor__careerRight p-doctor__flexItem">
+							<h3 class="c-heading__point">経歴</h3>
+							<ul class="p-doctor__careerList">
+								<li><span>平成30年</span>大阪医科大学医学部　卒業</li>
+								<li><span>平成30年</span>市立ひらかた病院</li>
+								<li><span>令和2年</span>水の森美容外科　入職</li>
+								<li><span>令和4年</span>水の森美容外科福岡院院長就任</li>
+							</ul><!-- /.p-doctor__careerList -->
+							<h3 class="c-heading__point">特記事項</h3>
+							<ul class="p-doctor__careerList">
+								<li><a href="">BOTOX VISTA認定医</a></li>
+								<li><a href="">ジュビダームビスタ認定医</a></li>
+								<li>日本美容外科学会（Jsas）正会員</li>
+								<li>日本美容外科医師会　会員</li>
+							</ul><!-- /.p-doctor__careerList -->
+						</div><!-- /.p-doctor__careerRight -->
+
+					</div><!-- /.p-doctor__career -->
+					<div class="p-doctor__comment">
+						<h3 class="c-heading__point">コメント</h3>
+						<p class="c-sentence__sm c-paragraph">学生時代、家庭教師のアルバイトをしていました。<br>担当していたのは自分の見た目に自信が無く、そのせいで人との関わり合いも少なくなってしまっていた中学生の男の子でした。							</p>
+						<p class="c-sentence__sm c-paragraph">研修医時代、久しぶりに大学生になった彼に会いとても驚きました。<br>彼は美容外科、皮膚科に通い、自分の見た目を理想に近付け、非常に逞しくなっていました。外見もさることながら、内面が大きく変わっていたことが印象に残っています。</p>
+						<p class="c-sentence__sm c-paragraph">あまり人に心を開かず人と関わるのを避けていた彼が、積極的にコミュニケーションを取り、 明るく楽しそうにしている姿はとても輝いて見えました。</p>
+						<p class="c-sentence__sm c-paragraph">この時から私は美容外科医に魅力を感じ、志すようになりました。<br>しかし、美容医療は利益中心主義であるというイメージがあり、個人的に良い印象は持っていませんでした。<br>そんな時、水の森美容外科と出会いました。<br>							利益を追い求めるわけではなく、患者様の満足の為に施術を提案する「患者様中心主義」。							これが私の求めていた美容医療のあるべき姿でした。</p>
+						<p class="c-sentence__sm c-paragraph">医療においては信頼関係が大事であると私は思っております。<br>患者様のために知識、技術の研鑽を積み重ね、							信頼される医師になるため精進して参ります。<br>ご来院お待ちしております。お気軽にお越しください。</p>
+					</div><!-- /.p-doctor__comment -->
+
+					<div class="p-doctor__closeButton js-closeaccordion">
+						<span>閉じる</span>
+					</div><!-- /.p-doctor__closeButton -->
+				</div><!-- /.p-doctor__content -->
+			</div><!-- /p-doctor__box -->
+
+
+			<div id="takee" class="p-doctor__box">
+				<div class="c-flexPC c-flex__alignCenter">
+					<div class="p-doctor__img c-flex__half">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/doctor/doc_takee1.webp" alt="竹江総院長">
+					</div><!-- /p-doctor__img -->
+					<div class="p-doctor__textWrap c-flex__half">
+						<p class="p-doctor__en" lang="en">Wataru Takee</p>
+						<h3>
+							<p class="p-doctor__small">水の森美容外科 総院長</p>
+							<p class="p-doctor__name">
+								<span class="u-blueCrayon">竹江 渉</span>
+							</p>
+						</h3>
+					</div><!-- /p-doctor__textWrap -->
+				</div><!-- /c-flexPC -->
+				<div class="c-flexPC c-flex__spaceBetween l-doctor__body p-doctor__flex">
+					<div class="p-doctor__flexItem">
+						<h3 class="c-heading__point">総院長挨拶</h3>
+						<p class="c-sentence">常に患者様を身内と思って接するカウンセリング姿勢には多くの患者様から支持されており、また外科手術はオールラウンドにわたり絶対的な自信をもつ。</p>
+					</div>
+					<div class="p-doctor__flexItem">
+						<h3 class="c-heading__point">総院長 竹江渉より患者様へ</h3>
+						<a href="https://www.youtube.com/watch?v=06KYInBAGPw" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/doctor/doc_takee_youtube1.webp" alt=""></a>
+						<h3 class="c-heading__point">竹江渉Youtubeチャンネル</h3>
+						<a href="https://www.youtube.com/channel/UCo3qCN17xUuS-bTHxFhiEuA" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/doctor/doc_takee_youtube2.webp" alt=""></a>
+
+					</div>
+				</div><!-- /.c-flexPC -->
+
+				<div class="p-doctor__button">
+					<a class="p-doctor__buttonText" href="https://www.mizunomori.com/case-takee/" target="_blank" rel="noopener">症例写真</a>
+				</div><!-- /.p-doctor__button -->
+
+				<div class="p-doctor__button js-accordion">
+					<span class="p-doctor__buttonText">詳しい経歴</span>
+				</div><!-- /.p-doctor__button -->
+
+				<div class="p-doctor__content js-content">
+					<div class="p-doctor__career c-flexPC c-flex__spaceBetween">
+
+						<div class="p-doctor__careerLeft p-doctor__flexItem">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/doctor/doc_takee2.webp" alt="竹江医師">
+						</div><!-- /.p-doctor__careerLeft -->
+
+						<div class="p-doctor__careerRight p-doctor__flexItem">
+							<h3 class="c-heading__point">経歴</h3>
+							<ul class="p-doctor__careerList">
+								<li><span>平成10年</span>東京医科大学医学部　卒業</li>
+								<li><span>平成11年</span>麻酔科　入職</li>
+								<li><span>平成13年</span>麻酔科標榜医免許　取得</li>
+								<li><span></span>大塚美容外科　入職</li>
+								<li><span>平成16年</span>大手美容外科院長</li>
+								<li><span>平成18年</span>水の森美容外科　開院</li>
+							</ul><!-- /.p-doctor__careerList -->
+							<h3 class="c-heading__point">特記事項</h3>
+							<ul class="p-doctor__careerList">
+								<li><a href="">BOTOX VISTA認定医</a></li>
+								<li><a href="">ジュビダームビスタ認定医</a></li>
+								<li>日本美容外科学会（Jsas）正会員</li>
+								<li>日本美容外科医師会　会員</li>
+							</ul><!-- /.p-doctor__careerList -->
+						</div><!-- /.p-doctor__careerRight -->
+
+					</div><!-- /.p-doctor__career -->
+					<div class="p-doctor__comment">
+						<h3 class="c-heading__point">コメント</h3>
+						<p class="c-sentence__sm c-paragraph">はじめまして、水の森美容外科院長の竹江 渉です。<br>私が初めて入局した美容外科は業界の中でも高い医療技術を誇るすばらしい病院でした。<br>師事した医師は日本でもトップといわれる医師で、そこから学んだことは高い技術は勿論のこと、美容外科医として真摯な姿勢であり、常に患者様の目線で診察することの重要性でした。</p>
+						<p class="c-sentence__sm c-paragraph">この経験は生涯の財産となり続けるでしょう。<br>その後、他院で院長に就任し、多くの患者様に出会い、患者様の希望と夢の実現のために尽力して参りました。<br>ここ名古屋でも、今までの経験と初心を忘れずに皆様に愛される病院として精一杯努力していきたいと思います。</p>
+						<p class="c-sentence__sm c-paragraph">ここ数年の美容外科ブームを経て美容外科の認知度は一気に高まりました。</p>
+						<p class="c-sentence__sm c-paragraph">しかし、今現在でも美容外科に興味はあるが行動には移せないという方は多いと思います。<br>それは金銭的な問題や手術や結果に対する不安などの理由が多いのではないでしょうか？</p>
+						<p class="c-sentence__sm c-paragraph">そんな方々に伝えたいのが美容外科というのは確かな技術をもとに正しく応用されればすばらしい医療であるということです。</p>
+						<p class="c-sentence__sm c-paragraph">それは外見的な美しさをつくるだけでなく、内面的な美しさまでも引き出し貴女の人生に夢や希望までももたらすことができると確信しております。</p>
+						<p class="c-sentence__sm c-paragraph">又患者様を正しく導くにあたって最も重要なのがカウンセリングです。<br>患者様の悩みや希望をゆっくり聞かせて頂き正しい情報を伝える、そして双方の理解が一致し信頼関係が生まれた時初めて患者様の期待に応えられるのだと思います。</p>
+						<p class="c-sentence__sm c-paragraph">今後美容外科が皆さんにとってもっと身近なものとなりたくさんの患者様にお会いできることを心より楽しみにしております。
+							</p>
+					</div><!-- /.p-doctor__comment -->
+
+					<div class="p-doctor__closeButton js-closeaccordion">
+						<span>閉じる</span>
+					</div><!-- /.p-doctor__closeButton -->
+				</div><!-- /.p-doctor__content -->
+			</div><!-- /p-doctor__box -->
+
+			<div class="p-doctor__bottom c-flexPC c-flex__spaceBetween c-flex__alignCenter">
+				<div class="p-doctor__bottomButton">
+					<a class="p-doctor__buttonText" href="<?php echo esc_url(home_url('')); ?>/access">アクセス</a>
+				</div><!-- /.p-doctor__button -->
+				<div class="p-doctor__bottomButton">
+					<a class="p-doctor__buttonText" href="https://www.mizunomori.com/counsel/" target="_blank" rel="noopener">無料カウンセリング予約</a>
+				</div><!-- /.p-doctor__button -->
+			</div><!-- /.p-doctor__bottom -->
+
+		</div><!-- /l-container -->
+	</section><!-- /p-doctor -->
+</main>
+
+
+<footer class="l-footer p-footer">
+	<div class="p-footer__body">
+		<div class="l-containerPc">
+			<div class="p-footer__flex">
+				<!-- pcでのレイアウト対応 -->
+				<div class="p-footer__bnr">
+					<a href="https://www.mizunomori.com/correct/" target="_blank" rel="noopener"><img
+							src="<?php echo get_template_directory_uri(); ?>/img/bnr_correct.webp" alt="失敗サイトへの誘導バナー"></a>
+				</div><!-- /.p-footer__bnr -->
+				<nav class="p-footer__icons">
+					<h2 class="u-visually-hidden">snsナビゲーション</h2>
+					<ul>
+						<li>
+							<a href="https://twitter.com/_mizunomori_" target="_blank" rel="noopener">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/twitter.png" alt="twitter" class="p-footer__icons-icon" width="53px"
+									height="53px">
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/mizunomori_clinic/" target="_blank" rel="noopener">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="instagram" class="p-footer__icons-icon" width="53px"
+									height="53px">
+							</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/user/mizunomoribiyougeka" target="_blank" rel="noopener">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/youtube.png" alt="youtube" class="p-footer__icons-icon" width="53px"
+									height="53px">
+							</a>
+						</li>
+						<li>
+							<a href="" class="p-footer__icons-icon" target="_blank" rel="noopener">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/line.png" alt="line" class="p-footer__icons-icon" width="53px" height="53px">
+							</a>
+						</li>
+					</ul>
+				</nav><!-- /.p-footer__icons -->
+				<div class="p-footer__flexItem">
+					<div class="c-buttonCTAWrap -forPC c-flex c-flex__spaceBetween">
+						<div class="c-buttonCTA c-buttonCTA__footer c-buttonCTA__phone u-pcNone">
+							<a href="tel:0120-510-830">お電話</a>
+						</div>
+						<div class="c-buttonCTA c-buttonCTA__footer c-buttonCTA__phone u-spNone">
+							<a href="<?php echo esc_url(home_url('')); ?>/first">お電話</a>
+						</div>
+						<div class="c-buttonCTA c-buttonCTA__footer c-buttonCTA__mail">
+							<a href="https://www.mizunomori.com/counsel/" target="_blank" rel="noopener">WEB予約</a>
+						</div>
+					</div><!-- /c-buttonCtaWrap -->
+					<div class="p-footer__button">
+						<a href="https://www.mizunomori.com/" target="_blank" rel="noopener"
+							class="u-fontGothic">水の森美容外科総合サイト</a>
+					</div><!-- /.p-footer__button -->
+				</div>
+			</div><!-- /p-footer__flex -->
+		</div><!-- /.l-containerPc -->
+	</div><!-- /.p-footer__body -->
+	<div class="p-footer__bottom">
+		<div class="l-containerPc">
+			<ul class="p-footer__list">
+				<li class="p-footer__list-item"><a href="<?php echo esc_url(home_url('')); ?>/first">・<span>はじめての方へ</span></a></li>
+				<li class="p-footer__list-item"><a href="<?php echo esc_url(home_url('')); ?>/access">・<span>アクセス</span></a></li>
+				<li class="p-footer__list-item"><a href="https://www.mizunomori.com/price/">・<span>料金一覧</span></a></li>
+				<li class="p-footer__list-item"><a href="https://www.mizunomori.com/case-rank/">・<span>症例写真</span></a>
+				</li>
+				<li class="p-footer__list-item"><a href="https://www.mizunomori.com/policy/">・<span>プライバシーポリシー</span></a>
+				</li>
+				<li class="p-footer__list-item"><a href="https://www.mizunomori.com/concept/">・<span>コンセプト</span></a></li>
+				<li class="p-footer__list-item"><a href="<?php echo esc_url(home_url('')); ?>/diagnosis">・<span>診療項目</span></a></li>
+				<li class="p-footer__list-item"><a href="<?php echo esc_url(home_url('')); ?>/doctor">・<span>ドクター紹介</span></a></li>
+				<li class="p-footer__list-item"><a href="https://www.mizunomori.com/faq/">・<span>よくあるご質問</span></a></li>
+				<li class="p-footer__list-item"><a href="<?php echo esc_url(home_url('')); ?>/sitemap">・<span>サイトマップ</span></a></li>
+				<li class="p-footer__list-item"><a
+						href="https://mizunomori-recruit.com/?_ebx=jfdiwlqj.1618535530.7k3u5pk">・<span>採用情報</span></a></li>
+				<li class="p-footer__list-item"><a href="https://www.mizunomori.com/safety/">・<span>安心・安全への取り組み</span></a>
+				</li>
+			</ul><!-- /.p-footer__list -->
+		</div><!-- /.l-containerPc -->
+	</div><!-- /.p-footer__bottom -->
+	<p class="p-footer__copyright u-centerposition">&copy; 2022 mizunomori-biyougeka. All rights reserved.</p>
+</footer>
+
+
+
+</body>
+</html>
