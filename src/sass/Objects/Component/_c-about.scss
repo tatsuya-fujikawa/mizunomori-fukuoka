@@ -56,7 +56,7 @@
   }
 
   &__boxInner {
-    padding: rem(20) rem(25) rem(40);
+    padding: rem(20) rem(20) rem(40);
 
     @include mq('pc') {
       padding: rem(20) 0 rem(40);
