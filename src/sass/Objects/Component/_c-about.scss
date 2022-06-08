@@ -193,3 +193,12 @@
     }
   }
 }
+
+.c-about__tag[data-style="gray"] {
+  background-color: #F0F0F0;
+  color: var(--color-text);
+}
+.c-about__tag[data-style="yellow"] {
+  background-color: #f2ec00;
+  color: var(--color-text);
+}
