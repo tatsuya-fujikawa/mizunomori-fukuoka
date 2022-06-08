@@ -2,6 +2,10 @@
     &__case {
         margin-bottom: rem(20);
 
+        @include mq('pc') {
+            margin-bottom: 0;
+        }
+
         &:first-of-type {
             margin-top: rem(24);
         }
@@ -31,7 +35,6 @@
     &__tableWrap {
         width: 100%;
         margin: rem(24) auto 0;
-        font-family: 游明朝体, Yu Mincho, YuMincho, ヒラギノ明朝 Pro W3, Hiragino Mincho Pro, ＭＳ\ Ｐ明朝, MS PMincho, メイリオ, Meiryo, serif;
 
         @include mq('pc') {
             // width: 90%;
@@ -91,5 +94,60 @@
         font-size: rem(18);
         border-bottom: 1px solid #dadada;
         margin-bottom: rem(16);
+    }
+
+    &__contentBox {
+        border-radius: rem(8);
+        border: 1px solid #DBDBDB;
+        padding: rem(20);
+
+        @include mq('pc') {
+            padding: rem(16);
+        }
+    }
+
+    &__failures {
+        padding: rem(0) rem(6) rem(24);
+
+
+        @include mq('pc') {
+            padding: rem(0) rem(12) rem(24);
+        }
+    }
+    &__failuresTitle {
+        background-color: #3EA49F;
+        border-radius: 5000px;
+        color: var(--color-white);
+        font-family: fot-tsukuardgothic-std, sans-serif;
+        font-size: 0.875rem;
+        font-weight: bold;
+        padding: 0.25rem 0.375rem;
+        text-align: center;
+        height: 44px;
+        line-height: 20px;
+        margin-bottom: rem(16);
+    }
+
+    &__aboutInner {
+        margin: rem(24) 0 rem(16);
+        border: 1px solid #3EA49F;
+        padding: 0 rem(16) rem(16);
+        position: relative;
+    }
+    &__aboutLead {
+        
+        span {
+            display: inline-block;
+            font-size: rem(16);
+            background-color: var(--color-white);
+            position: relative;
+            z-index: 2;
+            padding: rem(0) rem(8);
+            top: -16px;
+
+            @include mq('pc') {
+                font-size: rem(18);
+            }
+        }
     }
 }

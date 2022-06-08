@@ -9,9 +9,9 @@
     src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js"></script>
-    <script src="./bundle.js" defer></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/bundle.js" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
@@ -38,7 +38,7 @@
 		<div class="p-header__top l-header__top c-flex c-flex__spaceBetween">
 				<div class="p-header__logo">
 						<div class="p-header__logo-top u-min">
-								<img src="./img/logo.png" alt="水の森美容外科">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="水の森美容外科">
 								<span>福岡院</span>
 						</div><!-- /p-header__logo-top -->
 						<div class="p-header__logo-text u-min">
@@ -66,8 +66,8 @@
 		<nav>
 				<div class="l-container">
 						<ul class="p-header__list c-flex c-flex__alignCenter">
-								<li class="p-header__listItem"><a href="./first.html">初めての方へ</a></li>
-								<li class="p-header__listItem -diagnosis"><a href="./diagnosis.html">診療項目</a>
+								<li class="p-header__listItem"><a href="<?php echo esc_url(home_url('')); ?>/first">初めての方へ</a></li>
+								<li class="p-header__listItem -diagnosis"><a href="<?php echo esc_url(home_url('')); ?>/diagnosis">診療項目</a>
 										<ul class="p-header__listChild">
 												<li><a href="#">二重まぶた・目元</a></li>
 												<li><a href="#">脂肪吸引・痩身</a></li>
@@ -79,11 +79,11 @@
 												<li><a href="#">美容点滴・内服</a></li>
 										</ul><!-- /p-header__listChild -->
 								</li>
-								<li class="p-header__listItem"><a href="./doctor.html">ドクター紹介</a></li>
+								<li class="p-header__listItem"><a href="<?php echo esc_url(home_url('')); ?>/doctor">ドクター紹介</a></li>
 								<li class="p-header__listItem"><a href="https://www.mizunomori.com/price/">料金一覧</a></li>
 								<li class="p-header__listItem"><a href="https://www.mizunomori.com/faq/">よくあるご質問</a></li>
 								<li class="p-header__listItem"><a href="https://www.mizunomori.com/case-rank/">症例写真</a></li>
-								<li class="p-header__listItem"><a href="./access.html">アクセス</a></li>
+								<li class="p-header__listItem"><a href="<?php echo esc_url(home_url('')); ?>/access">アクセス</a></li>
 						</ul><!-- /p-header__list -->
 				</div><!-- /l-container -->
 		</nav>
@@ -104,12 +104,12 @@
 										<li><a href="#">美容点滴・内服</a></li>
 								</ul>
 								<ul class="p-header__humbergerNav-list">
-										<li><a href="./first.html">初めての方へ</a></li>
-										<li><a href="./doctor.html">ドクター紹介</a></li>
+										<li><a href="<?php echo esc_url(home_url('')); ?>/first">初めての方へ</a></li>
+										<li><a href="<?php echo esc_url(home_url('')); ?>/doctor">ドクター紹介</a></li>
 										<li><a href="https://www.mizunomori.com/price/">料金一覧</a></li>
 										<li><a href="https://www.mizunomori.com/faq/">よくあるご質問</a></li>
 										<li><a href="https://www.mizunomori.com/case-rank/">症例写真</a></li>
-										<li><a href="./access.html">アクセス</a></li>
+										<li><a href="<?php echo esc_url(home_url('')); ?>/access">アクセス</a></li>
 								</ul>
 						</nav>
 						<div class="p-CTA u-pcNone">
@@ -130,8 +130,8 @@
 	<section class="l-jumbotron c-jumbotron">
 		<div class="c-jumbotron__mv">
 			<picture>
-				<source srcset="./img/diagnosis/eye/mv_pc.webp" media="(min-width:768px)" />
-				<img src="./img/diagnosis/eye/mv_sp.webp" alt="">
+				<source srcset="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/mv_pc.webp" media="(min-width:768px)" />
+				<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/mv_sp.webp" alt="">
 			</picture>
 		</div><!-- /c-jumbotron__mv -->
 		<div class="l-container c-jumbotron__inner">
@@ -145,7 +145,7 @@
 		<div class="l-container__narrow">
 			<nav>
 				<ol class="p-breadcrumb__list">
-					<li><a href="index.html">TOP</a></li>
+					<li><a href="<?php echo esc_url(home_url('')); ?>/">TOP</a></li>
 					<li>二重まぶた・目元TOP</li>
 				</ol>
 			</nav>
@@ -162,13 +162,13 @@
 					<div class="c-heading p-attention__boxBody"><h3 class="c-heading__point" data-type="priceTable">自然な二重ラインを形成</h3></div>
 					<ul class="p-priceTable__list">
 						<li class="p-priceTable__listItem">
-							<a href="./diagnosis-eye-maibotsu.html">
+							<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/eye/maibotsu/">
 								<span class="p-priceTable__listLeft">二重埋没法</span>
 								<span class="p-priceTable__listRight">¥65,890<small>(税込)</small></span>
 							</a>
 						</li>
 						<li class="p-priceTable__listItem">
-							<a href="./diagnosis-eye-sekkai.html">
+							<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/eye/sekkai/">
 								<span class="p-priceTable__listLeft">二重切開法</span>
 								<span class="p-priceTable__listRight">¥273,900<small>(税込)</small></span>
 							</a>
@@ -180,13 +180,13 @@
 					<div class="c-heading"><h3 class="c-heading__point" data-type="priceTable">目元を印象的に</h3></div>
 					<ul class="p-priceTable__list">
 						<li class="p-priceTable__listItem">
-							<a href="./diagnosis-eye-megashira.html">
+							<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/eye/megashira/">
 								<span class="p-priceTable__listLeft">目頭切開</span>
 								<span class="p-priceTable__listRight">¥218,900<small>(税込)</small></span>
 							</a>
 						</li>
 						<li class="p-priceTable__listItem">
-							<a href="./diagnosis-eye-mejiri-sekkai.html">
+							<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/eye/mejiri/sekkai/">
 								<span class="p-priceTable__listLeft">目尻切開</span>
 								<span class="p-priceTable__listRight">¥220,000<small>(税込)</small></span>
 							</a>
@@ -204,13 +204,13 @@
 					<div class="c-heading"><h3 class="c-heading__point" data-type="priceTable">目の開きをしっかりと</h3></div>
 					<ul class="p-priceTable__list">
 						<li class="p-priceTable__listItem">
-							<a href="./diagnosis-eye-tarumi_mayushita.html">
+							<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/eye/tarumi_mayushita/">
 								<span class="p-priceTable__listLeft">眉下切開</span>
 								<span class="p-priceTable__listRight">¥218,900<small>(税込)</small></span>
 							</a>
 						</li>
 						<li class="p-priceTable__listItem">
-							<a href="./diagnosis-eye-gankenkasui.html">
+							<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/eye/gankenkasui/">
 								<span class="p-priceTable__listLeft">眼瞼下垂</span>
 								<span class="p-priceTable__listRight">¥427,900<small>(税込)</small></span>
 							</a>
@@ -222,7 +222,7 @@
 					<div class="c-heading"><h3 class="c-heading__point" data-type="priceTable">目の下のたるみ・ふくらみ</h3></div>
 					<ul class="p-priceTable__list">
 						<li class="p-priceTable__listItem">
-							<a href="./diagnosis-eye-ageng-eye.html">
+							<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/eye/ageng/eye/">
 								<span class="p-priceTable__listLeft">目の下の治療</span>
 								<span class="p-priceTable__listRight">¥214,500<small>(税込)</small></span>
 							</a>
@@ -257,7 +257,7 @@
                             <a href="tel:0120-510-830">お電話</a>
                         </div>
                         <div class="c-buttonCTA c-buttonCTA__phone u-spNone">
-                            <a href="./first.html">お電話</a>
+                            <a href="<?php echo esc_url(home_url('')); ?>/first">お電話</a>
                         </div>
 						<div class="c-buttonCTA c-buttonCTA__mail">
 								<a href="https://www.mizunomori.com/counsel/" target="_blank" rel="noopener">WEB予約</a>
@@ -297,11 +297,11 @@
 				<div class="c-case__boxInner">
 					<div class="c-flex c-flex__spaceBetween">
 						<figure class="c-case__picture">
-							<img src="./img/diagnosis/eye/case1_1.webp" alt="" loading="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/case1_1.webp" alt="" loading="lazy">
 							<figcaption>Before</figcaption>
 						</figure>
 						<figure class="c-case__picture">
-							<img src="./img/diagnosis/eye/case1_2.webp" alt="" loading="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/case1_2.webp" alt="" loading="lazy">
 							<figcaption>After</figcaption>
 						</figure>
 					</div><!-- /.c-flex -->
@@ -329,7 +329,7 @@
 							</ul><!-- /.c-case__list -->
 						
 						<div class="c-case__bottomButton">
-							<a href="./diagnosis-eye-maibotsu.html">施術ページへ</a>
+							<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/eye/maibotsu/">施術ページへ</a>
 						</div>
 						
 					</div><!-- /.c-case__bottom -->
@@ -342,11 +342,11 @@
 				<div class="c-case__boxInner">
 					<div class="c-flex c-flex__spaceBetween">
 						<figure class="c-case__picture">
-							<img src="./img/diagnosis/eye/case2_2.webp" alt="" loading="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/case2_2.webp" alt="" loading="lazy">
 							<figcaption>Before</figcaption>
 						</figure>
 						<figure class="c-case__picture">
-							<img src="./img/diagnosis/eye/case2_1.webp" alt="" loading="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/case2_1.webp" alt="" loading="lazy">
 							<figcaption>After</figcaption>
 						</figure>
 					</div><!-- /.c-flex -->
@@ -374,7 +374,7 @@
 							</ul><!-- /.c-case__list -->
 						
 						<div class="c-case__bottomButton">
-							<a href="./diagnosis-eye-sekkai.html">施術ページへ</a>
+							<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/eye/sekkai/">施術ページへ</a>
 						</div>
 						
 					</div><!-- /.c-case__bottom -->
@@ -387,11 +387,11 @@
 				<div class="c-case__boxInner">
 					<div class="c-flex c-flex__spaceBetween">
 						<figure class="c-case__picture">
-							<img src="./img/diagnosis/eye/case3_1.webp" alt="" loading="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/case3_1.webp" alt="" loading="lazy">
 							<figcaption>Before</figcaption>
 						</figure>
 						<figure class="c-case__picture">
-							<img src="./img/diagnosis/eye/case3_2.webp" alt="" loading="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/case3_2.webp" alt="" loading="lazy">
 							<figcaption>After</figcaption>
 						</figure>
 					</div><!-- /.c-flex -->
@@ -419,7 +419,7 @@
 							</ul><!-- /.c-case__list -->
 						
 						<div class="c-case__bottomButton">
-							<a href="./diagnosis-eye-megashira.html">施術ページへ</a>
+							<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/eye/megashira/">施術ページへ</a>
 						</div>
 						
 					</div><!-- /.c-case__bottom -->
@@ -432,11 +432,11 @@
 				<div class="c-case__boxInner">
 					<div class="c-flex c-flex__spaceBetween">
 						<figure class="c-case__picture">
-							<img src="./img/diagnosis/eye/case4_1.webp" alt="" loading="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/case4_1.webp" alt="" loading="lazy">
 							<figcaption>Before</figcaption>
 						</figure>
 						<figure class="c-case__picture">
-							<img src="./img/diagnosis/eye/case4_2.webp" alt="" loading="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/case4_2.webp" alt="" loading="lazy">
 							<figcaption>After</figcaption>
 						</figure>
 					</div><!-- /.c-flex -->
@@ -464,7 +464,7 @@
 							</ul><!-- /.c-case__list -->
 						
 						<div class="c-case__bottomButton">
-							<a href="./diagnosis-eye-mejiri-sekkai.html">施術ページへ</a>
+							<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/eye/mejiri/sekkai/">施術ページへ</a>
 						</div>
 						
 					</div><!-- /.c-case__bottom -->
@@ -477,11 +477,11 @@
 				<div class="c-case__boxInner">
 					<div class="c-flex c-flex__spaceBetween">
 						<figure class="c-case__picture">
-							<img src="./img/diagnosis/eye/case5_1.webp" alt="" loading="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/case5_1.webp" alt="" loading="lazy">
 							<figcaption>Before</figcaption>
 						</figure>
 						<figure class="c-case__picture">
-							<img src="./img/diagnosis/eye/case5_2.webp" alt="" loading="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/case5_2.webp" alt="" loading="lazy">
 							<figcaption>After</figcaption>
 						</figure>
 					</div><!-- /.c-flex -->
@@ -509,7 +509,7 @@
 							</ul><!-- /.c-case__list -->
 						
 						<div class="c-case__bottomButton">
-							<a href="./diagnosis-eye-tarumi_mayushita.html">施術ページへ</a>
+							<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/eye/tarumi_mayushita/">施術ページへ</a>
 						</div>
 						
 					</div><!-- /.c-case__bottom -->
@@ -522,11 +522,11 @@
 				<div class="c-case__boxInner">
 					<div class="c-flex c-flex__spaceBetween">
 						<figure class="c-case__picture">
-							<img src="./img/diagnosis/eye/case6_1.webp" alt="" loading="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/case6_1.webp" alt="" loading="lazy">
 							<figcaption>Before</figcaption>
 						</figure>
 						<figure class="c-case__picture">
-							<img src="./img/diagnosis/eye/case6_2.webp" alt="" loading="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/case6_2.webp" alt="" loading="lazy">
 							<figcaption>After</figcaption>
 						</figure>
 					</div><!-- /.c-flex -->
@@ -554,7 +554,7 @@
 							</ul><!-- /.c-case__list -->
 						
 						<div class="c-case__bottomButton">
-							<a href="./diagnosis-eye-gankenkasui.html">施術ページへ</a>
+							<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/eye/gankenkasui/">施術ページへ</a>
 						</div>
 						
 					</div><!-- /.c-case__bottom -->
@@ -567,11 +567,11 @@
 				<div class="c-case__boxInner">
 					<div class="c-flex c-flex__spaceBetween">
 						<figure class="c-case__picture">
-							<img src="./img/diagnosis/eye/case7_1.webp" alt="" loading="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/case7_1.webp" alt="" loading="lazy">
 							<figcaption>Before</figcaption>
 						</figure>
 						<figure class="c-case__picture">
-							<img src="./img/diagnosis/eye/case7_2.webp" alt="" loading="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/case7_2.webp" alt="" loading="lazy">
 							<figcaption>After</figcaption>
 						</figure>
 					</div><!-- /.c-flex -->
@@ -599,7 +599,7 @@
 							</ul><!-- /.c-case__list -->
 						
 						<div class="c-case__bottomButton">
-							<a href="./diagnosis-eye-ageng-eye.html">施術ページへ</a>
+							<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/eye/ageng/eye/">施術ページへ</a>
 						</div>
 						
 					</div><!-- /.c-case__bottom -->
@@ -629,7 +629,7 @@
 						
 						<div class="c-about__body">
 							<p class="c-about__eyeLead">一重の仕組み</p>
-							<img class="u-centerposition" src="./img/diagnosis/eye/about1.webp" alt="">
+							<img class="u-centerposition" src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/about1.webp" alt="">
 							<div class="u-spacer__s"></div><!-- /u-spacer__s -->
 							<p class="c-sentence">
 								瞼板（A）と言われる組織に眼瞼挙筋（B）といわれる筋肉が付着しております。 この眼瞼挙筋（B）が瞼板（A）を引き上げる事で目が開きます。<br>（A）が引っ張られると相対的に皮膚は②の方向へ垂れ下がってしまう為、黒目があまり見えていない状態となります。<br>これが一重の仕組みです。 黒目が見えていないため人相が悪くみえたり、暗いイメージになりやすいのです。 まぶたの皮膚が②の方向へ垂れ下がるため、まつ毛も上を向きません。
@@ -638,7 +638,7 @@
 
 						<div class="c-about__body">
 							<p class="c-about__eyeLead">二重の仕組み</p>
-							<img class="u-centerposition" src="./img/diagnosis/eye/about1.webp" alt="">
+							<img class="u-centerposition" src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/about1.webp" alt="">
 							<div class="u-spacer__s"></div><!-- /u-spacer__s -->
 							<p class="c-sentence">
 								二重になる方は眼瞼挙筋の枝が皮膚の方まで伸びて付着しています。眼瞼挙筋（B）が瞼板（A）を引っ張って開眼する際に、同時に眼瞼挙筋（B）の枝が皮膚を引き込んできますので、上図の様に折り重なりが出来て二重となります。<br> この時Cの地点（瞼縁といいます）が上に持ち上がる事で黒目が大きく見えます。二重になる事で黒目が大きく見えたり睫毛が上に持ち上がって目が大きく見えるということになるのです。<br>その上で、どの程度二重の幅があった方が良いかは患者様の好みということになります。すなわち眼瞼挙筋の枝の代わりを作ってあげる事が二重の手術という事になります。
@@ -654,7 +654,7 @@
 									<div class="p-eye__caseInner">
 										<div class="c-flex c-flex__alignCenter">
 											<div class="p-eye__caseLeft">
-												<img src="./img/diagnosis/eye/about3.webp" alt="">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/about3.webp" alt="">
 											</div>
 											<div class="p-eye__caseRight">
 												<p class="c-sentence">二重のラインにまぶたがかぶっているため、角度によっては一重に見えてしまうタイプの二重です。奥二重は、クールな印象を持たれることが多いです。</p>
@@ -668,7 +668,7 @@
 									<div class="p-eye__caseInner">
 										<div class="c-flex c-flex__alignCenter">
 											<div class="p-eye__caseLeft">
-												<img src="./img/diagnosis/eye/about4.webp" alt="">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/about4.webp" alt="">
 											</div>
 											<div class="p-eye__caseRight">
 												<p class="c-sentence">目尻側にいくほどに幅が広がっているタイプで日本を含むアジアの方に１番多いのがこの末広の二重です。ナチュラルな印象になります。</p>
@@ -682,7 +682,7 @@
 									<div class="p-eye__caseInner">
 										<div class="c-flex c-flex__alignCenter">
 											<div class="p-eye__caseLeft">
-												<img src="./img/diagnosis/eye/about5.webp" alt="">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/about5.webp" alt="">
 											</div>
 											<div class="p-eye__caseRight">
 												<p class="c-sentence">幅の広い平行二重よりもさりげなく華やかな印象を与
@@ -697,7 +697,7 @@
 									<div class="p-eye__caseInner">
 										<div class="c-flex c-flex__alignCenter">
 											<div class="p-eye__caseLeft">
-												<img src="./img/diagnosis/eye/about6.webp" alt="">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/about6.webp" alt="">
 											</div>
 											<div class="p-eye__caseRight">
 												<p class="c-sentence">目頭側から目じりまで均一なラインが入っている欧米の方に多く見られる二重です。まつ毛の生え際もしっかり見えており、華やかな印象のお目元になります。</p>
@@ -809,7 +809,7 @@
 						</div><!-- /.p-point__point -->
 
 						<div class="p-point__pointImg">
-							<img src="./img/diagnosis/eye/point1.webp" alt="">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/point1.webp" alt="">
 						</div><!-- /.p-point__pointImg -->
 					</div><!-- /.p-point__boxBody -->
 
@@ -828,7 +828,7 @@
 					<div class="p-point__boxBody c-flex c-flex__alignCenter c-flex__spaceBetween">
 					
 						<div class="p-point__pointImg" data-style="reverse">
-							<img src="./img/diagnosis/eye/point2.webp" alt="">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/point2.webp" alt="">
 						</div><!-- /.p-point__pointImg -->
 
 						<div class="p-point__point">
@@ -844,7 +844,7 @@
 
 			<div class="u-spacer__m"></div>
 			<div class="u-centerposition">
-				<a href="https://www.mizunomori.com/diagnosis/eye/maibotsu/maibotsu-width/" target="_blank" rel="noopener"><img src="./img/diagnosis/eye/point3.webp" alt="" class="u-narrowSP u-marginAuto u-block"></a>
+				<a href="https://www.mizunomori.com/diagnosis/eye/maibotsu/maibotsu-width/" target="_blank" rel="noopener"><img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/point3.webp" alt="" class="u-narrowSP u-marginAuto u-block"></a>
 			</div><!-- /.u-centerposition -->
 			
 			<div class="p-point__box">
@@ -865,7 +865,7 @@
 						</div><!-- /.p-point__point -->
 
 						<div class="p-point__pointImg">
-							<img src="./img/diagnosis/eye/point4.webp" alt="">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/point4.webp" alt="">
 						</div><!-- /.p-point__pointImg -->
 					</div><!-- /.p-point__boxBody -->
 				</div><!-- /.p-point__boxInner -->
@@ -890,7 +890,7 @@
 						<h3 class="p-reservationFlow__lead c-flex c-flex__alignCenter"><span>1</span>ご予約</h3>
 						<div class="c-flexPC c-flex__alignCenter">
 							<div class="p-reservationFlow__img c-flex__half">
-								<img src="./img/diagnosis/eye/flow1.webp" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/flow1.webp" alt="">
 							</div>
 							<div class="p-reservationFlow__body c-flex__half">
 								<p class="c-sentence">当院の無料カウンセリングは完全予約制です。<br>ご希望のお日にちにて、メール・お電話からご予約ください。</p>
@@ -902,7 +902,7 @@
 						<h3 class="p-reservationFlow__lead c-flex c-flex__alignCenter"><span>2</span>ご来院後</h3>
 						<div class="c-flexPC c-flex__alignCenter">
 							<div class="p-reservationFlow__img c-flex__half">
-								<img src="./img/diagnosis/eye/flow2.webp" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/flow2.webp" alt="">
 							</div>
 							<div class="p-reservationFlow__body c-flex__half">
 								<p class="c-sentence">受付後、問診表ご記入し医師との診断になります。お悩みから理想の目元をお聞きしながら丁寧に診察します。</p>
@@ -914,7 +914,7 @@
 						<h3 class="p-reservationFlow__lead c-flex c-flex__alignCenter"><span>3</span>診察後</h3>
 						<div class="c-flexPC c-flex__alignCenter">
 							<div class="p-reservationFlow__img c-flex__half">
-								<img src="./img/diagnosis/eye/flow3.webp" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/flow3.webp" alt="">
 							</div>
 							<div class="p-reservationFlow__body c-flex__half">
 								<p class="c-sentence">医師に聞きそびれた事やご不明点をカウンセラーが伺います。<br>施術をご意向の場合は、そのままお手続きも行えます。</p>
@@ -940,7 +940,7 @@
 						<h3 class="p-reservationFlow__lead c-flex c-flex__alignCenter" data-style="onTheDay"><span>4</span>ご来院</h3>
 						<div class="c-flexPC c-flex__alignCenter">
 							<div class="p-reservationFlow__img c-flex__half">
-								<img src="./img/diagnosis/eye/flow4.webp" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/flow4.webp" alt="">
 							</div>
 							<div class="p-reservationFlow__body c-flex__half">
 								<p class="c-sentence">ご来院後、お手続きや体調確認をし、施術にうつります。</p>
@@ -952,7 +952,7 @@
 						<h3 class="p-reservationFlow__lead c-flex c-flex__alignCenter" data-style="onTheDay"><span>5</span>施術開始</h3>
 						<div class="c-flexPC c-flex__alignCenter">
 							<div class="p-reservationFlow__img c-flex__half">
-								<img src="./img/diagnosis/eye/flow5.webp" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/flow5.webp" alt="">
 							</div>
 							<div class="p-reservationFlow__body c-flex__half">
 								<p class="c-sentence">施術室にて施術を行います。<br>埋没法であれば10分～15分程度で終わります。</p>
@@ -964,7 +964,7 @@
 						<h3 class="p-reservationFlow__lead c-flex c-flex__alignCenter" data-style="onTheDay"><span>6</span>終了・ご帰宅</h3>
 						<div class="c-flexPC c-flex__alignCenter">
 							<div class="p-reservationFlow__img c-flex__half">
-								<img src="./img/diagnosis/eye/flow6.webp" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/eye/flow6.webp" alt="">
 							</div>
 							<div class="p-reservationFlow__body c-flex__half">
 								<p class="c-sentence">術後、パウダールームにてご準備頂きお帰り頂きます。</p>
@@ -1179,11 +1179,11 @@
 
 					<div class="p-supervisor__profileTop c-flexSP c-flex__alignCenter">
 						<div class="p-supervisor__profileTopLeft c-flex__half">
-							<img src="./img/diagnosis/liposuction/doc_kaneko.jpg" alt="金子貴則院長">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/doc_kaneko.jpg" alt="金子貴則院長">
 						</div><!-- /.p-supervisor__profileLeft -->
 						<div class="p-supervisor__profileTopRight c-flex__half">
 							<p class="c-sentence">水の森美容外科<br>福岡院院長</p>
-							<h3 class="p-supervisor__profileName">金子貴則<a href="#"><img src="./img/instagram_white.svg" alt="" width="20px"></a></h3>
+							<h3 class="p-supervisor__profileName">金子貴則<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram_white.svg" alt="" width="20px"></a></h3>
 						</div><!-- /.p-supervisor__profileRight -->
 					</div><!-- /.c-flexSP -->
 
@@ -1266,7 +1266,7 @@
 				<div class="c-tabMenu__content active" id="01">
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin1.webp" alt="天神駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin1.webp" alt="天神駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1276,7 +1276,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin2.webp" alt="天神駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin2.webp" alt="天神駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1286,7 +1286,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin3.webp" alt="天神駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin3.webp" alt="天神駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1296,7 +1296,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin4.webp" alt="天神駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin4.webp" alt="天神駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1309,7 +1309,7 @@
 				<div class="c-tabMenu__content" id="02">
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin1.webp" alt="西鉄福岡天神駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin1.webp" alt="西鉄福岡天神駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1319,7 +1319,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin2.webp" alt="西鉄福岡天神駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin2.webp" alt="西鉄福岡天神駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1329,7 +1329,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin3.webp" alt="西鉄福岡天神駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin3.webp" alt="西鉄福岡天神駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1339,7 +1339,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin4.webp" alt="西鉄福岡天神駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin4.webp" alt="西鉄福岡天神駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1352,7 +1352,7 @@
 				<div class="c-tabMenu__content" id="03">
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin1.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin1.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1362,7 +1362,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin2.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin2.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1373,7 +1373,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin2.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin2.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1384,7 +1384,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin3.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin3.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1395,7 +1395,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin4.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin4.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1409,7 +1409,7 @@
 				<div class="c-tabMenu__content" id="04">
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1419,7 +1419,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1429,7 +1429,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin3.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin3.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1439,7 +1439,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin4.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin4.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1455,16 +1455,16 @@
 				<dl class="c-accordion">
 					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">地下鉄天神駅からお越しの場合(徒歩７分)</dt>
 					<dd class="c-accordion__contents js-content">
-						<img src="./img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">地下鉄天神駅⑥番出口から福岡駅通りを真っ直ぐ南へ進み、西鉄福岡（天神）駅の大きな入り口があり、その正面の天神21号線に入ります。</p>
 						<div class="u-spacer__m"></div>
-						<img src="./img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">中華料理店がある交差点を左折し、メルヘン通りを真っ直ぐ進むと、左手に警固神社の入り口が見えてきます。</p>
 						<div class="u-spacer__m"></div>
-						<img src="./img/access_chika-tenjin3.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin3.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">その正面の警固参道に入って真っ直ぐ進み、天神西通りと交差する角にあるビルです。</p>
 						<div class="u-spacer__m"></div>
-						<img src="./img/access_chika-tenjin4.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin4.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">当院までは徒歩約7分でお越しいただけます。</p>
 						<div class="u-spacer__m"></div>
 					</dd>
@@ -1473,16 +1473,16 @@
 				<dl class="c-accordion">
 					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">西鉄福岡(天神)駅からお越しの場合(徒歩４分)</dt>
 					<dd class="c-accordion__contents js-content">
-						<img src="./img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">西鉄福岡(天神)駅三越口西側から警固公園内を抜け、今泉公園通りに出ます。</p>
 						<div class="u-spacer__m"></div>
-						<img src="./img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">今泉公園通りを南に進むと左手に警固神社の入り口が見えてきます。</p>
 						<div class="u-spacer__m"></div>
-						<img src="./img/access_chika-tenjin3.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin3.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">その正面の警固参道に入って真っ直ぐ進み、天神西通りと交差する角にあるビルです。</p>
 						<div class="u-spacer__m"></div>
-						<img src="./img/access_chika-tenjin4.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin4.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">当院までは徒歩約5分でお越しいただけます。</p>
 						<div class="u-spacer__m"></div>
 					</dd>
@@ -1491,10 +1491,10 @@
 				<dl class="c-accordion">
 					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">JR博多駅からお越しの場合</dt>
 					<dd class="c-accordion__contents js-content">
-						<img src="./img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">【電車】<br>博多駅より空港線にて姪浜行に乗車。天神駅にて下車し上記のルートよりお越しいただけます。</p>
 						<div class="u-spacer__m"></div>
-						<img src="./img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">
 							【バス】<br>駅ビル1階のバスターミナルへ。西鉄バスにて【博多バスターミナル】で乗車し【今泉一丁目】で下車。モバイルショップが入ったビルを目印に天神西通りを北に進み、警固参道と交差する角にあるビルです。当院までは徒歩約2分でお越しいただけます。
 						</p>
@@ -1504,17 +1504,17 @@
 				<dl class="c-accordion">
 					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">JR熊本駅からお越しの場合</dt>
 					<dd class="c-accordion__contents js-content">
-						<img src="./img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">【新幹線】<br>新幹線にて【JR熊本駅】で乗車し→【JR博多駅】で下車。</p>
 						<div class="u-spacer__m"></div>
-						<img src="./img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">
 							【バス】<br>駅ビル1階のバスターミナルへ。西鉄バスにて【博多バスターミナル】で乗車し【今泉一丁目】で下車。
 							<div class="u-spacer__m"></div>
-							<img src="./img/access_chika-tenjin3.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin3.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 							<p class="c-sentence">モバイルショップが入ったビルを目印に天神西通りを北に進み、警固参道と交差する角にあるビルです。</p>
 							<div class="u-spacer__m"></div>
-							<img src="./img/access_chika-tenjin4.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin4.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 							<p class="c-sentence">当院までは徒歩約2分でお越しいただけます。</p>
 							<div class="u-spacer__m"></div>
 						</p>
@@ -1550,32 +1550,32 @@
 				<!-- pcでのレイアウト対応 -->
 				<div class="p-footer__bnr">
 					<a href="https://www.mizunomori.com/correct/" target="_blank" rel="noopener"><img
-							src="./img/bnr_correct.webp" alt="失敗サイトへの誘導バナー"></a>
+							src="<?php echo get_template_directory_uri(); ?>/img/bnr_correct.webp" alt="失敗サイトへの誘導バナー"></a>
 				</div><!-- /.p-footer__bnr -->
 				<nav class="p-footer__icons">
 					<h2 class="u-visually-hidden">snsナビゲーション</h2>
 					<ul>
 						<li>
 							<a href="https://twitter.com/_mizunomori_" target="_blank" rel="noopener">
-								<img src="./img/twitter.png" alt="twitter" class="p-footer__icons-icon" width="53px"
+								<img src="<?php echo get_template_directory_uri(); ?>/img/twitter.png" alt="twitter" class="p-footer__icons-icon" width="53px"
 									height="53px">
 							</a>
 						</li>
 						<li>
 							<a href="https://www.instagram.com/mizunomori_clinic/" target="_blank" rel="noopener">
-								<img src="./img/instagram.png" alt="instagram" class="p-footer__icons-icon" width="53px"
+								<img src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="instagram" class="p-footer__icons-icon" width="53px"
 									height="53px">
 							</a>
 						</li>
 						<li>
 							<a href="https://www.youtube.com/user/mizunomoribiyougeka" target="_blank" rel="noopener">
-								<img src="./img/youtube.png" alt="youtube" class="p-footer__icons-icon" width="53px"
+								<img src="<?php echo get_template_directory_uri(); ?>/img/youtube.png" alt="youtube" class="p-footer__icons-icon" width="53px"
 									height="53px">
 							</a>
 						</li>
 						<li>
 							<a href="" class="p-footer__icons-icon" target="_blank" rel="noopener">
-								<img src="./img/line.png" alt="line" class="p-footer__icons-icon" width="53px" height="53px">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/line.png" alt="line" class="p-footer__icons-icon" width="53px" height="53px">
 							</a>
 						</li>
 					</ul>
@@ -1586,7 +1586,7 @@
 							<a href="tel:0120-510-830">お電話</a>
 						</div>
 						<div class="c-buttonCTA c-buttonCTA__footer c-buttonCTA__phone u-spNone">
-							<a href="./first.html">お電話</a>
+							<a href="<?php echo esc_url(home_url('')); ?>/first">お電話</a>
 						</div>
 						<div class="c-buttonCTA c-buttonCTA__footer c-buttonCTA__mail">
 							<a href="https://www.mizunomori.com/counsel/" target="_blank" rel="noopener">WEB予約</a>
@@ -1603,18 +1603,18 @@
 	<div class="p-footer__bottom">
 		<div class="l-containerPc">
 			<ul class="p-footer__list">
-				<li class="p-footer__list-item"><a href="./first.html">・<span>はじめての方へ</span></a></li>
-				<li class="p-footer__list-item"><a href="./access.html">・<span>アクセス</span></a></li>
+				<li class="p-footer__list-item"><a href="<?php echo esc_url(home_url('')); ?>/first">・<span>はじめての方へ</span></a></li>
+				<li class="p-footer__list-item"><a href="<?php echo esc_url(home_url('')); ?>/access">・<span>アクセス</span></a></li>
 				<li class="p-footer__list-item"><a href="https://www.mizunomori.com/price/">・<span>料金一覧</span></a></li>
 				<li class="p-footer__list-item"><a href="https://www.mizunomori.com/case-rank/">・<span>症例写真</span></a>
 				</li>
 				<li class="p-footer__list-item"><a href="https://www.mizunomori.com/policy/">・<span>プライバシーポリシー</span></a>
 				</li>
 				<li class="p-footer__list-item"><a href="https://www.mizunomori.com/concept/">・<span>コンセプト</span></a></li>
-				<li class="p-footer__list-item"><a href="./diagnosis.html">・<span>診療項目</span></a></li>
-				<li class="p-footer__list-item"><a href="./doctor.html">・<span>ドクター紹介</span></a></li>
+				<li class="p-footer__list-item"><a href="<?php echo esc_url(home_url('')); ?>/diagnosis">・<span>診療項目</span></a></li>
+				<li class="p-footer__list-item"><a href="<?php echo esc_url(home_url('')); ?>/doctor">・<span>ドクター紹介</span></a></li>
 				<li class="p-footer__list-item"><a href="https://www.mizunomori.com/faq/">・<span>よくあるご質問</span></a></li>
-				<li class="p-footer__list-item"><a href="./sitemap.html">・<span>サイトマップ</span></a></li>
+				<li class="p-footer__list-item"><a href="<?php echo esc_url(home_url('')); ?>/sitemap">・<span>サイトマップ</span></a></li>
 				<li class="p-footer__list-item"><a
 						href="https://mizunomori-recruit.com/?_ebx=jfdiwlqj.1618535530.7k3u5pk">・<span>採用情報</span></a></li>
 				<li class="p-footer__list-item"><a href="https://www.mizunomori.com/safety/">・<span>安心・安全への取り組み</span></a>

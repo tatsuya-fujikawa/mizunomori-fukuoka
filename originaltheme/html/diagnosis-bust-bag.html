@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>二重まぶた・目元-ターミナル｜水の森福岡院</title>
+    <title>バスト-シリコン｜水の森福岡院</title>
     <script
     src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js"></script>
-    <script src="./bundle.js" defer></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/bundle.js" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
@@ -38,7 +38,7 @@
 		<div class="p-header__top l-header__top c-flex c-flex__spaceBetween">
 				<div class="p-header__logo">
 						<div class="p-header__logo-top u-min">
-								<img src="./img/logo.png" alt="水の森美容外科">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="水の森美容外科">
 								<span>福岡院</span>
 						</div><!-- /p-header__logo-top -->
 						<div class="p-header__logo-text u-min">
@@ -66,8 +66,8 @@
 		<nav>
 				<div class="l-container">
 						<ul class="p-header__list c-flex c-flex__alignCenter">
-								<li class="p-header__listItem"><a href="./first.html">初めての方へ</a></li>
-								<li class="p-header__listItem -diagnosis"><a href="./diagnosis.html">診療項目</a>
+								<li class="p-header__listItem"><a href="<?php echo esc_url(home_url('')); ?>/first">初めての方へ</a></li>
+								<li class="p-header__listItem -diagnosis"><a href="<?php echo esc_url(home_url('')); ?>/diagnosis">診療項目</a>
 										<ul class="p-header__listChild">
 												<li><a href="#">二重まぶた・目元</a></li>
 												<li><a href="#">脂肪吸引・痩身</a></li>
@@ -79,11 +79,11 @@
 												<li><a href="#">美容点滴・内服</a></li>
 										</ul><!-- /p-header__listChild -->
 								</li>
-								<li class="p-header__listItem"><a href="./doctor.html">ドクター紹介</a></li>
+								<li class="p-header__listItem"><a href="<?php echo esc_url(home_url('')); ?>/doctor">ドクター紹介</a></li>
 								<li class="p-header__listItem"><a href="https://www.mizunomori.com/price/">料金一覧</a></li>
 								<li class="p-header__listItem"><a href="https://www.mizunomori.com/faq/">よくあるご質問</a></li>
 								<li class="p-header__listItem"><a href="https://www.mizunomori.com/case-rank/">症例写真</a></li>
-								<li class="p-header__listItem"><a href="./access.html">アクセス</a></li>
+								<li class="p-header__listItem"><a href="<?php echo esc_url(home_url('')); ?>/access">アクセス</a></li>
 						</ul><!-- /p-header__list -->
 				</div><!-- /l-container -->
 		</nav>
@@ -104,18 +104,20 @@
 										<li><a href="#">美容点滴・内服</a></li>
 								</ul>
 								<ul class="p-header__humbergerNav-list">
-										<li><a href="./first.html">初めての方へ</a></li>
-										<li><a href="./doctor.html">ドクター紹介</a></li>
+										<li><a href="<?php echo esc_url(home_url('')); ?>/first">初めての方へ</a></li>
+										<li><a href="<?php echo esc_url(home_url('')); ?>/doctor">ドクター紹介</a></li>
 										<li><a href="https://www.mizunomori.com/price/">料金一覧</a></li>
 										<li><a href="https://www.mizunomori.com/faq/">よくあるご質問</a></li>
 										<li><a href="https://www.mizunomori.com/case-rank/">症例写真</a></li>
-										<li><a href="./access.html">アクセス</a></li>
+										<li><a href="<?php echo esc_url(home_url('')); ?>/access">アクセス</a></li>
 								</ul>
 						</nav>
 						<div class="p-CTA u-pcNone">
 								<h2 class="p-CTA__heading">無料カウンセリング予約<br class="u-pcNone">お問い合わせ　</h2>
 								<div class="c-buttonCTAWrap c-flex c-flex__center">
-										
+										<div class="c-buttonCTA c-buttonCTA__phone">
+												<a href="tel:0120-510-830">お電話</a>
+										</div>
 										<div class="c-buttonCTA c-buttonCTA__mail">
 												<a href="https://www.mizunomori.com/counsel/" target="_blank" rel="noopener">WEB予約</a>
 										</div>
@@ -130,13 +132,13 @@
 	<section class="l-jumbotron c-jumbotron">
 		<div class="c-jumbotron__mv">
 			<picture>
-				<source srcset="./img/diagnosis/eye/mv_pc.webp" media="(min-width:768px)" />
-				<img src="./img/diagnosis/eye/mv_sp.webp" alt="">
+				<source srcset="<?php echo get_template_directory_uri(); ?>/img/diagnosis/bust/bag/mv_pc.webp" media="(min-width:768px)" />
+				<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/bust/bag/mv_sp.webp" alt="">
 			</picture>
 		</div><!-- /c-jumbotron__mv -->
 		<div class="l-container c-jumbotron__inner">
 			<h1 class="c-jumbotron__title">
-				<span>二重まぶた・目元</span>
+				<span>シリコンバッグ豊胸</span>
 			</h1><!-- /c-jumbotron__title -->
 		</div><!-- /l-container -->
 	</section><!-- /c-jumbotron -->
@@ -145,104 +147,22 @@
 		<div class="l-container__narrow">
 			<nav>
 				<ol class="p-breadcrumb__list">
-					<li><a href="index.html">TOP</a></li>
-					<li>二重まぶた・目元TOP</li>
+					<li><a href="<?php echo esc_url(home_url('')); ?>/">TOP</a></li>
+					<li><a href="">バスト注射TOP</a></li>
+					<li>シリコンバッグ豊胸</li>
 				</ol>
 			</nav>
 		</div><!-- /l-container -->
 	</div><!-- /p-breadcrumb -->
-
-	<section class="l-priceTable p-priceTable">
-		<div class="l-container__narrow">
-			<div class="l-spacer__headingDiagnosis c-heading u-pcNone">
-				<h2 class="c-heading__diagnosis" data-entitle="menu">施術内容</h2>
-			</div><!-- /.c-heading -->
-			<div class="l-priceTable__wrap p-priceTable__wrap">
-				<div class="p-priceTable__inner">
-					<div class="c-heading p-attention__boxBody"><h3 class="c-heading__point" data-type="priceTable">自然な二重ラインを形成</h3></div>
-					<ul class="p-priceTable__list">
-						<li class="p-priceTable__listItem">
-							<a href="./diagnosis-eye-maibotsu.html">
-								<span class="p-priceTable__listLeft">二重埋没法</span>
-								<span class="p-priceTable__listRight">¥65,890<small>(税込)</small></span>
-							</a>
-						</li>
-						<li class="p-priceTable__listItem">
-							<a href="./diagnosis-eye-sekkai.html">
-								<span class="p-priceTable__listLeft">二重切開法</span>
-								<span class="p-priceTable__listRight">¥273,900<small>(税込)</small></span>
-							</a>
-						</li>
-					</ul><!-- /.p-priceTable__list -->
-				</div><!-- /.p-priceTable__inner -->
-
-				<div class="p-priceTable__inner">
-					<div class="c-heading"><h3 class="c-heading__point" data-type="priceTable">目元を印象的に</h3></div>
-					<ul class="p-priceTable__list">
-						<li class="p-priceTable__listItem">
-							<a href="./diagnosis-eye-megashira.html">
-								<span class="p-priceTable__listLeft">目頭切開</span>
-								<span class="p-priceTable__listRight">¥218,900<small>(税込)</small></span>
-							</a>
-						</li>
-						<li class="p-priceTable__listItem">
-							<a href="./diagnosis-eye-mejiri-sekkai.html">
-								<span class="p-priceTable__listLeft">目尻切開</span>
-								<span class="p-priceTable__listRight">¥220,000<small>(税込)</small></span>
-							</a>
-						</li>
-						<li class="p-priceTable__listItem">
-							<a href="#">
-								<span class="p-priceTable__listLeft">涙袋のヒアルロン酸</span>
-								<span class="p-priceTable__listRight">¥25,300<small>(税込)</small></span>
-							</a>
-						</li>
-					</ul><!-- /.p-priceTable__list -->
-				</div><!-- /.p-priceTable__inner -->
-
-				<div class="p-priceTable__inner">
-					<div class="c-heading"><h3 class="c-heading__point" data-type="priceTable">目の開きをしっかりと</h3></div>
-					<ul class="p-priceTable__list">
-						<li class="p-priceTable__listItem">
-							<a href="./diagnosis-eye-tarumi_mayushita.html">
-								<span class="p-priceTable__listLeft">眉下切開</span>
-								<span class="p-priceTable__listRight">¥218,900<small>(税込)</small></span>
-							</a>
-						</li>
-						<li class="p-priceTable__listItem">
-							<a href="./diagnosis-eye-gankenkasui.html">
-								<span class="p-priceTable__listLeft">眼瞼下垂</span>
-								<span class="p-priceTable__listRight">¥427,900<small>(税込)</small></span>
-							</a>
-						</li>
-					</ul><!-- /.p-priceTable__list -->
-				</div><!-- /.p-priceTable__inner -->
-
-				<div class="p-priceTable__inner">
-					<div class="c-heading"><h3 class="c-heading__point" data-type="priceTable">目の下のたるみ・ふくらみ</h3></div>
-					<ul class="p-priceTable__list">
-						<li class="p-priceTable__listItem">
-							<a href="./diagnosis-eye-ageng-eye.html">
-								<span class="p-priceTable__listLeft">目の下の治療</span>
-								<span class="p-priceTable__listRight">¥214,500<small>(税込)</small></span>
-							</a>
-						</li>
-					</ul><!-- /.p-priceTable__list -->
-				</div><!-- /.p-priceTable__inner -->
-
-			</div><!-- /.p-priceTable__wrap -->
-		</div><!-- /.l-container__narroq -->
-	</section><!-- /.p-priceTable -->
 
 	<section class="l-recommend p-recommend">
 		<div class="l-container__narrow">
 			<h2 class="p-recommend__lead">こんな方におすすめ</h2>
 			<div class="p-recommend__textWrap">
 				<p class="p-recommend__sentence">
-					"毎日自然な二重になりたい"<br>
-					"目元の印象を変えたい"<br>
-					"目の開きをしっかりさせたい"<br>
-					"目の下を若々しい印象に"
+					"2カップ以上バストアップしたい"<br>
+					"谷間を作りたい"<br>
+					"授乳で小さくなった胸を大きくしたい"
 				</p>
 				<p class="p-recommend__sentence">
 					そのために<br>
@@ -257,7 +177,7 @@
                             <a href="tel:0120-510-830">お電話</a>
                         </div>
                         <div class="c-buttonCTA c-buttonCTA__phone u-spNone">
-                            <a href="./first.html">お電話</a>
+                            <a href="<?php echo esc_url(home_url('')); ?>/first">お電話</a>
                         </div>
 						<div class="c-buttonCTA c-buttonCTA__mail">
 								<a href="https://www.mizunomori.com/counsel/" target="_blank" rel="noopener">WEB予約</a>
@@ -275,9 +195,9 @@
 				<h2 class="u-visually-hidden">ページナビゲーション</h2>
 				<ul class="c-navigation__list c-flex c-flex__alignCenter c-flex__wrap">
 					<li class="c-navigation__listItem -diagnosis"><a href="#case">症例写真</a></li>
-					<li class="c-navigation__listItem -diagnosis"><a href="#about">一重と二重</a></li>
-					<li class="c-navigation__listItem -diagnosis"><a href="#point">水の森の特徴</a></li>
-					<li class="c-navigation__listItem -diagnosis"><a href="#flow">施術の流れ</a></li>
+					<li class="c-navigation__listItem -diagnosis"><a href="#about">シリコンバッグとは</a></li>
+					<li class="c-navigation__listItem -diagnosis"><a href="#method">効果を出す施術方法</a></li>
+					<li class="c-navigation__listItem -diagnosis"><a href="#point">選ばれる理由</a></li>
 					<li class="c-navigation__listItem -diagnosis"><a href="#faq">よくあるご質問</a></li>
 					<li class="c-navigation__listItem -diagnosis"><a href="#price">施術料金</a></li>
 				</ul><!-- /c-navigation__list -->
@@ -285,7 +205,6 @@
 		</div><!-- /l-container -->
 	</div><!-- /u-bgNaviColor -->
 
-		
 	<section id="case" class="l-case c-case"> 
 		<div class="l-container__narrow">
 			<div class="l-spacer__headingDiagnosis c-heading">
@@ -293,15 +212,15 @@
 			</div><!-- /.c-heading -->
 
 			<div class="c-case__box">
-				<h3 class="c-case__title">二重埋没法</h3>
 				<div class="c-case__boxInner">
+					<div class="u-spacer__s"></div>
 					<div class="c-flex c-flex__spaceBetween">
 						<figure class="c-case__picture">
-							<img src="./img/diagnosis/eye/case1_1.webp" alt="" loading="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/bust/bag/case1_1.webp" alt="" loading="lazy">
 							<figcaption>Before</figcaption>
 						</figure>
 						<figure class="c-case__picture">
-							<img src="./img/diagnosis/eye/case1_2.webp" alt="" loading="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/bust/bag/case1_2.webp" alt="" loading="lazy">
 							<figcaption>After</figcaption>
 						</figure>
 					</div><!-- /.c-flex -->
@@ -312,41 +231,33 @@
 							<div class="c-case__table">
 								<dl>
 									<dt>施術費用</dt>
-									<dd>65,890円（税込）</dd>
+									<dd>658,900円（税込）</dd>
 									<dt>リスク・<br>副作用</dt>
-									<dd>【痛み・熱感・ゴロゴロ感・熱感】･･･1～2週間程度</dd>
+									<dd>【ドレーン装着】･･･翌日まで<br>
+										【腫れ・痛み】･･･1ヶ月程度<br>
+										【傷口の赤み】･･･3～6ヶ月程度<br>
+										【しびれ】･･･3ヶ月程度</dd>
 								</dl>
 							</div><!-- /.c-case__table -->
 						</div><!-- /.c-case__hiddenTable -->
 					</div><!-- /.c-case__body -->
+					
+					<div class="u-spacer__s"></div>
 
-					<div class="c-case__bottom">
-						<p class="c-case__recommend">おすすめの方</p>
-							<ul class="c-case__list">
-								<li class="c-case__listItem">・短時間で施術をしたい</li>
-								<li class="c-case__listItem">・メスに抵抗がある</li>
-								<li class="c-case__listItem">・ダウンタイムを抑えて二重にしたい</li>
-							</ul><!-- /.c-case__list -->
-						
-						<div class="c-case__bottomButton">
-							<a href="./diagnosis-eye-maibotsu.html">施術ページへ</a>
-						</div>
-						
-					</div><!-- /.c-case__bottom -->
-
+				
 				</div><!-- /.c-case__boxInner -->
 			</div><!-- /.c-case__box -->
 
 			<div class="c-case__box">
-				<h3 class="c-case__title">二重切開法</h3>
 				<div class="c-case__boxInner">
+					<div class="u-spacer__s"></div>
 					<div class="c-flex c-flex__spaceBetween">
 						<figure class="c-case__picture">
-							<img src="./img/diagnosis/eye/case2_2.webp" alt="" loading="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/bust/bag/case2_1.webp" alt="" loading="lazy">
 							<figcaption>Before</figcaption>
 						</figure>
 						<figure class="c-case__picture">
-							<img src="./img/diagnosis/eye/case2_1.webp" alt="" loading="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/bust/bag/case2_2.webp" alt="" loading="lazy">
 							<figcaption>After</figcaption>
 						</figure>
 					</div><!-- /.c-flex -->
@@ -357,41 +268,33 @@
 							<div class="c-case__table">
 								<dl>
 									<dt>施術費用</dt>
-									<dd>273,900円（税込）</dd>
+									<dd>658,900円（税込）</dd>
 									<dt>リスク・<br>副作用</dt>
-									<dd>【痛み・熱感】･･･1週間程度<br>【腫れ・内出血】･･･ピークは1〜2週間程度<br>【傷口の赤み】･･･3ヶ月</dd>
+									<dd>【ドレーン装着】･･･翌日まで<br>
+										【腫れ・痛み】･･･1ヶ月程度<br>
+										【傷口の赤み】･･･3～6ヶ月程度<br>
+										【しびれ】･･･3ヶ月程度</dd>
 								</dl>
 							</div><!-- /.c-case__table -->
 						</div><!-- /.c-case__hiddenTable -->
 					</div><!-- /.c-case__body -->
 
-					<div class="c-case__bottom">
-						<p class="c-case__recommend">おすすめの方</p>
-							<ul class="c-case__list">
-								<li class="c-case__listItem">・埋没の糸が取れるのが心配な方</li>
-								<li class="c-case__listItem">・埋没で作ったラインをキープしたい</li>
-								<li class="c-case__listItem">・半永久的な二重にしたい</li>
-							</ul><!-- /.c-case__list -->
-						
-						<div class="c-case__bottomButton">
-							<a href="./diagnosis-eye-sekkai.html">施術ページへ</a>
-						</div>
-						
-					</div><!-- /.c-case__bottom -->
+					<div class="u-spacer__s"></div>
 
 				</div><!-- /.c-case__boxInner -->
 			</div><!-- /.c-case__box -->
+
 
 			<div class="c-case__box">
-				<h3 class="c-case__title">目頭切開法</h3>
 				<div class="c-case__boxInner">
+					<div class="u-spacer__s"></div>
 					<div class="c-flex c-flex__spaceBetween">
 						<figure class="c-case__picture">
-							<img src="./img/diagnosis/eye/case3_1.webp" alt="" loading="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/bust/bag/case3_1.webp" alt="" loading="lazy">
 							<figcaption>Before</figcaption>
 						</figure>
 						<figure class="c-case__picture">
-							<img src="./img/diagnosis/eye/case3_2.webp" alt="" loading="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/bust/bag/case3_2.webp" alt="" loading="lazy">
 							<figcaption>After</figcaption>
 						</figure>
 					</div><!-- /.c-flex -->
@@ -402,389 +305,162 @@
 							<div class="c-case__table">
 								<dl>
 									<dt>施術費用</dt>
-									<dd>218,900円（税込）</dd>
+									<dd>658,900円（税込）</dd>
 									<dt>リスク・<br>副作用</dt>
-									<dd>【痛み・熱感】･･･1週間程度<br>【腫れ・内出血】･･･ピークは1〜2週間程度<br>【傷口の赤み】･･･3ヶ月</dd>
+									<dd>【ドレーン装着】･･･翌日まで<br>
+										【腫れ・痛み】･･･1ヶ月程度<br>
+										【傷口の赤み】･･･3～6ヶ月程度<br>
+										【しびれ】･･･3ヶ月程度</dd>
 								</dl>
 							</div><!-- /.c-case__table -->
 						</div><!-- /.c-case__hiddenTable -->
 					</div><!-- /.c-case__body -->
 
-					<div class="c-case__bottom">
-						<p class="c-case__recommend">おすすめの方</p>
-							<ul class="c-case__list">
-								<li class="c-case__listItem">・離れ目を解消したい</li>
-								<li class="c-case__listItem">・目を大きく見せたい</li>
-								<li class="c-case__listItem">・二重を平行に近づけたい</li>
-							</ul><!-- /.c-case__list -->
-						
-						<div class="c-case__bottomButton">
-							<a href="./diagnosis-eye-megashira.html">施術ページへ</a>
-						</div>
-						
-					</div><!-- /.c-case__bottom -->
+					<div class="u-spacer__s"></div>
 
 				</div><!-- /.c-case__boxInner -->
 			</div><!-- /.c-case__box -->
-
-			<div class="c-case__box">
-				<h3 class="c-case__title">目尻切開法</h3>
-				<div class="c-case__boxInner">
-					<div class="c-flex c-flex__spaceBetween">
-						<figure class="c-case__picture">
-							<img src="./img/diagnosis/eye/case4_1.webp" alt="" loading="lazy">
-							<figcaption>Before</figcaption>
-						</figure>
-						<figure class="c-case__picture">
-							<img src="./img/diagnosis/eye/case4_2.webp" alt="" loading="lazy">
-							<figcaption>After</figcaption>
-						</figure>
-					</div><!-- /.c-flex -->
-
-					<div class="c-case__body">
-						<p class="c-case__button js-accordion" role="button">施術詳細</p>
-						<div class="c-case__hiddenTable js-content">
-							<div class="c-case__table">
-								<dl>
-									<dt>施術費用</dt>
-									<dd>220,000円（税込）</dd>
-									<dt>リスク・<br>副作用</dt>
-									<dd>【痛み・熱感】･･･1〜2週間程度<br>【腫れ・内出血】･･･1〜2週間程度<br>【傷口の赤み】･･･3ヶ月</dd>
-								</dl>
-							</div><!-- /.c-case__table -->
-						</div><!-- /.c-case__hiddenTable -->
-					</div><!-- /.c-case__body -->
-
-					<div class="c-case__bottom">
-						<p class="c-case__recommend">おすすめの方</p>
-							<ul class="c-case__list">
-								<li class="c-case__listItem">・切れ長の目元にしたい</li>
-								<li class="c-case__listItem">・シャープな印象に</li>
-								<li class="c-case__listItem">・目の横幅を広げたい</li>
-							</ul><!-- /.c-case__list -->
-						
-						<div class="c-case__bottomButton">
-							<a href="./diagnosis-eye-mejiri-sekkai.html">施術ページへ</a>
-						</div>
-						
-					</div><!-- /.c-case__bottom -->
-
-				</div><!-- /.c-case__boxInner -->
-			</div><!-- /.c-case__box -->
-
-			<div class="c-case__box">
-				<h3 class="c-case__title">眉下切開法</h3>
-				<div class="c-case__boxInner">
-					<div class="c-flex c-flex__spaceBetween">
-						<figure class="c-case__picture">
-							<img src="./img/diagnosis/eye/case5_1.webp" alt="" loading="lazy">
-							<figcaption>Before</figcaption>
-						</figure>
-						<figure class="c-case__picture">
-							<img src="./img/diagnosis/eye/case5_2.webp" alt="" loading="lazy">
-							<figcaption>After</figcaption>
-						</figure>
-					</div><!-- /.c-flex -->
-
-					<div class="c-case__body">
-						<p class="c-case__button js-accordion" role="button">施術詳細</p>
-						<div class="c-case__hiddenTable js-content">
-							<div class="c-case__table">
-								<dl>
-									<dt>施術費用</dt>
-									<dd>218,900円（税込）</dd>
-									<dt>リスク・<br>副作用</dt>
-									<dd>腫れ・赤み・むくみ<br>※ピークは1週間ほど</dd>
-								</dl>
-							</div><!-- /.c-case__table -->
-						</div><!-- /.c-case__hiddenTable -->
-					</div><!-- /.c-case__body -->
-
-					<div class="c-case__bottom">
-						<p class="c-case__recommend">おすすめの方</p>
-							<ul class="c-case__list">
-								<li class="c-case__listItem">・まぶたがたるんで二重が隠れてきた</li>
-								<li class="c-case__listItem">・二重幅を自然に広げたい</li>
-								<li class="c-case__listItem">・若々しい目元にしたい</li>
-							</ul><!-- /.c-case__list -->
-						
-						<div class="c-case__bottomButton">
-							<a href="./diagnosis-eye-tarumi_mayushita.html">施術ページへ</a>
-						</div>
-						
-					</div><!-- /.c-case__bottom -->
-
-				</div><!-- /.c-case__boxInner -->
-			</div><!-- /.c-case__box -->
-
-			<div class="c-case__box">
-				<h3 class="c-case__title">眼瞼下垂</h3>
-				<div class="c-case__boxInner">
-					<div class="c-flex c-flex__spaceBetween">
-						<figure class="c-case__picture">
-							<img src="./img/diagnosis/eye/case6_1.webp" alt="" loading="lazy">
-							<figcaption>Before</figcaption>
-						</figure>
-						<figure class="c-case__picture">
-							<img src="./img/diagnosis/eye/case6_2.webp" alt="" loading="lazy">
-							<figcaption>After</figcaption>
-						</figure>
-					</div><!-- /.c-flex -->
-
-					<div class="c-case__body">
-						<p class="c-case__button js-accordion" role="button">施術詳細</p>
-						<div class="c-case__hiddenTable js-content">
-							<div class="c-case__table">
-								<dl>
-									<dt>施術費用</dt>
-									<dd>427,900円（税込）</dd>
-									<dt>リスク・<br>副作用</dt>
-									<dd>【痛み・熱感】･･･1週間程度<br>【腫れ・内出血】･･･ピークは1週間程度<br>【傷口の赤み】･･･3ヶ月</dd>
-								</dl>
-							</div><!-- /.c-case__table -->
-						</div><!-- /.c-case__hiddenTable -->
-					</div><!-- /.c-case__body -->
-
-					<div class="c-case__bottom">
-						<p class="c-case__recommend">おすすめの方</p>
-							<ul class="c-case__list">
-								<li class="c-case__listItem">・眠たそうにみられる</li>
-								<li class="c-case__listItem">・目の上が凹む</li>
-								<li class="c-case__listItem">・眉毛を上げ目を開く癖がある</li>
-							</ul><!-- /.c-case__list -->
-						
-						<div class="c-case__bottomButton">
-							<a href="./diagnosis-eye-gankenkasui.html">施術ページへ</a>
-						</div>
-						
-					</div><!-- /.c-case__bottom -->
-
-				</div><!-- /.c-case__boxInner -->
-			</div><!-- /.c-case__box -->
-
-			<div class="c-case__box">
-				<h3 class="c-case__title">目の下のたるみ・ふくらみ</h3>
-				<div class="c-case__boxInner">
-					<div class="c-flex c-flex__spaceBetween">
-						<figure class="c-case__picture">
-							<img src="./img/diagnosis/eye/case7_1.webp" alt="" loading="lazy">
-							<figcaption>Before</figcaption>
-						</figure>
-						<figure class="c-case__picture">
-							<img src="./img/diagnosis/eye/case7_2.webp" alt="" loading="lazy">
-							<figcaption>After</figcaption>
-						</figure>
-					</div><!-- /.c-flex -->
-
-					<div class="c-case__body">
-						<p class="c-case__button js-accordion" role="button">施術詳細</p>
-						<div class="c-case__hiddenTable js-content">
-							<div class="c-case__table">
-								<dl>
-									<dt>施術費用</dt>
-									<dd> 394,900円（税込）</dd>
-									<dt>リスク・<br>副作用</dt>
-									<dd>【目の下の圧迫固定】･･･３日間<br>【痛み・熱感】･･･1週間程度<br>【傷口の赤み】･･･3ヶ月程度</dd>
-								</dl>
-							</div><!-- /.c-case__table -->
-						</div><!-- /.c-case__hiddenTable -->
-					</div><!-- /.c-case__body -->
-
-					<div class="c-case__bottom">
-						<p class="c-case__recommend">おすすめの方</p>
-							<ul class="c-case__list">
-								<li class="c-case__listItem">・目の下のふくらみを治したい</li>
-								<li class="c-case__listItem">・クマが目立ってきた</li>
-								<li class="c-case__listItem">・たるみを改善したい</li>
-							</ul><!-- /.c-case__list -->
-						
-						<div class="c-case__bottomButton">
-							<a href="./diagnosis-eye-ageng-eye.html">施術ページへ</a>
-						</div>
-						
-					</div><!-- /.c-case__bottom -->
-
-				</div><!-- /.c-case__boxInner -->
-			</div><!-- /.c-case__box -->
-
 
 			<div class="c-case__bottomButton c-case__archiveButton">
-				<a href="https://www.mizunomori.com/case-rank/eye/" target="_blank" rel="noopener">二重まぶた・目元の症例一覧はこちら</a>
+				<a href="https://www.mizunomori.com/cases/bust/bag/" target="_blank" rel="noopener">シリコンバッグの症例一覧はこちら</a>
 			</div><!-- /.c-case__archiveButton -->
 
 		</div><!-- /.l-container__narrow -->
 	</section><!-- /.l-case -->
 
-	
 	<div class="u-bgMainColor">
 		<section id="about" class="c-about l-about">
 			<div class="l-container__narrow">
 				<div class="l-spacer__headingDiagnosis c-heading">
-					<h2 class="c-heading__diagnosis" data-entitle="about">一重と二重の違い</h2>
+					<h2 class="c-heading__diagnosis" data-entitle="about">シリコンバッグとは</h2>
 				</div><!-- /.c-heading -->
 				<div class="c-about__box" data-style="ordinaryStyle">
-					<h3 class="c-about__title" data-style="ordinaryStyle"><span>二重の仕組みご存じですか？</span></h3>
 					<div class="c-about__boxInner" data-style="ordinaryStyle">
-						<p class="c-sentence">二重の手術を受ける前にまずはしっかりまぶたの仕組みを知ることが必要です。</p>
-						
+						<div class="u-spacer__m"></div>
+						<p class="c-sentence">
+							シリコンバッグによる豊胸術は、半永久的に理想のバストを実現します。2サイズ以上大きくしたい方などは豊胸バッグの治療が最適です。シリコンのサイズは患者様ごとに適した大きさをご提案します。挿入後は入替や除去などの必要はございません。
+						</p>
 						<div class="c-about__body">
-							<p class="c-about__eyeLead">一重の仕組み</p>
-							<img class="u-centerposition" src="./img/diagnosis/eye/about1.webp" alt="">
-							<div class="u-spacer__s"></div><!-- /u-spacer__s -->
-							<p class="c-sentence">
-								瞼板（A）と言われる組織に眼瞼挙筋（B）といわれる筋肉が付着しております。 この眼瞼挙筋（B）が瞼板（A）を引き上げる事で目が開きます。<br>（A）が引っ張られると相対的に皮膚は②の方向へ垂れ下がってしまう為、黒目があまり見えていない状態となります。<br>これが一重の仕組みです。 黒目が見えていないため人相が悪くみえたり、暗いイメージになりやすいのです。 まぶたの皮膚が②の方向へ垂れ下がるため、まつ毛も上を向きません。
-							</p><!-- /c-sentence -->
+							<h3 class="c-about__title" data-style="ordinaryStyle"><span>シリコンバッグによる豊胸術の特徴</span></h3>
+							<ul class="c-about__hyaluronanList">
+								<li>
+									<p class="c-about__hyaluronanListTitle"><span>1</span>大きなサイズアップ</p>
+									<p class="c-sentence">一度の施術でしっかりした大きさが出るため何度も受け直す必要がなく半永久的にボリュームを維持できます。</p>
+								</li>
+								<li>
+									<p class="c-about__hyaluronanListTitle"><span>2</span>効果が半永久的</p>
+									<p class="c-sentence">注入する場所によって内出血が起こる可能性がありますが、術後の腫れやメイクで隠せないような赤みは出ません。</p>
+								</li>
+								<li>
+									<p class="c-about__hyaluronanListTitle"><span>3</span>左右差が出ずらい</p>
+									<p class="c-sentence">シリコンの大きさは両胸とも均等のものを入れ、お身体に合わせ挿入するためバランスの取れた美しい胸になります。</p>
+								</li>
+							</ul><!-- /.c-about__hyaluronanList -->
 						</div><!-- /.c-about__body -->
 
+						<div id="method" class="l-spacer__headingDiagnosis c-heading">
+							<h3 class="c-heading__diagnosis" data-entitle="method">効果を出す施術方法</h3>
+						</div><!-- /.c-heading -->
 						<div class="c-about__body">
-							<p class="c-about__eyeLead">二重の仕組み</p>
-							<img class="u-centerposition" src="./img/diagnosis/eye/about1.webp" alt="">
-							<div class="u-spacer__s"></div><!-- /u-spacer__s -->
-							<p class="c-sentence">
-								二重になる方は眼瞼挙筋の枝が皮膚の方まで伸びて付着しています。眼瞼挙筋（B）が瞼板（A）を引っ張って開眼する際に、同時に眼瞼挙筋（B）の枝が皮膚を引き込んできますので、上図の様に折り重なりが出来て二重となります。<br> この時Cの地点（瞼縁といいます）が上に持ち上がる事で黒目が大きく見えます。二重になる事で黒目が大きく見えたり睫毛が上に持ち上がって目が大きく見えるということになるのです。<br>その上で、どの程度二重の幅があった方が良いかは患者様の好みということになります。すなわち眼瞼挙筋の枝の代わりを作ってあげる事が二重の手術という事になります。
-							</p><!-- /c-sentence -->
+							<h4 class="p-bust__underlineTitle">シリコンの挿入方法は２種類</h4>
+							<p class="c-sentence">脇のシワに沿って切開し、シリコンバッグを挿入していきます。<br>どの位置に入れるかで方法が２つあります。</p>
+							<div class="u-spacer__m"></div>
+							<p class="u-bold u-strong">■乳腺下法：Aカップ以上の方向け</p>
+							<div class="u-spacer__s"></div>
+							<div class="u-centerposition">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/bust/bag/method1.webp" alt="" class="u-half">
+							</div><!-- /u-centerposition -->
+							<div class="u-spacer__s"></div>
+							<p class="c-sentence">シリコンを乳腺の下に挿入する方法です。<br>胸の谷間ができやすく、垂れている胸もハリのあるバストに変化があります。</p>
+
+							<div class="u-spacer__m"></div>
+							<p class="u-bold u-strong">■大胸筋下法：Aカップ以下の方向け</p>
+							<div class="u-spacer__s"></div>
+							<div class="u-centerposition">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/bust/bag/method2.webp" alt="" class="u-half">
+							</div><!-- /u-centerposition -->
+							<div class="u-spacer__s"></div>
+							<p class="c-sentence">乳腺がほぼない方向けの方法です。<br>術後の痛みが乳腺下法に比べ強いことや谷間が出来づらい特徴がございます。</p>
+							<p class="c-sentence">大胸筋法か乳腺下法かは患者様の体形や選択するバッグの種類によっても違うためカウンセリングにて患者様のご希望にあわせてアドバイスさせていただきます。<br>豊胸術は手術をしてそれで終わりというわけではありませんので、術後の医師の診察やマッサージに加え、定期検診をしてくれる医院を選びましょう。一生物の手術なので、将来のことまで考えてくれる医師や病院選びが重要です。</p>
 						</div><!-- /.c-about__body -->
 
+						<div class="l-spacer__headingDiagnosis c-heading">
+							<h3 class="c-heading__diagnosis" data-entitle="type">シリコンバッグの種類</h3>
+						</div><!-- /.c-heading -->
 						<div class="c-about__body">
-							<div class="u-spacer__m"></div><!-- /u-spacer__m -->
-							<h3 class="c-about__title" data-style="ordinaryStyle"><span>代表的な二重の種類</span></h3>
-							<div class="p-eye l-eye">
-								<div class="p-eye__case">
-									<h4 class="p-eye__caseTitle">奥二重</h4>
-									<div class="p-eye__caseInner">
-										<div class="c-flex c-flex__alignCenter">
-											<div class="p-eye__caseLeft">
-												<img src="./img/diagnosis/eye/about3.webp" alt="">
-											</div>
-											<div class="p-eye__caseRight">
-												<p class="c-sentence">二重のラインにまぶたがかぶっているため、角度によっては一重に見えてしまうタイプの二重です。奥二重は、クールな印象を持たれることが多いです。</p>
-											</div>
-										</div><!-- /c-flex -->
-									</div><!-- /p-eye__caseInner -->
-								</div><!-- /p-eye__case -->
-
-								<div class="p-eye__case">
-									<h4 class="p-eye__caseTitle">末広二重</h4>
-									<div class="p-eye__caseInner">
-										<div class="c-flex c-flex__alignCenter">
-											<div class="p-eye__caseLeft">
-												<img src="./img/diagnosis/eye/about4.webp" alt="">
-											</div>
-											<div class="p-eye__caseRight">
-												<p class="c-sentence">目尻側にいくほどに幅が広がっているタイプで日本を含むアジアの方に１番多いのがこの末広の二重です。ナチュラルな印象になります。</p>
-											</div>
-										</div><!-- /c-flex -->
-									</div><!-- /p-eye__caseInner -->
-								</div><!-- /p-eye__case -->
-
-								<div class="p-eye__case">
-									<h4 class="p-eye__caseTitle">幅の狭い平行二重</h4>
-									<div class="p-eye__caseInner">
-										<div class="c-flex c-flex__alignCenter">
-											<div class="p-eye__caseLeft">
-												<img src="./img/diagnosis/eye/about5.webp" alt="">
-											</div>
-											<div class="p-eye__caseRight">
-												<p class="c-sentence">幅の広い平行二重よりもさりげなく華やかな印象を与
-													え、ノーメイクでも違和感のない二重です。平行二重がいいけど自然に見せたいという方におすすめです。</p>
-											</div>
-										</div><!-- /c-flex -->
-									</div><!-- /p-eye__caseInner -->
-								</div><!-- /p-eye__case -->
-
-								<div class="p-eye__case">
-									<h4 class="p-eye__caseTitle">幅の広い平行二重</h4>
-									<div class="p-eye__caseInner">
-										<div class="c-flex c-flex__alignCenter">
-											<div class="p-eye__caseLeft">
-												<img src="./img/diagnosis/eye/about6.webp" alt="">
-											</div>
-											<div class="p-eye__caseRight">
-												<p class="c-sentence">目頭側から目じりまで均一なラインが入っている欧米の方に多く見られる二重です。まつ毛の生え際もしっかり見えており、華やかな印象のお目元になります。</p>
-											</div>
-										</div><!-- /c-flex -->
-									</div><!-- /p-eye__caseInner -->
-								</div><!-- /p-eye__case -->
-							</div><!-- /p-eye -->
+							<div class="u-spacer__s"></div>
+							<div class="u-centerposition">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/bust/bag/type1.webp" alt="" class="u-narrow">
+							</div><!-- /u-centerposition -->
+							<div class="u-spacer__s"></div>
+							<p class="c-sentence">当院では、上記図左のテクスチャードタイプのシリコンを使用しています。<br>形状はラウンド型（丸型）で、体の動きに合わせて動くため自然なバストを形成でき、しっかりしたサイズアップが可能です。</p>
+							<div class="u-spacer__m"></div>
+							<p class="u-centerposition u-strong u-fontGothic u-expantion">カプセル拘縮について</p>
+							<div class="u-spacer__s"></div>
+							<p class="c-sentence">カプセル拘縮とはシリコンが固くなる現象のことです。<br>生体内に異物（豊胸バッグ）が挿入されると、人間の体はその異物を排除しようとする生体反応が働きます。その機構によってバッグの周囲に被膜が形成されます。被膜がバッグを圧縮するように硬く厚く出来上がってしまうと硬くなり、これをカプセル拘縮といいます。</p>
+							<div class="u-spacer__s"></div>
+							<div class="u-centerposition">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/bust/bag/type2.webp" alt="" class="u-half">
+							</div><!-- /u-centerposition -->
+							<div class="u-spacer__s"></div>
 						</div><!-- /c-about__body -->
-
-						<div class="c-about__body">
-							<h3 class="c-about__title" data-style="ordinaryStyle"><span>埋没法と切開法の違い</span></h3>
-
-							<div class="p-eye__tableWrap">
-								<table>
-									<thead>
-										<tr>
-											<th class="heading"></th>
-											<th class="heading">埋没法</th>
-											<th class="heading">切開法</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td class="heading">方法</td>
-											<td>二重にしたいラインに糸をかけて二重を形成</td>
-											<td>二重にしたいラインを切開して二重を形成</td>
-										</tr>
-										<tr>
-											<td class="heading">特徴</td>
-											<td>切らずに短時間で二重に</td>
-											<td>半永久の二重に</td>
-										</tr>
-										<tr>
-											<td class="heading">時間</td>
-											<td>１０分～１５分</td>
-											<td>６０～９０分程度</td>
-										</tr>
-										<tr>
-											<td class="heading">長所</td>
-											<td>
-												<ul>
-													<li>・ダウンタイムが短い</li>
-													<li>・元に戻せる</li>
-												</ul>
-											</td>
-											<td>
-												<ul>
-													<li>・取れない二重になる</li>
-													<li>・二重ラインをくっきりさせる</li>
-												</ul>
-											</td>
-										</tr>
-										<tr>
-											<td class="heading">短所</td>
-											<td>
-												<ul>
-													<li>・糸が弛むと元に戻る</li>
-													<li>・戻る速さに個人差がある</li>
-												</ul>
-											</td>
-											<td>
-												<ul>
-													<li>・ダウンタイムが埋没法より長い</li>
-													<li>・術後幅を狭くするのは困難</li>
-												</ul>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div><!-- /p-eye__tableWrap -->
-						</div><!-- /c-about__body -->
-
-						<div class="u-spacer__s"></div><!-- /u-spacer__s -->
-						<div class="c-about__body">
-							<div class="p-eye__selectWrap">
-								<h4 class="p-eye__selectLead">どっちがいい？</h4>
-								<div class="c-sentence">よくあるのが、まぶたが厚いから切開じゃないと厳しいと他院様で言われた患者様が、当院で埋没法を行い十分理想の二重になったケースがございます。<br>迷われた際は一つのクリニックで決めずにいくつかの医院をカウンセリングすることをおすすめします。</div>
-							</div><!-- /p-eye__selectWrap -->
-						</div><!-- /c-about__body -->
-
-
 					</div><!-- /.c-about__boxInner -->
 				</div><!-- /.c-about__box -->
 			</div><!-- /.l-container__narrow -->
 		</section><!-- /.c-about -->
 	</div><!-- /.u-bgMainColor -->
+
+
+	<div class="p-method__failure">
+		<div class="l-container__narrow">
+			<div class="p-method__failureInner">
+				<h3 class="p-method__failureTitle u-expantion">予防のための当院の工夫</h3>
+				<div class="u-spacer__m"></div>
+				<div class="p-method__failureBox">
+					<p class="u-accentColor">①手術手技</p>
+					<div class="u-spacer__s"></div>
+					<p class="c-sentence">一番の原因は剥離不足にあります。剥離をしたつもりでも剥離が非常に雑で、中で線維状の組織が残っていて剥離しきれない。このようなケースがカプセル拘縮につながっていることが多いでしょう。通常、剥離する際には鈍的な棒(剥離棒)をつかって剥がすのですが、見えないところを棒で 剥がすのでどうしても剥離不足が起こりがちです。当院ではすべて医師の指で剥離するため剥離残しがないかをすべて確認し、均一なレイヤーで丁寧に剥離します。</p>
+				</div><!-- /.p-method__failureBox -->
+				<div class="p-method__failureBox">
+					<p class="u-accentColor">②術後ドレーンでの器質化の防止</p>
+					<div class="u-spacer__s"></div>
+					<p class="c-sentence">バッグを入れるスペースをつくった部位に血液が溜まると、その血液が器質化してカプセル拘縮を引き起こす原因となる可能性があります。ドレーンとはスペースに血が溜まらないように留置させておく管のことで、中に血液が溜まり器質化するのを防ぎます。</p>
+				</div><!-- /.p-method__failureBox -->
+				<div class="p-method__failureBox">
+					<p class="u-accentColor">③術後のマッサージ通院</p>
+					<div class="u-spacer__s"></div>
+					<p class="c-sentence">テクスチャードタイプのシリコンバッグでは術後のマッサージは不要としているクリニックが多数ですが、テクスチャードタイプでも術後のマッサージを行ったほうが明らかに仕上がりがやわらかいと言えます。術後3ヶ月間は医師の診断のもとにしっかりマッサージを受けましょう。そうすることによりカプセル拘縮の前兆があった際にも早期に対処することができます。</p>
+				</div><!-- /.p-method__failureBox -->
+	
+				<div class="p-method__failureBox">
+				
+				</div><!-- /.p-method__failureBox -->
+			</div><!-- /.p-method__failureInner -->
+		</div><!-- /l-container__narrow -->
+	</div><!-- /.p-method__failure -->
+
+
+	<section class="p-downtime l-downtime">
+		<div class="l-container__narrow">
+			<div class="l-spacer__headingDiagnosis c-heading">
+				<h2 class="c-heading__diagnosis" data-entitle="downtime">ダウンタイムと経過</h2>
+			</div><!-- /.c-heading -->
+			<div class="u-spacer__m"></div>
+				<p class="c-sentence u-narrowPC u-marginAuto">【当日】<br>圧迫は翌日の来院まで外さないようお気を付け下さい。<br>万が一、外れかかった場合は手持ちの包帯やテープなどで固定して下さい。</p>
+				<p class="c-sentence u-narrowPC u-marginAuto">【翌日　検診】<br>ご来院いただき、ドレーン抜去と包帯圧迫の再固定を行います。</p>
+				<p class="c-sentence u-narrowPC u-marginAuto">【３日目　検診】<br>ご来院いただき、一部圧迫除去・ガーゼ交換を行います。必ずご来院下さい。<br>抜糸までの間は、ご自身で上胸バンドの着用と処置と圧迫を行っていただきます。<br>創部の処置方法を検診時にお伝えします。</p>
+				<p class="c-sentence u-narrowPC u-marginAuto">【7日目　検診】<br>ご来院いただき、抜糸と圧迫除去(大胸筋下法の方は2週間目まで)を行います。</p>
+				<p class="c-sentence u-narrowPC u-marginAuto">【2週間目　検診】<br>ご来院いただき、状態確認・マッサージ指導を行います。<br>	手術後2週間目からご自身でお胸のマッサージを行っていただきます。</p>
+				<p class="c-sentence u-narrowPC u-marginAuto">【3週間目　検診】<br>1週間後にマッサージがきちんと出来ているか検診にて確認させていただきます。</p>
+				<div class="u-spacer__m"></div>
+				<p class="c-sentence u-narrowPC u-marginAuto">～入浴・洗顔・洗髪・メイクについて～</p>
+				<p class="c-sentence u-narrowPC u-marginAuto">【当日】<br>洗髪、シャワー浴はお控え下さい。</p>
+					<p class="c-sentence u-narrowPC u-marginAuto">【ドレーン除去後】<br>下半身のみシャワー浴が可能となります。浴槽入浴は1週間お控え下さい。<br>（体が温まることで血行がよくなり、腫れが強くなる可能性があります。）<br>シャワー浴時は、包帯が濡れない様ご注意下さい。</p>
+					<p class="c-sentence u-narrowPC u-marginAuto">【抜糸の翌日】<br>創部の水洗いが可能となります。<br>石鹸のご使用、浴槽入浴ができます。傷口は優しく洗うようにして下さい。</p>
+			<div class="u-spacer__l"></div>
+
+		</div><!-- /.l-container__narrow -->
+	</section><!-- /.p-downtime -->
 
 	<section id="point" class="p-point l-point">
 		<div class="l-container__narrow">
@@ -799,17 +475,17 @@
 					<p class="p-point__boxLead">
 						<span>“技術統一による高水準の施術”</span>
 					</p>
-					<p class="c-sentence">二重・目元の解剖学を熟知したドクターのみが施術するため、カウンセリングにおいても理論に基づき必要な治療、必要でない治療をご案内します。</p>
+					<p class="c-sentence">解剖学を熟知したドクターのみが施術するため、<br>カウンセリングにおいても理論に基づき必要な治療、必要でない治療をご案内します。</p>
 					<div class="p-point__boxBody c-flex c-flex__alignCenter">
 						<div class="p-point__point">
 							<h4 class="p-point__pointTitle">技術統一</h4>
 							<p class="p-point__pointText">全院でどのドクターでも技術差のない技術統一を行っております。</p>
-							<h4 class="p-point__pointTitle">１院で１日20件以上</h4>
-							<p class="p-point__pointText">一番人気の埋没法は1院のみで１日20件以上施術を行っています。<br>（2021年1月～12月全院合計施術数より）</p>
+							<h4 class="p-point__pointTitle">解剖学の理解</h4>
+							<p class="p-point__pointText">患者様のお身体にあった適切な大きさのシリコンをご提案します。</p>
 						</div><!-- /.p-point__point -->
 
 						<div class="p-point__pointImg">
-							<img src="./img/diagnosis/eye/point1.webp" alt="">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/bust/point1.webp" alt="">
 						</div><!-- /.p-point__pointImg -->
 					</div><!-- /.p-point__boxBody -->
 
@@ -817,35 +493,32 @@
 			</div><!-- /.p-point__box -->
 
 			<div class="p-point__box">
-				<h3 class="p-point__title" data-style="reverse">＃2 デザイン技術</h3>
+				<h3 class="p-point__title" data-style="reverse">＃2 高い技術を適正価格でご提供</h3>
 				<div class="p-point__boxInner" data-style="reverse">
 					<p class="p-point__boxLead" data-style="reverse">
-						当院独自の
-						<span>“二重整形の幅のパターン化”</span>
+						「豊胸って高い…」というイメージで、諦めていませんか？
+						<span>“豊胸は100万円もかかりません”</span>
 					</p>
-					<p class="p-point__boxSentence c-sentence" data-style="reverse">3パターンの二重幅をご提案しそこから更に0.5mm単位で希望の幅を調整していきます。</p>
+					<p class="p-point__boxSentence c-sentence" data-style="reverse">当院では、必要のない方法は一切行わず、適正な価格でしっかりと効果のある施術だけを行います。</p>
 
-					<div class="p-point__boxBody c-flex c-flex__alignCenter c-flex__spaceBetween">
-					
-						<div class="p-point__pointImg" data-style="reverse">
-							<img src="./img/diagnosis/eye/point2.webp" alt="">
-						</div><!-- /.p-point__pointImg -->
-
-						<div class="p-point__point">
-							<h4 class="p-point__pointTitle" data-style="reverse">入念なデザイン</h4>
-							<p class="p-point__pointText" data-style="reverse">患者様ごとの骨格やくせを確認しながらラインを丁寧に確認します</p>
-							<h4 class="p-point__pointTitle" data-style="reverse">0.5ミリ単位の調整</h4>
-							<p class="p-point__pointText" data-style="reverse">0.5mm単位でわずかな違いを創りだします。</p>
-						</div><!-- /.p-point__point -->
-
+					<div class="p-point__boxBody c-flex c-flex__alignCenter c-flex__spaceBetween u-centerposition">
+						<ul class="p-priceTable__list c-flex__center" data-style="long">
+							<li class="p-priceTable__listItem" data-style="long">
+								<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/bust/bag/">
+									<span class="p-priceTable__listLeft">シリコンバック豊胸</span>
+									<span class="p-priceTable__listRight"><span class="u-priceColor">¥658,900<small>(税込)</small></span><br><small>麻酔代等全て込み</small></span>
+								</a>
+							</li>
+							<li class="p-priceTable__listItem" data-style="long">
+								<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/bust/bag/">
+									<span class="p-priceTable__listLeft">脂肪注入豊胸</span>
+									<span class="p-priceTable__listRight"><span class="u-priceColor">¥614,900<small>(税込)</small></span><br><small>麻酔代等全て込み</small></span>
+								</a>
+							</li>
+						</ul><!-- /p-priceTable__list -->
 					</div><!-- /.p-point__boxBody -->
 				</div><!-- /.p-point__boxInner -->
 			</div><!-- /.p-point__box -->
-
-			<div class="u-spacer__m"></div>
-			<div class="u-centerposition">
-				<a href="https://www.mizunomori.com/diagnosis/eye/maibotsu/maibotsu-width/" target="_blank" rel="noopener"><img src="./img/diagnosis/eye/point3.webp" alt="" class="u-narrowSP u-marginAuto u-block"></a>
-			</div><!-- /.u-centerposition -->
 			
 			<div class="p-point__box">
 				<h3 class="p-point__title">＃3 アフターケア</h3>
@@ -858,14 +531,14 @@
 
 					<div class="p-point__boxBody c-flex c-flex__alignCenter">
 						<div class="p-point__point">
-							<h4 class="p-point__pointTitle">検診は1ヶ月・3ヶ月</h4>
-							<p class="p-point__pointText">術後は何かあったらご来院、という訳ではなく完成までしっかり確認します。</p>
-							<h4 class="p-point__pointTitle">何度でも検診無料</h4>
+							<h4 class="p-point__pointTitle -long">マッサージ検診</h4>
+							<p class="p-point__pointText">シリコンバック豊胸では、通常の検診に加え柔らかさを保つためのマッサージ検診があります。</p>
+							<h4 class="p-point__pointTitle -long">何度でも検診無料</h4>
 							<p class="p-point__pointText">ご心配事やご不安なことがあればいつでも何度でもご相談下さい。</p>
 						</div><!-- /.p-point__point -->
 
 						<div class="p-point__pointImg">
-							<img src="./img/diagnosis/eye/point4.webp" alt="">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/bust/bag/point3.webp" alt="">
 						</div><!-- /.p-point__pointImg -->
 					</div><!-- /.p-point__boxBody -->
 				</div><!-- /.p-point__boxInner -->
@@ -874,7 +547,7 @@
 		</div><!-- /.l-container__narrow -->
 	</section><!-- /.p-point -->
 
-		
+			
 	<div class="u-bgBeigeColor">
 		<section id="flow" class="p-reservationFlow l-reservationFlow__lower">
 			<div class="l-container__narrow">
@@ -890,7 +563,7 @@
 						<h3 class="p-reservationFlow__lead c-flex c-flex__alignCenter"><span>1</span>ご予約</h3>
 						<div class="c-flexPC c-flex__alignCenter">
 							<div class="p-reservationFlow__img c-flex__half">
-								<img src="./img/diagnosis/eye/flow1.webp" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/bust/bag/flow1.webp" alt="">
 							</div>
 							<div class="p-reservationFlow__body c-flex__half">
 								<p class="c-sentence">当院の無料カウンセリングは完全予約制です。<br>ご希望のお日にちにて、メール・お電話からご予約ください。</p>
@@ -902,23 +575,11 @@
 						<h3 class="p-reservationFlow__lead c-flex c-flex__alignCenter"><span>2</span>ご来院後</h3>
 						<div class="c-flexPC c-flex__alignCenter">
 							<div class="p-reservationFlow__img c-flex__half">
-								<img src="./img/diagnosis/eye/flow2.webp" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/bust/bag/flow2.webp" alt="">
 							</div>
 							<div class="p-reservationFlow__body c-flex__half">
-								<p class="c-sentence">受付後、問診表ご記入し医師との診断になります。お悩みから理想の目元をお聞きしながら丁寧に診察します。</p>
-							</div>
-						</div><!-- /.c-flexPC -->
-					</div><!-- /.p-reservationFlow__steps -->
-
-					<div class="p-reservationFlow__steps">
-						<h3 class="p-reservationFlow__lead c-flex c-flex__alignCenter"><span>3</span>診察後</h3>
-						<div class="c-flexPC c-flex__alignCenter">
-							<div class="p-reservationFlow__img c-flex__half">
-								<img src="./img/diagnosis/eye/flow3.webp" alt="">
-							</div>
-							<div class="p-reservationFlow__body c-flex__half">
-								<p class="c-sentence">医師に聞きそびれた事やご不明点をカウンセラーが伺います。<br>施術をご意向の場合は、そのままお手続きも行えます。</p>
-								<p class="c-sentence">※切開系の手術の場合はカウンセリング当日の施術は出来かねます。</p>
+								<p class="c-sentence">患者様のご希望を伺い、実際に適応があるか確認します。<br>ご不明な点や疑問なども、お気軽にご相談ください。</p>
+								<p class="c-sentence">医師とのカウンセリング以外で、気になる点などもスタッフに遠慮なくご相談ください。</p>
 							</div>
 						</div><!-- /.c-flexPC -->
 					</div><!-- /.p-reservationFlow__steps -->
@@ -928,7 +589,7 @@
 			</div><!-- /.l-container -->
 		</section><!-- /.p-reservationFlow -->
 	</div><!-- /.u-bgBeigeColor -->
-	
+
 	<div class="u-bgMainColor">
 		<section class="p-reservationFlow l-reservationFlow__lower" data-style="onTheDay">
 			<div class="l-container__narrow">
@@ -937,46 +598,36 @@
 						<span>施術当日</span>
 					</h3>
 					<div class="p-reservationFlow__steps">
-						<h3 class="p-reservationFlow__lead c-flex c-flex__alignCenter" data-style="onTheDay"><span>4</span>ご来院</h3>
+						<h3 class="p-reservationFlow__lead c-flex c-flex__alignCenter" data-style="onTheDay"><span>3</span>施術</h3>
 						<div class="c-flexPC c-flex__alignCenter">
 							<div class="p-reservationFlow__img c-flex__half">
-								<img src="./img/diagnosis/eye/flow4.webp" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/bust/bag/flow3.webp" alt="">
 							</div>
 							<div class="p-reservationFlow__body c-flex__half">
-								<p class="c-sentence">ご来院後、お手続きや体調確認をし、施術にうつります。</p>
+								<p class="c-sentence">豊胸術では静脈麻酔を使用し、眠っている間に終わりますのでご安心ください。<br>その他の施術も麻酔を使用しますので痛みを感じることはありません。</p>
 							</div>
 						</div><!-- /.c-flexPC -->
 					</div><!-- /.p-reservationFlow__steps -->
 
 					<div class="p-reservationFlow__steps">
-						<h3 class="p-reservationFlow__lead c-flex c-flex__alignCenter" data-style="onTheDay"><span>5</span>施術開始</h3>
+						<h3 class="p-reservationFlow__lead c-flex c-flex__alignCenter" data-style="onTheDay"><span>4</span>施術開始</h3>
 						<div class="c-flexPC c-flex__alignCenter">
 							<div class="p-reservationFlow__img c-flex__half">
-								<img src="./img/diagnosis/eye/flow5.webp" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/bust/bag/flow4.webp" alt="">
 							</div>
 							<div class="p-reservationFlow__body c-flex__half">
-								<p class="c-sentence">施術室にて施術を行います。<br>埋没法であれば10分～15分程度で終わります。</p>
+								<p class="c-sentence">シリコンバック豊胸をお受けの場合、術後ドレーンと呼ばれる管を通して包帯で圧迫固定を行い、そのままご帰宅いただきます。</p>
 							</div>
 						</div><!-- /.c-flexPC -->
 					</div><!-- /.p-reservationFlow__steps -->
-
-					<div class="p-reservationFlow__steps">
-						<h3 class="p-reservationFlow__lead c-flex c-flex__alignCenter" data-style="onTheDay"><span>6</span>終了・ご帰宅</h3>
-						<div class="c-flexPC c-flex__alignCenter">
-							<div class="p-reservationFlow__img c-flex__half">
-								<img src="./img/diagnosis/eye/flow6.webp" alt="">
-							</div>
-							<div class="p-reservationFlow__body c-flex__half">
-								<p class="c-sentence">術後、パウダールームにてご準備頂きお帰り頂きます。</p>
-							</div>
-						</div><!-- /.c-flexPC -->
-					</div><!-- /.p-reservationFlow__steps -->
-
 				</div><!-- /.p-reservationFlow__box -->
 
 			</div><!-- /.l-container -->
 		</section><!-- /.p-reservationFlow -->
 	</div><!-- /.u-bgKeyColor -->
+
+	
+
 
 	<div class="u-bgGrayColor">
 		<section id="faq" class="l-questions p-questions">
@@ -985,56 +636,53 @@
 					<h2 class="c-heading__diagnosis" data-entitle="questions">よくあるご質問</h2>
 				</div><!-- /.c-heading -->
 				<dl class="c-accordion" data-type="questions">
-					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">Q. 埋没の糸は老後どうなりますか？</dt>
+					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">Q. シリコンバックの交換や、メンテナンスは必要ですか？</dt>
 					<dd class="c-accordion__contents js-content">
 						<div class="c-accordion__contentsInner">
-							<p class="c-sentence">A.　埋没で使用される糸は医療用の糸で血管を縫合する際にも使われる糸です。そのためそのままにしていても悪影響があるものではありません。<br>しかし糸が飛び出している場合は皮膚や眼球のトラブルになる可能性があるため埋没を行ったクリニックへ相談しましょう。
-								</p>
+							<p class="c-sentence">A.　万が一シリコンバッグが破損した場合等はバッグの摘出や交換が必要となる場合もございますが、定期的にバッグを入れ替える等のメンテナンスは必要ではございません。</p>
 						</div><!-- /.c-accordion__contentsInner -->
 					</dd>
 				</dl><!-- /.c-accordion -->
 				<dl class="c-accordion" data-type="questions">
-					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">Q. 整形したら人にバレないですか？</dt>
+					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">Q. もっと大きくしたいのです。そのようなことも可能ですか？</dt>
 					<dd class="c-accordion__contents js-content">
 						<div class="c-accordion__contentsInner">
-							<p class="c-sentence">A.　不自然な幅で作ってしまうと、明らかに整形したような目元になるのでバレる可能性は高くなります。<br>メイクをしない状態での自然な目元を元に二重を作ることで自然な変化になります。
-								</p>
+							<p class="c-sentence">A.　挿入されているバッグの種類や、前回の手術方法によってどのような手術を行うかは変わってまいりますが、現在のバッグをより大きなバッグに入れ替える事は可能です。<br>そのようなご希望がある患者様は、前回入れられたバッグがどのようなバッグであるか、手術の方法がどのような方法であるかを、事前にお調べしたうえでカウンセリングにいらして頂くと、ご提案がスムーズになるかと思います。</p>
 						</div><!-- /.c-accordion__contentsInner -->
 					</dd>
 				</dl><!-- /.c-accordion -->
 				<dl class="c-accordion" data-type="questions">
-					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">Q. 痛みが不安です</dt>
+					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">Q. 妊娠出産授乳に影響はありませんか？</dt>
 					<dd class="c-accordion__contents js-content">
 						<div class="c-accordion__contentsInner">
-							<p class="c-sentence">A.　基本的には局所麻酔をするので、はじめに注射の痛みがちくっとするだけです。術中に少し痛みを感じられてきた場合は麻酔を追加しますので遠慮なくお申し付け下さい。<br>またよりご不安な方は笑気麻酔（8,250円）もつけられますのでご相談ください。</p>
+							<p class="c-sentence">A.　妊娠や授乳は問題なく行う事が可能です。</p>
 						</div><!-- /.c-accordion__contentsInner -->
 					</dd>
 				</dl><!-- /.c-accordion -->
 				<dl class="c-accordion" data-type="questions">
-					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">Q. 二重切開ではまつエクやまつぱはいつからOKですか？</dt>
+					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">Q. かなり大きくしたいのですが、どれくらい大きく出来ますか？</dt>
 					<dd class="c-accordion__contents js-content">
 						<div class="c-accordion__contentsInner">
-							<p class="c-sentence">A.　創部の安静が必要であるため可能であれば1ヶ月ほど空けて頂くのをおすすめしております。</p>
+							<p class="c-sentence">A.　患者様の体格等によって自然な範囲で大きく出来るバッグの容量が変わってまいります。自然さを多少犠牲にしても、より大きく見せたい場合は、バッグの形状を変更することによって、大きくすることが可能です。これも体格によって変わってまいりますが、片胸400ccから、患者様によっては500cc程度のバッグ挿入も出来る場合もあります。<br>実際にお体を拝見させて頂き、お胸の状態等を診察させて頂いた上で、具体的な大きさを決めますのでぜひカウンセリングにお越しください。</p>
 						</div><!-- /.c-accordion__contentsInner -->
 					</dd>
 				</dl><!-- /.c-accordion -->
 				<dl class="c-accordion" data-type="questions">
-					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">Q. 失敗することはありませんか？</dt>
+					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">Q. 傷口は目立ちませんか？</dt>
 					<dd class="c-accordion__contents js-content">
 						<div class="c-accordion__contentsInner">
-							<p class="c-sentence">A.　美容整形での失敗の大半は、不自然な目元になるのが原因です。お顔全体のバランスを見た上で、骨格上できる事や出来ないことを明確にし、リスクもきちんと事前にお話しすることでその可能性を下げることは出来ると当院では考えております。</p>
+							<p class="c-sentence">A.　傷口は脇のシワに沿って数センチの傷がありますが、将来的には脇のシワと同化して目立たなくなります。</p>
 						</div><!-- /.c-accordion__contentsInner -->
 					</dd>
 				</dl><!-- /.c-accordion -->
 
 				<div class="p-questions__button">
-					<a href="https://www.mizunomori.com/faq/eye/" target="_blank" rel="noopener">その他よくある質問はこちら</a>
+					<a href="https://www.mizunomori.com/faq/bust/bag/" target="_blank" rel="noopener">その他よくある質問はこちら</a>
 				</div><!-- /.p-questions__button -->
 			</div><!-- /.l-container__narrow -->
 		</section><!-- /.l-questions -->
 	</div><!-- /.u-bgGrayColor -->
 
-	
 	<section id="price" class="l-price p-price">
 		<div class="l-container__narrow">
 			<div class="l-spacer__headingDiagnosis c-heading">
@@ -1052,119 +700,35 @@
 				</div><!-- /.p-price__captionInner -->
 			</div><!-- /.p-price__caption -->
 
-			<div id="priceWeight" class="p-price__tableWrap">
+			<div id="priceSilicone" class="p-price__tableWrap">
 				<h3 class="c-heading__point" data-type="price">各部位の料金</h3>
 
-				<dl class="p-price__table" data-style="priceWide">
-					<dt>二重埋没法</dt>
+				<dl class="p-price__table">
+					<dt>乳腺下法<br>大胸筋下法</dt>
 					<div class="p-price__tableRight">
 						<dd>
-							<span></span>
-							<span>¥65,890(税込)</span>
+							<span>シリコンバック豊胸</span>
+							<span>¥658,900 (税込)</span>
 						</dd>
 					</div><!-- /.p-price__tableRight -->
 				</dl>
-				<dl class="p-price__table p-price__tableNotop" data-style="priceWide">
-					<dt>二重埋没法(2年保証)</dt>
+
+				<dl class="p-price__table" data-type="table_pink">
+					<dt>バック<br>(抜去・入替)</dt>
 					<div class="p-price__tableRight">
 						<dd>
-							<span></span>
-							<span>¥98,890(税込)</span>
-						</dd>
-					</div><!-- /.p-price__tableRight -->
-				</dl>
-				<dl class="p-price__table p-price__tableNotop" data-style="priceWide">
-					<dt>二重埋没法(5年保証)</dt>
-					<div class="p-price__tableRight">
-						<dd>
-							<span></span>
-							<span>¥142,890(税込)</span>
-						</dd>
-					</div><!-- /.p-price__tableRight -->
-				</dl>
-				<dl class="p-price__table p-price__tableNotop" data-style="priceWide">
-					<dt>二重切開法</dt>
-					<div class="p-price__tableRight">
-						<dd>
-							<span></span>
-							<span>¥273,900(税込)</span>
-						</dd>
-					</div><!-- /.p-price__tableRight -->
-				</dl>
-				<dl class="p-price__table p-price__tableNotop" data-style="priceWide">
-					<dt>目頭切開法</dt>
-					<div class="p-price__tableRight">
-						<dd>
-							<span></span>
-							<span>¥218,900(税込)</span>
-						</dd>
-					</div><!-- /.p-price__tableRight -->
-				</dl>
-				<dl class="p-price__table p-price__tableNotop" data-style="priceWide">
-					<dt>目尻切開法</dt>
-					<div class="p-price__tableRight">
-						<dd>
-							<span></span>
+							<span>バック抜去（当院）<br>バック抜去（他院）</span>
 							<span>¥220,000(税込)</span>
 						</dd>
-					</div><!-- /.p-price__tableRight -->
-				</dl>
-				<dl class="p-price__table p-price__tableNotop" data-style="priceWide">
-					<dt>眉下切開法</dt>
-					<div class="p-price__tableRight">
 						<dd>
-							<span></span>
-							<span>¥218,900(税込)</span>
+							<span>バック入替（当院）<br>バック入替（他院）</span>
+							<span>¥550,000(税込)<br>¥770,000(税込)</span>
 						</dd>
 					</div><!-- /.p-price__tableRight -->
 				</dl>
-				<dl class="p-price__table p-price__tableNotop" data-style="priceWide">
-					<dt>眼瞼下垂</dt>
-					<div class="p-price__tableRight">
-						<dd>
-							<span></span>
-							<span>¥427,900(税込)</span>
-						</dd>
-					</div><!-- /.p-price__tableRight -->
-				</dl>
-				<dl class="p-price__table p-price__tableNotop" data-style="priceWide">
-					<dt>たれ目形成</dt>
-					<div class="p-price__tableRight">
-						<dd>
-							<span></span>
-							<span>¥361,900(税込)</span>
-						</dd>
-					</div><!-- /.p-price__tableRight -->
-				</dl>
-				<dl class="p-price__table p-price__tableNotop" data-style="priceWide">
-					<dt>目の下の脂肪取り</dt>
-					<div class="p-price__tableRight">
-						<dd>
-							<span></span>
-							<span>¥214,500(税込)</span>
-						</dd>
-					</div><!-- /.p-price__tableRight -->
-				</dl>
-				<dl class="p-price__table p-price__tableNotop" data-style="priceWide">
-					<dt>ハムラ法</dt>
-					<div class="p-price__tableRight">
-						<dd>
-							<span></span>
-							<span>¥394,900(税込)</span>
-						</dd>
-					</div><!-- /.p-price__tableRight -->
-				</dl>
-				<dl class="p-price__table p-price__tableNotop" data-style="priceWide">
-					<dt>裏ハムラ法</dt>
-					<div class="p-price__tableRight">
-						<dd>
-							<span></span>
-							<span>¥416,900(税込)</span>
-						</dd>
-					</div><!-- /.p-price__tableRight -->
-				</dl>
+
 			</div><!-- /.p-price__tableWrap -->
-		
+
 		</div><!-- /.l-container__narrow -->
 
 	</section><!-- /.p-price -->
@@ -1179,11 +743,11 @@
 
 					<div class="p-supervisor__profileTop c-flexSP c-flex__alignCenter">
 						<div class="p-supervisor__profileTopLeft c-flex__half">
-							<img src="./img/diagnosis/liposuction/doc_kaneko.jpg" alt="金子貴則院長">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/doc_kaneko.jpg" alt="金子貴則院長">
 						</div><!-- /.p-supervisor__profileLeft -->
 						<div class="p-supervisor__profileTopRight c-flex__half">
 							<p class="c-sentence">水の森美容外科<br>福岡院院長</p>
-							<h3 class="p-supervisor__profileName">金子貴則<a href="#"><img src="./img/instagram_white.svg" alt="" width="20px"></a></h3>
+							<h3 class="p-supervisor__profileName">金子貴則<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram_white.svg" alt="" width="20px"></a></h3>
 						</div><!-- /.p-supervisor__profileRight -->
 					</div><!-- /.c-flexSP -->
 
@@ -1205,7 +769,7 @@
 							</ul><!-- /.c-DrProfile__list -->
 							<p class="c-DrProfile__conference"><span>ドクターコメント</span></p>
 							<div class="c-DrProfile__list -lowerstyle">
-									<p class="c-DrProfile__listText">目の美容整形は、美容外科治療の中でも最もニーズの高い部位となっております。施術内容は非常にバリエーションに富んでおります。どのような治療が自分に合っているのかわからないという患者様も、親身なカウンセリングを心掛けて、その方に合った最適なご提案をさせて頂きますのでご安心ください。</p>
+									<p class="c-DrProfile__listText">女性の胸の悩みといっても様々で、胸を大きくする手術から小さくする手術、乳頭や乳輪の手術など、お悩みによって様々な手術があります。<br>水の森美容外科では、様々なお胸に関する手術を、豊富なバリエーションで取り揃えておりますので、どのようなお悩みでもお気軽にご相談下さい。</p>
 									<p class="c-DrProfile__listText">
 										当院のホームページは「医療広告ガイドライン」を遵守し、医師監修の元、作成・掲載しております。当院における医療広告ガイドラインの運用や方針については<a href="https://mizunomori-campaign.com/guideline/" class="u-textLink" target="_blank" rel="noopener">こちら</a>を御覧ください。
 									</p>
@@ -1232,7 +796,8 @@
 			</div><!-- /.l-container__narrow -->
 
 		</section><!-- /.l-supervisor -->
-	</div>
+	</div><!-- /.u-bgGrayColor -->
+
 
 	<section id="access" class="l-access p-access">
 		<div class="l-container">
@@ -1266,7 +831,7 @@
 				<div class="c-tabMenu__content active" id="01">
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin1.webp" alt="天神駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin1.webp" alt="天神駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1276,7 +841,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin2.webp" alt="天神駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin2.webp" alt="天神駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1286,7 +851,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin3.webp" alt="天神駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin3.webp" alt="天神駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1296,7 +861,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin4.webp" alt="天神駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin4.webp" alt="天神駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1309,7 +874,7 @@
 				<div class="c-tabMenu__content" id="02">
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin1.webp" alt="西鉄福岡天神駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin1.webp" alt="西鉄福岡天神駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1319,7 +884,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin2.webp" alt="西鉄福岡天神駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin2.webp" alt="西鉄福岡天神駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1329,7 +894,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin3.webp" alt="西鉄福岡天神駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin3.webp" alt="西鉄福岡天神駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1339,7 +904,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin4.webp" alt="西鉄福岡天神駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin4.webp" alt="西鉄福岡天神駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1352,7 +917,7 @@
 				<div class="c-tabMenu__content" id="03">
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin1.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin1.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1362,7 +927,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin2.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin2.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1373,7 +938,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin2.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin2.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1384,7 +949,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin3.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin3.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1395,7 +960,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin4.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin4.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1409,7 +974,7 @@
 				<div class="c-tabMenu__content" id="04">
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1419,7 +984,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1429,7 +994,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin3.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin3.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1439,7 +1004,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin4.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin4.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1455,16 +1020,16 @@
 				<dl class="c-accordion">
 					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">地下鉄天神駅からお越しの場合(徒歩７分)</dt>
 					<dd class="c-accordion__contents js-content">
-						<img src="./img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">地下鉄天神駅⑥番出口から福岡駅通りを真っ直ぐ南へ進み、西鉄福岡（天神）駅の大きな入り口があり、その正面の天神21号線に入ります。</p>
 						<div class="u-spacer__m"></div>
-						<img src="./img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">中華料理店がある交差点を左折し、メルヘン通りを真っ直ぐ進むと、左手に警固神社の入り口が見えてきます。</p>
 						<div class="u-spacer__m"></div>
-						<img src="./img/access_chika-tenjin3.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin3.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">その正面の警固参道に入って真っ直ぐ進み、天神西通りと交差する角にあるビルです。</p>
 						<div class="u-spacer__m"></div>
-						<img src="./img/access_chika-tenjin4.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin4.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">当院までは徒歩約7分でお越しいただけます。</p>
 						<div class="u-spacer__m"></div>
 					</dd>
@@ -1473,16 +1038,16 @@
 				<dl class="c-accordion">
 					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">西鉄福岡(天神)駅からお越しの場合(徒歩４分)</dt>
 					<dd class="c-accordion__contents js-content">
-						<img src="./img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">西鉄福岡(天神)駅三越口西側から警固公園内を抜け、今泉公園通りに出ます。</p>
 						<div class="u-spacer__m"></div>
-						<img src="./img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">今泉公園通りを南に進むと左手に警固神社の入り口が見えてきます。</p>
 						<div class="u-spacer__m"></div>
-						<img src="./img/access_chika-tenjin3.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin3.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">その正面の警固参道に入って真っ直ぐ進み、天神西通りと交差する角にあるビルです。</p>
 						<div class="u-spacer__m"></div>
-						<img src="./img/access_chika-tenjin4.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin4.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">当院までは徒歩約5分でお越しいただけます。</p>
 						<div class="u-spacer__m"></div>
 					</dd>
@@ -1491,10 +1056,10 @@
 				<dl class="c-accordion">
 					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">JR博多駅からお越しの場合</dt>
 					<dd class="c-accordion__contents js-content">
-						<img src="./img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">【電車】<br>博多駅より空港線にて姪浜行に乗車。天神駅にて下車し上記のルートよりお越しいただけます。</p>
 						<div class="u-spacer__m"></div>
-						<img src="./img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">
 							【バス】<br>駅ビル1階のバスターミナルへ。西鉄バスにて【博多バスターミナル】で乗車し【今泉一丁目】で下車。モバイルショップが入ったビルを目印に天神西通りを北に進み、警固参道と交差する角にあるビルです。当院までは徒歩約2分でお越しいただけます。
 						</p>
@@ -1504,17 +1069,17 @@
 				<dl class="c-accordion">
 					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">JR熊本駅からお越しの場合</dt>
 					<dd class="c-accordion__contents js-content">
-						<img src="./img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">【新幹線】<br>新幹線にて【JR熊本駅】で乗車し→【JR博多駅】で下車。</p>
 						<div class="u-spacer__m"></div>
-						<img src="./img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">
 							【バス】<br>駅ビル1階のバスターミナルへ。西鉄バスにて【博多バスターミナル】で乗車し【今泉一丁目】で下車。
 							<div class="u-spacer__m"></div>
-							<img src="./img/access_chika-tenjin3.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin3.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 							<p class="c-sentence">モバイルショップが入ったビルを目印に天神西通りを北に進み、警固参道と交差する角にあるビルです。</p>
 							<div class="u-spacer__m"></div>
-							<img src="./img/access_chika-tenjin4.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin4.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 							<p class="c-sentence">当院までは徒歩約2分でお越しいただけます。</p>
 							<div class="u-spacer__m"></div>
 						</p>
@@ -1550,32 +1115,32 @@
 				<!-- pcでのレイアウト対応 -->
 				<div class="p-footer__bnr">
 					<a href="https://www.mizunomori.com/correct/" target="_blank" rel="noopener"><img
-							src="./img/bnr_correct.webp" alt="失敗サイトへの誘導バナー"></a>
+							src="<?php echo get_template_directory_uri(); ?>/img/bnr_correct.webp" alt="失敗サイトへの誘導バナー"></a>
 				</div><!-- /.p-footer__bnr -->
 				<nav class="p-footer__icons">
 					<h2 class="u-visually-hidden">snsナビゲーション</h2>
 					<ul>
 						<li>
 							<a href="https://twitter.com/_mizunomori_" target="_blank" rel="noopener">
-								<img src="./img/twitter.png" alt="twitter" class="p-footer__icons-icon" width="53px"
+								<img src="<?php echo get_template_directory_uri(); ?>/img/twitter.png" alt="twitter" class="p-footer__icons-icon" width="53px"
 									height="53px">
 							</a>
 						</li>
 						<li>
 							<a href="https://www.instagram.com/mizunomori_clinic/" target="_blank" rel="noopener">
-								<img src="./img/instagram.png" alt="instagram" class="p-footer__icons-icon" width="53px"
+								<img src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="instagram" class="p-footer__icons-icon" width="53px"
 									height="53px">
 							</a>
 						</li>
 						<li>
 							<a href="https://www.youtube.com/user/mizunomoribiyougeka" target="_blank" rel="noopener">
-								<img src="./img/youtube.png" alt="youtube" class="p-footer__icons-icon" width="53px"
+								<img src="<?php echo get_template_directory_uri(); ?>/img/youtube.png" alt="youtube" class="p-footer__icons-icon" width="53px"
 									height="53px">
 							</a>
 						</li>
 						<li>
 							<a href="" class="p-footer__icons-icon" target="_blank" rel="noopener">
-								<img src="./img/line.png" alt="line" class="p-footer__icons-icon" width="53px" height="53px">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/line.png" alt="line" class="p-footer__icons-icon" width="53px" height="53px">
 							</a>
 						</li>
 					</ul>
@@ -1586,7 +1151,7 @@
 							<a href="tel:0120-510-830">お電話</a>
 						</div>
 						<div class="c-buttonCTA c-buttonCTA__footer c-buttonCTA__phone u-spNone">
-							<a href="./first.html">お電話</a>
+							<a href="<?php echo esc_url(home_url('')); ?>/first">お電話</a>
 						</div>
 						<div class="c-buttonCTA c-buttonCTA__footer c-buttonCTA__mail">
 							<a href="https://www.mizunomori.com/counsel/" target="_blank" rel="noopener">WEB予約</a>
@@ -1603,18 +1168,18 @@
 	<div class="p-footer__bottom">
 		<div class="l-containerPc">
 			<ul class="p-footer__list">
-				<li class="p-footer__list-item"><a href="./first.html">・<span>はじめての方へ</span></a></li>
-				<li class="p-footer__list-item"><a href="./access.html">・<span>アクセス</span></a></li>
+				<li class="p-footer__list-item"><a href="<?php echo esc_url(home_url('')); ?>/first">・<span>はじめての方へ</span></a></li>
+				<li class="p-footer__list-item"><a href="<?php echo esc_url(home_url('')); ?>/access">・<span>アクセス</span></a></li>
 				<li class="p-footer__list-item"><a href="https://www.mizunomori.com/price/">・<span>料金一覧</span></a></li>
 				<li class="p-footer__list-item"><a href="https://www.mizunomori.com/case-rank/">・<span>症例写真</span></a>
 				</li>
 				<li class="p-footer__list-item"><a href="https://www.mizunomori.com/policy/">・<span>プライバシーポリシー</span></a>
 				</li>
 				<li class="p-footer__list-item"><a href="https://www.mizunomori.com/concept/">・<span>コンセプト</span></a></li>
-				<li class="p-footer__list-item"><a href="./diagnosis.html">・<span>診療項目</span></a></li>
-				<li class="p-footer__list-item"><a href="./doctor.html">・<span>ドクター紹介</span></a></li>
+				<li class="p-footer__list-item"><a href="<?php echo esc_url(home_url('')); ?>/diagnosis">・<span>診療項目</span></a></li>
+				<li class="p-footer__list-item"><a href="<?php echo esc_url(home_url('')); ?>/doctor">・<span>ドクター紹介</span></a></li>
 				<li class="p-footer__list-item"><a href="https://www.mizunomori.com/faq/">・<span>よくあるご質問</span></a></li>
-				<li class="p-footer__list-item"><a href="./sitemap.html">・<span>サイトマップ</span></a></li>
+				<li class="p-footer__list-item"><a href="<?php echo esc_url(home_url('')); ?>/sitemap">・<span>サイトマップ</span></a></li>
 				<li class="p-footer__list-item"><a
 						href="https://mizunomori-recruit.com/?_ebx=jfdiwlqj.1618535530.7k3u5pk">・<span>採用情報</span></a></li>
 				<li class="p-footer__list-item"><a href="https://www.mizunomori.com/safety/">・<span>安心・安全への取り組み</span></a>

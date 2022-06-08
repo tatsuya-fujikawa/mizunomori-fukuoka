@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>バスト-脂肪注入豊胸｜水の森福岡院</title>
+    <title>脂肪吸引-お腹｜水の森福岡院</title>
     <script
     src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js"></script>
-    <script src="./bundle.js" defer></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/bundle.js" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
@@ -38,7 +38,7 @@
 		<div class="p-header__top l-header__top c-flex c-flex__spaceBetween">
 				<div class="p-header__logo">
 						<div class="p-header__logo-top u-min">
-								<img src="./img/logo.png" alt="水の森美容外科">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="水の森美容外科">
 								<span>福岡院</span>
 						</div><!-- /p-header__logo-top -->
 						<div class="p-header__logo-text u-min">
@@ -66,8 +66,8 @@
 		<nav>
 				<div class="l-container">
 						<ul class="p-header__list c-flex c-flex__alignCenter">
-								<li class="p-header__listItem"><a href="./first.html">初めての方へ</a></li>
-								<li class="p-header__listItem -diagnosis"><a href="./diagnosis.html">診療項目</a>
+								<li class="p-header__listItem"><a href="<?php echo esc_url(home_url('')); ?>/first">初めての方へ</a></li>
+								<li class="p-header__listItem -diagnosis"><a href="<?php echo esc_url(home_url('')); ?>/diagnosis">診療項目</a>
 										<ul class="p-header__listChild">
 												<li><a href="#">二重まぶた・目元</a></li>
 												<li><a href="#">脂肪吸引・痩身</a></li>
@@ -79,11 +79,11 @@
 												<li><a href="#">美容点滴・内服</a></li>
 										</ul><!-- /p-header__listChild -->
 								</li>
-								<li class="p-header__listItem"><a href="./doctor.html">ドクター紹介</a></li>
+								<li class="p-header__listItem"><a href="<?php echo esc_url(home_url('')); ?>/doctor">ドクター紹介</a></li>
 								<li class="p-header__listItem"><a href="https://www.mizunomori.com/price/">料金一覧</a></li>
 								<li class="p-header__listItem"><a href="https://www.mizunomori.com/faq/">よくあるご質問</a></li>
 								<li class="p-header__listItem"><a href="https://www.mizunomori.com/case-rank/">症例写真</a></li>
-								<li class="p-header__listItem"><a href="./access.html">アクセス</a></li>
+								<li class="p-header__listItem"><a href="<?php echo esc_url(home_url('')); ?>/access">アクセス</a></li>
 						</ul><!-- /p-header__list -->
 				</div><!-- /l-container -->
 		</nav>
@@ -104,20 +104,18 @@
 										<li><a href="#">美容点滴・内服</a></li>
 								</ul>
 								<ul class="p-header__humbergerNav-list">
-										<li><a href="./first.html">初めての方へ</a></li>
-										<li><a href="./doctor.html">ドクター紹介</a></li>
+										<li><a href="<?php echo esc_url(home_url('')); ?>/first">初めての方へ</a></li>
+										<li><a href="<?php echo esc_url(home_url('')); ?>/doctor">ドクター紹介</a></li>
 										<li><a href="https://www.mizunomori.com/price/">料金一覧</a></li>
 										<li><a href="https://www.mizunomori.com/faq/">よくあるご質問</a></li>
 										<li><a href="https://www.mizunomori.com/case-rank/">症例写真</a></li>
-										<li><a href="./access.html">アクセス</a></li>
+										<li><a href="<?php echo esc_url(home_url('')); ?>/access">アクセス</a></li>
 								</ul>
 						</nav>
 						<div class="p-CTA u-pcNone">
 								<h2 class="p-CTA__heading">無料カウンセリング予約<br class="u-pcNone">お問い合わせ　</h2>
 								<div class="c-buttonCTAWrap c-flex c-flex__center">
-										<div class="c-buttonCTA c-buttonCTA__phone">
-												<a href="tel:0120-510-830">お電話</a>
-										</div>
+										
 										<div class="c-buttonCTA c-buttonCTA__mail">
 												<a href="https://www.mizunomori.com/counsel/" target="_blank" rel="noopener">WEB予約</a>
 										</div>
@@ -132,13 +130,13 @@
 	<section class="l-jumbotron c-jumbotron">
 		<div class="c-jumbotron__mv">
 			<picture>
-				<source srcset="./img/diagnosis/bust/grease/mv_pc.webp" media="(min-width:768px)" />
-				<img src="./img/diagnosis/bust/grease/mv_sp.webp" alt="">
+				<source srcset="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/mv_pc.webp" media="(min-width:768px)" />
+				<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/mv_sp.webp" alt="">
 			</picture>
 		</div><!-- /c-jumbotron__mv -->
 		<div class="l-container c-jumbotron__inner">
-			<h1 class="c-jumbotron__title" data-style="black">
-				<span>脂肪注入豊胸</span>
+			<h1 class="c-jumbotron__title">
+				<span>お腹・ウエスト・腰の<br class="u-pcNone">脂肪吸引</span>
 			</h1><!-- /c-jumbotron__title -->
 		</div><!-- /l-container -->
 	</section><!-- /c-jumbotron -->
@@ -147,9 +145,9 @@
 		<div class="l-container__narrow">
 			<nav>
 				<ol class="p-breadcrumb__list">
-					<li><a href="index.html">TOP</a></li>
-					<li><a href="">バスト注射TOP</a></li>
-					<li>脂肪注入豊胸</li>
+					<li><a href="<?php echo esc_url(home_url('')); ?>/">TOP</a></li>
+					<li><a href="<?php echo esc_url(home_url('')); ?>/diagnosis/liposuction/">脂肪吸引TOP</a> </li>
+					<li>お腹・ウエスト・腰</li>
 				</ol>
 			</nav>
 		</div><!-- /l-container -->
@@ -159,18 +157,8 @@
 		<div class="l-container__narrow">
 			<h2 class="p-recommend__lead">こんな方におすすめ</h2>
 			<div class="p-recommend__textWrap">
-				<p class="p-recommend__sentence">
-					"自然にバストアップしたい"<br>
-					"人工物を入れるのは抵抗がある"<br>
-					"バストアップしながら部分痩せもしたい"
-				</p>
-				<p class="p-recommend__sentence">
-					足やお腹だけを細くしたいけど<br>
-					ダイエットだと胸まで小さくなってしまう。
-				</p>
-				<p class="p-recommend__sentence">
-					水の森の脂肪注入豊胸なら<br>
-					部分痩せもバストアップ両方叶えます。
+				<p class="p-recommend__sentence">お腹の脂肪吸引をするなら、<br>モデルのようなくびれを手に入れたい。<br>
+					理想を形にするため当院では、<br>上下腹部・ウェスト・腰と<br>お腹の各部位ごとに<br>適切な吸引方法と確かな技術で<br>アプローチしていきます。
 				</p>
 			</div><!-- /.p-recommend__textWrap -->
 
@@ -181,7 +169,7 @@
                             <a href="tel:0120-510-830">お電話</a>
                         </div>
                         <div class="c-buttonCTA c-buttonCTA__phone u-spNone">
-                            <a href="./first.html">お電話</a>
+                            <a href="<?php echo esc_url(home_url('')); ?>/first">お電話</a>
                         </div>
 						<div class="c-buttonCTA c-buttonCTA__mail">
 								<a href="https://www.mizunomori.com/counsel/" target="_blank" rel="noopener">WEB予約</a>
@@ -192,24 +180,24 @@
 		</div><!-- /.l-container__narrow -->
 	</section><!-- /.p-recommend -->
 
-
+	
 	<div class="u-bgNaviColor">
 		<div class="l-container__narrow">
 			<nav class="c-navigation l-navigation">
 				<h2 class="u-visually-hidden">ページナビゲーション</h2>
 				<ul class="c-navigation__list c-flex c-flex__alignCenter c-flex__wrap">
-					<li class="c-navigation__listItem -diagnosis"><a href="#case">症例写真</a></li>
-					<li class="c-navigation__listItem -diagnosis"><a href="#about">脂肪注入豊胸とは</a></li>
+					<li class="c-navigation__listItem -diagnosis"><a href="#about">お腹・ウエスト・腰の脂肪吸引とは</a></li>
 					<li class="c-navigation__listItem -diagnosis"><a href="#point">施術方法</a></li>
 					<li class="c-navigation__listItem -diagnosis"><a href="#flow">施術の流れ</a></li>
+					<li class="c-navigation__listItem -diagnosis"><a href="#case">症例写真</a></li>
 					<li class="c-navigation__listItem -diagnosis"><a href="#faq">よくあるご質問</a></li>
 					<li class="c-navigation__listItem -diagnosis"><a href="#price">施術料金</a></li>
-				</ul><!-- /c-navigation__list -->
+				</ul><!-- /c-navigation__list --> 
 			</nav>
 		</div><!-- /l-container -->
 	</div><!-- /u-bgNaviColor -->
 
-
+	
 	<section class="l-case c-case"> 
 		<div class="l-container__narrow">
 			<div class="l-spacer__headingDiagnosis c-heading">
@@ -217,7 +205,7 @@
 			</div><!-- /.c-heading -->
 
 			<div class="c-case__box">
-				<h3 class="c-case__title">脂肪注入豊胸の術前後</h3>
+				<h3 class="c-case__title">お腹・ウエスト・腰の<br>脂肪吸引の術前後</h3>
 				<div class="c-case__boxInner" data-style="photo">
 
 					<div class="c-flex c-flex__wrap">
@@ -226,46 +214,44 @@
 							<p class="c-case__photosTitle">正面</p>
 							<div class="c-flex c-flex__spaceBetween">
 								<figure class="c-case__picture">
-									<img src="./img/diagnosis/bust/grease/top_1_before.webp" alt="" loading="lazy">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/topcase_center1.webp" alt="" loading="lazy">
 									<figcaption>Before</figcaption>
 								</figure>
 								<figure class="c-case__picture">
-									<img src="./img/diagnosis/bust/grease/top_1_after.webp" alt="" loading="lazy">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/topcase_center2.webp" alt="" loading="lazy">
 									<figcaption>After</figcaption>
 								</figure>
 							</div><!-- /.c-flex -->
 						</div><!-- /.c-case__photos -->
 	
 						<div class="c-case__photos">
-							<p class="c-case__photosTitle">ななめ横</p>
+							<p class="c-case__photosTitle">右</p>
 							<div class="c-flex c-flex__spaceBetween">
 								<figure class="c-case__picture">
-									<img src="./img/diagnosis/bust/grease/top_2_before.webp" alt="" loading="lazy">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/topcase_right1.webp" alt="" loading="lazy">
 									<figcaption>Before</figcaption>
 								</figure>
 								<figure class="c-case__picture">
-									<img src="./img/diagnosis/bust/grease/top_2_after.webp" alt="" loading="lazy">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/topcase_right2.webp" alt="" loading="lazy">
 									<figcaption>After</figcaption>
 								</figure>
 							</div><!-- /.c-flex -->
 						</div><!-- /.c-case__photos -->
 	
 						<div class="c-case__photos">
-							<p class="c-case__photosTitle">横</p>
+							<p class="c-case__photosTitle">左</p>
 							<div class="c-flex c-flex__spaceBetween">
 								<figure class="c-case__picture">
-									<img src="./img/diagnosis/bust/grease/top_3_before.webp" alt="" loading="lazy">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/topcase_left1.webp" alt="" loading="lazy">
 									<figcaption>Before</figcaption>
 								</figure>
 								<figure class="c-case__picture">
-									<img src="./img/diagnosis/bust/grease/top_3_after.webp" alt="" loading="lazy">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/topcase_left2.webp" alt="" loading="lazy">
 									<figcaption>After</figcaption>
 								</figure>
 							</div><!-- /.c-flex -->
 						</div><!-- /.c-case__photos -->
-
 					</div><!-- /.c-flex -->
-
 
 					<div class="c-case__body">
 						<p class="c-case__button js-accordion" role="button">施術詳細</p>
@@ -273,11 +259,14 @@
 							<div class="c-case__table">
 								<dl>
 									<dt>施術費用</dt>
-									<dd>218,900円（税込）+脂肪吸引代金</dd>
+									<dd>548,900円（税込）</dd>
 									<dt>リスク・<br>副作用</dt>
-									<dd>【痛み】･･･1週間程度<br>
-										【張り感・硬さ】･･･2週間程度<br>
-										</dd>
+									<dd>【痛み・腫れ】･･･術後1週間ほど<br>
+										【浮腫み】･･･術後1週間がピーク<br>
+										【内出血】･･･術後2〜3週間<br>
+										【皮膚の硬さ(拘縮)】･･･術後2週間から3ヶ月<br>
+										【しびれ】･･･3〜6ヶ月ほど<br>
+										【傷口の赤味】･･･3ヶ月ほど</dd>
 								</dl>
 							</div><!-- /.c-case__table -->
 						</div><!-- /.c-case__hiddenTable -->
@@ -286,9 +275,8 @@
 				</div><!-- /.c-case__boxInner -->
 			</div><!-- /.c-case__box -->
 
-
 			<div class="c-case__bottomButton c-case__archiveButton">
-				<a href="https://www.mizunomori.com/case-rank/bust/grease/" target="_blank" rel="noopener">脂肪注入豊胸の症例一覧はこちら</a>
+				<a href="https://www.mizunomori.com/case-rank/diet/" target="_blank" rel="noopener">脂肪吸引の症例一覧はこちら</a>
 			</div><!-- /.c-case__archiveButton -->
 
 		</div><!-- /.l-container__narrow -->
@@ -298,152 +286,36 @@
 		<section id="about" class="c-about l-about">
 			<div class="l-container__narrow">
 				<div class="l-spacer__headingDiagnosis c-heading">
-					<h2 class="c-heading__diagnosis" data-entitle="about">脂肪注入豊胸について</h2>
+					<h2 class="c-heading__diagnosis" data-entitle="about">お腹・ウエスト・腰の脂肪吸引について</h2>
 				</div><!-- /.c-heading -->
 				<div class="c-about__box" data-style="ordinaryStyle">
+					<h3 class="c-about__title" data-style="ordinaryStyle"><span>どこから吸引するの？<br>効果はあるの？</span></h3>
 					<div class="c-about__boxInner" data-style="ordinaryStyle">
-						<h3 class="c-about__title" data-style="ordinaryStyle"><span>どんな施術？<br class="u-pcNone">脂肪はどこからとるの？</span></h3>
+						<p class="c-sentence">お腹・ウエスト・腰の脂肪吸引の<br>吸引部位は、以下の6カ所になります。</p>
+
+						<div class="c-flexPC c-flex__alignCenter c-about__body">
+							<div class="c-flex__half">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/about1.webp" loading="lazy" alt="">
+							</div><!-- /.c-flex__half -->
+							<div class="c-flex__half">
+								<ul class="c-about__list u-narrow u-marginAuto">
+									<li>1.上腹部 (赤・2カ所)</li>
+									<li>2.下腹部 (青2カ所)</li>
+									<li>3 (緑2カ所)</li>
+								</ul>
+							</div><!-- /.c-flex__half -->
+						</div><!-- /.c-flex -->
+
+						<div class="c-about__body u-centerposition">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/about2.webp" alt="">
+						</div><!-- /.c-about__body -->
 						<div class="u-spacer__m"></div>
-						<p class="c-sentence">
-							脂肪注入豊胸は、 脂肪吸引で取り出したご自身の脂肪を注入してバストを大きくします。
-						</p>
-						<p class="c-sentence">
-							注入した脂肪の約70%が体内に吸収され、残りの30%程度が一生残るとされています。個人差がありますが、1カップ〜2カップ程度のバストアップが可能です。
-						</p>
-						<div class="c-about__body">
-							<p class="c-sentence">
-								また、 脂肪吸引の部位は以下の通りとなります。
-							</p>
-							<div class="u-spacer__s"></div>
-							<ul>
-								<li class="u-indent">①太もも前側 (前面・内側) または太もも後側 (後面・外側)</li>
-								<li class="u-indent">②腹部全体</li>
-								<li class="u-indent">③太もも全体 (臀部含む)</li>
-							</ul>
-							<div class="u-spacer__s"></div><!-- /u-spacer__s -->
-							<div class="u-centerposition">
-								<img src="./img/diagnosis/bust/grease/about1.webp" alt="">
-							</div><!-- /u-centerposition -->
-						</div><!-- /.c-about__body -->
 
-						<div class="c-about__body">
-							<p class="c-sentence">上記に加えて脂肪吸引にも種類があり、患者様ご自身の要望にあわせてお選びいただけます。</p>
-
-							<div class="p-bust__types" data-style="normal">
-								<div class="p-bust__typesInner">
-									<p class="p-bust__typesLead"><span>適度な部分痩せ<br>バストを大きくしたい</span></p>
-									<p class="u-underline u-bold u-textCenter">リサーフェイシングを行わない<br class="u-pcNone"><span class="u-expantion">脂肪吸引</span></p>
-
-									<div class="u-spacer__s"></div>
-									<p class="u-centerposition u-expantion">吸引部位</p>
-									<ul class="p-bust__typesList c-flex c-flex__wrap c-flex__center">
-										<li class="u-indent">・太もも前側(前面・内側)</li>
-										<li class="u-indent">・太もも全体(臀部含む)</li>
-										<li class="u-indent">・太もも後側(後面・外側)</li>
-										<li class="u-indent">・腹部全体</li>
-									</ul><!-- /p-bust__typesList -->
-
-									<div class="c-flexPC c-flex__center">
-										<div class="c-flex__half">
-											<p class="p-bust__typesTag u-centerposition">メリット</p>
-											<p class="p-bust__typesSentence u-indent u-narrow u-marginAuto">・リサーフェイシング法を行うパーフェクト脂肪吸引に比べてダウンタイムが短い</p>
-										</div><!-- /c-flex__half -->
-										<div class="u-spacer__s"></div>
-										<div class="c-flex__half">
-											<p class="p-bust__typesTag">デメリット</p>
-											<p class="p-bust__typesSentence u-indent u-narrow u-marginAuto">・細さの実感は少ない</p>
-										</div><!-- /c-flex__half -->
-										<div class="u-spacer__s"></div>
-									</div><!-- /c-flex -->
-								</div><!-- /p-bust__typesInner -->
-							</div><!-- /p-bust__types -->
-
-							<div class="p-bust__types" data-style="perfectDiet">
-								<div class="p-bust__typesInner" data-style="perfectDiet">
-									<p class="p-bust__typesLead" data-style="perfectDiet"><span>しっかり細く<br>バストを大きくしたい</span></p>
-									<p class="u-underline u-bold u-textCenter">リサーフェイシングを行う<br class="u-pcNone"><span class="u-expantion">パーフェクト脂肪吸引</span></p>
-									<div class="u-spacer__s"></div>
-									<p class="u-centerposition u-expantion">吸引部位</p>
-									<ul class="p-bust__typesList c-flex c-flex__wrap c-flex__center">
-										<li class="u-indent">・太もも全体(臀部含む)</li>
-										<li class="u-indent">・腹部全体</li>
-									</ul><!-- /p-bust__typesList -->
-
-									<div class="c-flexPC c-flex__center">
-										<div class="c-flex__half">
-											<p class="p-bust__typesTag u-centerposition" data-style="perfectDiet">メリット</p>
-											<p class="p-bust__typesSentence u-indent u-narrow u-marginAuto">・しっかりと細さを実感できる</p>
-										</div><!-- /c-flex__half -->
-										<div class="u-spacer__s"></div>
-										<div class="c-flex__half">
-											<p class="p-bust__typesTag" data-style="perfectDiet">デメリット</p>
-											<p class="p-bust__typesSentence u-indent u-narrow u-marginAuto">・リサーフェイシング法を行わない脂肪吸引に比べてダウンタイムが長い</p>
-										</div><!-- /c-flex__half -->
-										<div class="u-spacer__s"></div>
-									</div><!-- /c-flex -->
-								</div><!-- /p-bust__typesInner -->
-							</div><!-- /p-bust__types -->
-
-						</div><!-- /.c-about__body -->
-
-						<div class="c-about__body">
-							<h3 class="u-expantion u-bold u-fontGothic">リサーフェイシング法とは？</h3>
-							<div class="u-spacer__s"></div>
-							<div class="u-centerposition">
-								<img src="./img/diagnosis/bust/grease/about2.webp" alt="">
-							</div><!-- /u-centerposition -->
-							<div class="u-spacer__s"></div>
-							<p class="c-sentence">脂肪吸引を行う中で最も難しいのが<span class="u-accentColor">皮膚に近い皮下脂肪の吸引</span>です。<br>リサーフェイシング法では、その皮下<span class="u-accentColor">脂肪の吸引を徹底的に行い</span>、しっかりと効果を実感することができます。</p>
-
-							<div class="u-spacer__m"></div>
-
-							<h3 class="u-expantion u-bold u-fontGothic u-centerposition">脂肪吸引の手順</h3>
-							
-							<div class="c-contentBox">
-								<div class="u-centerposition">
-									<img src="./img/diagnosis/bust/grease/about3.webp" alt="" class="u-narrow">
-								</div><!-- /u-centerposition -->
-								<p class="c-sentence">麻酔液を脂肪層全体に注入して、脂肪を軟らかくします。</p>
-							</div>
-
-							<div class="c-contentBox">
-								<div class="u-centerposition">
-									<img src="./img/diagnosis/bust/grease/about4.webp" alt="" class="u-narrow">
-								</div><!-- /u-centerposition -->
-								<p class="c-sentence">軟らかくした脂肪を、LFDと呼ばれる脂肪層から吸引していきます。</p>
-							</div>
-
-							<div class="c-contentBox">
-								<div class="u-centerposition">
-									<img src="./img/diagnosis/bust/grease/about5.webp" alt="" class="u-narrow">
-								</div><!-- /u-centerposition -->
-								<p class="c-sentence">LFDを吸引した後、皮下脂肪層の脂肪を吸引していきます。</p>
-							</div>
-
-							<div class="c-contentBox">
-								<div class="u-centerposition">
-									<img src="./img/diagnosis/bust/grease/about6.webp" alt="" class="u-narrow">
-								</div><!-- /u-centerposition -->
-								<p class="c-sentence">ここまでが<br><span class="u-underline">リサーフェイシング法を行わない脂肪吸引</span>となります。</p>
-							</div>
-						</div><!-- /c-about__body -->
-
-						<div class="c-about__body">
-							<p class="c-sentence"><span class="u-underline u-bold u-expantion">リサーフェイシング法を行うパーフェクト脂肪吸引</span>では、更にギリギリまで吸引を行います。</p>
-							<div class="u-spacer__s"></div>
-							<div class="u-centerposition">
-								<img src="./img/diagnosis/bust/grease/about7.webp" alt="" class="u-narrow">
-							</div><!-- /u-centerposition -->
-							<div class="u-spacer__s"></div>
-							<p class="c-sentence">麻酔液を皮下脂肪層に注入して更に脂肪を軟らかくし、<span class="u-accentColor">皮膚のギリギリまで徹底的に吸引</span>していきます。</p>
-							<p class="c-sentence">ここまで全て行うのが<br><span class="u-underline">リサーフェイシング法を行うパーフェクト脂肪吸引</span>となります。</p>
-							<div class="u-spacer__m"></div>
-							<div class="c-buttonOrdinary" data-type="downtime">
-								<a href="./diagnosis-liposuction.html">脂肪吸引について<br>詳しくはこちら</a>
-							</div><!-- /c-buttonOrdinar -->
-						</div><!-- /c-about__body -->
-
-
+						<p class="c-sentence">脂肪は、2つの層に分かれています。<br>1つは「皮下脂肪層｣ といわれる、 毛細血管や神経が通り、 皮膚に近い部分の層です。 もう1つは 「LFD ｣ といい､ 筋肉に近い深い層にある脂肪です。</p>
+						<p class="c-sentence">皮下脂肪は、 ダイエットなどで反応しやすい脂肪ですが、<br>LFDは反応しにくい脂肪です。また、LFDは女性特有の脂肪と言われています。</p>
+						<p class="c-sentence">お腹・ウエスト・腰の脂肪吸引では、<br>ダイエットでは反応しにくいLFDをしっかりと取り除くので、 高い痩身効果が期待できます。<br>さらに、 LFDの吸引だけでなく皮下脂肪も綺麗に吸引し、 理想の仕上がりに近づけていきます。</p>
+						<p class="c-sentence u-grayColor">※17歳以下の方は脂肪吸引のご手術自体がお受けいただけませんので、予めご了承ください。</p>
+						<!-- <p class="c-sentence">お顔の脂肪吸引では、<span class="u-accentColor">2.頬 （フェイスライン）</span>と <span class="u-accentColor">3.顎</span>を合わせて吸引し、シャープな輪郭を作ることで二重あごや脂肪によるたるみ、丸顔でお悩みの方に効果があります。</p> -->
 
 					</div><!-- /.c-about__boxInner -->
 				</div><!-- /.c-about__box -->
@@ -451,86 +323,147 @@
 		</section><!-- /.c-about -->
 	</div><!-- /.u-bgMainColor -->
 
-
+	
 	<section id="point" class="p-point l-point">
 		<div class="l-container__narrow">
 			<div class="l-spacer__headingDiagnosis c-heading">
 				<h2 class="c-heading__diagnosis" data-entitle="point">施術方法</h2>
 			</div><!-- /.c-heading -->
-			<p class="p-point__lead">自然にバストアップしたい。<br>部分痩せもしたい。<br>でも感染やしこりにならないか不安。</p>
+			<p class="p-point__lead" data-style="black">取り残しはイヤ。でも早く終わらせて欲しい。<br>終わった後の副作用やダウンタイムが不安。
+				</p>
 
 			<div class="p-point__box">
-				<h3 class="p-point__title">＃1 新鮮な脂肪を注入</h3>
-				<div class="p-point__boxInner">
-					<div class="p-point__right">
-						<div class="p-point__space"></div><!-- /p-point__space -->
-						<div class="p-point__pointImg p-point__floatImg">
-							<img src="./img/diagnosis/bust/grease/point1.webp" alt="">
-						</div><!-- /.p-point__pointImg -->
-					</div><!-- /p-point__right -->
-					<div class="p-point__left">
-						<p class="c-sentence">新鮮な脂肪を注入するためには、まず脂肪吸引自体をスピーディーに行うことが重要です。<br>また、注入するための脂肪を素早く精製する医師や看護師の技術も必要となります。<br>当院では毎日複数件の脂肪吸引を行っており、医師や看護師も毎日実際の施術で経験を積み重ねることで、脂肪吸引からバストへの注入までの過程をよりスムーズに進めることができます。<br>その結果、新鮮な脂肪をバストへ注入することが可能になります。</p>
-					</div><!-- /p-point__left -->
-
-				</div><!-- /.p-point__boxInner -->
-			</div><!-- /.p-point__box -->
-
-			<div class="p-point__box">
-				<h3 class="p-point__title" data-style="reverse">＃2 注入までの保管湿度を一定に保つ</h3>
+				<h3 class="p-point__titleSecond"><span>01</span>各部位の特徴に合わせた吸引</h3>
 				<div class="p-point__boxInner" data-style="reverse">
-					<p class="c-sentence" data-style="reverse">どれだけ素早く脂肪吸引と、バストへ注入するための脂肪の精製を行ったとしても、注入までのタイムラグは必ず発生します。少しでも脂肪の劣化を防ぐためには、常温ではなく<span class="u-accentColor">脂肪にとって最適な温度 「4℃」</span>で保管しておくことが重要です。</p>
-					<div class="u-spacer__s"></div><!-- /u-spacer__s -->
-					<div class="c-flex">
-							<div class="p-point__pointImg">
-								<img src="./img/diagnosis/bust/grease/point2.webp" alt="">
-							</div><!-- /.p-point__pointImg -->
-							<div class="p-point__point">
-								<p class="c-sentence">当院では脂肪吸引後すぐに脂肪の温度を4℃に保ったまま脂肪の精製を行い、バストへの注入までの間も一定に保っています。
-								</p>
-							</div><!-- /.p-point__point -->
+					<p class="c-sentence">お腹・ウエスト・腰の脂肪吸引では、 腰・上腹部・下腹部・ ウエストの部分に分けられます。 各部位の特徴をしっかりと 把握したうえで、 吸引を行っていきます。	</p>
 
+					<div class="p-point__boxBody c-flex c-flex__alignCenter">
+						<div class="p-point__pointImg">
+							<h4 class="p-point__pointTitle u-marginAuto">腰の脂肪吸引</h4>
+							<div class="u-spacer__s"></div><!-- /u-spacer__ -->
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/point1.webp" alt="">
+							<div class="u-spacer__s u-pcNone"></div><!-- /u-spacer__s -->
+						</div><!-- /.p-point__pointImg -->
+
+						<div class="p-point__point">
+							<p class="c-sentence p-point__boxSentence">他院では、腰部分のみの吸引が多いですが､<span class="u-accentColor">当院では腰～ウエストの吸引を行います。</span></p>
+							<p class="c-sentence p-point__boxSentence">これにより、腰からウエストにかけての綺麗なラインを出すことができます。</p>
+						</div><!-- /.p-point__point -->
 					</div><!-- /.p-point__boxBody -->
 
-				</div><!-- /.p-point__boxInner -->
-			</div><!-- /.p-point__box -->
-			
-			<div class="p-point__box">
-				<h3 class="p-point__title">＃3 上質な脂肪だけを使用</h3>
-				<div class="p-point__boxInner">
-					
-					<p class="c-sentence">吸引してすぐの脂肪には麻酔液や血液、その他の不純物が多く含まれています。<br>そのため、ここからいかに純粋な脂肪のみを抽出できるかが、脂肪注入豊胸を行う上で重要なポイントとなります。<br>当院では重力による分離法と、フィルターを通してろ過を繰り返す方法を組み合わせて上質な脂肪のみを抽出しています。<br>また、脂肪注入の種類に“コンデンスリッチ”や“ピュアグラフト”と呼ばれるものがあります。</p>
-					<div class="u-spacer__s"></div>
-					<div class="c-flex">
-						<div class="p-point__point">
-							<p class="c-sentence">これは不純物を取り除く方法が通常の分離法と違うだけですが、不当に金額が高く設定してある場合が多いので注意が必要です。</p>
-						</div><!-- /.p-point__point -->
+					<div class="p-point__boxBody c-flex c-flex__alignCenter">
 						<div class="p-point__pointImg">
-							<img src="./img/diagnosis/bust/grease/point3.webp" alt="">
+							<h4 class="p-point__pointTitle u-marginAuto p-point__boxSentence">上腹部の脂肪吸引</h4>
+							<div class="u-spacer__s"></div><!-- /u-spacer__ -->
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/point2.webp" alt="">
+							<div class="u-spacer__s u-pcNone"></div><!-- /u-spacer__s -->
 						</div><!-- /.p-point__pointImg -->
-					</div><!-- /.-->
+
+						<div class="p-point__point">
+							<p class="c-sentence p-point__boxSentence">上腹部は、皮下脂肪の割合が多く、丁寧に吸引を行わなければ取り残しが出てしまいます。</p>
+							<p class="c-sentence p-point__boxSentence">当院では、<span class="u-accentColor">独自のクリスクロス法やリサーフェイシング法</span>を用いて、ムラなく徹底的に脂肪を取り除きます。</p>
+						</div><!-- /.p-point__point -->
+					</div><!-- /.p-point__boxBody -->
+
+					<div class="p-point__boxBody c-flex c-flex__alignCenter">
+						<div class="p-point__pointImg">
+							<h4 class="p-point__pointTitle u-marginAuto p-point__boxSentence">下腹部の脂肪吸引</h4>
+							<div class="u-spacer__s"></div><!-- /u-spacer__ -->
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/point3.webp" alt="">
+							<div class="u-spacer__s u-pcNone"></div><!-- /u-spacer__s -->
+						</div><!-- /.p-point__pointImg -->
+
+						<div class="p-point__point">
+							<p class="c-sentence p-point__boxSentence">下腹部は、皮下脂肪とLFDが混在し、特におへそ周辺は頑固な部分です。</p>
+							<p class="c-sentence p-point__boxSentence">確かな技術のもと、複数の方向からクリスクロス法を行い綺麗な仕上がりにしていきます。
+							</p>
+						</div><!-- /.p-point__point -->
+					</div><!-- /.p-point__boxBody -->
+
+
+					<div class="p-point__boxBody c-flex c-flex__alignCenter">
+						<div class="p-point__pointImg">
+							<h4 class="p-point__pointTitle u-marginAuto p-point__boxSentence">ウエストの脂肪吸引</h4>
+							<div class="u-spacer__s"></div><!-- /u-spacer__ -->
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/point4.webp" alt="">
+							<div class="u-spacer__s u-pcNone"></div><!-- /u-spacer__s -->
+						</div><!-- /.p-point__pointImg -->
+
+						<div class="p-point__point">
+							<p class="c-sentence p-point__boxSentence">腰⇒上下腹部⇒ウエストと、ウエストは最後の仕上げで吸引を行います。</p>
+							<p class="c-sentence p-point__boxSentence">ウエスト部分はLFDは無く、皮下脂肪のみの部分ですが､くびれを出すために、最後までしっかりと吸引を行います。</p>
+						</div><!-- /.p-point__point -->
+
+					</div><!-- /.p-point__boxBody -->
+					
 				</div><!-- /.p-point__boxInner -->
 			</div><!-- /.p-point__box -->
 
 			<div class="p-point__box">
-				<h3 class="p-point__title" data-style="reverse">＃4 最適な注入方法</h3>
-				<div class="p-point__boxInner" data-style="reverse">
-					<p class="c-sentence">バストを大きくしたいからといって、一度にたくさんの脂肪を注入できるわけではありません。<br>無理にたくさんの脂肪を注入すると、しこりや感染のリスクが上がってしまうため、当院では一度に注入できる量を片側250mlまでとしています。<br>また、注入した脂肪をなるべく吸収されないように定着させるためには、<span class="u-accentColor">様々な層に細かく注入</span>することが大切です。</p>
-					<div class="u-spacer__s"></div>
-					<div class="c-flex">
-						<div class="p-point__point">
-							<p class="c-sentence">例えば同じ 250ml 注入する場合 でも、乳腺下のみに注入するのではなく、乳腺内・胸筋内・場合によっては皮下など、<span class="u-accentColor">様々な層に細かく注入</span>する必要があります。<br>また、脂肪注入豊胸は術後3ヶ月以上空ければ繰り返し行える施術ですので、<span class="u-accentColor">更なるバストアップ</span>も可能です。</p>
-						</div><!-- /.p-point__point -->
-						<div class="p-point__pointImg">
-							<img src="./img/diagnosis/bust/grease/point4.webp" alt="">
-						</div><!-- /.p-point__pointImg -->
-				</div><!-- /.p-point__boxBody -->
+				<h3 class="p-point__titleSecond" data-style="reverse">水の森独自のクリスクロス法<span>02</span></h3>
+				<div class="p-point__boxInner">
+					<p class="c-sentence">水の森美容外科は、全院でクリスクロス法をさらに追求し、より一層、<span class="u-accentColor">均一でムラのない吸引を実現</span>しています。<br>福岡院でも、完成度の高い脂肪吸引をご提供いたします。
+					</p>
+					<p class="c-sentence">一般的に、クリスクロス法は1本のカニューレを使用して、複数の方向から吸引する方法です。この方法で、吸引のムラを限りなく抑え、均一な吸引を行うことができます。</p>
 				</div><!-- /.p-point__boxInner -->
 			</div><!-- /.p-point__box -->
+
+			
+			<div class="p-point__box">
+				<h3 class="p-point__titleSecond"><span>03</span>ダウンタイム中の副作用・症状</h3>
+				<div class="p-point__boxInner" data-style="reverse">
+					<p class="c-sentence">ダウンタイム中の主な副作用・症状には、<br>腫れ・痛み・むくみ・傷口の赤み・内出血・皮膚のつっぱり感（拘縮）などがあります。</p>
+					<p class="c-sentence">それぞれ個人差がありますが、<br>1～2週間で腫れや痛み、むくみが徐々に落ち着きはじめ、術後1ヶ月頃には、ほぼ引いてきます。<br>また、傷口の赤みや内出血も目立たなくなっていきます。</p>
+
+				</div><!-- /.p-point__boxInner -->
+			</div><!-- /.p-point__box -->
+			<div class="u-spacer__m"></div>
+			<div class="u-spacer__m u-spNone"></div>
+			<div class="c-flexPC">
+				<div class="c-flex__half p-point__bottomLeft">
+					<h3 class="c-heading__point" data-type="keycolor">脂肪吸引ダウンタイムサイト</h3>
+					<div class="p-downtime__img">
+						<a href="https://www.mizunomori.com/downtime/" target="_blank" rel="noopener">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/bnr_downtime.jpg" alt="脂肪吸引ダウンタイムサイトバナー" loading="lazy" width="420px" height="191px">
+						</a>
+					</div><!-- /.p-downtime__img -->
+				</div><!-- /c-flex__half -->
+				<div class="c-flex__half">
+					<div class="p-downtime__point">
+						<div class="p-downtime__pointStep">
+							<span>Point1</span>
+							<p>ダウンタイムカレンダー</p>
+						</div><!-- /.p-downtime__pointStep -->
+						<p class="p-downtime__pointText c-sentence">入力するだけで日々の経過や症状を確認</p>
+					</div><!-- /.p-downtime__point -->
+	
+					<div class="p-downtime__point">
+						<div class="p-downtime__pointStep">
+							<span>Point2</span>
+							<p>マッサージ解説動画</p>
+						</div><!-- /.p-downtime__pointStep -->
+						<p class="p-downtime__pointText c-sentence">動画を見ながら実践できる</p>
+					</div><!-- /.p-downtime__point -->
+	
+					<div class="p-downtime__point">
+						<div class="p-downtime__pointStep">
+							<span>Point3</span>
+							<p>Q＆Aやお問い合わせ</p>
+						</div><!-- /.p-downtime__pointStep -->
+						<p class="p-downtime__pointText c-sentence">気になることをいつでも確認</p>
+					</div><!-- /.p-downtime__point -->
+	
+					<div class="u-spacer__m"></div>
+					<div class="c-buttonOrdinary" data-type="downtime">
+						<a href="https://www.mizunomori.com/downtime/" target="_blank" rel="noopener">詳しくはこちら</a>
+					</div>
+	
+				</div><!-- /.c-flex__half -->
+			</div><!-- /c-flex -->
 
 		</div><!-- /.l-container__narrow -->
 	</section><!-- /.p-point -->
-
-
+	
 	<div class="u-bgBeigeColor">
 		<section id="flow" class="p-reservationFlow l-reservationFlow__lower">
 			<div class="l-container__narrow">
@@ -546,7 +479,7 @@
 						<h3 class="p-reservationFlow__lead c-flex c-flex__alignCenter"><span>1</span>ご予約</h3>
 						<div class="c-flexPC c-flex__alignCenter">
 							<div class="p-reservationFlow__img c-flex__half">
-								<img src="./img/diagnosis/liposuction/flow1.webp" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/flow1.webp" alt="">
 							</div>
 							<div class="p-reservationFlow__body c-flex__half">
 								<p class="c-sentence">当院の無料カウンセリングは完全予約制です。<br>ご希望のお日にちにて、メール・お電話からご予約ください。</p>
@@ -558,10 +491,10 @@
 						<h3 class="p-reservationFlow__lead c-flex c-flex__alignCenter"><span>2</span>ご来院</h3>
 						<div class="c-flexPC c-flex__alignCenter">
 							<div class="p-reservationFlow__img c-flex__half">
-								<img src="./img/diagnosis/liposuction/flow2.webp" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/flow2.webp" alt="">
 							</div>
 							<div class="p-reservationFlow__body c-flex__half">
-								<p class="c-sentence">受付後、医師とのカウンセリングに入ります。<br>脂肪吸引豊胸についてのメリットやデメリットをお伝えし、患者様のお悩みもしっかりとお伺いします。
+								<p class="c-sentence">受付後、問診表ご記入し医師との診断になります。どのくらい脂肪が取れそうか、また効果やリスクまで丁寧に説明いたします。
 								</p>
 							</div>
 						</div><!-- /.c-flexPC -->
@@ -571,10 +504,10 @@
 						<h3 class="p-reservationFlow__lead c-flex c-flex__alignCenter"><span>3</span>診察後</h3>
 						<div class="c-flexPC c-flex__alignCenter">
 							<div class="p-reservationFlow__img c-flex__half">
-								<img src="./img/diagnosis/liposuction/flow3.webp" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/flow3.webp" alt="">
 							</div>
 							<div class="p-reservationFlow__body c-flex__half">
-								<p class="c-sentence">医師とのカウンセリング後、聞きそびれた事やご不明点をカウンセラーが伺います。<br>施術をご意向の場合は、そのままお手続きや血液検査も行えます。</p>
+								<p class="c-sentence">医師に聞きそびれた事やご不明点をカウンセラーが伺います。<br>施術をご意向の場合は、そのままお手続きや血液検査も行えます。</p>
 								<p class="c-sentence">※カウンセリング当日は施術頂けません。</p>
 							</div>
 						</div><!-- /.c-flexPC -->
@@ -593,27 +526,50 @@
 					<h3 class="p-reservationFlow__tag" data-style="onTheDay">
 						<span>施術当日</span>
 					</h3>
-
 					<div class="p-reservationFlow__steps">
-						<h3 class="p-reservationFlow__lead c-flex c-flex__alignCenter" data-style="onTheDay"><span>4</span>施術開始</h3>
+						<h3 class="p-reservationFlow__lead c-flex c-flex__alignCenter" data-style="onTheDay"><span>4</span>ご来院</h3>
 						<div class="c-flexPC c-flex__alignCenter">
 							<div class="p-reservationFlow__img c-flex__half">
-								<img src="./img/diagnosis/liposuction/flow6.webp" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/flow4.webp" alt="">
 							</div>
 							<div class="p-reservationFlow__body c-flex__half">
-								<p class="c-sentence">事前に行ったカウンセリングを元に施術を行います。<br>豊胸術では静脈麻酔を使用し、眠っている間に終わりますのでご安心ください。<br>その他の施術も麻酔を使用しますので痛みを感じることはありません。</p>
+								<p class="c-sentence">ご来院後、お手続きや体調確認をし、術前の写真撮影とサイズ計測を行います。</p>
 							</div>
 						</div><!-- /.c-flexPC -->
 					</div><!-- /.p-reservationFlow__steps -->
 
 					<div class="p-reservationFlow__steps">
-						<h3 class="p-reservationFlow__lead c-flex c-flex__alignCenter" data-style="onTheDay"><span>5</span>終了・ご帰宅</h3>
+						<h3 class="p-reservationFlow__lead c-flex c-flex__alignCenter" data-style="onTheDay"><span>5</span>デザイン</h3>
 						<div class="c-flexPC c-flex__alignCenter">
 							<div class="p-reservationFlow__img c-flex__half">
-								<img src="./img/diagnosis/liposuction/flow7.webp" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/flow5.webp" alt="">
 							</div>
 							<div class="p-reservationFlow__body c-flex__half">
-								<p class="c-sentence">術後、棒状の綿をT字にして胸にあて包帯で固定します。<br>脂肪吸引をした創部も包帯を巻き、レインコートとお洋服を着用いただき、リカバリールームでお休みいただけます。<br>体調を確認しながら、ご帰宅可能なタイミングでお帰りください。</p>
+								<p class="c-sentence">医師により入念にデザインを行います。デザインを丁寧に行う事でラインをキレイに調整できます。</p>
+							</div>
+						</div><!-- /.c-flexPC -->
+					</div><!-- /.p-reservationFlow__steps -->
+
+					<div class="p-reservationFlow__steps">
+						<h3 class="p-reservationFlow__lead c-flex c-flex__alignCenter" data-style="onTheDay"><span>6</span>施術開始</h3>
+						<div class="c-flexPC c-flex__alignCenter">
+							<div class="p-reservationFlow__img c-flex__half">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/flow6.webp" alt="">
+							</div>
+							<div class="p-reservationFlow__body c-flex__half">
+								<p class="c-sentence">施術室にて麻酔をかけ吸引を行っていきます。眠っている間に終わりますのでご安心下さい。</p>
+							</div>
+						</div><!-- /.c-flexPC -->
+					</div><!-- /.p-reservationFlow__steps -->
+
+					<div class="p-reservationFlow__steps">
+						<h3 class="p-reservationFlow__lead c-flex c-flex__alignCenter" data-style="onTheDay"><span>7</span>終了・ご帰宅</h3>
+						<div class="c-flexPC c-flex__alignCenter">
+							<div class="p-reservationFlow__img c-flex__half">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/flow7.webp" alt="">
+							</div>
+							<div class="p-reservationFlow__body c-flex__half">
+								<p class="c-sentence">術後、創部に包帯を巻き、合羽とお洋服を着用いただきます。その後、リカバリールームへ移動しベッドでお休みください。体調を確認しながら、ご帰宅可能なタイミングでお帰り頂きます。	</p>
 							</div>
 						</div><!-- /.c-flexPC -->
 					</div><!-- /.p-reservationFlow__steps -->
@@ -631,10 +587,7 @@
 					<h3 class="p-reservationFlow__tag" data-style="afterTreatment">
 						<span>施術後</span>
 					</h3>
-
 					<div class="p-reservationFlow__steps">
-						<p class="u-expand u-bold u-accentColor">ご来院いただくタイミング</p>
-						<div class="u-spacer__s"></div>
 						<div class="p-reservationFlow__afterTreatmentBox">
 							<p class="p-reservationFlow__afterTreatmentLead">7～9日後【抜糸】</p>
 							<p class="c-sentence">抜糸後翌日から、石鹸を用いた洗顔・入浴・お顔全体のメイクが可能となります。<br>※抜糸の無い方は、8日目より石鹸を使用した洗顔が可能となります。</p>
@@ -647,65 +600,19 @@
 							<p class="p-reservationFlow__afterTreatmentLead">3ヶ月後【検診】</p>
 							<p class="c-sentence">ほぼ完成となります。</p>
 						</div>
-						<div class="u-spacer__s"></div>
-						<p class="c-sentence">ダウンタイム中の主な副作用・症状には、1～2週間程度痛みや硬さ・張り感などがあります。</p>
-						<p class="c-sentence">また、脂肪吸引の主な副作用・症状には、<br>腫れ・痛み・むくみ・傷口の赤み・内出血・皮膚のつっぱり感（拘縮）などがあります。</p>
-						<p class="c-sentence">それぞれ個人差がありますが、1～2週間で腫れや痛み、むくみが徐々に落ち着き始め、術後1ヶ月頃には、ほぼ引いてきます。<br>また、傷口の赤みや内出血も目立たなくなっていきます。</p>
+						<div class="p-reservationFlow__afterTreatmentBox">
+							<p class="c-sentence">より詳しい施術の流れについては、こちらをご覧ください。</p>
+							<div class="u-spacer__s"></div>
+							<a href="https://www.mizunomori.com/diagnosis/diet/diet-sub1/" target="_blank" rel="noopener">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/face/flow_8.webp" alt="">
+							</a>
+						</div>
 					</div><!-- /.p-reservationFlow__steps -->
-					
 				</div><!-- /.p-reservationFlow__box -->
 
 			</div><!-- /.l-container__narrow -->
 		</section>
 	</div><!-- /.u-bgGrayColor -->
-
-	<div class="l-container__narrow">
-		<div class="u-spacer__m"></div>
-		<div class="u-spacer__m u-spNone"></div>
-		<div class="c-flexPC">
-			<div class="c-flex__half p-point__bottomLeft">
-				<h3 class="c-heading__point" data-type="keycolor">脂肪吸引ダウンタイムサイト</h3>
-				<div class="p-downtime__img">
-					<a href="https://www.mizunomori.com/downtime/" target="_blank" rel="noopener">
-						<img src="./img/diagnosis/liposuction/bnr_downtime.jpg" alt="脂肪吸引ダウンタイムサイトバナー" loading="lazy" width="420px" height="191px">
-					</a>
-				</div><!-- /.p-downtime__img -->
-			</div><!-- /c-flex__half -->
-			<div class="c-flex__half">
-				<div class="p-downtime__point">
-					<div class="p-downtime__pointStep">
-						<span>Point1</span>
-						<p>ダウンタイムカレンダー</p>
-					</div><!-- /.p-downtime__pointStep -->
-					<p class="p-downtime__pointText c-sentence">日々の経過や症状を確認</p>
-				</div><!-- /.p-downtime__point -->
-	
-				<div class="p-downtime__point">
-					<div class="p-downtime__pointStep">
-						<span>Point2</span>
-						<p>ストレッチ解説動画</p>
-					</div><!-- /.p-downtime__pointStep -->
-					<p class="p-downtime__pointText c-sentence">動画を見ながら実践できる</p>
-				</div><!-- /.p-downtime__point -->
-	
-				<div class="p-downtime__point">
-					<div class="p-downtime__pointStep">
-						<span>Point3</span>
-						<p>Q＆Aやお問い合わせ</p>
-					</div><!-- /.p-downtime__pointStep -->
-					<p class="p-downtime__pointText c-sentence">気になることをいつでも確認</p>
-				</div><!-- /.p-downtime__point -->
-	
-				<div class="u-spacer__m"></div>
-				<div class="c-buttonOrdinary" data-type="downtime">
-					<a href="https://www.mizunomori.com/downtime/" target="_blank" rel="noopener">詳しくはこちら</a>
-				</div>
-	
-			</div><!-- /.c-flex__half -->
-		</div><!-- /c-flex -->
-	</div><!-- /l-container__narrow -->
-
-
 
 	<section class="l-reasonsLower p-reasonsLower">
 		<div class="l-container__narrow">
@@ -714,11 +621,11 @@
 			</div><!-- /.c-heading -->
 			<div class="p-reasonsLower__body">
 				<div class="p-reasonsLower__img">
-					<img src="./img/reasons_mv.webp" loading="lazy" alt="竹江総院長" width="920px" height="440px">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/reasons_mv.webp" loading="lazy" alt="竹江総院長" width="920px" height="440px">
 				</div>
 				<div class="p-reasonsLower__wrap">
 					<h3 class="p-reasonsLower__lead">脂肪の吸引技術</h3>
-					<p class="c-sentence p-reasonsLower__sentence">16年間積み重ねてきた技術により、全て医師による手技で微細な調整をかけながら吸引します。<br>機械では実現できない数ミリ単位の吸引を実現します。</p>
+					<p class="c-sentence p-reasonsLower__sentence">16年間積み重ねてきた技術により、全て医師による手技で微細な調整をかけながら吸引します。<br>						機械では実現できない数ミリ単位の吸引を実現します。</p>
 				</div><!-- /.p-reasonsLower__wrap -->
 				<div class="p-reasonsLower__wrap">
 					<h3 class="p-reasonsLower__lead">クリアプライス</h3>
@@ -732,399 +639,406 @@
 		</div><!-- /.l-container__narrow -->
 	</section><!-- /.l-reasonsLower -->
 
-	<section id="case" class="l-case c-case" data-style="caseLower">
+	<div class="u-bgBeigeColor">
+		<section id="case" class="l-case c-case"> 
+			<div class="l-container__narrow">
+				<div class="l-spacer__headingDiagnosis c-heading">
+					<h2 class="c-heading__diagnosis" data-entitle="case">症例写真</h2>
+				</div><!-- /.c-heading -->
+
+				<div class="c-flexPC c-flex__wrap c-flex__spaceBetween">
+
+					<div class="c-case__card">
+						<div class="swiper-container">
+							<div class="swiper__cases">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="c-flex c-flex__spaceBetween">
+											<figure class="c-case__picture">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/case_case1-back1.webp" alt="" loading="lazy">
+												<figcaption>Before</figcaption>
+											</figure>
+											<figure class="c-case__picture">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/case_case1-back2.webp" alt="" loading="lazy">
+												<figcaption>After</figcaption>
+											</figure>
+										</div><!-- /.c-flex -->
+									</div><!-- /.swiper-slide -->
+	
+									<div class="swiper-slide">
+										<div class="c-flex c-flex__spaceBetween">
+											<figure class="c-case__picture">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/case_case1-center1.webp" alt="" loading="lazy">
+												<figcaption>Before</figcaption>
+											</figure>
+											<figure class="c-case__picture">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/case_case1-center2.webp" alt="" loading="lazy">
+												<figcaption>After</figcaption>
+											</figure>
+										</div><!-- /.c-flex -->
+									</div><!-- /.swiper-slide -->
+	
+									<div class="swiper-slide">
+										<div class="c-flex c-flex__spaceBetween">
+											<figure class="c-case__picture">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/case_case1-side1.webp" alt="" loading="lazy">
+												<figcaption>Before</figcaption>
+											</figure>
+											<figure class="c-case__picture">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/case_case1-side2.webp" alt="" loading="lazy">
+												<figcaption>After</figcaption>
+											</figure>
+										</div><!-- /.c-flex -->
+									</div><!-- /.swiper-slide -->
+									
+								</div><!-- /.swiper-wrapper -->
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+							</div><!-- /.swiper -->
+	
+						</div><!-- /.swiper-container -->
+					
+							<div class="c-case__body">
+								<p class="c-case__button js-accordion" role="button">施術詳細</p>
+								<div class="c-case__hiddenTable js-content">
+									<div class="c-case__table">
+										<dl>
+											<dt>施術費用</dt>
+											<dd>548,900円（税込）</dd>
+											<dt>リスク・<br>副作用</dt>
+											<dd>【痛み・腫れ】･･･術後1週間ほど<br>
+												【浮腫み】･･･術後1週間がピーク<br>
+												【内出血】･･･術後2〜3週間<br>
+												【皮膚の硬さ(拘縮)】･･･術後2週間から3ヶ月<br>
+												【しびれ】･･･3〜6ヶ月ほど<br>
+												【傷口の赤味】･･･3ヶ月ほど</dd>
+										</dl>
+									</div><!-- /.c-case__table -->
+								</div><!-- /.c-case__hiddenTable -->
+							</div>
+					</div><!-- /.c-case__card -->
+
+					<div class="c-case__card">
+						<div class="swiper-container">
+							<div class="swiper__cases">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="c-flex c-flex__spaceBetween">
+											<figure class="c-case__picture">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/case_case2-center1.webp" alt="" loading="lazy">
+												<figcaption>Before</figcaption>
+											</figure>
+											<figure class="c-case__picture">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/case_case2-center2.webp" alt="" loading="lazy">
+												<figcaption>After</figcaption>
+											</figure>
+										</div><!-- /.c-flex -->
+									</div><!-- /.swiper-slide -->
+	
+									<div class="swiper-slide">
+										<div class="c-flex c-flex__spaceBetween">
+											<figure class="c-case__picture">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/case_case2-left1.webp" alt="" loading="lazy">
+												<figcaption>Before</figcaption>
+											</figure>
+											<figure class="c-case__picture">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/case_case2-left2.webp" alt="" loading="lazy">
+												<figcaption>After</figcaption>
+											</figure>
+										</div><!-- /.c-flex -->
+									</div><!-- /.swiper-slide -->
+	
+									<div class="swiper-slide">
+										<div class="c-flex c-flex__spaceBetween">
+											<figure class="c-case__picture">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/case_case2-right1.webp" alt="" loading="lazy">
+												<figcaption>Before</figcaption>
+											</figure>
+											<figure class="c-case__picture">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/case_case2-right2.webp" alt="" loading="lazy">
+												<figcaption>After</figcaption>
+											</figure>
+										</div><!-- /.c-flex -->
+									</div><!-- /.swiper-slide -->
+									
+								</div><!-- /.swiper-wrapper -->
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+							</div><!-- /.swiper -->
+						</div><!-- /.swiper-container -->
+					
+							<div class="c-case__body">
+								<p class="c-case__button js-accordion" role="button">施術詳細</p>
+								<div class="c-case__hiddenTable js-content">
+									<div class="c-case__table">
+										<dl>
+											<dt>施術費用</dt>
+											<dd>548,900円（税込）</dd>
+											<dt>リスク・<br>副作用</dt>
+											<dd>【痛み・腫れ】･･･術後1週間ほど<br>
+												【浮腫み】･･･術後1週間がピーク<br>
+												【内出血】･･･術後2〜3週間<br>
+												【皮膚の硬さ(拘縮)】･･･術後2週間から3ヶ月<br>
+												【しびれ】･･･3〜6ヶ月ほど<br>
+												【傷口の赤味】･･･3ヶ月ほど</dd>
+										</dl>
+									</div><!-- /.c-case__table -->
+								</div><!-- /.c-case__hiddenTable -->
+							</div>
+					</div><!-- /.c-case__card -->
+						
+					<div class="c-case__card">
+						<div class="swiper-container">
+							<div class="swiper__cases">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="c-flex c-flex__spaceBetween">
+											<figure class="c-case__picture">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/case_case3-back1.webp" alt="" loading="lazy">
+												<figcaption>Before</figcaption>
+											</figure>
+											<figure class="c-case__picture">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/case_case3-back2.webp" alt="" loading="lazy">
+												<figcaption>After</figcaption>
+											</figure>
+										</div><!-- /.c-flex -->
+									</div><!-- /.swiper-slide -->
+	
+									<div class="swiper-slide">
+										<div class="c-flex c-flex__spaceBetween">
+											<figure class="c-case__picture">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/case_case3-center1.webp" alt="" loading="lazy">
+												<figcaption>Before</figcaption>
+											</figure>
+											<figure class="c-case__picture">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/case_case3-center2.webp" alt="" loading="lazy">
+												<figcaption>After</figcaption>
+											</figure>
+										</div><!-- /.c-flex -->
+									</div><!-- /.swiper-slide -->
+	
+									<div class="swiper-slide">
+										<div class="c-flex c-flex__spaceBetween">
+											<figure class="c-case__picture">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/case_case3-side1.webp" alt="" loading="lazy">
+												<figcaption>Before</figcaption>
+											</figure>
+											<figure class="c-case__picture">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/case_case3-side1.webp" alt="" loading="lazy">
+												<figcaption>After</figcaption>
+											</figure>
+										</div><!-- /.c-flex -->
+									</div><!-- /.swiper-slide -->
+									
+								</div><!-- /.swiper-wrapper -->
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+							</div><!-- /.swiper -->
+	
+						</div><!-- /.swiper-container -->
+					
+							<div class="c-case__body">
+								<p class="c-case__button js-accordion" role="button">施術詳細</p>
+								<div class="c-case__hiddenTable js-content">
+									<div class="c-case__table">
+										<dl>
+											<dt>施術費用</dt>
+											<dd>548,900円（税込）</dd>
+											<dt>リスク・<br>副作用</dt>
+											<dd>【痛み・腫れ】･･･術後1週間ほど<br>
+												【浮腫み】･･･術後1週間がピーク<br>
+												【内出血】･･･術後2〜3週間<br>
+												【皮膚の硬さ(拘縮)】･･･術後2週間から3ヶ月<br>
+												【しびれ】･･･3〜6ヶ月ほど<br>
+												【傷口の赤味】･･･3ヶ月ほど</dd>
+										</dl>
+									</div><!-- /.c-case__table -->
+								</div><!-- /.c-case__hiddenTable -->
+							</div>
+					</div><!-- /.c-case__card -->
+	
+					<div class="c-case__card">
+						<div class="swiper-container">
+							<div class="swiper__cases">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="c-flex c-flex__spaceBetween">
+											<figure class="c-case__picture">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/case_case4-back1.webp" alt="" loading="lazy">
+												<figcaption>Before</figcaption>
+											</figure>
+											<figure class="c-case__picture">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/case_case4-back2.webp" alt="" loading="lazy">
+												<figcaption>After</figcaption>
+											</figure>
+										</div><!-- /.c-flex -->
+									</div><!-- /.swiper-slide -->
+	
+									<div class="swiper-slide">
+										<div class="c-flex c-flex__spaceBetween">
+											<figure class="c-case__picture">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/case_case4-center1.webp" alt="" loading="lazy">
+												<figcaption>Before</figcaption>
+											</figure>
+											<figure class="c-case__picture">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/case_case4-center2.webp" alt="" loading="lazy">
+												<figcaption>After</figcaption>
+											</figure>
+										</div><!-- /.c-flex -->
+									</div><!-- /.swiper-slide -->
+	
+									<div class="swiper-slide">
+										<div class="c-flex c-flex__spaceBetween">
+											<figure class="c-case__picture">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/case_case4-left1.webp" alt="" loading="lazy">
+												<figcaption>Before</figcaption>
+											</figure>
+											<figure class="c-case__picture">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/case_case4-left2.webp" alt="" loading="lazy">
+												<figcaption>After</figcaption>
+											</figure>
+										</div><!-- /.c-flex -->
+									</div><!-- /.swiper-slide -->
+	
+									<div class="swiper-slide">
+										<div class="c-flex c-flex__spaceBetween">
+											<figure class="c-case__picture">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/case_case4-right1.webp" alt="" loading="lazy">
+												<figcaption>Before</figcaption>
+											</figure>
+											<figure class="c-case__picture">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/case_case4-right2.webp" alt="" loading="lazy">
+												<figcaption>After</figcaption>
+											</figure>
+										</div><!-- /.c-flex -->
+									</div><!-- /.swiper-slide -->
+									
+								</div><!-- /.swiper-wrapper -->
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+							</div><!-- /.swiper -->
+	
+						</div><!-- /.swiper-container -->
+					
+							<div class="c-case__body">
+								<p class="c-case__button js-accordion" role="button">施術詳細</p>
+								<div class="c-case__hiddenTable js-content">
+									<div class="c-case__table">
+										<dl>
+											<dt>施術費用</dt>
+											<dd>548,900円（税込）</dd>
+											<dt>リスク・<br>副作用</dt>
+											<dd>【痛み・腫れ】･･･術後1週間ほど<br>
+												【浮腫み】･･･術後1週間がピーク<br>
+												【内出血】･･･術後2〜3週間<br>
+												【皮膚の硬さ(拘縮)】･･･術後2週間から3ヶ月<br>
+												【しびれ】･･･3〜6ヶ月ほど<br>
+												【傷口の赤味】･･･3ヶ月ほど</dd>
+										</dl>
+									</div><!-- /.c-case__table -->
+								</div><!-- /.c-case__hiddenTable -->
+							</div>
+					</div><!-- /.c-case__card -->
+
+				</div><!-- /c-flex -->
+
+				<div class="c-case__bottomButton c-case__archiveButton">
+					<a href="https://www.mizunomori.com/case-rank/diet/" target="_blank" rel="noopener">脂肪吸引の症例一覧はこちら</a>
+				</div><!-- /.c-case__archiveButton -->
+	
+			</div><!-- /.l-container__narrow -->
+		</section><!-- /.l-case -->
+	</div><!-- /.u-bgBeigeColor -->
+
+	<section class="l-attention p-attention">
 		<div class="l-container__narrow">
 			<div class="l-spacer__headingDiagnosis c-heading">
-				<h2 class="c-heading__diagnosis" data-entitle="case">症例写真</h2>
+				<h2 class="c-heading__diagnosis" data-entitle="attention">失敗しないための注意点</h2>
 			</div><!-- /.c-heading -->
 
-			<div class="c-case__box">
-				<h3 class="c-case__title">脂肪注入豊胸の術前後</h3>
-				<div class="c-case__boxInner" data-style="photo">
-					
-					<div class="c-case__card" data-style="caseLower">
-						<div class="swiper-container">
-							<div class="swiper__cases">
-								<div class="swiper-wrapper">
+			
+			<div class="p-attention__box">
+				<h3 class="p-attention__title">1. 術後デコボコになってしまった</h3>
+				<div class="p-attention__boxInner">
+					<p class="c-sentence">お腹・腰･ウエストの脂肪吸引で、皮膚の表面がデコボコに なってしまったという事例を耳にします。<br>主に挙げられる “2つの原因”について、解説していきます。
+						</p>
 
-									<div class="swiper-slide">
-										<div class="c-flex c-flex__spaceBetween">
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case1-1_1.webp" alt="" loading="lazy">
-												<figcaption>Before</figcaption>
-											</figure>
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case1-1_2.webp" alt="" loading="lazy">
-												<figcaption>After</figcaption>
-											</figure>
-										</div><!-- /.c-flex -->
-									</div><!-- /.swiper-slide -->
-		
-									<div class="swiper-slide">
-										<div class="c-flex c-flex__spaceBetween">
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case1-2_1.webp" alt="" loading="lazy">
-												<figcaption>Before</figcaption>
-											</figure>
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case1-2_2.webp" alt="" loading="lazy">
-												<figcaption>After</figcaption>
-											</figure>
-										</div><!-- /.c-flex -->
-									</div><!-- /.swiper-slide -->
-		
-									<div class="swiper-slide">
-										<div class="c-flex c-flex__spaceBetween">
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case1-3_1.webp" alt="" loading="lazy">
-												<figcaption>Before</figcaption>
-											</figure>
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case1-3_2.webp" alt="" loading="lazy">
-												<figcaption>After</figcaption>
-											</figure>
-										</div><!-- /.c-flex -->
-									</div><!-- /.swiper-slide -->
-		
-									
-								</div><!-- /.swiper-wrapper -->
-								<div class="swiper-button-next"></div>
-								<div class="swiper-button-prev"></div>
-							</div><!-- /.swiper -->
-		
-						</div><!-- /.swiper-container -->
-					
-					</div><!-- /.c-case__card -->
+					<div class="p-attention__boxBody">
+						
+						<h3 class="p-attention__heading"> ①担当医師の吸引技術の不足</h3>
+						<p class="c-sentence">まず脂肪吸引において、いかに“ムラなく”脂肪を吸引できるかという点で医師の技量が試されてきます。デコボコになるリスクを抑えるため､ 少量の吸引では肝心な効果は期待できません。<br>ムラも、凹凸も無く、しっかり脂肪を吸引できるかという点で、医師やクリニックの差が現れます。</p>
 
-					<div class="c-case__body">
-						<p class="c-case__button js-accordion" role="button">施術詳細</p>
-						<div class="c-case__hiddenTable js-content">
-							<div class="c-case__table">
-								<dl>
-									<dt>施術費用</dt>
-									<dd>218,900円（税込）+脂肪吸引代金</dd>
-									<dt>リスク・<br>副作用</dt>
-									<dd>【痛み】･･･1週間程度<br>
-										【張り感・硬さ】･･･2週間程度
-									</dd>
-								</dl>
-							</div><!-- /.c-case__table -->
-						</div><!-- /.c-case__hiddenTable -->
-					</div><!-- /.c-case__body -->
+						<div class="p-attention__innerWhite u-textCenter">
+							<p class="u-underline u-bold">お腹の脂肪吸引取りムラの修正</p>
+							<div class="p-attention__textBox">
+								<p class="c-sentence">デコボコになっている場合</p>
+								<p class="p-attention__heading">修正が比較的容易</p>
+							</div>
+							<div class="p-attention__textBox">
+								<p class="c-sentence">浅い層の脂肪まで取りすぎてしまっている場合</p>
+								<p class="p-attention__heading">修正が比較的難しい</p>
+							</div> 
+						</div><!-- /.-->
+					</div><!-- /.p-attention__boxBody -->
 
-				</div><!-- /.c-case__boxInner -->
-			</div><!-- /.c-case__box -->
-
-			<div class="c-case__box">
-				<h3 class="c-case__title">脂肪注入豊胸の術前後</h3>
-				<div class="c-case__boxInner" data-style="photo">
-
-					<div class="c-case__card" data-style="caseLower" data-style2="long">
-						<div class="swiper-container">
-							<div class="swiper__cases">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<div class="c-flex c-flex__spaceBetween">
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case2-1_1.webp" alt="" loading="lazy">
-												<figcaption>Before</figcaption>
-											</figure>
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case2-1_2.webp" alt="" loading="lazy">
-												<figcaption>After</figcaption>
-											</figure>
-										</div><!-- /.c-flex -->
-									</div><!-- /.swiper-slide -->
-		
-									<div class="swiper-slide">
-										<div class="c-flex c-flex__spaceBetween">
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case2-2_1.webp" alt="" loading="lazy">
-												<figcaption>Before</figcaption>
-											</figure>
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case2-2_2.webp" alt="" loading="lazy">
-												<figcaption>After</figcaption>
-											</figure>
-										</div><!-- /.c-flex -->
-									</div><!-- /.swiper-slide -->
-
-									
-								</div><!-- /.swiper-wrapper -->
-								<div class="swiper-button-next"></div>
-								<div class="swiper-button-prev"></div>
-							</div><!-- /.swiper -->
-		
-						</div><!-- /.swiper-container -->
-					
-					</div><!-- /.c-case__card -->
-
-					<div class="c-case__card" data-style="caseLower" data-style2="long">
-						<div class="swiper-container">
-							<div class="swiper__cases">
-								<div class="swiper-wrapper">
-											
-									<div class="swiper-slide">
-										<div class="c-flex c-flex__spaceBetween">
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case2-3_1.webp" alt="" loading="lazy">
-												<figcaption>Before</figcaption>
-											</figure>
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case2-3_2.webp" alt="" loading="lazy">
-												<figcaption>After</figcaption>
-											</figure>
-										</div><!-- /.c-flex -->
-									</div><!-- /.swiper-slide -->
-
-									<div class="swiper-slide">
-										<div class="c-flex c-flex__spaceBetween">
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case2-5_1.webp" alt="" loading="lazy">
-												<figcaption>Before</figcaption>
-											</figure>
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case2-5_2.webp" alt="" loading="lazy">
-												<figcaption>After</figcaption>
-											</figure>
-										</div><!-- /.c-flex -->
-									</div><!-- /.swiper-slide -->
-		
-									<div class="swiper-slide">
-										<div class="c-flex c-flex__spaceBetween">
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case2-4_1.webp" alt="" loading="lazy">
-												<figcaption>Before</figcaption>
-											</figure>
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case2-4_2.webp" alt="" loading="lazy">
-												<figcaption>After</figcaption>
-											</figure>
-										</div><!-- /.c-flex -->
-									</div><!-- /.swiper-slide -->
-									
-								</div><!-- /.swiper-wrapper -->
-								<div class="swiper-button-next"></div>
-								<div class="swiper-button-prev"></div>
-							</div><!-- /.swiper -->
-		
-						</div><!-- /.swiper-container -->
-					
-					</div><!-- /.c-case__card -->
-
-					<div class="c-case__body">
-						<p class="c-case__button js-accordion" role="button">施術詳細</p>
-						<div class="c-case__hiddenTable js-content">
-							<div class="c-case__table">
-								<dl>
-									<dt>施術費用</dt>
-									<dd>790,900円（税込）</dd>
-									<dt>リスク・<br>副作用</dt>
-									<dd>【痛み・腫れ】･･･術後1週間ほど<br>
-										【浮腫み】･･･術後1週間がピーク<br>
-										【内出血】･･･術後2～3週間<br>
-										【皮膚の硬さ（拘縮）】･･･術後2週間から3ヶ月<br>
-										【しびれ】･･･3～6ヶ月ほど</dd>
-								</dl>
-							</div><!-- /.c-case__table -->
-						</div><!-- /.c-case__hiddenTable -->
-					</div><!-- /.c-case__body -->
-
-					
-				</div><!-- /.c-case__boxInner -->
-			</div><!-- /.c-case__box -->
-
-			<div class="c-case__box">
-				<h3 class="c-case__title">脂肪注入豊胸の術前後</h3>
-				<div class="c-case__boxInner" data-style="photo">
-					
-					<div class="c-case__card" data-style="caseLower">
-						<div class="swiper-container">
-							<div class="swiper__cases">
-								<div class="swiper-wrapper">
-
-									<div class="swiper-slide">
-										<div class="c-flex c-flex__spaceBetween">
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case3-1_1.webp" alt="" loading="lazy">
-												<figcaption>Before</figcaption>
-											</figure>
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case3-1_2.webp" alt="" loading="lazy">
-												<figcaption>After</figcaption>
-											</figure>
-										</div><!-- /.c-flex -->
-									</div><!-- /.swiper-slide -->
-		
-									<div class="swiper-slide">
-										<div class="c-flex c-flex__spaceBetween">
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case3-2_1.webp" alt="" loading="lazy">
-												<figcaption>Before</figcaption>
-											</figure>
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case3-2_2.webp" alt="" loading="lazy">
-												<figcaption>After</figcaption>
-											</figure>
-										</div><!-- /.c-flex -->
-									</div><!-- /.swiper-slide -->
-		
-									<div class="swiper-slide">
-										<div class="c-flex c-flex__spaceBetween">
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case1-3_1.webp" alt="" loading="lazy">
-												<figcaption>Before</figcaption>
-											</figure>
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case1-3_2.webp" alt="" loading="lazy">
-												<figcaption>After</figcaption>
-											</figure>
-										</div><!-- /.c-flex -->
-									</div><!-- /.swiper-slide -->
-		
-									
-								</div><!-- /.swiper-wrapper -->
-								<div class="swiper-button-next"></div>
-								<div class="swiper-button-prev"></div>
-							</div><!-- /.swiper -->
-		
-						</div><!-- /.swiper-container -->
-					
-					</div><!-- /.c-case__card -->
-
-					<div class="c-case__body">
-						<p class="c-case__button js-accordion" role="button">施術詳細</p>
-						<div class="c-case__hiddenTable js-content">
-							<div class="c-case__table">
-								<dl>
-									<dt>施術費用</dt>
-									<dd>218,900円（税込）+脂肪吸引代金</dd>
-									<dt>リスク・<br>副作用</dt>
-									<dd>【痛み】･･･1週間程度<br>
-										【張り感・硬さ】･･･2週間程度
-									</dd>
-								</dl>
-							</div><!-- /.c-case__table -->
-						</div><!-- /.c-case__hiddenTable -->
-					</div><!-- /.c-case__body -->
-
-				</div><!-- /.c-case__boxInner -->
-			</div><!-- /.c-case__box -->
-
-			<div class="c-case__box">
-				<h3 class="c-case__title">脂肪注入豊胸の術前後</h3>
-				<div class="c-case__boxInner" data-style="photo">
-
-					<div class="c-case__card" data-style="caseLower">
-						<div class="swiper-container">
-							<div class="swiper__cases">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<div class="c-flex c-flex__spaceBetween">
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case4-1_1.webp" alt="" loading="lazy">
-												<figcaption>Before</figcaption>
-											</figure>
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case4-1_2.webp" alt="" loading="lazy">
-												<figcaption>After</figcaption>
-											</figure>
-										</div><!-- /.c-flex -->
-									</div><!-- /.swiper-slide -->
-		
-									<div class="swiper-slide">
-										<div class="c-flex c-flex__spaceBetween">
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case4-2_1.webp" alt="" loading="lazy">
-												<figcaption>Before</figcaption>
-											</figure>
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case4-2_2.webp" alt="" loading="lazy">
-												<figcaption>After</figcaption>
-											</figure>
-										</div><!-- /.c-flex -->
-									</div><!-- /.swiper-slide -->
-
-									
-								</div><!-- /.swiper-wrapper -->
-								<div class="swiper-button-next"></div>
-								<div class="swiper-button-prev"></div>
-							</div><!-- /.swiper -->
-		
-						</div><!-- /.swiper-container -->
-					
-					</div><!-- /.c-case__card -->
-
-					<div class="c-case__card" data-style="caseLower" data-style2="long">
-						<div class="swiper-container">
-							<div class="swiper__cases">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<div class="c-flex c-flex__spaceBetween">
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case4-3_1.webp" alt="" loading="lazy">
-												<figcaption>Before</figcaption>
-											</figure>
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case4-3_2.webp" alt="" loading="lazy">
-												<figcaption>After</figcaption>
-											</figure>
-										</div><!-- /.c-flex -->
-									</div><!-- /.swiper-slide -->
-		
-									<div class="swiper-slide">
-										<div class="c-flex c-flex__spaceBetween">
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case4-4_1.webp" alt="" loading="lazy">
-												<figcaption>Before</figcaption>
-											</figure>
-											<figure class="c-case__picture">
-												<img src="./img/diagnosis/bust/grease/case4-4_2.webp" alt="" loading="lazy">
-												<figcaption>After</figcaption>
-											</figure>
-										</div><!-- /.c-flex -->
-									</div><!-- /.swiper-slide -->
-
-									
-								</div><!-- /.swiper-wrapper -->
-								<div class="swiper-button-next"></div>
-								<div class="swiper-button-prev"></div>
-							</div><!-- /.swiper -->
-		
-						</div><!-- /.swiper-container -->
-					
-					</div><!-- /.c-case__card -->
-
-					<div class="c-case__body">
-						<p class="c-case__button js-accordion" role="button">施術詳細</p>
-						<div class="c-case__hiddenTable js-content">
-							<div class="c-case__table">
-								<dl>
-									<dt>施術費用</dt>
-									<dd>790,900円（税込）</dd>
-									<dt>リスク・<br>副作用</dt>
-									<dd>【痛み・腫れ】･･･術後1週間ほど<br>
-										【浮腫み】･･･術後1週間がピーク<br>
-										【内出血】･･･術後2～3週間<br>
-										【皮膚の硬さ（拘縮）】･･･術後2週間から3ヶ月<br>
-										【しびれ】･･･3～6ヶ月ほど</dd>
-								</dl>
-							</div><!-- /.c-case__table -->
-						</div><!-- /.c-case__hiddenTable -->
-					</div><!-- /.c-case__body -->
-
-					
-				</div><!-- /.c-case__boxInner -->
-			</div><!-- /.c-case__box -->
+					<div class="p-attention__boxBody">
+						<h3 class="p-attention__heading"> ②術後の圧迫が不十分</h3>
+						<p class="c-sentence">技術の高い医師がしっかり吸引を行っても、術後が不十分だったり皮膚がよれたままくっついてしまうと、デコボコの原因になります。</p>
+						<p class="c-sentence">当院では、カウンセリング時・施術時・術後の検診時に圧迫指導を徹底しております。</p>
+						<div class="u-spacer__s"></div><!-- /.u-spacer__s -->
+						<div class="p-attention__alignRight">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/waist/attention.webp" alt="">
+						</div><!-- /.p-attention__alignRight -->
+					</div><!-- /.p-attention__boxBody -->
 
 
-			<div class="c-case__bottomButton c-case__archiveButton">
-				<a href="https://www.mizunomori.com/case-rank/bust/grease/" target="_blank"
-					rel="noopener">脂肪注入豊胸の<br>症例一覧はこちら</a>
-			</div><!-- /.c-case__archiveButton -->
+
+
+
+				</div><!-- /.p-attention__boxInner -->
+			</div><!-- /.p-attention__box -->
+
+
+			<div class="p-attention__box">
+				<h3 class="p-attention__title" data-style="reverse">２.効果が無かった</h3>
+				<div class="p-attention__boxInner" data-style="reverse">
+
+					<div class="p-attention__boxBody">
+						<p class="c-sentence">結論､吸引量が少なければ当然効果は出ません。<br>
+							「効果が無かった」という方は、 特に上腹部の繊維質で硬い脂肪が しっかり取り切れていないケースが多いようです。</p>
+						<p class="c-sentence">一方、下腹部の一部は吸引しやすいので、 上腹部の吸引が十分ではないのに、下腹部だけがしっかり吸引されている といったケースもよくあります。 この場合は、効果はもちろん仕上がりも酷い結果になってしまいます。<br>当院では、クリスクロス法を用いて複数の方向から 繊維質で取り残しがちな脂肪もしっかり吸引し､ 確かな効果に繋げます。</p>
+						<div class="u-spacer__s"></div><!-- /.u-spacer__s -->
+						<div class="u-centerposition">
+							<a href="https://www.mizunomori.com/diagnosis/diet/crisscross/" class="p-attention__button" target="_blank" rel="noopener">クリスクロス法</a>
+						</div><!-- /.u-centerposition -->
+					</div><!-- /.p-attention__boxBody -->
+				</div><!-- /.p-attention__boxInner -->
+			</div><!-- /.p-attention__box -->
+			
+			<div class="p-attention__caption">
+				<div class="p-attention__captionInner">
+					<p class="c-sentence">患者様に失敗ではなく、<br>理想の変化を手にして欲しい。</p>
+					<p class="c-sentence">水の森美容外科福岡院は、<br>お腹の脂肪吸引についてきちんをお伝えします。</p>
+				</div><!-- /.p-attention__captionInner -->
+			</div><!-- /.p-attention__caption -->
+
+			<div class="p-CTA l-CTA">
+				<h2 class="p-CTA__heading">無料カウンセリング予約<br class="u-pcNone">お問い合わせ　</h2>
+				<div class="c-buttonCTAWrap c-flex c-flex__center">
+                        <div class="c-buttonCTA c-buttonCTA__phone u-pcNone">
+                            <a href="tel:0120-510-830">お電話</a>
+                        </div>
+                        <div class="c-buttonCTA c-buttonCTA__phone u-spNone">
+                            <a href="<?php echo esc_url(home_url('')); ?>/first">お電話</a>
+                        </div>
+						<div class="c-buttonCTA c-buttonCTA__mail">
+								<a href="https://www.mizunomori.com/counsel/" target="_blank" rel="noopener">WEB予約</a>
+						</div>
+				</div><!-- /c-buttonCTAWrap -->
+		</div><!-- /.p-CTA -->
 
 		</div><!-- /.l-container__narrow -->
-	</section><!-- /.l-case -->
+	</section><!-- /.l-attention -->
 
 	<div class="u-bgGrayColor">
 		<section id="faq" class="l-questions p-questions">
@@ -1133,62 +1047,56 @@
 					<h2 class="c-heading__diagnosis" data-entitle="questions">よくあるご質問</h2>
 				</div><!-- /.c-heading -->
 				<dl class="c-accordion" data-type="questions">
-					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">Q. 傷口は目立ちますか？
-</dt>
+					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">Q. 脂肪を全て取り切ることはできますか？</dt>
 					<dd class="c-accordion__contents js-content">
 						<div class="c-accordion__contentsInner">
-							<p class="c-sentence">A.　傷口は脇の前部に針穴程度ですので、ほぼ気になりません。
-。</p>
+							<p class="c-sentence">A.　1度の施術で、全ての脂肪を取り切ることは現実的に不可能です。<br>
+								実際の施術では、各部位ごとに1度に吸飲できる脂肪量には限界があり、取りすぎてしまうと健康にも支障をきたしてしまいます。<br>
+								また、お身体のラインや左右のバランスなど、総合的に確認したうえで施術を行いますので、<br>
+								皮1枚にするなど全ての脂肪を取り切ることはできません。</p>
 						</div><!-- /.c-accordion__contentsInner -->
 					</dd>
 				</dl><!-- /.c-accordion -->
 				<dl class="c-accordion" data-type="questions">
-					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">Q. しこりになりませんか？</dt>
+					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">Q. 合併症や副作用はありませんか？</dt>
 					<dd class="c-accordion__contents js-content">
 						<div class="c-accordion__contentsInner">
-							<p class="c-sentence">A.　さわって分かるほどのしこりができることはほぼないと言えます。<br>
-								定着率を高め、しこりが出来ないようにするためには、第一に新鮮な脂肪を使用する事です。<br>
-								採取した脂肪は、その時点から徐々に新鮮さを失います。<br>
-								新鮮な状態の脂肪を素早くお胸に注入するためには、十分量の脂肪を速やかに採取する事が重要です。<br>
-								当院でしこりの可能性を低く抑えられるのは、脂肪吸引を数多く行っている経験や技術の積み重ねがあるからこそのものだと思っております。</p>
-							<p class="c-sentence">また、採取した脂肪を細かく多層に注入することも重要です。<br>
-								多量の脂肪を一か所に注入するとしこりや低い定着率の原因となります。<br>
-								当院ではお胸の構造を理解し、お胸の手術をまんべんなく行う事の出来る医師が、丁寧に細かく注入しておりますので、しこりの可能性を限りなく低く抑える事が出来ます。</p>
+							<p class="c-sentence">A.　一般的に、脂肪吸引の合併症と呼ばれるものには、皮膚の凸凹や色素沈着などが挙げられますが、正常の範囲の症状ですのでご安心ください。<br>
+								また、術後の痛みや内出血、腫れも正常の経過において現れるものですのでご安心ください。</p>
 						</div><!-- /.c-accordion__contentsInner -->
 					</dd>
 				</dl><!-- /.c-accordion -->
 				<dl class="c-accordion" data-type="questions">
-					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">Q. 注入した脂肪が吸収されると聞きましたが、どのくらい減ってしまいますか？</dt>
+					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">Q. ベイザー脂肪吸引とどちらが効果がありますか？</dt>
 					<dd class="c-accordion__contents js-content">
 						<div class="c-accordion__contentsInner">
-							<p class="c-sentence">A.　定着率は患者様によって異なりますが、30％から50％となります。<br>
-								クリニックによって過大な定着率を広告しているところも見受けられますが、実際は30％から50％の範囲内であるのが現実です。<br>
-								最新の機械や実際の結果は伴わない学問上の理論を並べて、あたかも効果が高いように見せている広告にはご注意ください。</p>
+							<p class="c-sentence">A.　手作業による脂肪吸引とベイザー脂肪吸引は、どちらも効果はあると思います。<br>
+								吸引量の違いは、機械と人の手ではなく、担当医が最後までしっかりと丁寧に吸引をしたかどうかです。<br>
+								ベイザーを使用しても、ギリギリまで吸引できていなければ、取り残しが出てしまいます。<br>
+								当院は、確かな技術と知識を持った医師が、ギリギリまで吸引を行いますので、効果を実感いただけるはずです。</p>
 						</div><!-- /.c-accordion__contentsInner -->
 					</dd>
 				</dl><!-- /.c-accordion -->
 				<dl class="c-accordion" data-type="questions">
-					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">Q. 痩せていてもできますか？</dt>
+					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">Q. くびれを作ることは可能ですか？</dt>
 					<dd class="c-accordion__contents js-content">
 						<div class="c-accordion__contentsInner">
-							<p class="c-sentence">A.　極端な痩せ型の方ですと、施術を受けられない可能性があります。<br>
-								カウンセリングの際にお腹や太ももを拝見し、生着に十分な脂肪が採取できると判断されると、施術が可能となります。</p>
+							<p class="c-sentence">A.　お腹のくびれの要素としては、ウエストと腰の部分をしっかり吸引することが鍵となります。当院ではもちろん、ウエスト・腰に限らずどの部位もしっかりと吸引してきますので、術前と比べて数値的な変化が出なかった方はお一人もおりません。</p>
 						</div><!-- /.c-accordion__contentsInner -->
 					</dd>
 				</dl><!-- /.c-accordion -->
 				<dl class="c-accordion" data-type="questions">
-					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">Q. 脂肪吸引後のボコボコは治りますか？治らない場合の解決策はありますか？</dt>
+					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">Q. 失敗することはありませんか？</dt>
 					<dd class="c-accordion__contents js-content">
 						<div class="c-accordion__contentsInner">
-							<p class="c-sentence">A.　脂肪吸引の術後は、2～3週間ほどで拘縮のピークとなるため、表面がボコボコした感じが強くなります。<br>
-								拘縮によるボコボコは、3ヶ月ほどで改善していきます。<br>
-								脂肪の取り残しによるボコボコは、再手術で改善することができます。</p>
+							<p class="c-sentence">A.　失敗といわれる事例としては、皮膚の凸凹や取り残しなどが挙げられるかと思います。<br>
+								当院では、そのような事象が起こらないよう、丁寧かつ確実な施術で対応しております。</p>
 						</div><!-- /.c-accordion__contentsInner -->
 					</dd>
 				</dl><!-- /.c-accordion -->
 
 				<div class="p-questions__button">
-					<a href="https://www.mizunomori.com/faq/bust/grease/" target="_blank" rel="noopener">その他よくある質問はこちら</a>
+					<a href="https://www.mizunomori.com/faq/diet/" target="_blank" rel="noopener">その他よくある質問はこちら</a>
 				</div><!-- /.p-questions__button -->
 			</div><!-- /.l-container__narrow -->
 		</section><!-- /.l-questions -->
@@ -1204,6 +1112,17 @@
 				<p class="p-price__sentence">“あれもこれもと追加で結局高額に”<br>“今日だけこの金額でと強引な勧誘”<br>こんなご経験をされたことはありませんか？<br>そして、初めての方も<br class="u-pcNone">こんな経験をしてほしくない。</p>
 			</div><!-- /.p-price__textWrap -->
 
+			<div class="p-price__example u-bgGrayColor">
+				<div class="c-flex c-flex__alignCenter">
+					<div class="p-price__exampleLeft">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/price.webp" alt="">
+					</div><!-- /.p-price__exampleLeft -->
+					<div class="p-price__exampleRight">
+						<p class="c-sentence">例えば、吸引を行う際、吸引管（カニューレ）が通る傷口に皮膚を保護するために装着する「スキンプロテクター」。<br>HPには料金を記載せず別費用だったなどのケースもございます。</p>
+					</div><!-- /.p-price__exampleRight -->
+				</div><!-- /.c-flex -->
+			</div><!-- /.p-price__example -->
+
 			<div class="p-price__caption">
 				<div class="p-price__captionInner">
 					<p class="c-sentence">当院では<br>麻酔代、処方薬代、術後の検診費用など施術に必要なものは全て含んでおります。</p>
@@ -1211,40 +1130,67 @@
 				</div><!-- /.p-price__captionInner -->
 			</div><!-- /.p-price__caption -->
 
-			<div class="p-price__tableWrap">
-				<h3 class="c-heading__point" data-type="price_line">脂肪注入豊胸</h3>
+			<div id="priceWaist" class="p-price__tableWrap">
+				<h3 class="c-heading__point" data-type="price_line">お腹の脂肪吸引</h3>
 
 				<dl class="p-price__table">
-					<dt>脂肪注入</dt>
+					<dt>部位ごと</dt>
 					<div class="p-price__tableRight">
 						<dd>
-							<span>太もも2箇所の脂肪吸引<br>(前面・前面内側)</span>
-							<span>¥614,900 (税込)</span>
+							<span>上腹部</span>
+							<span>¥262,900(税込)</span>
 						</dd>
 						<dd>
-							<span>太もも2箇所の脂肪吸引<br>(後面・後面外側)</span>
-							<span>¥614,900 (税込)</span>
+							<span>下腹部</span>
+							<span>¥262,900(税込)</span>
 						</dd>
 						<dd>
-							<span>太もも全体の脂肪吸引<br>(お尻の一部含む)</span>
-							<span>¥790,900 (税込)</span>
+							<span>ウエスト</span>
+							<span>¥262,900(税込)</span>
 						</dd>
 						<dd>
-							<span>腹部の脂肪吸引</span>
-							<span>¥614,900 (税込)</span>
+							<span>腰</span>
+							<span>¥262,900(税込)</span>
 						</dd>
 						<dd>
-							<span>パーフェクト脂肪吸引<br>(太もも前面・お尻の一部)</span>
-							<span>¥877,800 (税込)</span>
-						</dd>
-						<dd>
-							<span>パーフェクト脂肪吸引<br>(上下腹部・ウエスト・腰)</span>
-							<span>¥767,800 (税込)</span>
+							<span>恥骨部</span>
+							<span>¥240,900(税込)</span>
 						</dd>
 					</div><!-- /.p-price__tableRight -->
 				</dl>
 
-				<p class="p-price__link"><a href="#">脂肪注入豊胸の詳細へ</a></p>
+				<dl class="p-price__table" data-type="table_pink">
+					<dt>セット<br>プラン</dt>
+					<div class="p-price__tableRight">
+						<dd>
+							<span>上下腹部<br>ウエスト<br>腰</span>
+							<span>¥328,900(税込)</span>
+						</dd>
+						<dd>
+							<span>上下腹部<br>ウエスト</span>
+							<span>¥427,900(税込)</span>
+						</dd>
+						<dd>
+							<span>上下腹部<br>ウエスト<br>腰<br>恥骨部</span>
+							<span>¥625,900(税込)</span>
+						</dd>
+					</div><!-- /.p-price__tableRight -->
+				</dl>
+
+				<dl class="p-price__table">
+					<dt>圧迫着</dt>
+					<div class="p-price__tableRight">
+						<dd>
+							<span>ウエストニッパー<br><small>(サイズ：SS・S・M・L・LL・3L)</small></span>
+							<span>¥15,400(税込)</span>
+						</dd>
+						<dd>
+							<span>ウエストニッパー<br><small>(サイズ：6L)</small></span>
+							<span>¥17,600(税込)</span>
+						</dd>
+					</div><!-- /.p-price__tableRight -->
+				</dl>
+
 			</div><!-- /.p-price__tableWrap -->
 
 		</div><!-- /.l-container__narrow -->
@@ -1261,11 +1207,11 @@
 
 					<div class="p-supervisor__profileTop c-flexSP c-flex__alignCenter">
 						<div class="p-supervisor__profileTopLeft c-flex__half">
-							<img src="./img/diagnosis/liposuction/doc_kaneko.jpg" alt="金子貴則院長">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/doc_kaneko.jpg" alt="金子貴則院長">
 						</div><!-- /.p-supervisor__profileLeft -->
 						<div class="p-supervisor__profileTopRight c-flex__half">
 							<p class="c-sentence">水の森美容外科<br>福岡院院長</p>
-							<h3 class="p-supervisor__profileName">金子貴則<a href="#"><img src="./img/instagram_white.svg" alt="" width="20px"></a></h3>
+							<h3 class="p-supervisor__profileName">金子貴則<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram_white.svg" alt="" width="20px"></a></h3>
 						</div><!-- /.p-supervisor__profileRight -->
 					</div><!-- /.c-flexSP -->
 
@@ -1287,8 +1233,7 @@
 							</ul><!-- /.c-DrProfile__list -->
 							<p class="c-DrProfile__conference"><span>ドクターコメント</span></p>
 							<div class="c-DrProfile__list -lowerstyle">
-									<p class="c-DrProfile__listText">脂肪注入は自身の脂肪を採取して注入するため、安全性が高いのが魅力です。脂肪は30%程度の生着率ですが、生着した脂肪は、基本的には半永久的に残ります。<br>
-									脂肪吸引をする方で、「あわせて豊胸もしたい」とお考えの方は別途注入だけで豊胸ができるため、特におすすめです。</p>
+									<p class="c-DrProfile__listText">水の森美容外科で扱う様々な手術の中でも、脂肪吸引は非常に人気の高い手術です。開院以来、口コミやブログの情報などをもとにいらした多数の患者様の脂肪吸引を手掛けてまいりましたので、症例数は非常に多い件数になっております。料金も患者様の立場に立ってリーズナブルに設定しておりますので、安心してご相談ください。</p>
 									<p class="c-DrProfile__listText">
 										当院のホームページは「医療広告ガイドライン」を遵守し、医師監修の元、作成・掲載しております。当院における医療広告ガイドラインの運用や方針については<a href="https://mizunomori-campaign.com/guideline/" class="u-textLink" target="_blank" rel="noopener">こちら</a>を御覧ください。
 									</p>
@@ -1309,14 +1254,18 @@
 							</div>
 					</div><!-- /c-buttonCTAWrap -->
 				</div><!-- /.p-CTA -->
-
-
+				<div class="p-supervisor__bnrArea">
+					<p class="p-supervisor__bnrAreaText">脂肪吸引について<br>総院長竹江渉が詳しく解説！</p>
+					<div class="p-supervisor__bnrAreaBnr">
+						<a href="https://www.youtube.com/channel/UCo3qCN17xUuS-bTHxFhiEuA" target="_blank" rel="noopener"><img
+								src="<?php echo get_template_directory_uri(); ?>/img/doc_youtube.webp" alt="竹江渡のyoutubeチャンネルバナー"></a>
+					</div><!-- /.p-supervisor__bnrAreaBnr -->
+				</div>
 
 			</div><!-- /.l-container__narrow -->
 
 		</section><!-- /.l-supervisor -->
 	</div><!-- /.u-bgGrayColor -->
-
 
 	<section id="access" class="l-access p-access">
 		<div class="l-container">
@@ -1350,7 +1299,7 @@
 				<div class="c-tabMenu__content active" id="01">
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin1.webp" alt="天神駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin1.webp" alt="天神駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1360,7 +1309,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin2.webp" alt="天神駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin2.webp" alt="天神駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1370,7 +1319,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin3.webp" alt="天神駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin3.webp" alt="天神駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1380,7 +1329,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin4.webp" alt="天神駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin4.webp" alt="天神駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1393,7 +1342,7 @@
 				<div class="c-tabMenu__content" id="02">
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin1.webp" alt="西鉄福岡天神駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin1.webp" alt="西鉄福岡天神駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1403,7 +1352,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin2.webp" alt="西鉄福岡天神駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin2.webp" alt="西鉄福岡天神駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1413,7 +1362,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin3.webp" alt="西鉄福岡天神駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin3.webp" alt="西鉄福岡天神駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1423,7 +1372,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin4.webp" alt="西鉄福岡天神駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin4.webp" alt="西鉄福岡天神駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1436,7 +1385,7 @@
 				<div class="c-tabMenu__content" id="03">
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin1.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin1.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1446,7 +1395,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin2.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin2.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1457,7 +1406,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin2.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin2.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1468,7 +1417,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin3.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin3.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1479,7 +1428,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin4.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin4.webp" alt="JR博多駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1493,7 +1442,7 @@
 				<div class="c-tabMenu__content" id="04">
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1503,7 +1452,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1513,7 +1462,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin3.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin3.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1523,7 +1472,7 @@
 					</div><!-- /.p-access__card -->
 					<div class="p-access__card c-flexPC">
 						<div class="p-access__card-img c-flex__half">
-							<img src="./img/access_chika-tenjin4.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy" width="347px"
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin4.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy" width="347px"
 								height="279px">
 						</div><!-- /.p-access__card-img -->
 						<div class="p-access__card-body c-flex__half">
@@ -1539,16 +1488,16 @@
 				<dl class="c-accordion">
 					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">地下鉄天神駅からお越しの場合(徒歩７分)</dt>
 					<dd class="c-accordion__contents js-content">
-						<img src="./img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">地下鉄天神駅⑥番出口から福岡駅通りを真っ直ぐ南へ進み、西鉄福岡（天神）駅の大きな入り口があり、その正面の天神21号線に入ります。</p>
 						<div class="u-spacer__m"></div>
-						<img src="./img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">中華料理店がある交差点を左折し、メルヘン通りを真っ直ぐ進むと、左手に警固神社の入り口が見えてきます。</p>
 						<div class="u-spacer__m"></div>
-						<img src="./img/access_chika-tenjin3.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin3.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">その正面の警固参道に入って真っ直ぐ進み、天神西通りと交差する角にあるビルです。</p>
 						<div class="u-spacer__m"></div>
-						<img src="./img/access_chika-tenjin4.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin4.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">当院までは徒歩約7分でお越しいただけます。</p>
 						<div class="u-spacer__m"></div>
 					</dd>
@@ -1557,16 +1506,16 @@
 				<dl class="c-accordion">
 					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">西鉄福岡(天神)駅からお越しの場合(徒歩４分)</dt>
 					<dd class="c-accordion__contents js-content">
-						<img src="./img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">西鉄福岡(天神)駅三越口西側から警固公園内を抜け、今泉公園通りに出ます。</p>
 						<div class="u-spacer__m"></div>
-						<img src="./img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">今泉公園通りを南に進むと左手に警固神社の入り口が見えてきます。</p>
 						<div class="u-spacer__m"></div>
-						<img src="./img/access_chika-tenjin3.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin3.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">その正面の警固参道に入って真っ直ぐ進み、天神西通りと交差する角にあるビルです。</p>
 						<div class="u-spacer__m"></div>
-						<img src="./img/access_chika-tenjin4.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin4.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">当院までは徒歩約5分でお越しいただけます。</p>
 						<div class="u-spacer__m"></div>
 					</dd>
@@ -1575,10 +1524,10 @@
 				<dl class="c-accordion">
 					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">JR博多駅からお越しの場合</dt>
 					<dd class="c-accordion__contents js-content">
-						<img src="./img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">【電車】<br>博多駅より空港線にて姪浜行に乗車。天神駅にて下車し上記のルートよりお越しいただけます。</p>
 						<div class="u-spacer__m"></div>
-						<img src="./img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">
 							【バス】<br>駅ビル1階のバスターミナルへ。西鉄バスにて【博多バスターミナル】で乗車し【今泉一丁目】で下車。モバイルショップが入ったビルを目印に天神西通りを北に進み、警固参道と交差する角にあるビルです。当院までは徒歩約2分でお越しいただけます。
 						</p>
@@ -1588,17 +1537,17 @@
 				<dl class="c-accordion">
 					<dt class="c-accordion__tab js-accordion c-accordion__tabAccess">JR熊本駅からお越しの場合</dt>
 					<dd class="c-accordion__contents js-content">
-						<img src="./img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin1.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">【新幹線】<br>新幹線にて【JR熊本駅】で乗車し→【JR博多駅】で下車。</p>
 						<div class="u-spacer__m"></div>
-						<img src="./img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin2.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 						<p class="c-sentence">
 							【バス】<br>駅ビル1階のバスターミナルへ。西鉄バスにて【博多バスターミナル】で乗車し【今泉一丁目】で下車。
 							<div class="u-spacer__m"></div>
-							<img src="./img/access_chika-tenjin3.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin3.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 							<p class="c-sentence">モバイルショップが入ったビルを目印に天神西通りを北に進み、警固参道と交差する角にあるビルです。</p>
 							<div class="u-spacer__m"></div>
-							<img src="./img/access_chika-tenjin4.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/access_chika-tenjin4.webp" alt="JR熊本駅からのアクセス写真説明" loading="lazy">
 							<p class="c-sentence">当院までは徒歩約2分でお越しいただけます。</p>
 							<div class="u-spacer__m"></div>
 						</p>
@@ -1634,32 +1583,32 @@
 				<!-- pcでのレイアウト対応 -->
 				<div class="p-footer__bnr">
 					<a href="https://www.mizunomori.com/correct/" target="_blank" rel="noopener"><img
-							src="./img/bnr_correct.webp" alt="失敗サイトへの誘導バナー"></a>
+							src="<?php echo get_template_directory_uri(); ?>/img/bnr_correct.webp" alt="失敗サイトへの誘導バナー"></a>
 				</div><!-- /.p-footer__bnr -->
 				<nav class="p-footer__icons">
 					<h2 class="u-visually-hidden">snsナビゲーション</h2>
 					<ul>
 						<li>
 							<a href="https://twitter.com/_mizunomori_" target="_blank" rel="noopener">
-								<img src="./img/twitter.png" alt="twitter" class="p-footer__icons-icon" width="53px"
+								<img src="<?php echo get_template_directory_uri(); ?>/img/twitter.png" alt="twitter" class="p-footer__icons-icon" width="53px"
 									height="53px">
 							</a>
 						</li>
 						<li>
 							<a href="https://www.instagram.com/mizunomori_clinic/" target="_blank" rel="noopener">
-								<img src="./img/instagram.png" alt="instagram" class="p-footer__icons-icon" width="53px"
+								<img src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="instagram" class="p-footer__icons-icon" width="53px"
 									height="53px">
 							</a>
 						</li>
 						<li>
 							<a href="https://www.youtube.com/user/mizunomoribiyougeka" target="_blank" rel="noopener">
-								<img src="./img/youtube.png" alt="youtube" class="p-footer__icons-icon" width="53px"
+								<img src="<?php echo get_template_directory_uri(); ?>/img/youtube.png" alt="youtube" class="p-footer__icons-icon" width="53px"
 									height="53px">
 							</a>
 						</li>
 						<li>
 							<a href="" class="p-footer__icons-icon" target="_blank" rel="noopener">
-								<img src="./img/line.png" alt="line" class="p-footer__icons-icon" width="53px" height="53px">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/line.png" alt="line" class="p-footer__icons-icon" width="53px" height="53px">
 							</a>
 						</li>
 					</ul>
@@ -1670,7 +1619,7 @@
 							<a href="tel:0120-510-830">お電話</a>
 						</div>
 						<div class="c-buttonCTA c-buttonCTA__footer c-buttonCTA__phone u-spNone">
-							<a href="./first.html">お電話</a>
+							<a href="<?php echo esc_url(home_url('')); ?>/first">お電話</a>
 						</div>
 						<div class="c-buttonCTA c-buttonCTA__footer c-buttonCTA__mail">
 							<a href="https://www.mizunomori.com/counsel/" target="_blank" rel="noopener">WEB予約</a>
@@ -1687,18 +1636,18 @@
 	<div class="p-footer__bottom">
 		<div class="l-containerPc">
 			<ul class="p-footer__list">
-				<li class="p-footer__list-item"><a href="./first.html">・<span>はじめての方へ</span></a></li>
-				<li class="p-footer__list-item"><a href="./access.html">・<span>アクセス</span></a></li>
+				<li class="p-footer__list-item"><a href="<?php echo esc_url(home_url('')); ?>/first">・<span>はじめての方へ</span></a></li>
+				<li class="p-footer__list-item"><a href="<?php echo esc_url(home_url('')); ?>/access">・<span>アクセス</span></a></li>
 				<li class="p-footer__list-item"><a href="https://www.mizunomori.com/price/">・<span>料金一覧</span></a></li>
 				<li class="p-footer__list-item"><a href="https://www.mizunomori.com/case-rank/">・<span>症例写真</span></a>
 				</li>
 				<li class="p-footer__list-item"><a href="https://www.mizunomori.com/policy/">・<span>プライバシーポリシー</span></a>
 				</li>
 				<li class="p-footer__list-item"><a href="https://www.mizunomori.com/concept/">・<span>コンセプト</span></a></li>
-				<li class="p-footer__list-item"><a href="./diagnosis.html">・<span>診療項目</span></a></li>
-				<li class="p-footer__list-item"><a href="./doctor.html">・<span>ドクター紹介</span></a></li>
+				<li class="p-footer__list-item"><a href="<?php echo esc_url(home_url('')); ?>/diagnosis">・<span>診療項目</span></a></li>
+				<li class="p-footer__list-item"><a href="<?php echo esc_url(home_url('')); ?>/doctor">・<span>ドクター紹介</span></a></li>
 				<li class="p-footer__list-item"><a href="https://www.mizunomori.com/faq/">・<span>よくあるご質問</span></a></li>
-				<li class="p-footer__list-item"><a href="./sitemap.html">・<span>サイトマップ</span></a></li>
+				<li class="p-footer__list-item"><a href="<?php echo esc_url(home_url('')); ?>/sitemap">・<span>サイトマップ</span></a></li>
 				<li class="p-footer__list-item"><a
 						href="https://mizunomori-recruit.com/?_ebx=jfdiwlqj.1618535530.7k3u5pk">・<span>採用情報</span></a></li>
 				<li class="p-footer__list-item"><a href="https://www.mizunomori.com/safety/">・<span>安心・安全への取り組み</span></a>
