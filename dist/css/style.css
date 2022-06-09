@@ -6055,7 +6055,7 @@ img {
 }
 .p-eye__megashiraType {
   margin-top: 2rem;
-  padding: 1rem;
+  padding: 1rem 0.75rem;
 }
 @media screen and (min-width: 960px) {
   .p-eye__megashiraType {
@@ -6077,19 +6077,19 @@ img {
 .p-eye__kodawariLeft {
   background-color: #3DBDBF;
   color: var(--color-white);
-  flex-basis: 25%;
+  flex-basis: 28%;
   text-align: center;
 }
 .p-eye__kodawariLeft p {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   padding: 0.5rem 0.25rem;
 }
 .p-eye__kodawariRight {
   background-color: var(--color-white);
-  flex-basis: 75%;
+  flex-basis: 72%;
 }
 .p-eye__kodawariRight p {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   padding: 0.5rem 0.25rem;
   position: relative;
   text-align: center;
