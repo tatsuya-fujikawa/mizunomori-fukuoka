@@ -241,3 +241,15 @@ function select_to_radio_hoge_taxonomy() {
     </script>
     <?php
 }
+
+
+//固定ページ・投稿記事で使用するショートコード
+function getThemeURLFunc() {
+  return "/wp-content/themes/mizunomori-fukuoka/";
+}
+add_shortcode('getThemeURL', 'getThemeURLFunc');
+
+function getThisURLFunc() {
+  return "/wp-content/themes/mizunomori-fukuoka/";
+}
+add_shortcode('getThisURL', 'getThisURLFunc');
