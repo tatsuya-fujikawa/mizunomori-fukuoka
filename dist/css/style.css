@@ -4102,7 +4102,7 @@ img {
 }
 
 .p-news__accordionWrap {
-  padding: 2.25rem 0 5rem;
+  padding: 2.25rem 0;
 }
 .p-news__accordionWrap dl {
   border-collapse: collapse;
