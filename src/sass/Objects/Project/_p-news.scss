@@ -1,6 +1,6 @@
 .p-news {
   &__accordionWrap {
-    padding: rem(36) 0 rem(80);
+    padding: rem(36) 0;
 
     dl {
       border-top: 1px solid #E2E2E2;
@@ -69,10 +69,15 @@
   }
   &__bnr {
     text-align: center;
-    padding-bottom: rem(20);
+    // padding-bottom: rem(20);
+
+    img {
+      padding: rem(6);
+    }
     
     @include mq('pc') {
       padding-bottom: rem(40);
+      width: 25%;
     }
   }
 

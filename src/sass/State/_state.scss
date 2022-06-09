@@ -55,14 +55,15 @@
 .swiper-slide img {
   height: auto;
   width: 100%;
+  padding-bottom: 2rem;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-  bottom: -20px!important;
-}
+// .swiper-horizontal > .swiper-pagination-bullets,
+// .swiper-pagination-bullets.swiper-pagination-horizontal,
+// .swiper-pagination-custom,
+// .swiper-pagination-fraction {
+//   bottom: -20px!important;
+// }
 
 .c-case .swiper-button-next {
 
