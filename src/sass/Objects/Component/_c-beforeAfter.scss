@@ -1,6 +1,10 @@
 .c-beforeAfter {
   display: flex;
+  align-items: center;
   justify-content: center;
+  @include mq('pc') {
+    height: 170px;
+  }
 
   &__before {
     padding-right: rem(8);
