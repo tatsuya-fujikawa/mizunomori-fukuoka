@@ -4165,7 +4165,6 @@ img {
   width: 95%;
 }
 .p-news__bnr {
-  padding-bottom: 1.25rem;
   text-align: center;
 }
 .p-news__bnr img {
@@ -6714,14 +6713,8 @@ img {
 
 .swiper-slide img {
   height: auto;
+  padding-bottom: 2rem;
   width: 100%;
-}
-
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-  bottom: -20px !important;
 }
 
 .c-case .swiper-button-next {
