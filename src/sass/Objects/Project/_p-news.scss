@@ -70,9 +70,14 @@
   &__bnr {
     text-align: center;
     padding-bottom: rem(20);
+
+    img {
+      padding: rem(6);
+    }
     
     @include mq('pc') {
       padding-bottom: rem(40);
+      width: 25%;
     }
   }
 
