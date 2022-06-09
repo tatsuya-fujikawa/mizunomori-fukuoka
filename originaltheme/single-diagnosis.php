@@ -17,12 +17,17 @@
 
 	<div class="l-breadcrumb p-breadcrumb">
 		<div class="l-container__narrow">
-			<nav>
-				<ol class="p-breadcrumb__list">
-					<li><a href="index.html">TOP</a></li>
-					<li>ヒアルロン酸注入</li>
-				</ol>
-			</nav>
+      <?php if( !(is_home() || is_front_page() )): ?>
+        <nav>
+          <ol class="p-breadcrumb__list">
+          <?php
+            if ( function_exists( 'bcn_display' ) ) {
+            bcn_display();
+            }
+          ?>
+          </ol>
+        </nav>
+        <?php endif; ?>
 		</div><!-- /l-container -->
 	</div><!-- /p-breadcrumb -->
 
