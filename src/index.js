@@ -25,6 +25,34 @@ $(function () {
 });
 
 
+gsap.set('.js-anim', {autoAlpha: 0});
+gsap.set('.js-anim02', {autoAlpha: 0});
+
+gsap.to('.js-anim', {
+  autoAlpha: 1,
+  scrollTrigger: {
+    trigger: '.js-trigger',
+    start: 'top center',
+  },
+  stagger: {
+    from: "start",
+    amount: 0.5
+  }
+});
+
+gsap.to('.js-anim02', {
+  autoAlpha: 1,
+  scrollTrigger: {
+    trigger: '.js-trigger02',
+    start: 'top center',
+  },
+  stagger: {
+    from: "start",
+    amount: 0.5
+  }
+});
+
+
 //モーダル
 MicroModal.init({
   openClass: 'is-open',
@@ -84,35 +112,7 @@ const createSwiper = () => {
   });
 }
 
-gsap.set('.js-anim', {autoAlpha: 0});
-gsap.set('.js-anim02', {autoAlpha: 0});
-
-gsap.to('.js-anim', {
-  autoAlpha: 1,
-  scrollTrigger: {
-    trigger: '.js-trigger',
-    start: 'top center',
-  },
-  stagger: {
-    from: "start",
-    amount: 0.5
-  }
-});
-
-gsap.to('.js-anim02', {
-  autoAlpha: 1,
-  scrollTrigger: {
-    trigger: '.js-trigger02',
-    start: 'top center',
-  },
-  stagger: {
-    from: "start",
-    amount: 0.5
-  }
-});
-
-
-
+let swiperCases;
 swiperCases = new Swiper('.swiper__cases', {
   effect: 'fade',
   fadeEffect: {
