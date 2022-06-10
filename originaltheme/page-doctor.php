@@ -1,11 +1,12 @@
-<?php if ( !defined( 'ABSPATH' ) ) exit; ?>
 <?php get_header(); ?>
 <main>
 	<section class="l-jumbotron c-jumbotron">
 		<div class="c-jumbotron__mv">
 			<picture>
-				<source srcset="<?php echo get_template_directory_uri(); ?>/img/first/mv_pc.webp" media="(min-width:768px)"/>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/first/mv_sp.webp" alt="">
+				<!-- <source srcset="./img/first/mv_pc.webp" media="(min-width:768px)"/> -->
+				<source srcset="<?php echo get_template_directory_uri(); ?>/img/doctor/mv_pc.webp" media="(min-width:768px)" />
+				<!-- <img src="./img/first/mv_sp.webp" alt=""> -->
+				<img src="<?php echo get_template_directory_uri(); ?>/img/doctor/mv_sp.webp" alt="">
 			</picture>
 		</div><!-- /c-jumbotron__mv -->
 		<div class="l-container c-jumbotron__inner">
@@ -16,18 +17,13 @@
 	</section><!-- /c-jumbotron -->
 
 	<div class="l-breadcrumb p-breadcrumb">
-		<div class="l-container__narrow">
-      <?php if( !(is_home() || is_front_page() )): ?>
-        <nav>
-          <ol class="p-breadcrumb__list">
-          <?php
-            if ( function_exists( 'bcn_display' ) ) {
-            bcn_display();
-            }
-          ?>
-          </ol>
-        </nav>
-        <?php endif; ?>
+		<div class="l-container l-container__narrow">
+			<nav>
+				<ol class="p-breadcrumb__list">
+					<li><a href="index.html">TOP</a></li>
+					<li>ドクター紹介</li>
+				</ol>
+			</nav>
 		</div><!-- /l-container -->
 	</div><!-- /p-breadcrumb -->
 
@@ -48,7 +44,7 @@
 							<p class="p-doctor__small">福岡院院長</p>
 							<p class="p-doctor__name">
 								<span class="u-blueCrayon">金子 貴則</span>
-								<a class="p-doctor__instagram" href="<?php echo esc_url(home_url('')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="" width="20px" height="20px"></a>
+								<a class="p-doctor__instagram" href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt="" width="20px" height="20px"></a>
 							</p>
 						</h3>
 					</div><!-- /p-doctor__textWrap -->
@@ -60,7 +56,7 @@
 					</div>
 					<div class="p-doctor__flexItem">
 						<h3 class="c-heading__point">金子院長 紹介動画</h3>
-						<a href="<?php echo esc_url(home_url('')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/doctor/doc_kaneko_youtube.webp" alt=""></a>
+						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/doctor/doc_kaneko_youtube.webp" alt=""></a>
 					</div>
 				</div><!-- /.c-flexPC -->
 
@@ -89,8 +85,8 @@
 							</ul><!-- /.p-doctor__careerList -->
 							<h3 class="c-heading__point">特記事項</h3>
 							<ul class="p-doctor__careerList">
-								<li><a href="<?php echo esc_url(home_url('')); ?>">BOTOX VISTA認定医</a></li>
-								<li><a href="<?php echo esc_url(home_url('')); ?>">ジュビダームビスタ認定医</a></li>
+								<li><a href="">BOTOX VISTA認定医</a></li>
+								<li><a href="">ジュビダームビスタ認定医</a></li>
 								<li>日本美容外科学会（Jsas）正会員</li>
 								<li>日本美容外科医師会　会員</li>
 							</ul><!-- /.p-doctor__careerList -->
@@ -135,9 +131,9 @@
 					</div>
 					<div class="p-doctor__flexItem">
 						<h3 class="c-heading__point">総院長 竹江渉より患者様へ</h3>
-						<a href="<?php echo esc_url(home_url('')); ?>"><img src="https://placehold.jp/363x204.png" alt=""></a>
+						<a href="https://www.youtube.com/watch?v=06KYInBAGPw" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/doctor/doc_takee_youtube1.webp" alt=""></a>
 						<h3 class="c-heading__point">竹江渉Youtubeチャンネル</h3>
-						<a href="<?php echo esc_url(home_url('')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/doctor/doc_takee_youtube.webp" alt=""></a>
+						<a href="https://www.youtube.com/channel/UCo3qCN17xUuS-bTHxFhiEuA" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/doctor/doc_takee_youtube2.webp" alt=""></a>
 
 					</div>
 				</div><!-- /.c-flexPC -->
@@ -169,8 +165,8 @@
 							</ul><!-- /.p-doctor__careerList -->
 							<h3 class="c-heading__point">特記事項</h3>
 							<ul class="p-doctor__careerList">
-								<li><a href="<?php echo esc_url(home_url('')); ?>">BOTOX VISTA認定医</a></li>
-								<li><a href="<?php echo esc_url(home_url('')); ?>">ジュビダームビスタ認定医</a></li>
+								<li><a href="">BOTOX VISTA認定医</a></li>
+								<li><a href="">ジュビダームビスタ認定医</a></li>
 								<li>日本美容外科学会（Jsas）正会員</li>
 								<li>日本美容外科医師会　会員</li>
 							</ul><!-- /.p-doctor__careerList -->
@@ -198,7 +194,7 @@
 
 			<div class="p-doctor__bottom c-flexPC c-flex__spaceBetween c-flex__alignCenter">
 				<div class="p-doctor__bottomButton">
-					<a class="p-doctor__buttonText" href="<?php echo esc_url(home_url('')); ?>/access.html">アクセス</a>
+					<a class="p-doctor__buttonText" href="<?php echo esc_url(home_url('')); ?>/access">アクセス</a>
 				</div><!-- /.p-doctor__button -->
 				<div class="p-doctor__bottomButton">
 					<a class="p-doctor__buttonText" href="https://www.mizunomori.com/counsel/" target="_blank" rel="noopener">無料カウンセリング予約</a>

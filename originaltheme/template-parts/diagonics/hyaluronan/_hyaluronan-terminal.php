@@ -1,8 +1,8 @@
     <section class="l-jumbotron c-jumbotron">
 		<div class="c-jumbotron__mv">
 			<picture>
-				<source srcset="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/mv_pc.webp" media="(min-width:768px)" />
-				<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/mv_sp.webp" alt="">
+				<source srcset="[getThemeURL]/img/diagnosis/hyaluronan/mv_pc.webp" media="(min-width:768px)" />
+				<img src="[getThemeURL]/img/diagnosis/hyaluronan/mv_sp.webp" alt="">
 			</picture>
 		</div><!-- /c-jumbotron__mv -->
 		<div class="l-container c-jumbotron__inner">
@@ -37,31 +37,31 @@
 				<div class="p-priceTable__inner">
 					<ul class="p-priceTable__list">
 						<li class="p-priceTable__listItem">
-							<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/hyaluronan/nose/ ">
+							<a href="/diagnosis/hyaluronan/nose/ ">
 								<span class="p-priceTable__listLeft">鼻</span>
 								<span class="p-priceTable__listRight">¥39,600<small>(税込)</small><br><span class="p-priceTable__listSmall">※～1.0ccまでの金額です</span></span>
 							</a>
 						</li>
 						<li class="p-priceTable__listItem">
-							<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/hyaluronan/nasolabialfold/">
+							<a href="/diagnosis/hyaluronan/nasolabialfold/">
 								<span class="p-priceTable__listLeft">ほうれい線</span>
 								<span class="p-priceTable__listRight">¥61,600<small>(税込)</small><br><span class="p-priceTable__listSmall">※～1.0ccまでの金額です</span></span>
 							</a>
 						</li>
 						<li class="p-priceTable__listItem">
-							<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/hyaluronan/mouth/chil/">
+							<a href="/diagnosis/hyaluronan/mouth/chil/">
 								<span class="p-priceTable__listLeft">顎（あご）</span>
 								<span class="p-priceTable__listRight">¥61,600<small>(税込)</small><br><span class="p-priceTable__listSmall">※～1.0ccまでの金額です</span></span>
 							</a>
 						</li>
 						<li class="p-priceTable__listItem">
-							<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/hyaluronan/face/">
+							<a href="/diagnosis/hyaluronan/face/">
 								<span class="p-priceTable__listLeft">額（おでこ）</span>
 								<span class="p-priceTable__listRight">¥61,600<small>(税込)</small><br><span class="p-priceTable__listSmall">※～1.0ccまでの金額です</span></span>
 							</a>
 						</li>
 						<li class="p-priceTable__listItem">
-							<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/hyaluronan/eye/">
+							<a href="/diagnosis/hyaluronan/eye/">
 								<span class="p-priceTable__listLeft">涙袋</span>
 								<span class="p-priceTable__listRight">¥25,300<small>(税込)</small><br><span class="p-priceTable__listSmall">※～1.0ccまでの金額です</span></span>
 							</a>
@@ -73,7 +73,7 @@
 							</a>
 						</li>
 						<li class="p-priceTable__listItem">
-							<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/hyaluronan/mouth/lips/">
+							<a href="/diagnosis/hyaluronan/mouth/lips/">
 								<span class="p-priceTable__listLeft">唇</span>
 								<span class="p-priceTable__listRight">¥61,600<small>(税込)</small><br><span class="p-priceTable__listSmall">※～1.0ccまでの金額です</span></span>
 							</a>
@@ -113,7 +113,7 @@
                             <a href="tel:0120-510-830">お電話</a>
                         </div>
                         <div class="c-buttonCTA c-buttonCTA__phone u-spNone">
-                            <a href="<?php echo esc_url(home_url('')); ?>/first">お電話</a>
+                            <a href="/first">お電話</a>
                         </div>
 						<div class="c-buttonCTA c-buttonCTA__mail">
 								<a href="https://www.mizunomori.com/counsel/" target="_blank" rel="noopener">WEB予約</a>
@@ -151,11 +151,11 @@
 				<div class="c-case__boxInner">
 					<div class="c-flex c-flex__spaceBetween">
 						<figure class="c-case__picture">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/case1_1.webp" alt="" loading="lazy">
+							<img src="[getThemeURL]/img/diagnosis/hyaluronan/case1_1.webp" alt="" loading="lazy">
 							<figcaption>Before</figcaption>
 						</figure>
 						<figure class="c-case__picture">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/case1_2.webp" alt="" loading="lazy">
+							<img src="[getThemeURL]/img/diagnosis/hyaluronan/case1_2.webp" alt="" loading="lazy">
 							<figcaption>After</figcaption>
 						</figure>
 					</div><!-- /.c-flex -->
@@ -183,7 +183,7 @@
 							</ul><!-- /.c-case__list -->
 						
 						<div class="c-case__bottomButton">
-							<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/hyaluronan/nose/">施術ページへ</a>
+							<a href="/diagnosis/hyaluronan/nose/">施術ページへ</a>
 						</div>
 						
 					</div><!-- /.c-case__bottom -->
@@ -196,11 +196,11 @@
 				<div class="c-case__boxInner">
 					<div class="c-flex c-flex__spaceBetween">
 						<figure class="c-case__picture">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/case2_1.webp" alt="" loading="lazy">
+							<img src="[getThemeURL]/img/diagnosis/hyaluronan/case2_1.webp" alt="" loading="lazy">
 							<figcaption>Before</figcaption>
 						</figure>
 						<figure class="c-case__picture">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/case2_2.webp" alt="" loading="lazy">
+							<img src="[getThemeURL]/img/diagnosis/hyaluronan/case2_2.webp" alt="" loading="lazy">
 							<figcaption>After</figcaption>
 						</figure>
 					</div><!-- /.c-flex -->
@@ -228,7 +228,7 @@
 							</ul><!-- /.c-case__list -->
 						
 						<div class="c-case__bottomButton">
-							<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/hyaluronan/nasolabialfold/">施術ページへ</a>
+							<a href="/diagnosis/hyaluronan/nasolabialfold/">施術ページへ</a>
 						</div>
 						
 					</div><!-- /.c-case__bottom -->
@@ -241,11 +241,11 @@
 				<div class="c-case__boxInner">
 					<div class="c-flex c-flex__spaceBetween">
 						<figure class="c-case__picture">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/case3_1.webp" alt="" loading="lazy">
+							<img src="[getThemeURL]/img/diagnosis/hyaluronan/case3_1.webp" alt="" loading="lazy">
 							<figcaption>Before</figcaption>
 						</figure>
 						<figure class="c-case__picture">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/case3_2.webp" alt="" loading="lazy">
+							<img src="[getThemeURL]/img/diagnosis/hyaluronan/case3_2.webp" alt="" loading="lazy">
 							<figcaption>After</figcaption>
 						</figure>
 					</div><!-- /.c-flex -->
@@ -273,7 +273,7 @@
 							</ul><!-- /.c-case__list -->
 						
 						<div class="c-case__bottomButton">
-							<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/hyaluronan/mouth/chin/">施術ページへ</a>
+							<a href="/diagnosis/hyaluronan/mouth/chin/">施術ページへ</a>
 						</div>
 						
 					</div><!-- /.c-case__bottom -->
@@ -286,11 +286,11 @@
 				<div class="c-case__boxInner">
 					<div class="c-flex c-flex__spaceBetween">
 						<figure class="c-case__picture">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/case4_1.webp" alt="" loading="lazy">
+							<img src="[getThemeURL]/img/diagnosis/hyaluronan/case4_1.webp" alt="" loading="lazy">
 							<figcaption>Before</figcaption>
 						</figure>
 						<figure class="c-case__picture">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/case4_2.webp" alt="" loading="lazy">
+							<img src="[getThemeURL]/img/diagnosis/hyaluronan/case4_2.webp" alt="" loading="lazy">
 							<figcaption>After</figcaption>
 						</figure>
 					</div><!-- /.c-flex -->
@@ -318,7 +318,7 @@
 							</ul><!-- /.c-case__list -->
 						
 						<div class="c-case__bottomButton">
-							<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/hyaluronan/amount/">施術ページへ</a>
+							<a href="/diagnosis/hyaluronan/amount/">施術ページへ</a>
 						</div>
 						
 					</div><!-- /.c-case__bottom -->
@@ -331,11 +331,11 @@
 				<div class="c-case__boxInner">
 					<div class="c-flex c-flex__spaceBetween">
 						<figure class="c-case__picture">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/case5_1.webp" alt="" loading="lazy">
+							<img src="[getThemeURL]/img/diagnosis/hyaluronan/case5_1.webp" alt="" loading="lazy">
 							<figcaption>Before</figcaption>
 						</figure>
 						<figure class="c-case__picture">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/case5_2.webp" alt="" loading="lazy">
+							<img src="[getThemeURL]/img/diagnosis/hyaluronan/case5_2.webp" alt="" loading="lazy">
 							<figcaption>After</figcaption>
 						</figure>
 					</div><!-- /.c-flex -->
@@ -363,7 +363,7 @@
 							</ul><!-- /.c-case__list -->
 						
 						<div class="c-case__bottomButton">
-							<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/hyaluronan/eye/">施術ページへ</a>
+							<a href="/diagnosis/hyaluronan/eye/">施術ページへ</a>
 						</div>
 						
 					</div><!-- /.c-case__bottom -->
@@ -376,11 +376,11 @@
 				<div class="c-case__boxInner">
 					<div class="c-flex c-flex__spaceBetween">
 						<figure class="c-case__picture">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/case6_1.webp" alt="" loading="lazy">
+							<img src="[getThemeURL]/img/diagnosis/hyaluronan/case6_1.webp" alt="" loading="lazy">
 							<figcaption>Before</figcaption>
 						</figure>
 						<figure class="c-case__picture">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/case6_2.webp" alt="" loading="lazy">
+							<img src="[getThemeURL]/img/diagnosis/hyaluronan/case6_2.webp" alt="" loading="lazy">
 							<figcaption>After</figcaption>
 						</figure>
 					</div><!-- /.c-flex -->
@@ -408,7 +408,7 @@
 							</ul><!-- /.c-case__list -->
 						
 						<div class="c-case__bottomButton">
-							<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/hyaluronan/mouth/lips/">施術ページへ</a>
+							<a href="/diagnosis/hyaluronan/mouth/lips/">施術ページへ</a>
 						</div>
 						
 					</div><!-- /.c-case__bottom -->
@@ -422,11 +422,11 @@
 					<p class="c-case__tag"><span>20代</span></p>
 					<div class="c-flex c-flex__spaceBetween">
 						<figure class="c-case__picture">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/case7_1.webp" alt="" loading="lazy">
+							<img src="[getThemeURL]/img/diagnosis/hyaluronan/case7_1.webp" alt="" loading="lazy">
 							<figcaption>Before</figcaption>
 						</figure>
 						<figure class="c-case__picture">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/case7_2.webp" alt="" loading="lazy">
+							<img src="[getThemeURL]/img/diagnosis/hyaluronan/case7_2.webp" alt="" loading="lazy">
 							<figcaption>After</figcaption>
 						</figure>
 					</div><!-- /.c-flex -->
@@ -447,11 +447,11 @@
 					<p class="c-case__tag"><span>50代</span></p>
 					<div class="c-flex c-flex__spaceBetween">
 						<figure class="c-case__picture">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/case7_3.webp" alt="" loading="lazy">
+							<img src="[getThemeURL]/img/diagnosis/hyaluronan/case7_3.webp" alt="" loading="lazy">
 							<figcaption>Before</figcaption>
 						</figure>
 						<figure class="c-case__picture">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/case7_4.webp" alt="" loading="lazy">
+							<img src="[getThemeURL]/img/diagnosis/hyaluronan/case7_4.webp" alt="" loading="lazy">
 							<figcaption>After</figcaption>
 						</figure>
 					</div><!-- /.c-flex -->
@@ -486,7 +486,7 @@
 							</ul><!-- /.c-case__list -->
 
 						<div class="c-case__bottomButton">
-							<a href="<?php echo esc_url(home_url('')); ?>/diagnosis/hyaluronan/mouth/lips/">施術ページへ</a>
+							<a href="/diagnosis/hyaluronan/mouth/lips/">施術ページへ</a>
 						</div>
 						
 					</div><!-- /.c-case__bottom -->
@@ -546,7 +546,7 @@
 
 						<div class="c-flexPC">
 							<div class="c-flex__half">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/what1.webp" alt="" class="c-about__hyaluronanPicture" data-style="01">
+								<img src="[getThemeURL]/img/diagnosis/hyaluronan/what1.webp" alt="" class="c-about__hyaluronanPicture" data-style="01">
 							</div><!-- /.c-flex__half -->
 							<div class="c-flex__half c-about__hyaluronanRightBox">
 								<div class="u-narrow u-marginAuto">
@@ -568,7 +568,7 @@
 
 						<div class="c-flexPC">
 							<div class="c-flex__half">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/what2.webp" alt="" class="c-about__hyaluronanPicture" data-style="02">
+								<img src="[getThemeURL]/img/diagnosis/hyaluronan/what2.webp" alt="" class="c-about__hyaluronanPicture" data-style="02">
 							</div><!-- /.c-flex__half -->
 							<div class="c-flex__half c-about__hyaluronanRightBox">
 								<div class="u-narrow u-marginAuto">
@@ -590,7 +590,7 @@
 
 						<div class="c-flexPC">
 							<div class="c-flex__half">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/what3.webp" alt="" class="c-about__hyaluronanPicture" data-style="03">
+								<img src="[getThemeURL]/img/diagnosis/hyaluronan/what3.webp" alt="" class="c-about__hyaluronanPicture" data-style="03">
 							</div><!-- /.c-flex__half -->
 							<div class="c-flex__half c-about__hyaluronanRightBox">
 								<div class="u-narrow u-marginAuto">
@@ -612,7 +612,7 @@
 
 						<div class="c-flexPC">
 							<div class="c-flex__half">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/what3.webp" alt="" class="c-about__hyaluronanPicture" data-style="04">
+								<img src="[getThemeURL]/img/diagnosis/hyaluronan/what3.webp" alt="" class="c-about__hyaluronanPicture" data-style="04">
 							</div><!-- /.c-flex__half -->
 							<div class="c-flex__half c-about__hyaluronanRightBox">
 								<div class="u-narrow u-marginAuto">
@@ -659,7 +659,7 @@
 					<p class="c-sentence">ヒアルロン酸製剤メーカー「アラガン・ジャパン社」より、美容治療の普及に貢献した<br class="u-spNone">クリニックに向け、全国でも限られたクリニックのみに贈られる賞です。 </p>
 					<div class="u-spacer__s"></div>
 					<div class="p-attention__alignRight">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/point1.webp" class="u-narrow u-marginAuto u-block" alt="">
+						<img src="[getThemeURL]/img/diagnosis/hyaluronan/point1.webp" class="u-narrow u-marginAuto u-block" alt="">
 					</div><!-- /.p-attention__alignRight -->
 
 				</div><!-- /.p-point__boxInner -->
@@ -677,7 +677,7 @@
 					<div class="p-point__boxBody c-flex c-flex__alignCenter c-flex__spaceBetween">
 					
 						<div class="p-point__pointImg" data-style="reverse">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/point2.webp" alt="">
+							<img src="[getThemeURL]/img/diagnosis/hyaluronan/point2.webp" alt="">
 						</div><!-- /.p-point__pointImg -->
 
 						<div class="p-point__point">
@@ -709,7 +709,7 @@
 						</div><!-- /.p-point__point -->
 
 						<div class="p-point__pointImg">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/point3.webp" alt="">
+							<img src="[getThemeURL]/img/diagnosis/hyaluronan/point3.webp" alt="">
 						</div><!-- /.p-point__pointImg -->
 					</div><!-- /.p-point__boxBody -->
 				</div><!-- /.p-point__boxInner -->
@@ -733,7 +733,7 @@
 						<h3 class="p-reservationFlow__lead c-flex c-flex__alignCenter"><span>1</span>ご予約</h3>
 						<div class="c-flexPC c-flex__alignCenter">
 							<div class="p-reservationFlow__img c-flex__half">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/flow1.webp" alt="">
+								<img src="[getThemeURL]/img/diagnosis/hyaluronan/flow1.webp" alt="">
 							</div>
 							<div class="p-reservationFlow__body c-flex__half">
 								<p class="c-sentence">当院の無料カウンセリングは完全予約制です。<br>ご希望のお日にちにて、メール・お電話からご予約ください。</p>
@@ -745,7 +745,7 @@
 						<h3 class="p-reservationFlow__lead c-flex c-flex__alignCenter"><span>2</span>ご来院</h3>
 						<div class="c-flexPC c-flex__alignCenter">
 							<div class="p-reservationFlow__img c-flex__half">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/flow2.webp" alt="">
+								<img src="[getThemeURL]/img/diagnosis/hyaluronan/flow2.webp" alt="">
 							</div>
 							<div class="p-reservationFlow__body c-flex__half">
 								<p class="c-sentence">患者様のご希望を伺い、実際に適応があるか確認します。ご不明な点や疑問なども、お気軽にご相談ください。</p>
@@ -771,7 +771,7 @@
 						<h3 class="p-reservationFlow__lead c-flex c-flex__alignCenter" data-style="onTheDay"><span>3</span>施術</h3>
 						<div class="c-flexPC c-flex__alignCenter">
 							<div class="p-reservationFlow__img c-flex__half">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/flow3.webp" alt="">
+								<img src="[getThemeURL]/img/diagnosis/hyaluronan/flow3.webp" alt="">
 							</div>
 							<div class="p-reservationFlow__body c-flex__half">
 								<p class="c-sentence">施術時間は、注入場所によって異なりますが最短5分〜20分程度で終了します。</p>
@@ -783,7 +783,7 @@
 						<h3 class="p-reservationFlow__lead c-flex c-flex__alignCenter" data-style="onTheDay"><span>4</span>終了・ご帰宅</h3>
 						<div class="c-flexPC c-flex__alignCenter">
 							<div class="p-reservationFlow__img c-flex__half">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/hyaluronan/flow4.webp" alt="">
+								<img src="[getThemeURL]/img/diagnosis/hyaluronan/flow4.webp" alt="">
 							</div>
 							<div class="p-reservationFlow__body c-flex__half">
 								<p class="c-sentence">メイクで注入部分を隠せますのでヒアルロン酸注入後は、すぐにご帰宅、お出かけいただけます。</p>
@@ -822,7 +822,7 @@
                             <a href="tel:0120-510-830">お電話</a>
                         </div>
                         <div class="c-buttonCTA c-buttonCTA__phone u-spNone">
-                            <a href="<?php echo esc_url(home_url('')); ?>/first">お電話</a>
+                            <a href="/first">お電話</a>
                         </div>
 						<div class="c-buttonCTA c-buttonCTA__mail">
 								<a href="https://www.mizunomori.com/counsel/" target="_blank" rel="noopener">WEB予約</a>
@@ -1108,11 +1108,11 @@
 
 					<div class="p-supervisor__profileTop c-flexSP c-flex__alignCenter">
 						<div class="p-supervisor__profileTopLeft c-flex__half">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/doc_kaneko.jpg" alt="金子貴則院長">
+							<img src="[getThemeURL]/img/diagnosis/liposuction/doc_kaneko.jpg" alt="金子貴則院長">
 						</div><!-- /.p-supervisor__profileLeft -->
 						<div class="p-supervisor__profileTopRight c-flex__half">
 							<p class="c-sentence">水の森美容外科<br>福岡院院長</p>
-							<h3 class="p-supervisor__profileName">金子貴則<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram_white.svg" alt="" width="20px"></a></h3>
+							<h3 class="p-supervisor__profileName">金子貴則<a href="#"><img src="[getThemeURL]/img/instagram_white.svg" alt="" width="20px"></a></h3>
 						</div><!-- /.p-supervisor__profileRight -->
 					</div><!-- /.c-flexSP -->
 

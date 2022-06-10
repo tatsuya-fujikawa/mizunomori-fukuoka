@@ -42,52 +42,13 @@ global $faq_slug;
 
 <?php get_header(); ?>
 <main>
-
-	<div class="l-breadcrumb p-breadcrumb">
-		<div class="l-container__narrow">
-      <?php if( !(is_home() || is_front_page() )): ?>
-        <nav>
-          <ol class="p-breadcrumb__list">
-          <?php
-            if ( function_exists( 'bcn_display' ) ) {
-            bcn_display();
-            }
-          ?>
-          </ol>
-        </nav>
-        <?php endif; ?>
-		</div><!-- /l-container -->
-	</div><!-- /p-breadcrumb -->
 <?php
-	switch ($ID) {
-  case 330: //二重埋没法
-    // $name = "バスト";
-	get_template_part( 'template-parts/diagonics/bust/_bust-terminal' );
-    break;
-  case 315: //二重埋没法幅決めページ
-    // $name = "ヒアルロン酸";
-	get_template_part( 'template-parts/diagonics/hyaluronan/_hyaluronan-terminal' );
-    break;
-  case 312: //二重切開法
-    // $name =  "ボトックス注射";
-	get_template_part( 'template-parts/diagonics/botox/_botox-terminal' );
-    break;
-  case 311:  //眼瞼下垂治療
-    // $name =  "二重まぶた・目元";
-	get_template_part( 'template-parts/diagonics/eye/_eye-terminal' );
-    break;
-  case 325:  //目頭切開
-    // $name =  "脂肪吸引";
-	get_template_part( 'template-parts/diagonics/liposuction/_liposuction-terminal' );
-    break;
-  case 333:  //涙袋のヒアルロン酸注入
-    // $name =  "鼻";
-	get_template_part( 'template-parts/diagonics/nose/_nose-terminal' );
-    break;
-  default: //目の一覧
-    $name = "";
-}
+echo do_shortcode('ショートコード');
 ?>
+
+
+
+
 
 <?php get_template_part('template-parts/_access'); ?>
 	<!-- /.l-access -->

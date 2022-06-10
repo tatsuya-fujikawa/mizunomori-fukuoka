@@ -718,7 +718,7 @@
 							'operator' => 'IN'
 						),
 					),
-					// 'posts_per_page' => 6, 
+					'posts_per_page' => 100, 
 					'orderby' => 'date',
 					'order' => 'DESC'
 				));
