@@ -916,6 +916,11 @@ img {
     width: 200px;
   }
 }
+.c-buttonSquare a {
+  height: 100%;
+  text-align: center;
+  width: 100%;
+}
 
 .c-tabMenu__tab-menu {
   border-collapse: collapse;
