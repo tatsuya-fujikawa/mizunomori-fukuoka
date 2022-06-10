@@ -176,7 +176,7 @@
     }
 
     &__megashiraType {
-        padding: rem(16);
+        padding: rem(16) rem(12);
         margin-top: rem(32);
         @include mq('pc') {
             padding: rem(16) rem(32);
@@ -195,24 +195,24 @@
         border: 1px solid #EBEBEB;
     }
     &__kodawariLeft {
-        flex-basis: 25%;
+        flex-basis: 28%;
         background-color:#3DBDBF;
         color: var(--color-white);
         text-align: center;
 
         p {
             padding: rem(8) rem(4);
-            font-size: rem(14);
+            font-size: rem(12);
         }
     }
     &__kodawariRight {
-        flex-basis: 75%;
+        flex-basis: 72%;
         background-color: var(--color-white);
 
         p {
             text-align: center;
             padding: rem(8) rem(4);
-            font-size: rem(14);
+            font-size: rem(12);
             position: relative;
 
                 &:first-of-type {

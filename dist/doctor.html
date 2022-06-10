@@ -11,6 +11,8 @@
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script src="./bundle.js" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -168,16 +170,16 @@
 				<h2 class="u-centerposition c-sentence">福岡院ドクターをご紹介いたします</h2>
 			</div><!-- /l-spacer -->
 
-			<div id="kaneko" class="p-doctor__box">
+			<div id="kaneko" class="p-doctor__box js-trigger">
 				<div class="c-flexPC c-flex__alignCenter">
-					<div class="p-doctor__img c-flex__half">
+					<div class="p-doctor__img c-flex__half js-anim">
 						<img src="./img/doctor/doc_kaneko1.webp" alt="金子院長">
 					</div><!-- /p-doctor__img -->
 					<div class="p-doctor__textWrap c-flex__half">
-						<p class="p-doctor__en" lang="en">Takanori Kaneko</p>
+						<p class="p-doctor__en js-anim" lang="en">Takanori Kaneko</p>
 						<h3>
-							<p class="p-doctor__small">福岡院院長</p>
-							<p class="p-doctor__name">
+							<p class="p-doctor__small js-anim">福岡院院長</p>
+							<p class="p-doctor__name js-anim">
 								<span class="u-blueCrayon">金子 貴則</span>
 								<a class="p-doctor__instagram" href="#"><img src="./img/instagram.png" alt="" width="20px" height="20px"></a>
 							</p>
@@ -185,21 +187,21 @@
 					</div><!-- /p-doctor__textWrap -->
 				</div><!-- /c-flexPC -->
 				<div class="c-flexPC c-flex__spaceBetween l-doctor__body p-doctor__flex">
-					<div class="p-doctor__flexItem">
+					<div class="p-doctor__flexItem js-anim">
 						<h3 class="c-heading__point">院長挨拶</h3>
 						<p class="c-sentence">患者様のお悩みが解消され、外見がより良くなることによって患者様が笑顔になれるよう、確かな知識と医療技術、思いやりの心をもって、しっかりカウンセリングさせていただきます。</p>
 					</div>
-					<div class="p-doctor__flexItem">
+					<div class="p-doctor__flexItem js-anim">
 						<h3 class="c-heading__point">金子院長 紹介動画</h3>
 						<a href="#"><img src="./img/doctor/doc_kaneko_youtube.webp" alt=""></a>
 					</div>
 				</div><!-- /.c-flexPC -->
 
-				<div class="p-doctor__button">
+				<div class="p-doctor__button js-anim">
 					<a class="p-doctor__buttonText" href="https://www.mizunomori.com/case-kaneko/" target="_blank" rel="noopener">症例写真</a>
 				</div><!-- /.p-doctor__button -->
 
-				<div class="p-doctor__button js-accordion">
+				<div class="p-doctor__button js-accordion js-anim">
 					<span class="p-doctor__buttonText">詳しい経歴</span>
 				</div><!-- /.p-doctor__button -->
 
@@ -244,40 +246,40 @@
 			</div><!-- /p-doctor__box -->
 
 
-			<div id="takee" class="p-doctor__box">
+			<div id="takee" class="p-doctor__box js-trigger02">
 				<div class="c-flexPC c-flex__alignCenter">
-					<div class="p-doctor__img c-flex__half">
+					<div class="p-doctor__img c-flex__half js-anim02">
 						<img src="./img/doctor/doc_takee1.webp" alt="竹江総院長">
 					</div><!-- /p-doctor__img -->
 					<div class="p-doctor__textWrap c-flex__half">
-						<p class="p-doctor__en" lang="en">Wataru Takee</p>
+						<p class="p-doctor__en js-anim02" lang="en">Wataru Takee</p>
 						<h3>
-							<p class="p-doctor__small">水の森美容外科 総院長</p>
-							<p class="p-doctor__name">
+							<p class="p-doctor__small js-anim02">水の森美容外科 総院長</p>
+							<p class="p-doctor__name js-anim02">
 								<span class="u-blueCrayon">竹江 渉</span>
 							</p>
 						</h3>
 					</div><!-- /p-doctor__textWrap -->
 				</div><!-- /c-flexPC -->
 				<div class="c-flexPC c-flex__spaceBetween l-doctor__body p-doctor__flex">
-					<div class="p-doctor__flexItem">
+					<div class="p-doctor__flexItem js-anim02">
 						<h3 class="c-heading__point">総院長挨拶</h3>
 						<p class="c-sentence">常に患者様を身内と思って接するカウンセリング姿勢には多くの患者様から支持されており、また外科手術はオールラウンドにわたり絶対的な自信をもつ。</p>
 					</div>
-					<div class="p-doctor__flexItem">
+					<div class="p-doctor__flexItem js-anim02">
 						<h3 class="c-heading__point">総院長 竹江渉より患者様へ</h3>
 						<a href="https://www.youtube.com/watch?v=06KYInBAGPw" target="_blank"><img src="./img/doctor/doc_takee_youtube1.webp" alt=""></a>
-						<h3 class="c-heading__point">竹江渉Youtubeチャンネル</h3>
+						<h3 class="c-heading__point js-anim02">竹江渉Youtubeチャンネル</h3>
 						<a href="https://www.youtube.com/channel/UCo3qCN17xUuS-bTHxFhiEuA" target="_blank"><img src="./img/doctor/doc_takee_youtube2.webp" alt=""></a>
 
 					</div>
 				</div><!-- /.c-flexPC -->
 
-				<div class="p-doctor__button">
+				<div class="p-doctor__button js-anim02">
 					<a class="p-doctor__buttonText" href="https://www.mizunomori.com/case-takee/" target="_blank" rel="noopener">症例写真</a>
 				</div><!-- /.p-doctor__button -->
 
-				<div class="p-doctor__button js-accordion">
+				<div class="p-doctor__button js-accordion js-anim02">
 					<span class="p-doctor__buttonText">詳しい経歴</span>
 				</div><!-- /.p-doctor__button -->
 
