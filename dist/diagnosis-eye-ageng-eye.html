@@ -11,6 +11,8 @@
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script src="./bundle.js" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -137,8 +139,8 @@
 			</picture>
 		</div><!-- /c-jumbotron__mv -->
 		<div class="l-container c-jumbotron__inner">
-			<h1 class="c-jumbotron__title" data-style="black">
-				<span>目の下のたるみ<br>膨らみ</span>
+			<h1 class="c-jumbotron__title" data-style="white">
+				<span>目の下の<br>たるみ・膨らみ</span>
 			</h1><!-- /c-jumbotron__title -->
 		</div><!-- /l-container -->
 	</section><!-- /c-jumbotron -->
@@ -193,7 +195,7 @@
 				<ul class="c-navigation__list c-flex c-flex__alignCenter c-flex__wrap">
 					<li class="c-navigation__listItem -diagnosis"><a href="#point">水の森の特徴</a></li>
 					<li class="c-navigation__listItem -diagnosis"><a href="#about">原因を解説</a></li>
-					<li class="c-navigation__listItem -diagnosis"><a href="#method">各治療法と比較</a></li>
+					<li class="c-navigation__listItem -diagnosis"><a href="#method">各治療法</a></li>
 					<li class="c-navigation__listItem -diagnosis"><a href="#flow">施術の流れ</a></li>
 					<li class="c-navigation__listItem -diagnosis"><a href="#faq">よくあるご質問</a></li>
 					<li class="c-navigation__listItem -diagnosis"><a href="#price">施術料金</a></li>
@@ -437,13 +439,14 @@
 						</div><!-- /c-about__body -->
 
 						<div class="l-spacer__headingDiagnosis c-heading">
-							<h2 class="c-heading__diagnosis" data-entitle="method">各治療法</h2>
+							<h2 class="c-heading__diagnosis" data-entitle="method" id="method">各治療法</h2>
 							<div class="u-spacer__s"></div>
 							<p class="c-sentence">治療法は複数あり、主な治療法をご紹介します。</p>
 						</div><!-- /.c-heading -->
 						<div class="u-spacer__m"></div>
 
 						<p class="u-strong"><span class="c-about__tag">下眼瞼脱脂（目の下の脂肪取り）</span></p>
+						<div class="u-spacer__s"></div>
 						<p class="c-sentence">
 							下眼瞼脱脂とは名前の通り、原因である突出した脂肪を取り除く治療です。<br>
 							下まぶた裏側から脂肪を取り除くので、皮膚表面に傷跡が出来ず目立ちにくいのが特徴です。<br>
@@ -469,6 +472,7 @@
 
 						<div class="u-spacer__m"></div>
 						<p class="u-strong"><span class="c-about__tag">ハムラ法</span></p>
+						<div class="u-spacer__s"></div>
 						<p class="c-sentence">
 							ハムラ法とは膨らみ（たるみ）の原因となる脂肪をクボミへ移動させ整える治療です。<br>
 							この時脂肪をクボミ部分へ固定させるため、脂肪が将来的に脂肪が垂れ下がったとしても再発のリスクが少ないのが特徴です。
@@ -496,6 +500,7 @@
 
 						<div class="u-spacer__m"></div>
 						<p class="u-strong"><span class="c-about__tag">裏ハムラ法</span></p>
+						<div class="u-spacer__s"></div>
 						<p class="c-sentence">
 							裏ハムラ法は下まぶた裏側（結膜側）から切開し、ハムラ法同様に脂肪を再配置させる治療です。<br>
 							表面の皮膚は切除しないので、表側に傷ができないのが特徴です。
