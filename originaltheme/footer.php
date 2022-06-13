@@ -37,7 +37,7 @@
                                 <a href="tel:0120-510-830">お電話</a>
                             </div>
                             <div class="c-buttonCTA c-buttonCTA__footer c-buttonCTA__phone u-spNone">
-                                <a href="./first.html">お電話</a>
+                                <a href="<?php echo esc_url(home_url('')); ?>/first">お電話</a>
                             </div>
                             <div class="c-buttonCTA c-buttonCTA__footer c-buttonCTA__mail">
                                 <a href="https://www.mizunomori.com/counsel/" target="_blank" rel="noopener">WEB予約</a>
@@ -53,16 +53,16 @@
         <div class="p-footer__bottom">
             <div class="l-containerPc">
                 <ul class="p-footer__list">
-                    <li class="p-footer__list-item"><a href="./first.html">・<span>はじめての方へ</span></a></li>
-                    <li class="p-footer__list-item"><a href="./access.html">・<span>アクセス</span></a></li>
+                    <li class="p-footer__list-item"><a href="<?php echo esc_url(home_url('')); ?>/first">・<span>はじめての方へ</span></a></li>
+                    <li class="p-footer__list-item"><a href="<?php echo esc_url(home_url('')); ?>/access">・<span>アクセス</span></a></li>
                     <li class="p-footer__list-item"><a href="https://www.mizunomori.com/price/">・<span>料金一覧</span></a></li>
                     <li class="p-footer__list-item"><a href="https://www.mizunomori.com/case-rank/">・<span>症例写真</span></a></li>
                     <li class="p-footer__list-item"><a href="https://www.mizunomori.com/policy/">・<span>プライバシーポリシー</span></a></li>
                     <li class="p-footer__list-item"><a href="https://www.mizunomori.com/concept/">・<span>コンセプト</span></a></li>
-                    <li class="p-footer__list-item"><a href="./diagnosis.html">・<span>診療項目</span></a></li>
-                    <li class="p-footer__list-item"><a href="./doctor.html">・<span>ドクター紹介</span></a></li>
+                    <li class="p-footer__list-item"><a href="<?php echo esc_url(home_url('')); ?>//diagnosis">・<span>診療項目</span></a></li>
+                    <li class="p-footer__list-item"><a href="<?php echo esc_url(home_url('')); ?>//doctor">・<span>ドクター紹介</span></a></li>
                     <li class="p-footer__list-item"><a href="https://www.mizunomori.com/faq/">・<span>よくあるご質問</span></a></li>
-                    <li class="p-footer__list-item"><a href="./sitemap.html">・<span>サイトマップ</span></a></li>
+                    <li class="p-footer__list-item"><a href="<?php echo esc_url(home_url('')); ?>//sitemap">・<span>サイトマップ</span></a></li>
                     <li class="p-footer__list-item"><a href="https://mizunomori-recruit.com/?_ebx=jfdiwlqj.1618535530.7k3u5pk">・<span>採用情報</span></a></li>
                     <li class="p-footer__list-item"><a href="https://www.mizunomori.com/safety/">・<span>安心・安全への取り組み</span></a></li>
                 </ul><!-- /.p-footer__list -->

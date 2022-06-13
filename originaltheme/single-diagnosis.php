@@ -1,4 +1,3 @@
-
 <?php
 //初期データ取得
 $ID = $post->ID; // ページID
@@ -43,7 +42,7 @@ global $faq_slug;
 		</div><!-- /c-jumbotron__mv -->
 		<div class="l-container c-jumbotron__inner">
 			<h1 class="c-jumbotron__title">
-				<span><?php the_title(); ?></span>
+				<span><?php the_field('diagnosis_mv_title'); ?></span>
 			</h1><!-- /c-jumbotron__title -->
 		</div><!-- /l-container -->
 	</section><!-- /c-jumbotron -->
@@ -76,7 +75,7 @@ global $faq_slug;
 
 					<div class="p-supervisor__profileTop c-flexSP c-flex__alignCenter">
 						<div class="p-supervisor__profileTopLeft c-flex__half">
-							<img src="[getThemeURL]/img/diagnosis/liposuction/doc_kaneko.jpg" alt="金子貴則院長">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis/liposuction/doc_kaneko.jpg" alt="金子貴則院長">
 						</div><!-- /.p-supervisor__profileLeft -->
 						<div class="p-supervisor__profileTopRight c-flex__half">
 							<p class="c-sentence">水の森美容外科<br>福岡院院長</p>
