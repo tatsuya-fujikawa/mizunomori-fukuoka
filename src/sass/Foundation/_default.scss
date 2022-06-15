@@ -24,7 +24,6 @@ html {
   letter-spacing: 0.1em;
   font-size: $basefontsize + px;
   font-family: 'Noto Sans JP', "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", sans-serif;
-
 }
 
 @function rem($pixels, $context: $basefontsize) { 
@@ -111,5 +110,3 @@ from { transform: translateY(15%); }
   from { transform: translateY(0); }
   to { transform: translateY(-10%); }
 }
-
-

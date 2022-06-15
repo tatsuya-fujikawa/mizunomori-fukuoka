@@ -6718,8 +6718,11 @@ img {
 
 .swiper-slide img {
   height: auto;
-  padding-bottom: 2rem;
   width: 100%;
+}
+
+.swiper-slide .p-news__bnr img, .l-clinic .swiper-slide img {
+  padding-bottom: 2rem;
 }
 
 .c-case .swiper-button-next {
