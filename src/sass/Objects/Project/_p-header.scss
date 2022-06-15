@@ -126,6 +126,7 @@
         left: 0;
         position:fixed;
         height: 100vh;
+        min-height: -webkit-fill-available;
         overflow-y: scroll;
         z-index: 50;
     }
