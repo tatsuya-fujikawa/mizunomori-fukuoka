@@ -2,8 +2,7 @@
     padding-top: rem(16);
 
     &__top {
-        
-            @include mq('sp') {
+            @media screen and (max-width: 959px) {
                 position: fixed;
                 padding-top: rem(16);
                 width: 100%;

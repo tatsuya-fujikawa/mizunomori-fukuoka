@@ -335,6 +335,7 @@ svg:not([fill]) {
 html, body {
   counter-reset: accessNum;
   margin: 0;
+  min-height: -webkit-fill-available;
   padding: 0;
   scroll-behavior: smooth;
 }
@@ -524,7 +525,7 @@ img {
 .l-header {
   padding-top: 1rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 959px) {
   .l-header__top {
     background-color: var(--color-white);
     padding-bottom: 1rem;
@@ -2557,7 +2558,6 @@ img {
   background-color: #A5DDDB;
   height: 100vh;
   left: 0;
-  min-height: -webkit-fill-available;
   overflow-y: scroll;
   position: fixed;
   top: 0;
