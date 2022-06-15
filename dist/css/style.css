@@ -2557,6 +2557,7 @@ img {
   background-color: #A5DDDB;
   height: 100vh;
   left: 0;
+  min-height: -webkit-fill-available;
   overflow-y: scroll;
   position: fixed;
   top: 0;
@@ -3230,7 +3231,7 @@ img {
   display: block;
   font-size: 0.875rem;
   font-weight: bold;
-  padding: 0.75rem;
+  padding: 0.75rem 0 0.75rem 2rem;
   position: relative;
 }
 .p-spnav__list-item a:before {
