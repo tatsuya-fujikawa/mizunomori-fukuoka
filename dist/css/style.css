@@ -2558,9 +2558,11 @@ img {
   background-color: #A5DDDB;
   height: 100vh;
   left: 0;
+  min-height: -webkit-fill-available;
   overflow-y: scroll;
   position: fixed;
   top: 0;
+  width: 100%;
   z-index: 50;
 }
 .p-header__humbergerNav {
